@@ -1,0 +1,18 @@
+Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.2 (Version 12.200.30.10)
+
+Date      :  Fri Aug 31 09:50:44 2018
+Project   :  C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_ddr
+Component :  CoreSPI_0
+Family    :  PolarFire
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/corespi.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_chanctrl.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_clockmux.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_control.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_fifo.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_rf.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/component/work/CoreSPI_0/CoreSPI_0.v
+

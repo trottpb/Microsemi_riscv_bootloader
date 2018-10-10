@@ -1,0 +1,20 @@
+Software Version: 12.200.35.9
+Opened 'C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\designer\TOP\TOP_fp\TOP.pro'
+The 'open_project' command succeeded.
+PDB file 'C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\designer\TOP\TOP.pdb' has been loaded successfully.
+DESIGN : TOP;  CHECKSUM : 0000;  PDB_VERSION : 1.9
+Load Programming Data(s) Finished : Tue Oct 02 15:48:20 2018 (Elapsed time 00:00:00)
+The 'load_programming_data' command succeeded.
+Successfully exported STAPL file: 'C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\designer\TOP\export\UART_2_SCSPI_Bridge_eval2_ddr.stp'; file programs Fabric and sNVM.
+BITS component bitstream digest: e628346f15f57b0bb57f2a9a7ba39a841126caa067b4873fa03d218c2fd0001c
+Fabric component bitstream digest: 10f5516065da51b85443748650612fb927b1adef01b0abdc89673ca7505c2a34
+Fabric digest: c623bcc7d3bfbef6d014f90cbf1739c423ed87d19732442d135090cf4460dd9e
+sNVM component bitstream digest: c4363604b33cecafa260534d8757806bfba7a3138048690e9ba2ed9e5523a8c4
+EOB component bitstream digest: 68db82d35ce5cbcc0588ba883093ace9c8bd5004ccf35c35db0045ad3cfc6bc2
+Finished: Tue Oct 02 15:49:01 2018 (Elapsed time 00:00:41)
+
+The 'export_single_stapl' command succeeded.
+The 'set_programming_file' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.

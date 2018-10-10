@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RV32_simple_gpio/Debug/RV32_simple_gpio2_pt.hex&apos; to &apos;RV32_simple_gpio_pt.hex&apos;" description="Rename resource &apos;RV32_simple_gpio2_pt.hex&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug/RV32_simple_gpio2_pt.hex" name="RV32_simple_gpio_pt.hex" stamp="1535993292343" updateReferences="true"/>
+</session>
