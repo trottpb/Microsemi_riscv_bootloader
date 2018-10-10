@@ -1,0 +1,34 @@
+*****************************************************************
+Pin Report - Date: Mon Sep 10 15:49:22 2018 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: PolarFire v2.2
+Version: 12.200.30.10
+Design Name: TOP
+Family: PolarFire
+Die: MPF300TS_ES
+Package: FCG1152
+*****************************************************************
+
+Port           |Pin |Fixed |Function                                     |Bank     |I/O Std   |Direction          |User I/O Lock Down             |I/O state in Flash*Freeze mode |Clamp Diode   |Resistor Pull   |Schmitt Trigger |Vcm Input Range    |On Die Termination |Odt Value (Ohm) |Input Delay |Slew              |Output Drive (mA) |Impedance (ohm)  |Output Load (pF)         |Source Termination (Ohm) |Output Delay |
+---------------|----|------|---------------------------------------------|---------|----------|-------------------|-------------------------------|-------------------------------|--------------|----------------|----------------|-------------------|-------------------|----------------|------------|------------------|------------------|-----------------|-------------------------|-------------------------|-------------|
+GPIO_OUT[0]     F22  Yes    HSIO64NB6                                     Bank6     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+GPIO_OUT[1]     B26  Yes    HSIO71NB6                                     Bank6     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+GPIO_OUT[2]     C26  Yes    HSIO70NB6                                     Bank6     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+GPIO_OUT[3]     D25  Yes    HSIO70PB6/CCC_SE_PLL1_OUT1                    Bank6     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+INT_RESET_N     A24  Yes    HSIO66NB6                                     Bank6     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+IO_CFG_INTF     L12  Fixed  IO_CFG_INTF                                   ---       
+RESET_N         K22  Yes    HSIO55PB6                                     Bank6     LVCMOS18   Input               No                              LAST_VALUE                      ON             Up               OFF              ---                 OFF                 120              OFF          ---                ---                ---               ---                       ---                       ---           
+SC_SPI_EN       L13  Fixed  SPI_EN                                        ---       
+SPI_CLK         L14  Fixed  SCK                                           ---       
+SPI_FLASH_HOLD  A22  Yes    HSIO53PB6                                     Bank6     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+SPI_FLASH_WP    A27  Yes    HSIO69PB6/CCC_SE_CLKIN_S_14/CCC_SE_PLL1_OUT0  Bank6     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+SPI_MISO        K12  Fixed  SDI                                           ---       
+SPI_MOSI        K10  Fixed  SDO                                           ---       
+SPI_SS          M14  Fixed  SS                                            ---       
+TCK             J10  Fixed  TCK                                           ---       
+TDI             K11  Fixed  TDI                                           ---       
+TDO             K9   Fixed  TDO                                           ---       
+TMS             J9   Fixed  TMS                                           ---       
+TRSTB           N14  Fixed  TRSTB                                         ---       
+UART_RX         H18  Yes    HSIO37PB6                                     Bank6     LVCMOS18   Input               No                              LAST_VALUE                      ON             Up               OFF              ---                 OFF                 120              OFF          ---                ---                ---               ---                       ---                       ---           
+UART_TX         G17  Yes    HSIO37NB6                                     Bank6     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           

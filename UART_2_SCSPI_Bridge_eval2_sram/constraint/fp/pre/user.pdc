@@ -1,0 +1,27 @@
+# Microsemi Physical design constraints file
+
+# Version: PolarFire v2.2 12.200.30.10
+
+# Design Name: TOP 
+
+# Input Netlist Format: EDIF 
+
+# Family: PolarFire , Die: MPF300TS_ES , Package: FCG1152 , Speed grade: -1 
+
+# Date generated: Fri Aug 31 13:42:56 2018 
+
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# Core cell constraints
+#
+

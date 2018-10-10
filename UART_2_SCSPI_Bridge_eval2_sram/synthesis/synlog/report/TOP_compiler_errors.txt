@@ -1,0 +1,4 @@
+@E: CG389 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\IO\IO.v":339:4:339:8|Reference to undefined module SPI
+@E: CG389 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\IO\IO.v":339:4:339:8|Illegal or Unsupported Syntax within black box. Use: // synthesis translate_off {  unsupported Verilog } // synthesis translate_on 
+@E: CG389 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\IO\IO.v":339:4:339:8|Alternatively, set the builtin compiler directive IGNORE_VERILOG_BLACKBOX_GUTS in the Verilog tab of the UI or set `define IGNORE_VERILOG_BLACKBOX_GUTS in any Verilog file.
+
