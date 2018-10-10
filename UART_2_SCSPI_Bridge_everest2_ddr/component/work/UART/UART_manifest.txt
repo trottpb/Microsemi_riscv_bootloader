@@ -1,0 +1,36 @@
+Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.2 (Version 12.200.30.10)
+
+Date      :  Mon Aug 06 08:07:42 2018
+Project   :  C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge
+Component :  UART
+Family    :  PolarFire
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/core/Clock_gen.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/core/CoreUART.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/core/CoreUARTapb.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/core/Rx_async.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/core/Tx_async.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/core/fifo_256x8_g5.v
+
+Stimulus files for all Simulation tools:
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/mti/scripts/bfmtovec_compile.do
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/mti/scripts/coreuart_usertb_apb_master.bfm
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/mti/scripts/coreuart_usertb_include.bfm
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/mti/scripts/wave_vlog_amba.do
+
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/coreparameters.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/amba_bfm/bfm_ahbl.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/amba_bfm/bfm_ahblapb.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/amba_bfm/bfm_ahbslave.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/amba_bfm/bfm_ahbslaveext.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/amba_bfm/bfm_ahbtoapb.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/amba_bfm/bfm_apb.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/amba_bfm/bfm_apbslave.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/amba_bfm/bfm_apbslaveext.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/amba_bfm/bfm_apbtoapb.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/amba_bfm/bfm_main.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/UART/UART_0/rtl/vlog/test/user/testbench.v
+

@@ -1,0 +1,13 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\designer\impl1\TOP.adb"
+LIST SOURCE_FILES
+VALUE "C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\constraint\TOP_derived_constraints.sdc;sdc"
+VALUE "C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\constraint\jtag_tck_constraint.sdc;sdc"
+VALUE "C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\constraint\io\user.pdc;pdc"
+VALUE "C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\constraint\fp\user.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\synthesis\TOP_vm.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

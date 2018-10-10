@@ -1,0 +1,36 @@
+
+Copyright (C) 1994-2017 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2017.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro
+OS: Windows 6.1
+
+Hostname: EMEAPC0002
+
+Database state : C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\synthesis\synwork\|synthesis
+Synopsys Synopsys Netlist Linker, Version comp2017q4p1, Build 221R, Built Apr 11 2018 10:07:45
+
+@N|Running in 64-bit mode
+File C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_ddr\synthesis\synwork\TOP_comp.srs changed - recompiling
+@W: BN108 :"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\component\Actel\DirectCore\COREAXI4INTERCONNECT\2.5.100\rtl\vlog\core\Axi4Convertors\SlaveConvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances: rgsl. Apply syn_hier to module using name v:caxi4interconnect_RegisterSlice_1_1_1_1_1_5s_32s_64s_0s_1s.
+@W: BN108 :"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\component\Actel\DirectCore\COREAXI4INTERCONNECT\2.5.100\rtl\vlog\core\Axi4Convertors\SlaveConvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances: slvdwc. Apply syn_hier to module using name v:caxi4interconnect_SlvDataWidthConverter_Z16.
+@W: BN108 :"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\component\Actel\DirectCore\COREAXI4INTERCONNECT\2.5.100\rtl\vlog\core\Axi4Convertors\SlaveConvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances: slvProtConv. Apply syn_hier to module using name v:caxi4interconnect_SlvProtocolConverter_Z17.
+@W: BN108 :"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\component\Actel\DirectCore\COREAXI4INTERCONNECT\2.5.100\rtl\vlog\core\Axi4Convertors\SlaveConvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances: slvCDC. Apply syn_hier to module using name v:caxi4interconnect_SlvClockDomainCrossing_32s_5s_64s_1s_1_68s_74s_8s_73s_4s.
+@W: BN108 :"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\component\Actel\DirectCore\COREAXI4INTERCONNECT\2.5.100\rtl\vlog\core\Axi4Convertors\MasterConvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances: rgsl. Apply syn_hier to module using name v:caxi4interconnect_RegisterSlice_1_1_1_1_1_4s_32s_64s_0s_1s.
+@W: BN108 :"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\component\Actel\DirectCore\COREAXI4INTERCONNECT\2.5.100\rtl\vlog\core\Axi4Convertors\MasterConvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances: genblk2\.mstAHBtoAXI4Conv. Apply syn_hier to module using name v:caxi4interconnect_MstrAHBtoAXI4Converter_32s_32s_1s_0_4s_8_0.
+@W: BN108 :"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\component\Actel\DirectCore\COREAXI4INTERCONNECT\2.5.100\rtl\vlog\core\Axi4Convertors\MasterConvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances: mstrDWC. Apply syn_hier to module using name v:caxi4interconnect_MstrDataWidthConv_2_0s_2s_4s_32s_64s_32s_1s_10s_16.
+@W: BN108 :"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\component\Actel\DirectCore\COREAXI4INTERCONNECT\2.5.100\rtl\vlog\core\Axi4Convertors\MasterConvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances: mstrCDC. Apply syn_hier to module using name v:caxi4interconnect_MstrClockDomainCrossing_32s_4s_32s_1s_0_67s_38s_7s_40s_4s.
+@W: BN108 :"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\component\Actel\DirectCore\COREAXI4INTERCONNECT\2.5.100\rtl\vlog\core\Axi4Convertors\MstrAHBtoAXI4Converter.v":23:7:23:46|syn_hier attribute not currently supported on instances: AHB_SM_i. Apply syn_hier to module using name v:caxi4interconnect_AHB_SM_Z15.
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 375MB peak: 377MB)
+
+Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+
+Process completed successfully.
+# Mon Sep 10 13:06:20 2018
+
+###########################################################]

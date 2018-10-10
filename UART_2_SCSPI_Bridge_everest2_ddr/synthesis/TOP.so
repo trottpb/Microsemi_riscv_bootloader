@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>TOP</design>
+	<target_verilog>C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\synthesis\TOP.vm</target_verilog>
+</SynplifyOutput>

@@ -1,0 +1,464 @@
+# Microsemi I/O Physical Design Constraints file
+
+# User I/O Constraints file 
+
+# Version: PolarFire v2.2 12.200.30.10
+
+# Family: PolarFire , Die: MPF300TS_ES , Package: FCG1152
+
+# Date generated: Wed Sep 05 15:45:40 2018 
+
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+
+# 
+# User Locked I/O settings
+# 
+
+set_io -port_name {A[0]}  \
+    -pin_name B26         \
+    -fixed true           \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[1]}  \
+    -pin_name C27         \
+    -fixed true           \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[2]}  \
+    -pin_name C26         \
+    -fixed true           \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[3]}  \
+    -pin_name D25         \
+    -fixed true           \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[4]}  \
+    -pin_name C24         \
+    -fixed true           \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[5]}  \
+    -pin_name D24         \
+    -fixed true           \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[6]}  \
+    -pin_name A24         \
+    -fixed true           \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[7]}  \
+    -pin_name B24         \
+    -fixed true           \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[8]}  \
+    -pin_name F22         \
+    -fixed true           \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[9]}  \
+    -pin_name G22         \
+    -fixed true           \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[10]}  \
+    -pin_name F24          \
+    -fixed true            \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[11]}  \
+    -pin_name F23          \
+    -fixed true            \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[12]}  \
+    -pin_name H24          \
+    -fixed true            \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[13]}  \
+    -pin_name G24          \
+    -fixed true            \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[14]}  \
+    -pin_name H22          \
+    -fixed true            \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {A[15]}  \
+    -pin_name H23          \
+    -fixed true            \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {BA[0]}  \
+    -pin_name J25          \
+    -fixed true            \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {BA[1]}  \
+    -pin_name L24          \
+    -fixed true            \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {BA[2]}  \
+    -pin_name K25          \
+    -fixed true            \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name CAS_N  \
+    -pin_name J24        \
+    -fixed true          \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name CK0  \
+    -pin_name A25      \
+    -fixed true        \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name CK0_N  \
+    -pin_name B25        \
+    -fixed true          \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name CKE  \
+    -pin_name M22      \
+    -fixed true        \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name CS_N  \
+    -pin_name M23       \
+    -fixed true         \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {DM[0]}  \
+    -pin_name D21          \
+    -fixed true            \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {DM[1]}  \
+    -pin_name D20          \
+    -fixed true            \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {DQS[0]}  \
+    -pin_name C22           \
+    -fixed true             \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQS[1]}  \
+    -pin_name A17           \
+    -fixed true             \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQS_N[0]}  \
+    -pin_name B22             \
+    -fixed true               \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQS_N[1]}  \
+    -pin_name A18             \
+    -fixed true               \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[0]}  \
+    -pin_name A23          \
+    -fixed true            \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[1]}  \
+    -pin_name A22          \
+    -fixed true            \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[2]}  \
+    -pin_name C23          \
+    -fixed true            \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[3]}  \
+    -pin_name D23          \
+    -fixed true            \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[4]}  \
+    -pin_name E23          \
+    -fixed true            \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[5]}  \
+    -pin_name E22          \
+    -fixed true            \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[6]}  \
+    -pin_name B21          \
+    -fixed true            \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[7]}  \
+    -pin_name C21          \
+    -fixed true            \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[8]}  \
+    -pin_name A20          \
+    -fixed true            \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[9]}  \
+    -pin_name B20          \
+    -fixed true            \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[10]}  \
+    -pin_name A19           \
+    -fixed true             \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[11]}  \
+    -pin_name B19           \
+    -fixed true             \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[12]}  \
+    -pin_name C19           \
+    -fixed true             \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[13]}  \
+    -pin_name C18           \
+    -fixed true             \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[14]}  \
+    -pin_name B17           \
+    -fixed true             \
+    -DIRECTION INOUT
+
+
+set_io -port_name {DQ[15]}  \
+    -pin_name C17           \
+    -fixed true             \
+    -DIRECTION INOUT
+
+
+set_io -port_name {GPIO_OUT[0]}  \
+    -pin_name U11                \
+    -fixed true                  \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {GPIO_OUT[1]}  \
+    -pin_name T5                 \
+    -fixed true                  \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {GPIO_OUT[2]}  \
+    -pin_name W8                 \
+    -fixed true                  \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name {GPIO_OUT[3]}  \
+    -pin_name W9                 \
+    -fixed true                  \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name INT_RESET_N  \
+    -pin_name AE23             \
+    -fixed true                \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name ODT  \
+    -pin_name L22      \
+    -fixed true        \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name RAS_N  \
+    -pin_name L25        \
+    -fixed true          \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name RESET_N  \
+    -pin_name T3           \
+    -fixed true            \
+    -DIRECTION INPUT
+
+
+set_io -port_name RESET_N_0  \
+    -pin_name K22            \
+    -fixed true              \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name SHIELD0  \
+    -pin_name E21          \
+    -fixed true            \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name SHIELD1  \
+    -pin_name D19          \
+    -fixed true            \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name UART_RX  \
+    -pin_name U7           \
+    -fixed true            \
+    -DIRECTION INPUT
+
+
+set_io -port_name UART_TX  \
+    -pin_name V9           \
+    -fixed true            \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name WE_N  \
+    -pin_name J23       \
+    -fixed true         \
+    -DIRECTION OUTPUT
+
+# Bank 3 Configuration SPI Flash
+
+set_io -port_name {SPI_MOSI}          \
+    -pin_name K10       \
+    -fixed true         \
+	-DIRECTION Output
+
+set_io -port_name {SPI_CLK}           \
+    -pin_name L14       \
+    -fixed true         \
+	-DIRECTION Output
+
+set_io -port_name {SPI_SS}            \
+    -pin_name M14       \
+    -fixed true         \
+	-DIRECTION Output
+
+set_io -port_name {SPI_MISO}          \
+    -pin_name K12       \
+    -fixed true         \
+	-DIRECTION Input
+
+# external Pull-up resistors required
+# on IO_CFG_INT & SC_SPI_EN pins
+
+set_io -port_name {IO_CFG_INTF}       \
+    -pin_name L12         \
+    -fixed true           \
+	-DIRECTION Input
+
+set_io -port_name {SC_SPI_EN}         \
+    -pin_name L13         \
+    -fixed true           \
+	-DIRECTION Input
+
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+
+
+#
+#Ports using Dedicated Pins
+
+#
+
+set_io -port_name TCK  \
+    -pin_name J10      \
+    -DIRECTION INPUT
+
+
+set_io -port_name TDI  \
+    -pin_name K11      \
+    -DIRECTION INPUT
+
+
+set_io -port_name TDO  \
+    -pin_name K9       \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name TMS  \
+    -pin_name J9       \
+    -DIRECTION INPUT
+
+
+set_io -port_name TRSTB  \
+    -pin_name N14        \
+    -DIRECTION INPUT
+
+

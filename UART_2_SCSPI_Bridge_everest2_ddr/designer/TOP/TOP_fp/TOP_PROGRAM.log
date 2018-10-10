@@ -1,0 +1,33 @@
+Software Version: 12.200.35.9
+Embedded FlashPro5 programmer detected.
+programmer 'E20025HR7C' : FlashPro5
+Opened 'C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr\designer\TOP\TOP_fp\TOP.pro'
+The 'open_project' command succeeded.
+Warning: Programming is already enabled for device 'MPF300TS_ES'.
+The 'enable_device' command succeeded.
+IPD file 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_everest2_ddr/designer/TOP/TOP.ipd' has been loaded successfully.
+DESIGN : TOP;  CHECKSUM : B72E;  PDB_VERSION : 1.9
+The 'set_programming_file' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer 'E20025HR7C' : Scan Chain...
+programmer 'E20025HR7C' : Check Chain...
+programmer 'E20025HR7C' : Scan and Check Chain PASSED.
+programmer 'E20025HR7C' : device 'MPF300TS_ES' : Executing action PROGRAM
+programmer 'E20025HR7C' : device 'MPF300TS_ES' : EXPORT ISC_ENABLE_RESULT[32] = 00000000
+programmer 'E20025HR7C' : device 'MPF300TS_ES' : EXPORT CRCERR[1] = 0
+programmer 'E20025HR7C' : device 'MPF300TS_ES' : Programming FPGA Array and sNVM...
+programmer 'E20025HR7C' : device 'MPF300TS_ES' : ===================================================================================
+programmer 'E20025HR7C' : device 'MPF300TS_ES' : EXPORT DSN[128] = 3ae01765341553ac38c7061f70fb6306
+programmer 'E20025HR7C' : device 'MPF300TS_ES' : ===================================================================================
+programmer 'E20025HR7C' : device 'MPF300TS_ES' : Finished: Tue Oct 02 14:36:36 2018 (Elapsed time 00:01:36)
+programmer 'E20025HR7C' : device 'MPF300TS_ES' : Executing action PROGRAM PASSED.
+programmer 'E20025HR7C' : Chain programming PASSED.
+Chain Programming Finished: Tue Oct 02 14:36:36 2018 (Elapsed time 00:01:36)
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+The 'set_programming_file' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.

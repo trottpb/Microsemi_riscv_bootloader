@@ -1,0 +1,11 @@
+Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.2 (Version 12.200.30.10)
+
+Date      :  Mon Sep 10 13:03:03 2018
+Project   :  C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_ddr
+Component :  IO
+Family    :  PolarFire
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_everest2_ddr/component/work/IO/IO.v
+
