@@ -1,0 +1,1575 @@
+#Build: Synplify Pro (R) N-2017.09M-SP1-1, Build 189R, Apr 11 2018
+#install: C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: EMEALTC0046
+
+# Thu Aug  2 16:16:07 2018
+
+#Implementation: synthesis
+
+
+Copyright (C) 1994-2017 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2017.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro
+OS: Windows 6.2
+
+Hostname: EMEALTC0046
+
+Implementation : synthesis
+Synopsys HDL Compiler, Version comp2017q4p1, Build 221R, Built Apr 11 2018 10:07:45
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2017 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2017.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro
+OS: Windows 6.2
+
+Hostname: EMEALTC0046
+
+Implementation : synthesis
+Synopsys Verilog Compiler, Version comp2017q4p1, Build 221R, Built Apr 11 2018 10:07:45
+
+@N|Running in 64-bit mode
+@I::"C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\lib\generic\acg5.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_PolarFire_v2.2\Designer\data\aPA5M\polarfire_syn_comps.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\acmtable.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\debugblk.v" (library work)
+@I:"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\debugblk.v":"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\support.v" (library work)
+@N: CG334 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\debugblk.v":68:17:68:29|Read directive translate_off.
+@N: CG333 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\debugblk.v":745:17:745:28|Read directive translate_on.
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\instructions.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\instructnvm_bb.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\iram512x9_rtl.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\instructram.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\ram128x8_polarfire.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\ram256x16_rtl.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\ram256x8_rtl.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\ramblocks.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v" (library work)
+@N: CG334 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":982:21:982:33|Read directive translate_off.
+@N: CG333 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":984:21:984:32|Read directive translate_on.
+@N: CG334 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":1379:17:1379:29|Read directive translate_off.
+@N: CG333 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":1423:17:1423:28|Read directive translate_on.
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\DIV2\DIV2_0\DIV2_DIV2_0_PF_CLK_DIV.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\DIV2\DIV2.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Init_Monitor\Init_Monitor_0\Init_Monitor_Init_Monitor_0_PF_INIT_MONITOR.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Init_Monitor\Init_Monitor.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v" (library COREAPB3_LIB)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v" (library COREAPB3_LIB)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v" (library COREAPB3_LIB)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Interconnect\Interconnect.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\RCOSC\RCOSC_0\RCOSC_RCOSC_0_PF_OSC.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\RCOSC\RCOSC.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_clockmux.v" (library CORESPI_LIB)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v" (library CORESPI_LIB)
+@W: CG1337 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":805:7:805:17|Net resetn_rx_s is not declared.
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_control.v" (library CORESPI_LIB)
+@N: CG347 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_control.v":69:31:69:43|Read a parallel_case directive.
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_fifo.v" (library CORESPI_LIB)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v" (library CORESPI_LIB)
+@N: CG347 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v":160:38:160:50|Read a parallel_case directive.
+@N: CG347 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v":223:34:223:46|Read a parallel_case directive.
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi.v" (library CORESPI_LIB)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\corespi.v" (library CORESPI_LIB)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\SPI\SPI.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Clock_gen.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Rx_async.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Tx_async.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\fifo_256x8_g5.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUART.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUARTapb.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART.v" (library work)
+@I::"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\TOP\TOP.v" (library work)
+Verilog syntax check successful!
+Selecting top level module TOP
+@N: CG364 :"C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\lib\generic\acg5.v":121:7:121:10|Synthesizing module AND2 in library work.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":46:7:46:37|Synthesizing module Controller_Controller_0_COREABC in library work.
+
+	FAMILY=32'b00000000000000000000000000011010
+	APB_AWIDTH=32'b00000000000000000000000000001000
+	APB_DWIDTH=32'b00000000000000000000000000001000
+	APB_SDEPTH=32'b00000000000000000000000000000010
+	ICWIDTH=32'b00000000000000000000000000000101
+	ZRWIDTH=32'b00000000000000000000000000000000
+	IFWIDTH=32'b00000000000000000000000000000000
+	IIWIDTH=32'b00000000000000000000000000000001
+	IOWIDTH=32'b00000000000000000000000000000001
+	STWIDTH=32'b00000000000000000000000000000100
+	EN_RAM=32'b00000000000000000000000000000001
+	EN_AND=32'b00000000000000000000000000000001
+	EN_XOR=32'b00000000000000000000000000000001
+	EN_OR=32'b00000000000000000000000000000001
+	EN_ADD=32'b00000000000000000000000000000001
+	EN_INC=32'b00000000000000000000000000000001
+	EN_SHL=32'b00000000000000000000000000000001
+	EN_SHR=32'b00000000000000000000000000000001
+	EN_CALL=32'b00000000000000000000000000000001
+	EN_PUSH=32'b00000000000000000000000000000001
+	EN_MULT=32'b00000000000000000000000000000000
+	EN_ACM=32'b00000000000000000000000000000000
+	EN_DATAM=32'b00000000000000000000000000000010
+	EN_INT=32'b00000000000000000000000000000000
+	EN_IOREAD=32'b00000000000000000000000000000001
+	EN_IOWRT=32'b00000000000000000000000000000001
+	EN_ALURAM=32'b00000000000000000000000000000000
+	EN_INDIRECT=32'b00000000000000000000000000000000
+	ISRADDR=32'b00000000000000000000000000000001
+	DEBUG=32'b00000000000000000000000000000001
+	INSMODE=32'b00000000000000000000000000000000
+	INITWIDTH=32'b00000000000000000000000000001011
+	TESTMODE=32'b00000000000000000000000000000000
+	ACT_CALIBRATIONDATA=32'b00000000000000000000000000000001
+	IMEM_APB_ACCESS=32'b00000000000000000000000000000000
+	UNIQ_STRING_LENGTH=32'b00000000000000000000000000010111
+	MAX_NVMDWIDTH=32'b00000000000000000000000000100000
+	BLANK=32'b11111111111111111111111111111111
+	iNOP=32'b00000000000000000000000100000000
+	iLOAD=32'b00000000000000000000001000000000
+	iINCB=32'b00000000000000000000001100000000
+	iAND=32'b00000000000000000000010000000000
+	iOR=32'b00000000000000000000010100000000
+	iXOR=32'b00000000000000000000011000000000
+	iADD=32'b00000000000000000000011100000000
+	iSUB=32'b00000000000000000000100000000000
+	iSHL0=32'b00000000000000000000100100000000
+	iSHL1=32'b00000000000000000000101000000000
+	iSHLE=32'b00000000000000000000101100000000
+	iROL=32'b00000000000000000000110000000000
+	iSHR0=32'b00000000000000000000110100000000
+	iSHR1=32'b00000000000000000000111000000000
+	iSHRE=32'b00000000000000000000111100000000
+	iROR=32'b00000000000000000001000000000000
+	iCMP=32'b00000000000000000001000100000000
+	iCMPLEQ=32'b00000000000000000001001000000000
+	iBITCLR=32'b00000000000000000001001100000000
+	iBITSET=32'b00000000000000000001010000000000
+	iBITTST=32'b00000000000000000001010100000000
+	iAPBREAD=32'b00000000000000000001011000000000
+	iAPBWRT=32'b00000000000000000001011100000000
+	iLOADZ=32'b00000000000000000001100000000000
+	iDECZ=32'b00000000000000000001100100000000
+	iINCZ=32'b00000000000000000001101000000000
+	iIOWRT=32'b00000000000000000001101100000000
+	iRAMREAD=32'b00000000000000000001110000000000
+	iRAMWRT=32'b00000000000000000001110100000000
+	iPUSH=32'b00000000000000000001111000000000
+	iPOP=32'b00000000000000000001111100000000
+	iIOREAD=32'b00000000000000000010000000000000
+	iUSER=32'b00000000000000000010000100000000
+	iJUMPB=32'b00000000000000000010001000000000
+	iCALLB=32'b00000000000000000010001100000000
+	iRETURNB=32'b00000000000000000010010000000000
+	iRETISRB=32'b00000000000000000010010100000000
+	iWAITB=32'b00000000000000000010011000000000
+	iHALTB=32'b00000000000000000010011000000000
+	iMULT=32'b00000000000000000010011100000000
+	iDEC=32'b00000000000000000010100000000000
+	iAPBREADZ=32'b00000000000000000010100100000000
+	iAPBWRTZ=32'b00000000000000000010101000000000
+	iADDZ=32'b00000000000000000010101100000000
+	iSUBZ=32'b00000000000000000010110000000000
+	iDAT=32'b00000000000000000000000000001010
+	iDAT8=32'b00000000000000000000000000001011
+	iDAT16=32'b00000000000000000000000000001100
+	iDAT32=32'b00000000000000000000000000001101
+	iACM=32'b00000000000000000000000000001110
+	iACC=32'b00000000000000000000000000001111
+	iRAM=32'b00000000000000000000000000010000
+	DAT=32'b00000000000000000000000000001010
+	DAT8=32'b00000000000000000000000000001011
+	DAT16=32'b00000000000000000000000000001100
+	DAT32=32'b00000000000000000000000000001101
+	ACM=32'b00000000000000000000000000001110
+	ACC=32'b00000000000000000000000000001111
+	RAM=32'b00000000000000000000000000010000
+	iIFNOT=32'b00000000000000000000000000000000
+	iNOTIF=32'b00000000000000000000000000000000
+	iIF=32'b00000000000000000000000000000001
+	iUNTIL=32'b00000000000000000000000000000000
+	iNOTUNTIL=32'b00000000000000000000000000000001
+	iUNTILNOT=32'b00000000000000000000000000000001
+	iWHILE=32'b00000000000000000000000000000001
+	iZZERO=8'b00001000
+	iNEGATIVE=8'b00000100
+	iZERO=8'b00000010
+	iLTE_ZERO=8'b00000110
+	iALWAYS=8'b00000001
+	iINPUT0=12'b000000010000
+	iINPUT1=12'b000000100000
+	iINPUT2=12'b000001000000
+	iINPUT3=12'b000010000000
+	iINPUT4=12'b000100000000
+	iINPUT5=12'b001000000000
+	iINPUT6=12'b010000000000
+	iINPUT7=12'b100000000000
+	iINPUT8=16'b0001000000000000
+	iINPUT9=16'b0010000000000000
+	iINPUT10=16'b0100000000000000
+	iINPUT11=16'b1000000000000000
+	iINPUT12=20'b00010000000000000000
+	iINPUT13=20'b00100000000000000000
+	iINPUT14=20'b01000000000000000000
+	iINPUT15=20'b10000000000000000000
+	iINPUT16=24'b000100000000000000000000
+	iINPUT17=24'b001000000000000000000000
+	iINPUT18=24'b010000000000000000000000
+	iINPUT19=24'b100000000000000000000000
+	iINPUT20=28'b0001000000000000000000000000
+	iINPUT21=28'b0010000000000000000000000000
+	iINPUT22=28'b0100000000000000000000000000
+	iINPUT23=28'b1000000000000000000000000000
+	iINPUT24=32'b00010000000000000000000000000000
+	iINPUT25=32'b00100000000000000000000000000000
+	iINPUT26=32'b01000000000000000000000000000000
+	iINPUT27=32'b10000000000000000000000000000000
+	iANYINPUT=32'b01111111111111111111111111110000
+	ALWAYS=8'b00000001
+	ZZERO=8'b00001000
+	NEGATIVE=8'b00000100
+	ZERO=8'b00000010
+	LTE_ZERO=8'b00000110
+	INPUT0=12'b000000010000
+	INPUT1=12'b000000100000
+	INPUT2=12'b000001000000
+	INPUT3=12'b000010000000
+	INPUT4=12'b000100000000
+	INPUT5=12'b001000000000
+	INPUT6=12'b010000000000
+	INPUT7=12'b100000000000
+	INPUT8=16'b0001000000000000
+	INPUT9=16'b0010000000000000
+	INPUT10=16'b0011000000000000
+	INPUT11=16'b1000000000000000
+	INPUT12=20'b00010000000000000000
+	INPUT13=20'b00100000000000000000
+	INPUT14=20'b01000000000000000000
+	INPUT15=20'b10000000000000000000
+	INPUT16=24'b000100000000000000000000
+	INPUT17=24'b001000000000000000000000
+	INPUT18=24'b001100000000000000000000
+	INPUT19=24'b100000000000000000000000
+	INPUT20=28'b0001000000000000000000000000
+	INPUT21=28'b0010000000000000000000000000
+	INPUT22=28'b0100000000000000000000000000
+	INPUT23=28'b1000000000000000000000000000
+	INPUT24=32'b00010000000000000000000000000000
+	INPUT25=32'b00100000000000000000000000000000
+	INPUT26=32'b01000000000000000000000000000000
+	INPUT27=32'b01000000000000000000000000000000
+	ANYINPUT=32'b01111111111111111111111111110000
+	iLOADLOOP=32'b00000000000000000001100000000000
+	iDECLOOP=32'b00000000000000000001100100000000
+	iINCLOOP=32'b00000000000000000001101000000000
+	iLOOPZ=32'b00000000000000000000000000001000
+	LOOPZ=32'b00000000000000000000000000001000
+	EN_USER=32'b00000000000000000000000000000000
+	IWWIDTH=32'b00000000000000000000000000111010
+	IRWIDTH=32'b00000000000000000000000000001000
+	ICDEPTH=32'b00000000000000000000000000100000
+	APB_SWIDTH=32'b00000000000000000000000000000001
+	RAMWIDTH=32'b00000000000000000000000000010111
+	SYNC_RESET=32'b00000000000000000000000000000000
+	CYCLE0=2'b00
+	CYCLE1=2'b01
+	CYCLE2=2'b10
+	CYCLE3=2'b11
+   Generated name = Controller_Controller_0_COREABC_Z1
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\ramblocks.v":25:7:25:39|Synthesizing module Controller_Controller_0_RAMBLOCKS in library work.
+
+	DWIDTH=32'b00000000000000000000000000001000
+	FAMILY=32'b00000000000000000000000000011010
+   Generated name = Controller_Controller_0_RAMBLOCKS_8s_26s
+@N: CG364 :"C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\lib\generic\acg5.v":578:7:578:13|Synthesizing module RAM1K20 in library work.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\ram128x8_polarfire.v":23:7:23:38|Synthesizing module Controller_Controller_0_RAM128X8 in library work.
+@W: CG360 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\ramblocks.v":38:23:38:25|Removing wire RDW, as there is no assignment to it.
+@W: CG360 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\ramblocks.v":40:15:40:17|Removing wire WDX, as there is no assignment to it.
+@W: CG360 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\ramblocks.v":41:15:41:17|Removing wire RDX, as there is no assignment to it.
+@W: CG360 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\ramblocks.v":42:15:42:17|Removing wire WDY, as there is no assignment to it.
+@W: CG360 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\ramblocks.v":43:15:43:17|Removing wire RDY, as there is no assignment to it.
+@W: CG360 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\ramblocks.v":44:15:44:18|Removing wire RDYY, as there is no assignment to it.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\instructions.v":26:7:26:42|Synthesizing module Controller_Controller_0_INSTRUCTIONS in library work.
+
+	AWIDTH=32'b00000000000000000000000000001000
+	DWIDTH=32'b00000000000000000000000000001000
+	SWIDTH=32'b00000000000000000000000000000001
+	ICWIDTH=32'b00000000000000000000000000000101
+	IIWIDTH=32'b00000000000000000000000000000001
+	IFWIDTH=32'b00000000000000000000000000000000
+	IWWIDTH=32'b00000000000000000000000000111010
+	EN_MULT=32'b00000000000000000000000000000000
+	EN_INC=32'b00000000000000000000000000000001
+	TESTMODE=32'b00000000000000000000000000000000
+	BLANK=32'b11111111111111111111111111111111
+	iNOP=32'b00000000000000000000000100000000
+	iLOAD=32'b00000000000000000000001000000000
+	iINCB=32'b00000000000000000000001100000000
+	iAND=32'b00000000000000000000010000000000
+	iOR=32'b00000000000000000000010100000000
+	iXOR=32'b00000000000000000000011000000000
+	iADD=32'b00000000000000000000011100000000
+	iSUB=32'b00000000000000000000100000000000
+	iSHL0=32'b00000000000000000000100100000000
+	iSHL1=32'b00000000000000000000101000000000
+	iSHLE=32'b00000000000000000000101100000000
+	iROL=32'b00000000000000000000110000000000
+	iSHR0=32'b00000000000000000000110100000000
+	iSHR1=32'b00000000000000000000111000000000
+	iSHRE=32'b00000000000000000000111100000000
+	iROR=32'b00000000000000000001000000000000
+	iCMP=32'b00000000000000000001000100000000
+	iCMPLEQ=32'b00000000000000000001001000000000
+	iBITCLR=32'b00000000000000000001001100000000
+	iBITSET=32'b00000000000000000001010000000000
+	iBITTST=32'b00000000000000000001010100000000
+	iAPBREAD=32'b00000000000000000001011000000000
+	iAPBWRT=32'b00000000000000000001011100000000
+	iLOADZ=32'b00000000000000000001100000000000
+	iDECZ=32'b00000000000000000001100100000000
+	iINCZ=32'b00000000000000000001101000000000
+	iIOWRT=32'b00000000000000000001101100000000
+	iRAMREAD=32'b00000000000000000001110000000000
+	iRAMWRT=32'b00000000000000000001110100000000
+	iPUSH=32'b00000000000000000001111000000000
+	iPOP=32'b00000000000000000001111100000000
+	iIOREAD=32'b00000000000000000010000000000000
+	iUSER=32'b00000000000000000010000100000000
+	iJUMPB=32'b00000000000000000010001000000000
+	iCALLB=32'b00000000000000000010001100000000
+	iRETURNB=32'b00000000000000000010010000000000
+	iRETISRB=32'b00000000000000000010010100000000
+	iWAITB=32'b00000000000000000010011000000000
+	iHALTB=32'b00000000000000000010011000000000
+	iMULT=32'b00000000000000000010011100000000
+	iDEC=32'b00000000000000000010100000000000
+	iAPBREADZ=32'b00000000000000000010100100000000
+	iAPBWRTZ=32'b00000000000000000010101000000000
+	iADDZ=32'b00000000000000000010101100000000
+	iSUBZ=32'b00000000000000000010110000000000
+	iDAT=32'b00000000000000000000000000001010
+	iDAT8=32'b00000000000000000000000000001011
+	iDAT16=32'b00000000000000000000000000001100
+	iDAT32=32'b00000000000000000000000000001101
+	iACM=32'b00000000000000000000000000001110
+	iACC=32'b00000000000000000000000000001111
+	iRAM=32'b00000000000000000000000000010000
+	DAT=32'b00000000000000000000000000001010
+	DAT8=32'b00000000000000000000000000001011
+	DAT16=32'b00000000000000000000000000001100
+	DAT32=32'b00000000000000000000000000001101
+	ACM=32'b00000000000000000000000000001110
+	ACC=32'b00000000000000000000000000001111
+	RAM=32'b00000000000000000000000000010000
+	iIFNOT=32'b00000000000000000000000000000000
+	iNOTIF=32'b00000000000000000000000000000000
+	iIF=32'b00000000000000000000000000000001
+	iUNTIL=32'b00000000000000000000000000000000
+	iNOTUNTIL=32'b00000000000000000000000000000001
+	iUNTILNOT=32'b00000000000000000000000000000001
+	iWHILE=32'b00000000000000000000000000000001
+	iZZERO=8'b00001000
+	iNEGATIVE=8'b00000100
+	iZERO=8'b00000010
+	iLTE_ZERO=8'b00000110
+	iALWAYS=8'b00000001
+	iINPUT0=12'b000000010000
+	iINPUT1=12'b000000100000
+	iINPUT2=12'b000001000000
+	iINPUT3=12'b000010000000
+	iINPUT4=12'b000100000000
+	iINPUT5=12'b001000000000
+	iINPUT6=12'b010000000000
+	iINPUT7=12'b100000000000
+	iINPUT8=16'b0001000000000000
+	iINPUT9=16'b0010000000000000
+	iINPUT10=16'b0100000000000000
+	iINPUT11=16'b1000000000000000
+	iINPUT12=20'b00010000000000000000
+	iINPUT13=20'b00100000000000000000
+	iINPUT14=20'b01000000000000000000
+	iINPUT15=20'b10000000000000000000
+	iINPUT16=24'b000100000000000000000000
+	iINPUT17=24'b001000000000000000000000
+	iINPUT18=24'b010000000000000000000000
+	iINPUT19=24'b100000000000000000000000
+	iINPUT20=28'b0001000000000000000000000000
+	iINPUT21=28'b0010000000000000000000000000
+	iINPUT22=28'b0100000000000000000000000000
+	iINPUT23=28'b1000000000000000000000000000
+	iINPUT24=32'b00010000000000000000000000000000
+	iINPUT25=32'b00100000000000000000000000000000
+	iINPUT26=32'b01000000000000000000000000000000
+	iINPUT27=32'b10000000000000000000000000000000
+	iANYINPUT=32'b01111111111111111111111111110000
+	ALWAYS=8'b00000001
+	ZZERO=8'b00001000
+	NEGATIVE=8'b00000100
+	ZERO=8'b00000010
+	LTE_ZERO=8'b00000110
+	INPUT0=12'b000000010000
+	INPUT1=12'b000000100000
+	INPUT2=12'b000001000000
+	INPUT3=12'b000010000000
+	INPUT4=12'b000100000000
+	INPUT5=12'b001000000000
+	INPUT6=12'b010000000000
+	INPUT7=12'b100000000000
+	INPUT8=16'b0001000000000000
+	INPUT9=16'b0010000000000000
+	INPUT10=16'b0011000000000000
+	INPUT11=16'b1000000000000000
+	INPUT12=20'b00010000000000000000
+	INPUT13=20'b00100000000000000000
+	INPUT14=20'b01000000000000000000
+	INPUT15=20'b10000000000000000000
+	INPUT16=24'b000100000000000000000000
+	INPUT17=24'b001000000000000000000000
+	INPUT18=24'b001100000000000000000000
+	INPUT19=24'b100000000000000000000000
+	INPUT20=28'b0001000000000000000000000000
+	INPUT21=28'b0010000000000000000000000000
+	INPUT22=28'b0100000000000000000000000000
+	INPUT23=28'b1000000000000000000000000000
+	INPUT24=32'b00010000000000000000000000000000
+	INPUT25=32'b00100000000000000000000000000000
+	INPUT26=32'b01000000000000000000000000000000
+	INPUT27=32'b01000000000000000000000000000000
+	ANYINPUT=32'b01111111111111111111111111110000
+	iLOADLOOP=32'b00000000000000000001100000000000
+	iDECLOOP=32'b00000000000000000001100100000000
+	iINCLOOP=32'b00000000000000000001101000000000
+	iLOOPZ=32'b00000000000000000000000000001000
+	LOOPZ=32'b00000000000000000000000000001000
+	EN_USER=32'b00000000000000000000000000000000
+	AW=32'b00000000000000000000000000001000
+	DW=32'b00000000000000000000000000001000
+	SW=32'b00000000000000000000000000000001
+	IW=32'b00000000000000000000000000000101
+	FW=32'b00000000000000000000000000000101
+	iJUMP=32'b00000000000000000010001000000000
+	iCALL=32'b00000000000000000010001100000000
+	iRETURN=32'b00000000000000000010010000000000
+	iRETISR=32'b00000000000000000010010100000000
+	iWAIT=32'b00000000000000000010011000000000
+	iHALT=32'b00000000000000000010011000000000
+	iINC=32'b00000000000000000000001100000000
+	iACM_CTRLSTAT=8'b00000000
+	iACM_ADDR_ADDR=8'b00000100
+	iACM_DATA_ADDR=8'b00001000
+	iADC_CTRL2_HI_ADDR=8'b00010000
+	iADC_STAT_HI_ADDR=8'b00100000
+	Sym_APB_UART=32'b00000000000000000000000000000000
+	Sym_APB_SPI=32'b00000000000000000000000000000001
+	Sym_UART_TXDATA=32'b00000000000000000000000000000000
+	Sym_UART_RXDATA=32'b00000000000000000000000000000100
+	Sym_UART_CTRL1=32'b00000000000000000000000000001000
+	Sym_UART_CTRL2=32'b00000000000000000000000000001100
+	Sym_UART_STATUS=32'b00000000000000000000000000010000
+	Sym_UART_CTRL3=32'b00000000000000000000000000010100
+	Sym_BAUD_VALUE=32'b00000000000000000000000000101010
+	Label_main=32'b00000000000000000000000000000000
+   Generated name = Controller_Controller_0_INSTRUCTIONS_Z2
+@W: CG133 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":686:34:686:37|Object MULT is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":687:34:687:34|Object A is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":688:34:688:34|Object B is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":1348:16:1348:16|Object b is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":227:9:227:14|Removing wire DEBUG1, as there is no assignment to it.
+@W: CG360 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":228:9:228:14|Removing wire DEBUG2, as there is no assignment to it.
+@W: CG360 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":229:9:229:23|Removing wire DEBUGBLK_RESETN, as there is no assignment to it.
+@W: CG133 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":255:12:255:14|Object iii is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":256:25:256:33|Object RAMDOUTXX is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG134 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":260:14:260:21|No assignment to bit 5 of ins_addr
+@W: CG134 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":260:14:260:21|No assignment to bit 6 of ins_addr
+@W: CG134 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":260:14:260:21|No assignment to bit 7 of ins_addr
+@W: CG134 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":260:14:260:21|No assignment to bit 8 of ins_addr
+@W: CG134 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":260:14:260:21|No assignment to bit 9 of ins_addr
+@W: CG134 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":260:14:260:21|No assignment to bit 10 of ins_addr
+@W: CG134 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":260:14:260:21|No assignment to bit 11 of ins_addr
+@W: CG134 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":260:14:260:21|No assignment to bit 12 of ins_addr
+@W: CG134 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":260:14:260:21|No assignment to bit 13 of ins_addr
+@W: CG134 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":260:14:260:21|No assignment to bit 14 of ins_addr
+@W: CG134 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":260:14:260:21|No assignment to bit 15 of ins_addr
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":1031:4:1031:9|Pruning unused register ZREGISTER[0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":1031:4:1031:9|Pruning unused register GETINST. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":501:12:501:17|Pruning unused register UROM.upper_addr[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL208 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":1031:4:1031:9|All reachable assignments to bit 4 of STKPTR[7:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":1031:4:1031:9|All reachable assignments to bit 5 of STKPTR[7:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":1031:4:1031:9|All reachable assignments to bit 6 of STKPTR[7:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":1031:4:1031:9|All reachable assignments to bit 7 of STKPTR[7:0] assign 1, register removed by optimization.
+@W: CL207 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":1031:4:1031:9|All reachable assignments to ISR assign 0, register removed by optimization.
+@W: CL207 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":1031:4:1031:9|All reachable assignments to DOISR assign 0, register removed by optimization.
+@W: CL207 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":808:4:808:9|All reachable assignments to ISR_ACCUM_ZERO assign 0, register removed by optimization.
+@W: CL207 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":808:4:808:9|All reachable assignments to ISR_ACCUM_NEG assign 0, register removed by optimization.
+@W: CL260 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":484:12:484:17|Pruning register bit 1 of UROM.INSTR_SLOT[1:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller.v":9:7:9:16|Synthesizing module Controller in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_PolarFire_v2.2\Designer\data\aPA5M\polarfire_syn_comps.v":1559:7:1559:16|Synthesizing module ICB_CLKDIV in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\lib\generic\acg5.v":504:7:504:9|Synthesizing module VCC in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\lib\generic\acg5.v":500:7:500:9|Synthesizing module GND in library work.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\DIV2\DIV2_0\DIV2_DIV2_0_PF_CLK_DIV.v":5:7:5:28|Synthesizing module DIV2_DIV2_0_PF_CLK_DIV in library work.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\DIV2\DIV2.v":9:7:9:10|Synthesizing module DIV2 in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_PolarFire_v2.2\Designer\data\aPA5M\polarfire_syn_comps.v":1696:7:1696:10|Synthesizing module INIT in library work.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Init_Monitor\Init_Monitor_0\Init_Monitor_Init_Monitor_0_PF_INIT_MONITOR.v":5:7:5:49|Synthesizing module Init_Monitor_Init_Monitor_0_PF_INIT_MONITOR in library work.
+@W: CL168 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Init_Monitor\Init_Monitor_0\Init_Monitor_Init_Monitor_0_PF_INIT_MONITOR.v":48:8:48:15|Removing instance gnd_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL168 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Init_Monitor\Init_Monitor_0\Init_Monitor_Init_Monitor_0_PF_INIT_MONITOR.v":47:8:47:15|Removing instance vcc_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Init_Monitor\Init_Monitor.v":9:7:9:18|Synthesizing module Init_Monitor in library work.
+@N: CG775 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Component CoreAPB3 not found in library "work" or "__hyper__lib__", but found in library COREAPB3_LIB
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v":30:7:30:23|Synthesizing module COREAPB3_MUXPTOB3 in library COREAPB3_LIB.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
+
+	APB_DWIDTH=6'b001000
+	IADDR_OPTION=32'b00000000000000000000000000000000
+	APBSLOT0ENABLE=1'b1
+	APBSLOT1ENABLE=1'b1
+	APBSLOT2ENABLE=1'b0
+	APBSLOT3ENABLE=1'b0
+	APBSLOT4ENABLE=1'b0
+	APBSLOT5ENABLE=1'b0
+	APBSLOT6ENABLE=1'b0
+	APBSLOT7ENABLE=1'b0
+	APBSLOT8ENABLE=1'b0
+	APBSLOT9ENABLE=1'b0
+	APBSLOT10ENABLE=1'b0
+	APBSLOT11ENABLE=1'b0
+	APBSLOT12ENABLE=1'b0
+	APBSLOT13ENABLE=1'b0
+	APBSLOT14ENABLE=1'b0
+	APBSLOT15ENABLE=1'b0
+	SC_0=1'b0
+	SC_1=1'b0
+	SC_2=1'b0
+	SC_3=1'b0
+	SC_4=1'b0
+	SC_5=1'b0
+	SC_6=1'b0
+	SC_7=1'b0
+	SC_8=1'b0
+	SC_9=1'b0
+	SC_10=1'b0
+	SC_11=1'b0
+	SC_12=1'b0
+	SC_13=1'b0
+	SC_14=1'b0
+	SC_15=1'b0
+	MADDR_BITS=6'b011000
+	UPR_NIBBLE_POSN=4'b0110
+	FAMILY=32'b00000000000000000000000000001111
+	SYNC_RESET=32'b00000000000000000000000000000000
+	IADDR_NOTINUSE=32'b00000000000000000000000000000000
+	IADDR_EXTERNAL=32'b00000000000000000000000000000001
+	IADDR_SLOT0=32'b00000000000000000000000000000010
+	IADDR_SLOT1=32'b00000000000000000000000000000011
+	IADDR_SLOT2=32'b00000000000000000000000000000100
+	IADDR_SLOT3=32'b00000000000000000000000000000101
+	IADDR_SLOT4=32'b00000000000000000000000000000110
+	IADDR_SLOT5=32'b00000000000000000000000000000111
+	IADDR_SLOT6=32'b00000000000000000000000000001000
+	IADDR_SLOT7=32'b00000000000000000000000000001001
+	IADDR_SLOT8=32'b00000000000000000000000000001010
+	IADDR_SLOT9=32'b00000000000000000000000000001011
+	IADDR_SLOT10=32'b00000000000000000000000000001100
+	IADDR_SLOT11=32'b00000000000000000000000000001101
+	IADDR_SLOT12=32'b00000000000000000000000000001110
+	IADDR_SLOT13=32'b00000000000000000000000000001111
+	IADDR_SLOT14=32'b00000000000000000000000000010000
+	IADDR_SLOT15=32'b00000000000000000000000000010001
+	SL0=16'b0000000000000001
+	SL1=16'b0000000000000010
+	SL2=16'b0000000000000000
+	SL3=16'b0000000000000000
+	SL4=16'b0000000000000000
+	SL5=16'b0000000000000000
+	SL6=16'b0000000000000000
+	SL7=16'b0000000000000000
+	SL8=16'b0000000000000000
+	SL9=16'b0000000000000000
+	SL10=16'b0000000000000000
+	SL11=16'b0000000000000000
+	SL12=16'b0000000000000000
+	SL13=16'b0000000000000000
+	SL14=16'b0000000000000000
+	SL15=16'b0000000000000000
+	SC=16'b0000000000000000
+	SC_qual=16'b0000000000000000
+   Generated name = CoreAPB3_Z3
+@W: CG360 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":244:12:244:20|Removing wire IA_PRDATA, as there is no assignment to it.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Interconnect\Interconnect.v":9:7:9:18|Synthesizing module Interconnect in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_PolarFire_v2.2\Designer\data\aPA5M\polarfire_syn_comps.v":4443:7:4443:12|Synthesizing module PF_SPI in library work.
+@N: CG364 :"C:\Microsemi\Libero_SoC_PolarFire_v2.2\Designer\data\aPA5M\polarfire_syn_comps.v":3010:7:3010:18|Synthesizing module OSC_RC160MHZ in library work.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\RCOSC\RCOSC_0\RCOSC_RCOSC_0_PF_OSC.v":5:7:5:26|Synthesizing module RCOSC_RCOSC_0_PF_OSC in library work.
+@W: CL168 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\RCOSC\RCOSC_0\RCOSC_RCOSC_0_PF_OSC.v":15:8:15:15|Removing instance gnd_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\RCOSC\RCOSC.v":9:7:9:11|Synthesizing module RCOSC in library work.
+@N: CG775 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\corespi.v":27:0:27:6|Component CORESPI not found in library "work" or "__hyper__lib__", but found in library CORESPI_LIB
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v":31:7:31:12|Synthesizing module spi_rf in library CORESPI_LIB.
+
+	APB_DWIDTH=32'b00000000000000000000000000001000
+	CFG_CLK=32'b00000000000000000000000000000111
+	ZEROS=8'b00000000
+   Generated name = spi_rf_8s_7s_0
+@W: CL208 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v":134:0:134:5|All reachable assignments to bit 3 of control2[7:0] assign 0, register removed by optimization.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_control.v":24:7:24:17|Synthesizing module spi_control in library CORESPI_LIB.
+
+	CFG_FRAME_SIZE=32'b00000000000000000000000000000100
+   Generated name = spi_control_4s
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_fifo.v":25:7:25:14|Synthesizing module spi_fifo in library CORESPI_LIB.
+
+	CFG_FRAME_SIZE=32'b00000000000000000000000000000100
+	CFG_FIFO_DEPTH=32'b00000000000000000000000000000100
+	PTR_WIDTH=32'b00000000000000000000000000000010
+   Generated name = spi_fifo_4s_4s_2
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_clockmux.v":24:7:24:18|Synthesizing module spi_clockmux in library CORESPI_LIB.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":29:7:29:18|Synthesizing module spi_chanctrl in library CORESPI_LIB.
+
+	SPH=1'b0
+	SPO=1'b0
+	SPS=1'b0
+	CFG_MODE=32'b00000000000000000000000000000000
+	CFG_CLKRATE=32'b00000000000000000000000000000111
+	CFG_FRAME_SIZE=32'b00000000000000000000000000000100
+	CFG_FIFO_DEPTH=32'b00000000000000000000000000000100
+	MTX_IDLE1=4'b0000
+	MTX_IDLE2=4'b0001
+	MTX_MOTSTART=4'b0010
+	MTX_TISTART1=4'b0011
+	MTX_TISTART2=4'b0100
+	MTX_NSCSTART1=4'b0101
+	MTX_NSCSTART2=4'b0110
+	MTX_SHIFT1=4'b0111
+	MTX_SHIFT2=4'b1000
+	MTX_END=4'b1001
+	STXS_IDLE=1'b0
+	STXS_SHIFT=1'b1
+	MOTMODE=1'b1
+	TIMODE=1'b0
+	NSCMODE=1'b0
+	MOTNOSSEL=1'b0
+	NSCNOSSEL=1'b0
+	cfg_framesizeM1=32'b00000000000000000000000000000011
+   Generated name = spi_chanctrl_Z4
+@W: CG1340 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":132:12:132:21|Index into variable txfifo_dhold could be out of range - a simulation mismatch is possible
+@W: CG133 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":195:12:195:22|Object resetn_rx_d is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":196:12:196:22|Removing wire resetn_rx_p, as there is no assignment to it.
+@W: CG360 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":200:12:200:22|Removing wire resetn_rx_r, as there is no assignment to it.
+@W: CG133 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":222:12:222:36|Object stxs_txready_at_ssel_temp is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":1130:0:1130:5|Pruning unused register msrxs_ssel. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":823:0:823:5|Pruning unused register stxs_oen. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":719:0:719:5|Pruning unused register spi_ssel_neg. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Pruning unused register mtx_bitcnt[4:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Pruning unused register mtx_ssel. Make sure that there are no unused intermediate registers.
+@W: CL177 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":343:0:343:5|Sharing sequential element cfg_enable_P1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL190 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Optimizing register bit mtx_holdsel to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Pruning unused register mtx_holdsel. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi.v":29:7:29:9|Synthesizing module spi in library CORESPI_LIB.
+
+	APB_DWIDTH=32'b00000000000000000000000000001000
+	CFG_FRAME_SIZE=32'b00000000000000000000000000000100
+	CFG_FIFO_DEPTH=32'b00000000000000000000000000000100
+	CFG_CLK=32'b00000000000000000000000000000111
+	SPO=1'b0
+	SPH=1'b0
+	SPS=1'b0
+	CFG_MODE=32'b00000000000000000000000000000000
+   Generated name = spi_8s_4s_4s_7s_0_0_0_0s
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\corespi.v":27:0:27:6|Synthesizing module CORESPI in library CORESPI_LIB.
+
+	APB_DWIDTH=32'b00000000000000000000000000001000
+	CFG_FRAME_SIZE=32'b00000000000000000000000000000100
+	CFG_FIFO_DEPTH=32'b00000000000000000000000000000100
+	CFG_CLK=32'b00000000000000000000000000000111
+	CFG_MODE=32'b00000000000000000000000000000000
+	CFG_MOT_MODE=32'b00000000000000000000000000000000
+	CFG_MOT_SSEL=32'b00000000000000000000000000000000
+	CFG_TI_NSC_CUSTOM=32'b00000000000000000000000000000000
+	CFG_TI_NSC_FRC=32'b00000000000000000000000000000000
+	CFG_TI_JMB_FRAMES=32'b00000000000000000000000000000000
+	CFG_NSC_OPERATION=32'b00000000000000000000000000000000
+	SPS=1'b0
+	SPO=1'b0
+	SPH=1'b0
+   Generated name = CORESPI_Z5
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\SPI\SPI.v":9:7:9:9|Synthesizing module SPI in library work.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Clock_gen.v":38:7:38:27|Synthesizing module UART_UART_0_Clock_gen in library work.
+
+	BAUD_VAL_FRCTN_EN=32'b00000000000000000000000000000000
+	SYNC_RESET=32'b00000000000000000000000000000000
+   Generated name = UART_UART_0_Clock_gen_0s_0s
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Tx_async.v":31:7:31:26|Synthesizing module UART_UART_0_Tx_async in library work.
+
+	SYNC_RESET=32'b00000000000000000000000000000000
+	TX_FIFO=32'b00000000000000000000000000000000
+	tx_idle=32'b00000000000000000000000000000000
+	tx_load=32'b00000000000000000000000000000001
+	start_bit=32'b00000000000000000000000000000010
+	tx_data_bits=32'b00000000000000000000000000000011
+	parity_bit=32'b00000000000000000000000000000100
+	tx_stop_bit=32'b00000000000000000000000000000101
+	delay_state=32'b00000000000000000000000000000110
+   Generated name = UART_UART_0_Tx_async_0s_0s_0s_1s_2s_3s_4s_5s_6s
+@W: CG1340 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Tx_async.v":66:9:66:20|Index into variable tx_byte could be out of range - a simulation mismatch is possible
+@W: CG1340 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Tx_async.v":66:9:66:20|Index into variable tx_byte could be out of range - a simulation mismatch is possible
+@N: CG179 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Tx_async.v":356:21:356:29|Removing redundant assignment.
+@W: CL190 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Tx_async.v":119:0:119:5|Optimizing register bit fifo_read_en0 to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Tx_async.v":119:0:119:5|Pruning unused register fifo_read_en0. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Rx_async.v":30:7:30:26|Synthesizing module UART_UART_0_Rx_async in library work.
+
+	SYNC_RESET=32'b00000000000000000000000000000000
+	RX_FIFO=32'b00000000000000000000000000000000
+	receive_states_rx_idle=32'b00000000000000000000000000000000
+	receive_states_rx_data_bits=32'b00000000000000000000000000000001
+	receive_states_rx_stop_bit=32'b00000000000000000000000000000010
+	receive_states_rx_wait_state=32'b00000000000000000000000000000011
+   Generated name = UART_UART_0_Rx_async_0s_0s_0s_1s_2s_3s
+@N: CG179 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Rx_async.v":254:23:254:35|Removing redundant assignment.
+@N: CG179 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Rx_async.v":280:18:280:25|Removing redundant assignment.
+@W: CL177 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Rx_async.v":501:0:501:5|Sharing sequential element clear_framing_error_en. Add a syn_preserve attribute to the element to prevent sharing.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUART.v":31:7:31:26|Synthesizing module UART_UART_0_COREUART in library work.
+
+	TX_FIFO=32'b00000000000000000000000000000000
+	RX_FIFO=32'b00000000000000000000000000000000
+	RX_LEGACY_MODE=32'b00000000000000000000000000000000
+	FAMILY=32'b00000000000000000000000000011010
+	BAUD_VAL_FRCTN_EN=32'b00000000000000000000000000000000
+	SYNC_RESET=32'b00000000000000000000000000000000
+   Generated name = UART_UART_0_COREUART_0s_0s_0s_26s_0s_0s
+@N: CG179 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUART.v":390:22:390:33|Removing redundant assignment.
+@W: CG133 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUART.v":136:8:136:17|Object data_ready is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUART.v":376:0:376:5|Pruning unused register overflow_reg. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUART.v":341:0:341:5|Pruning unused register rx_dout_reg_empty. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUART.v":341:0:341:5|Pruning unused register rx_dout_reg_empty_q. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUART.v":326:0:326:5|Pruning unused register rx_dout_reg[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUART.v":293:0:293:5|Pruning unused register rx_state[1:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUART.v":278:0:278:5|Pruning unused register clear_framing_error_reg. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUART.v":278:0:278:5|Pruning unused register clear_framing_error_reg0. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUART.v":263:0:263:5|Pruning unused register clear_parity_reg. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUART.v":263:0:263:5|Pruning unused register clear_parity_reg0. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUART.v":159:0:159:5|Pruning unused register fifo_write_tx. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUARTapb.v":59:7:59:29|Synthesizing module UART_UART_0_CoreUARTapb in library work.
+
+	FAMILY=32'b00000000000000000000000000011010
+	TX_FIFO=32'b00000000000000000000000000000000
+	RX_FIFO=32'b00000000000000000000000000000000
+	BAUD_VALUE=32'b00000000000000000000000000000001
+	FIXEDMODE=32'b00000000000000000000000000000000
+	PRG_BIT8=32'b00000000000000000000000000000000
+	PRG_PARITY=32'b00000000000000000000000000000000
+	RX_LEGACY_MODE=32'b00000000000000000000000000000000
+	BAUD_VAL_FRCTN=32'b00000000000000000000000000000000
+	BAUD_VAL_FRCTN_EN=32'b00000000000000000000000000000000
+	SYNC_RESET=32'b00000000000000000000000000000000
+   Generated name = UART_UART_0_CoreUARTapb_Z6
+@N: CG179 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUARTapb.v":254:31:254:41|Removing redundant assignment.
+@N: CG179 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUARTapb.v":275:31:275:41|Removing redundant assignment.
+@W: CG133 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUARTapb.v":158:20:158:30|Object controlReg3 is declared but not assigned. Either assign a value or remove the declaration.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART.v":9:7:9:10|Synthesizing module UART in library work.
+@N: CG364 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\TOP\TOP.v":9:7:9:9|Synthesizing module TOP in library work.
+@W: CL246 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUARTapb.v":104:20:104:24|Input port bits 1 to 0 of PADDR[4:0] are unused. Assign logic for all port bits or change the input port size.
+@A: CL153 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\CoreUARTapb.v":158:20:158:30|*Unassigned bits of controlReg3[2:0] are referenced and tied to 0 -- simulation mismatch possible.
+@N: CL201 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Rx_async.v":286:0:286:5|Trying to extract state machine for register rx_state.
+Extracted state machine for register rx_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@N: CL201 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Tx_async.v":119:0:119:5|Trying to extract state machine for register xmit_state.
+Extracted state machine for register xmit_state
+State machine has 6 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+   00000000000000000000000000000010
+   00000000000000000000000000000011
+   00000000000000000000000000000100
+   00000000000000000000000000000101
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Tx_async.v":44:11:44:21|Input tx_dout_reg is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Tx_async.v":45:6:45:15|Input fifo_empty is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Tx_async.v":46:6:46:14|Input fifo_full is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\UART\UART_0\rtl\vlog\core\Clock_gen.v":51:15:51:31|Input BAUD_VAL_FRACTION is unused.
+@W: CL246 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi.v":70:12:70:16|Input port bits 1 to 0 of PADDR[6:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL190 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":823:0:823:5|Optimizing register bit stxs_bitsel[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":823:0:823:5|Pruning register bit 4 of stxs_bitsel[4:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":823:0:823:5|Optimizing register bit stxs_bitsel[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":823:0:823:5|Pruning register bit 3 of stxs_bitsel[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":823:0:823:5|Optimizing register bit stxs_bitsel[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":823:0:823:5|Pruning register bit 2 of stxs_bitsel[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Trying to extract state machine for register mtx_state.
+Extracted state machine for register mtx_state
+State machine has 6 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0111
+   1000
+   1001
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":54:37:54:48|Input txfifo_count is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_chanctrl.v":59:37:59:48|Input rxfifo_count is unused.
+@N: CL134 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_fifo.v":101:0:101:5|Found RAM fifo_mem_q, depth=4, width=1
+@N: CL134 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_fifo.v":101:0:101:5|Found RAM fifo_mem_q, depth=4, width=4
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_control.v":27:35:27:41|Input aresetn is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_control.v":28:35:28:41|Input sresetn is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_control.v":34:35:34:44|Input cfg_master is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_control.v":35:35:35:47|Input rx_fifo_empty is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_control.v":36:35:36:47|Input tx_fifo_empty is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v":52:35:52:46|Input tx_fifo_read is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v":55:35:55:46|Input rx_fifo_full is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v":56:35:56:51|Input rx_fifo_full_next is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v":58:35:58:52|Input rx_fifo_empty_next is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v":61:35:61:51|Input tx_fifo_full_next is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v":62:35:62:47|Input tx_fifo_empty is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CORESPI\5.2.104\rtl\vlog\core\spi_rf.v":63:35:63:52|Input tx_fifo_empty_next is unused.
+@W: CL246 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":75:18:75:22|Input port bits 27 to 24 of PADDR[31:0] are unused. Assign logic for all port bits or change the input port size.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":72:36:72:40|Input IADDR is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":73:13:73:19|Input PRESETN is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":74:13:74:16|Input PCLK is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":106:18:106:25|Input PRDATAS2 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":107:18:107:25|Input PRDATAS3 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":108:18:108:25|Input PRDATAS4 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":109:18:109:25|Input PRDATAS5 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":110:18:110:25|Input PRDATAS6 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":111:18:111:25|Input PRDATAS7 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":112:18:112:25|Input PRDATAS8 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":113:18:113:25|Input PRDATAS9 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":114:18:114:26|Input PRDATAS10 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":115:18:115:26|Input PRDATAS11 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":116:18:116:26|Input PRDATAS12 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":117:18:117:26|Input PRDATAS13 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":118:18:118:26|Input PRDATAS14 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":119:18:119:26|Input PRDATAS15 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":123:13:123:20|Input PREADYS2 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":124:13:124:20|Input PREADYS3 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":125:13:125:20|Input PREADYS4 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":126:13:126:20|Input PREADYS5 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":127:13:127:20|Input PREADYS6 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":128:13:128:20|Input PREADYS7 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":129:13:129:20|Input PREADYS8 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":130:13:130:20|Input PREADYS9 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":131:13:131:21|Input PREADYS10 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":132:13:132:21|Input PREADYS11 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":133:13:133:21|Input PREADYS12 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":134:13:134:21|Input PREADYS13 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":135:13:135:21|Input PREADYS14 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":136:13:136:21|Input PREADYS15 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":140:13:140:21|Input PSLVERRS2 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":141:13:141:21|Input PSLVERRS3 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":142:13:142:21|Input PSLVERRS4 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":143:13:143:21|Input PSLVERRS5 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":144:13:144:21|Input PSLVERRS6 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":145:13:145:21|Input PSLVERRS7 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":146:13:146:21|Input PSLVERRS8 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":147:13:147:21|Input PSLVERRS9 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":148:13:148:22|Input PSLVERRS10 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":149:13:149:22|Input PSLVERRS11 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":150:13:150:22|Input PSLVERRS12 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":151:13:151:22|Input PSLVERRS13 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":152:13:152:22|Input PSLVERRS14 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":153:13:153:22|Input PSLVERRS15 is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\ram128x8_polarfire.v":34:6:34:11|Input RESETN is unused.
+@N: CL201 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":1031:4:1031:9|Trying to extract state machine for register ICYCLE.
+Extracted state machine for register ICYCLE
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":134:10:134:18|Input PSLVERR_M is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":138:10:138:15|Input INTREQ is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":141:10:141:19|Input INITDATVAL is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":142:10:142:17|Input INITDONE is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":143:27:143:34|Input INITADDR is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":144:15:144:22|Input INITDATA is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":148:11:148:16|Input PSEL_S is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":149:11:149:19|Input PENABLE_S is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":150:11:150:18|Input PWRITE_S is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":151:28:151:34|Input PADDR_S is unused.
+@N: CL159 :"C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\component\work\Controller\Controller_0\rtl\vlog\core\coreabc.v":152:28:152:35|Input PWDATA_S is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 87MB peak: 91MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Aug  2 16:16:09 2018
+
+###########################################################]
+
+Copyright (C) 1994-2017 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2017.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro
+OS: Windows 6.2
+
+Hostname: EMEALTC0046
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp2017q4p1, Build 221R, Built Apr 11 2018 10:07:45
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Aug  2 16:16:09 2018
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Aug  2 16:16:09 2018
+
+###########################################################]
+
+Copyright (C) 1994-2017 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2017.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro
+OS: Windows 6.2
+
+Hostname: EMEALTC0046
+
+Database state : C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\synthesis\synwork\|synthesis
+Synopsys Synopsys Netlist Linker, Version comp2017q4p1, Build 221R, Built Apr 11 2018 10:07:45
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Aug  2 16:16:11 2018
+
+###########################################################]
+Premap Report
+
+# Thu Aug  2 16:16:11 2018
+
+
+Copyright (C) 1994-2017 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2017.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro
+OS: Windows 6.2
+
+Hostname: EMEALTC0046
+
+Implementation : synthesis
+Synopsys Generic Technology Pre-mapping, Version mapact2017q4p1, Build 003R, Built Apr 11 2018 11:07:45
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+Reading constraint file: C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\designer\TOP\synthesis.fdc
+@L: C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\synthesis\TOP_scck.rpt 
+Printing clock  summary report in "C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\synthesis\TOP_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 106MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 108MB)
+
+@W: BN132 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\controller\controller_0\rtl\vlog\core\coreabc.v":484:12:484:17|Removing sequential instance Controller_0.Controller_0.UROM.INSTR_SLOT[0] because it is equivalent to instance Controller_0.Controller_0.UROM.INSTR_MUXC. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@W: MO156 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":101:0:101:5|RAM fifo_mem_q[3:0] removed due to constant propagation. 
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_rf.v":134:0:134:5|Removing sequential instance control1[7:0] (in view: CORESPI_LIB.spi_rf_8s_7s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_rf.v":134:0:134:5|Removing sequential instance cfg_ssel[7:0] (in view: CORESPI_LIB.spi_rf_8s_7s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":807:0:807:5|Removing sequential instance stxs_txready_at_ssel (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":630:0:630:5|Removing sequential instance mtx_spi_data_oen (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":823:0:823:5|Removing sequential instance stxs_checkorun (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":1085:13:1085:20|Removing instance UCLKMUX1 (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:CORESPI_LIB.spi_clockmux(verilog) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":823:0:823:5|Removing sequential instance stxs_state (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":286:0:286:5|Removing sequential instance spi_clk_next (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance mtx_oen (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":823:0:823:5|Removing sequential instance stxs_pktsel (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":823:0:823:5|Removing sequential instance stxs_first (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":1130:0:1130:5|Removing sequential instance msrxs_datain[3:0] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":1130:0:1130:5|Removing sequential instance msrxs_first (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":1130:0:1130:5|Removing sequential instance msrxs_shiftreg[2:0] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi.v":214:12:214:15|Removing instance UCON (in view: CORESPI_LIB.spi_8s_4s_4s_7s_0_0_0_0s(verilog)) of type view:CORESPI_LIB.spi_control_4s(verilog) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":1098:0:1098:5|Removing sequential instance ssel_rx_q2 (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":630:0:630:5|Removing sequential instance mtx_midbit (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":630:0:630:5|Removing sequential instance mtx_lastbit (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":630:0:630:5|Removing sequential instance mtx_firstrx (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":1098:0:1098:5|Removing sequential instance data_rx_q2 (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":630:0:630:5|Removing sequential instance spi_ssel_pos (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":111:0:111:5|Removing sequential instance full_next_out (in view: CORESPI_LIB.spi_fifo_4s_4s_2_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":111:0:111:5|Removing sequential instance empty_next_out (in view: CORESPI_LIB.spi_fifo_4s_4s_2_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":111:0:111:5|Removing sequential instance full_next_out (in view: CORESPI_LIB.spi_fifo_4s_4s_2_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":111:0:111:5|Removing sequential instance empty_next_out (in view: CORESPI_LIB.spi_fifo_4s_4s_2_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\rx_async.v":501:0:501:5|Removing sequential instance fifo_write (in view: work.UART_UART_0_Rx_async_0s_0s_0s_1s_2s_3s(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\rx_async.v":501:0:501:5|Removing sequential instance clear_parity_en_1 (in view: work.UART_UART_0_Rx_async_0s_0s_0s_1s_2s_3s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":1098:0:1098:5|Removing sequential instance ssel_rx_q1 (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":791:0:791:5|Removing sequential instance resetn_rx_d2 (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":323:0:323:5|Removing sequential instance clk_div_val_reg[7:0] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffpatre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance mtx_first (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":1098:0:1098:5|Removing sequential instance data_rx_q1 (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\controller\controller_0\rtl\vlog\core\coreabc.v":1031:4:1031:9|Removing sequential instance IO_OUT[0] (in view: work.Controller_Controller_0_COREABC_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":791:0:791:5|Removing sequential instance resetn_rx_d1 (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi.v":166:0:166:2|Removing instance URF (in view: CORESPI_LIB.spi_8s_4s_4s_7s_0_0_0_0s(verilog)) of type view:CORESPI_LIB.spi_rf_8s_7s_0(verilog) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":733:0:733:5|Removing sequential instance SYNC1_stxs_txready (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_rf.v":134:0:134:5|Removing sequential instance CLK_DIV[7:0] (in view: CORESPI_LIB.spi_rf_8s_7s_0(verilog)) of type view:PrimLib.dffpatre(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi.v":262:2:262:5|Removing instance URXF (in view: CORESPI_LIB.spi_8s_4s_4s_7s_0_0_0_0s(verilog)) of type view:CORESPI_LIB.spi_fifo_4s_4s_2_0(verilog) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":1014:0:1014:5|Removing sequential instance txfifo_davailable (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":111:0:111:5|Removing sequential instance empty_out (in view: CORESPI_LIB.spi_fifo_4s_4s_2_0(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":111:0:111:5|Removing sequential instance full_out (in view: CORESPI_LIB.spi_fifo_4s_4s_2_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":1194:0:1194:5|Removing sequential instance msrxp_strobe (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi.v":236:2:236:5|Removing instance UTXF (in view: CORESPI_LIB.spi_8s_4s_4s_7s_0_0_0_0s(verilog)) of type view:CORESPI_LIB.spi_fifo_4s_4s_2_1(verilog) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":111:0:111:5|Removing sequential instance empty_out (in view: CORESPI_LIB.spi_fifo_4s_4s_2_1(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":1172:0:1172:5|Removing sequential instance SYNC3_msrxp_strobe (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":1172:0:1172:5|Removing sequential instance SYNC2_msrxp_strobe (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":1172:0:1172:5|Removing sequential instance SYNC1_msrxp_strobe (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+syn_allowed_resources : blockrams=952  set on top level netlist TOP
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                                        Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                                        Frequency     Period        Type         Group                   Load 
+---------------------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                                       100.0 MHz     10.000        system       system_clkgroup         0    
+                                                                                                                                             
+0 -       DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock                100.0 MHz     10.000        inferred     Inferred_clkgroup_0     189  
+                                                                                                                                             
+0 -       RCOSC_RCOSC_0_PF_OSC|RCOSC_160MHZ_CLK_DIV_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     1    
+=============================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                             Clock     Source                                          Clock Pin                            Non-clock Pin     Non-clock Pin
+Clock                                                        Load      Pin                                             Seq Example                          Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                       0         -                                               -                                    -                 -            
+                                                                                                                                                                                           
+DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock                189       DIV2_0.DIV2_0.I_CD.Y_DIV(ICB_CLKDIV)            UART_0.UART_0.controlReg1[7:0].C     -                 -            
+                                                                                                                                                                                           
+RCOSC_RCOSC_0_PF_OSC|RCOSC_160MHZ_CLK_DIV_inferred_clock     1         RCOSC_0.RCOSC_0.I_OSC_160.CLK(OSC_RC160MHZ)     DIV2_0.DIV2_0.I_CD.A                 -                 -            
+===========================================================================================================================================================================================
+
+@W: MT530 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\controller\controller_0\rtl\vlog\core\ram128x8_polarfire.v":42:12:42:23|Found inferred clock DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock which controls 189 sequential elements including Controller_0.Controller_0.URAM\.UR.UG4\.UR8\.ram_r0c0.RAM1K20_R0C0. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\div2\div2_0\div2_div2_0_pf_clk_div.v":14:38:14:41|Found inferred clock RCOSC_RCOSC_0_PF_OSC|RCOSC_160MHZ_CLK_DIV_inferred_clock which controls 1 sequential elements including DIV2_0.DIV2_0.I_CD. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\synthesis\TOP.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 139MB)
+
+Encoding state machine ICYCLE[3:0] (in view: work.Controller_Controller_0_COREABC_Z1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\controller\controller_0\rtl\vlog\core\coreabc.v":1031:4:1031:9|There are no possible illegal states for state machine ICYCLE[3:0] (in view: work.Controller_Controller_0_COREABC_Z1(verilog)); safe FSM implementation is not required.
+Encoding state machine mtx_state[5:0] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog))
+original code -> new code
+   0000 -> 000001
+   0001 -> 000010
+   0010 -> 000100
+   0111 -> 001000
+   1000 -> 010000
+   1001 -> 100000
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance mtx_state[5] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance mtx_state[3] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance mtx_state[2] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance mtx_state[1] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance mtx_state[0] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+Encoding state machine xmit_state[5:0] (in view: work.UART_UART_0_Tx_async_0s_0s_0s_1s_2s_3s_4s_5s_6s(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000001
+   00000000000000000000000000000001 -> 000010
+   00000000000000000000000000000010 -> 000100
+   00000000000000000000000000000011 -> 001000
+   00000000000000000000000000000100 -> 010000
+   00000000000000000000000000000101 -> 100000
+Encoding state machine rx_state[3:0] (in view: work.UART_UART_0_Rx_async_0s_0s_0s_1s_2s_3s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\rx_async.v":286:0:286:5|There are no possible illegal states for state machine rx_state[3:0] (in view: work.UART_UART_0_Rx_async_0s_0s_0s_1s_2s_3s(verilog)); safe FSM implementation is not required.
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 52MB peak: 139MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Aug  2 16:16:12 2018
+
+###########################################################]
+Map & Optimize Report
+
+# Thu Aug  2 16:16:12 2018
+
+
+Copyright (C) 1994-2017 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2017.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro
+OS: Windows 6.2
+
+Hostname: EMEALTC0046
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version mapact2017q4p1, Build 003R, Built Apr 11 2018 11:07:45
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":823:0:823:5|Removing sequential instance stxs_bitsel[1:0] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+
+Encoding state machine ICYCLE[3:0] (in view: work.Controller_Controller_0_COREABC_Z1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\controller\controller_0\rtl\vlog\core\coreabc.v":1031:4:1031:9|There are no possible illegal states for state machine ICYCLE[3:0] (in view: work.Controller_Controller_0_COREABC_Z1(verilog)); safe FSM implementation is not required.
+@W: MO129 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\controller\controller_0\rtl\vlog\core\coreabc.v":484:12:484:17|Sequential instance Controller_0.Controller_0.UROM.INSTR_SCMD[0] is reduced to a combinational gate by constant propagation.
+Encoding state machine mtx_state[5:0] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog))
+original code -> new code
+   0000 -> 000001
+   0001 -> 000010
+   0010 -> 000100
+   0111 -> 001000
+   1000 -> 010000
+   1001 -> 100000
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance mtx_state[5] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance mtx_state[3] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance mtx_state[2] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance mtx_state[1] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance mtx_state[0] (in view: CORESPI_LIB.spi_chanctrl_Z4(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@W: MO129 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Sequential instance SPI_0.SPI_0.USPI.UCC.mtx_state[4] is reduced to a combinational gate by constant propagation.
+@N: MO231 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\clock_gen.v":283:6:283:11|Found counter in view:work.UART_UART_0_Clock_gen_0s_0s(verilog) instance genblk1\.baud_cntr[12:0] 
+Encoding state machine xmit_state[5:0] (in view: work.UART_UART_0_Tx_async_0s_0s_0s_1s_2s_3s_4s_5s_6s(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000001
+   00000000000000000000000000000001 -> 000010
+   00000000000000000000000000000010 -> 000100
+   00000000000000000000000000000011 -> 001000
+   00000000000000000000000000000100 -> 010000
+   00000000000000000000000000000101 -> 100000
+Encoding state machine rx_state[3:0] (in view: work.UART_UART_0_Rx_async_0s_0s_0s_1s_2s_3s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\rx_async.v":286:0:286:5|There are no possible illegal states for state machine rx_state[3:0] (in view: work.UART_UART_0_Rx_async_0s_0s_0s_1s_2s_3s(verilog)); safe FSM implementation is not required.
+@W: BN132 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\rx_async.v":261:0:261:5|Removing instance UART_0.UART_0.uUART.make_RX.last_bit[2] because it is equivalent to instance UART_0.UART_0.uUART.make_RX.last_bit[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 136MB)
+
+@W: BN132 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\controller\controller_0\rtl\vlog\core\coreabc.v":484:12:484:17|Removing instance Controller_0.Controller_0.UROM.INSTR_DATA[5] because it is equivalent to instance Controller_0.Controller_0.UROM.INSTR_DATA[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\coreuart.v":159:0:159:5|Removing instance UART_0.UART_0.uUART.tx_hold_reg[5] because it is equivalent to instance UART_0.UART_0.uUART.tx_hold_reg[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\coreuartapb.v":246:4:246:9|Removing instance UART_0.UART_0.controlReg1[5] because it is equivalent to instance UART_0.UART_0.controlReg1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\coreuartapb.v":267:4:267:9|Removing instance UART_0.UART_0.controlReg2[5] because it is equivalent to instance UART_0.UART_0.controlReg2[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\tx_async.v":119:0:119:5|Removing instance UART_0.UART_0.uUART.make_TX.tx_byte[5] because it is equivalent to instance UART_0.UART_0.uUART.make_TX.tx_byte[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\coreuart.v":234:2:234:7|Removing sequential instance UART_0.UART_0.uUART.genblk1\.RXRDY (in view: work.TOP(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\rx_async.v":231:0:231:5|Removing sequential instance UART_0.UART_0.uUART.make_RX.framing_error (in view: work.TOP(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\rx_async.v":206:0:206:5|Removing sequential instance UART_0.UART_0.uUART.make_RX.overflow (in view: work.TOP(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\rx_async.v":286:0:286:5|Removing sequential instance UART_0.UART_0.uUART.make_RX.stop_strobe (in view: work.TOP(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\rx_async.v":286:0:286:5|Removing sequential instance UART_0.UART_0.uUART.make_RX.framing_error_int (in view: work.TOP(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\rx_async.v":286:0:286:5|Removing sequential instance UART_0.UART_0.uUART.make_RX.overflow_int (in view: work.TOP(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\coreuart.v":159:0:159:5|Removing sequential instance UART_0.UART_0.uUART.tx_hold_reg[7] (in view: work.TOP(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\coreuartapb.v":267:4:267:9|Removing sequential instance UART_0.UART_0.controlReg2[7] (in view: work.TOP(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\coreuartapb.v":246:4:246:9|Removing sequential instance UART_0.UART_0.controlReg1[7] (in view: work.TOP(verilog)) because it does not drive other instances.
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
+
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\uart\uart_0\rtl\vlog\core\tx_async.v":119:0:119:5|Removing sequential instance UART_0.UART_0.uUART.make_TX.tx_byte[7] (in view: work.TOP(verilog)) because it does not drive other instances.
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 140MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 140MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
+
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance SPI_0.SPI_0.USPI.UCC.mtx_bitsel[4] (in view: work.TOP(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance SPI_0.SPI_0.USPI.UCC.mtx_bitsel[3] (in view: work.TOP(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance SPI_0.SPI_0.USPI.UCC.mtx_bitsel[2] (in view: work.TOP(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance SPI_0.SPI_0.USPI.UCC.mtx_bitsel[1] (in view: work.TOP(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_chanctrl.v":416:0:416:5|Removing sequential instance SPI_0.SPI_0.USPI.UCC.mtx_bitsel[0] (in view: work.TOP(verilog)) because it does not drive other instances.
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 145MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		     4.27ns		 309 /       142
+@N: FP130 |Promoting Net DIV2_0_CLK_OUT on CLKINT  I_132 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 145MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 145MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 147 clock pin(s) of sequential element(s)
+0 instances converted, 147 sequential instances remain driven by gated/generated clocks
+
+================================================================================= Gated/Generated Clocks ==================================================================================
+Clock Tree ID     Driving Element               Drive Element Type     Fanout     Sample Instance                  Explanation                                                             
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       DIV2_0.DIV2_0.I_CD            ICB_CLKDIV             146        UART_0.UART_0.controlReg2[1]     No generated or derived clock directive on output of sequential instance
+@K:CKID0002       RCOSC_0.RCOSC_0.I_OSC_160     OSC_RC160MHZ           1          DIV2_0.DIV2_0.I_CD               No gated clock conversion method for cell cell:work.ICB_CLKDIV          
+===========================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 145MB)
+
+Writing Analyst data base C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\synthesis\synwork\TOP_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 145MB)
+
+Writing Verilog Simulation files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 145MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 145MB)
+
+@W: MT246 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\rcosc\rcosc_0\rcosc_rcosc_0_pf_osc.v":13:17:13:25|Blackbox OSC_RC160MHZ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\crudel\documents\projects\pf_mpf300-ek\uart_2_spi_bridge\component\work\init_monitor\init_monitor_0\init_monitor_init_monitor_0_pf_init_monitor.v":38:53:38:58|Blackbox INIT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock with period 10.00ns. Please declare a user-defined clock on net DIV2_0.DIV2_0.CLK_OUT.
+@W: MT420 |Found inferred clock RCOSC_RCOSC_0_PF_OSC|RCOSC_160MHZ_CLK_DIV_inferred_clock with period 10.00ns. Please declare a user-defined clock on net RCOSC_0.RCOSC_0.RCOSC_0_RCOSC_160MHZ_CLK_DIV.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Aug  2 16:16:13 2018
+#
+
+
+Top view:               TOP
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge\designer\TOP\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 4.781
+
+                                                             Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock                                               Frequency     Frequency     Period        Period        Slack     Type         Group              
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock                100.0 MHz     191.6 MHz     10.000        5.219         4.781     inferred     Inferred_clkgroup_0
+RCOSC_RCOSC_0_PF_OSC|RCOSC_160MHZ_CLK_DIV_inferred_clock     100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_1
+===============================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                        |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                       Ending                                         |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock  DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock  |  10.000      4.781  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                       Starting                                                                                   Arrival          
+Instance                                                               Reference                                         Type        Pin           Net            Time        Slack
+                                                                       Clock                                                                                                       
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Controller_0.Controller_0.URAM\.UR.UG4\.UR8\.ram_r0c0.RAM1K20_R0C0     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     RAM1K20     A_DOUT[0]     RD_r0c0[0]     3.023       4.781
+Controller_0.Controller_0.URAM\.UR.UG4\.UR8\.ram_r1c0.RAM1K20_R0C0     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     RAM1K20     A_DOUT[0]     RD_r1c0[0]     3.023       4.862
+Controller_0.Controller_0.URAM\.UR.UG4\.UR8\.ram_r1c0.RAM1K20_R0C0     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     RAM1K20     A_DOUT[6]     RD_r1c0[6]     3.023       4.872
+Controller_0.Controller_0.URAM\.UR.UG4\.UR8\.ram_r0c0.RAM1K20_R0C0     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     RAM1K20     A_DOUT[1]     RD_r0c0[1]     3.023       4.872
+Controller_0.Controller_0.URAM\.UR.UG4\.UR8\.ram_r0c0.RAM1K20_R0C0     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     RAM1K20     A_DOUT[2]     RD_r0c0[2]     3.023       4.919
+Controller_0.Controller_0.URAM\.UR.UG4\.UR8\.ram_r1c0.RAM1K20_R0C0     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     RAM1K20     A_DOUT[1]     RD_r1c0[1]     3.023       4.954
+Controller_0.Controller_0.URAM\.UR.UG4\.UR8\.ram_r0c0.RAM1K20_R0C0     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     RAM1K20     A_DOUT[6]     RD_r0c0[6]     3.023       4.963
+Controller_0.Controller_0.URAM\.UR.UG4\.UR8\.ram_r1c0.RAM1K20_R0C0     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     RAM1K20     A_DOUT[2]     RD_r1c0[2]     3.023       5.001
+Controller_0.Controller_0.URAM\.UR.UG4\.UR8\.ram_r0c0.RAM1K20_R0C0     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     RAM1K20     A_DOUT[4]     RD_r0c0[4]     3.023       5.009
+Controller_0.Controller_0.URAM\.UR.UG4\.UR8\.ram_r1c0.RAM1K20_R0C0     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     RAM1K20     A_DOUT[4]     RD_r1c0[4]     3.023       5.090
+===================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                             Starting                                                                             Required          
+Instance                                     Reference                                         Type     Pin     Net               Time         Slack
+                                             Clock                                                                                                  
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Controller_0.Controller_0.STD_ACCUM_ZERO     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     SLE      D       tmp_4[0]          10.000       4.781
+Controller_0.Controller_0.ACCUMULATOR[5]     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     SLE      D       ACCUM_NEXT[5]     10.000       5.213
+Controller_0.Controller_0.ACCUMULATOR[6]     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     SLE      D       ACCUM_NEXT[6]     10.000       5.213
+Controller_0.Controller_0.ACCUMULATOR[0]     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     SLE      D       ACCUM_NEXT[0]     10.000       5.280
+Controller_0.Controller_0.ACCUMULATOR[1]     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     SLE      D       ACCUM_NEXT[1]     10.000       5.280
+Controller_0.Controller_0.ACCUMULATOR[2]     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     SLE      D       ACCUM_NEXT[2]     10.000       5.280
+Controller_0.Controller_0.ACCUMULATOR[4]     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     SLE      D       ACCUM_NEXT[4]     10.000       5.280
+Controller_0.Controller_0.ACCUMULATOR[3]     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     SLE      D       ACCUM_NEXT[3]     10.000       5.416
+Controller_0.Controller_0.ACCUMULATOR[7]     DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     SLE      D       ACCUM_NEXT[7]     10.000       5.678
+Controller_0.Controller_0.STD_ACCUM_NEG      DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock     SLE      D       ACCUM_NEXT[7]     10.000       5.678
+====================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         10.000
+
+    - Propagation time:                      5.219
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     4.781
+
+    Number of logic level(s):                7
+    Starting point:                          Controller_0.Controller_0.URAM\.UR.UG4\.UR8\.ram_r0c0.RAM1K20_R0C0 / A_DOUT[0]
+    Ending point:                            Controller_0.Controller_0.STD_ACCUM_ZERO / D
+    The start point is clocked by            DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock [rising] on pin A_CLK
+    The end   point is clocked by            DIV2_DIV2_0_PF_CLK_DIV|CLK_OUT_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                     Pin           Pin               Arrival     No. of    
+Name                                                                   Type        Name          Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------
+Controller_0.Controller_0.URAM\.UR.UG4\.UR8\.ram_r0c0.RAM1K20_R0C0     RAM1K20     A_DOUT[0]     Out     3.023     3.023       -         
+RD_r0c0[0]                                                             Net         -             -       0.033     -           1         
+Controller_0.Controller_0.URAM\.UR.RD[0]                               CFG3        C             In      -         3.056       -         
+Controller_0.Controller_0.URAM\.UR.RD[0]                               CFG3        Y             Out     0.251     3.307       -         
+RAMRDATA[0]                                                            Net         -             -       0.213     -           2         
+Controller_0.Controller_0.ACCUM_IN[0]                                  CFG3        A             In      -         3.520       -         
+Controller_0.Controller_0.ACCUM_IN[0]                                  CFG3        Y             Out     0.103     3.623       -         
+ACCUM_IN[0]                                                            Net         -             -       0.213     -           2         
+Controller_0.Controller_0.ACCUM_NEXT_m3_bm[0]                          CFG4        C             In      -         3.836       -         
+Controller_0.Controller_0.ACCUM_NEXT_m3_bm[0]                          CFG4        Y             Out     0.251     4.087       -         
+ACCUM_NEXT_m3_bm[0]                                                    Net         -             -       0.033     -           1         
+Controller_0.Controller_0.ACCUM_NEXT_m3_ns[0]                          CFG3        C             In      -         4.120       -         
+Controller_0.Controller_0.ACCUM_NEXT_m3_ns[0]                          CFG3        Y             Out     0.251     4.371       -         
+ACCUM_NEXT_m3[0]                                                       Net         -             -       0.033     -           1         
+Controller_0.Controller_0.ACCUM_NEXT[0]                                CFG3        A             In      -         4.404       -         
+Controller_0.Controller_0.ACCUM_NEXT[0]                                CFG3        Y             Out     0.103     4.507       -         
+ACCUM_NEXT[0]                                                          Net         -             -       0.213     -           2         
+Controller_0.Controller_0.to_logic_2\.tmp_4_5[0]                       CFG4        D             In      -         4.720       -         
+Controller_0.Controller_0.to_logic_2\.tmp_4_5[0]                       CFG4        Y             Out     0.308     5.028       -         
+tmp_4_5[0]                                                             Net         -             -       0.033     -           1         
+Controller_0.Controller_0.to_logic_2\.tmp_4[0]                         CFG4        B             In      -         5.061       -         
+Controller_0.Controller_0.to_logic_2\.tmp_4[0]                         CFG4        Y             Out     0.125     5.186       -         
+tmp_4[0]                                                               Net         -             -       0.033     -           1         
+Controller_0.Controller_0.STD_ACCUM_ZERO                               SLE         D             In      -         5.219       -         
+=========================================================================================================================================
+Total path delay (propagation time + setup) of 5.219 is 4.415(84.6%) logic and 0.804(15.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 145MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 145MB)
+
+---------------------------------------
+Resource Usage Report for TOP 
+
+Mapping to part: mpf300tfcg1152-1
+Cell usage:
+AND2            1 use
+CLKINT          1 use
+ICB_CLKDIV      1 use
+INIT            1 use
+OSC_RC160MHZ    1 use
+PF_SPI          1 use
+CFG1           2 uses
+CFG2           54 uses
+CFG3           89 uses
+CFG4           117 uses
+
+Carry cells:
+ARI1            14 uses - used for arithmetic functions
+ARI1            2 uses - used for Wide-Mux implementation
+Total ARI1      16 uses
+
+
+Sequential Cells: 
+SLE            142 uses
+
+DSP Blocks:    0 of 924 (0%)
+
+I/O ports: 9
+I/O primitives: 3
+INBUF          2 uses
+OUTBUF         1 use
+
+
+Global Clock Buffers: 1
+
+RAM/ROM usage summary
+Total Block RAMs (RAM1K20) : 2 of 952 (0%)
+
+Total LUTs:    278
+
+Extra resources required for RAM and MACC_PA interface logic during P&R:
+
+RAM64X12 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K20  Interface Logic : SLEs = 72; LUTs = 72;
+MACC_PA     Interface Logic : SLEs = 0; LUTs = 0;
+MACC_PA_BC_ROM     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  142 + 0 + 72 + 0 = 214;
+Total number of LUTs after P&R:  278 + 0 + 72 + 0 = 350;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 28MB peak: 145MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Aug  2 16:16:14 2018
+
+###########################################################]

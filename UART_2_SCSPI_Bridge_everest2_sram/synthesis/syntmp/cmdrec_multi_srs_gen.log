@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  TOP  -multisrs  C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_sram\synthesis\synwork\TOP_comp.srs  -osyn  C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_sram\synthesis\synwork\TOP_mult.srs  -log  C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_everest2_sram\synthesis\synlog\TOP_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\bin64\syn_nfilter.exe -link -top TOP -multisrs ..\synwork\TOP_comp.srs -osyn ..\synwork\TOP_mult.srs -log ..\synlog\TOP_multi_srs_gen.srr
+rc:0 success:1 runtime:3
+file:..\synwork\TOP_comp.srs|io:i|time:1536575661|size:767164|exec:0|csum:864E5357A339B35FCC5938404E082716
+file:..\synwork\TOP_mult.srs|io:o|time:1536575665|size:7578|exec:0|csum:
+file:..\synlog\TOP_multi_srs_gen.srr|io:o|time:1536575665|size:1225|exec:0|csum:
+file:..\..\..\..\..\..\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1523437922|size:8657408|exec:1|csum:EAD189456567CA910873FDB52FD25D03

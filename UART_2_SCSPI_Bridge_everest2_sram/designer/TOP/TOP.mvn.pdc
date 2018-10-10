@@ -1,0 +1,44 @@
+# Microsemi Physical design constraints file
+
+# Version: PolarFire v2.2 12.200.30.10
+
+# Design Name:  
+
+# Input Netlist Format: EDIF 
+
+# Family: PolarFire , Die: MPF300TS_ES , Package: FCG1152 , Speed grade: -1 
+
+# Date generated: Mon Sep 10 11:36:49 2018 
+
+
+#
+# IO banks setting
+#
+
+set_iobank -bank_name Bank3 -vcci 3.30 -fixed true
+
+#
+# Region constraints
+#
+
+
+#
+# I/O constraints
+#
+
+set_io -port_name IO_CFG_INTF -DIRECTION INPUT -pin_name L12
+set_io -port_name SC_SPI_EN -DIRECTION INPUT -pin_name L13
+set_io -port_name SPI_CLK -DIRECTION INOUT -pin_name L14
+set_io -port_name SPI_MISO -DIRECTION INPUT -pin_name K12
+set_io -port_name SPI_MOSI -DIRECTION OUTPUT -pin_name K10
+set_io -port_name SPI_SS -DIRECTION INOUT -pin_name M14
+set_io -port_name TCK -DIRECTION INPUT -pin_name J10
+set_io -port_name TDI -DIRECTION INPUT -pin_name K11
+set_io -port_name TDO -DIRECTION OUTPUT -pin_name K9
+set_io -port_name TMS -DIRECTION INPUT -pin_name J9
+set_io -port_name TRSTB -DIRECTION INPUT -pin_name N14
+
+#
+# Core cell constraints
+#
+
