@@ -1,0 +1,16 @@
+Project Name: UART_2_SPI_Bridge
+Location: C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : MPF300TS_ES-1FCG1152E
+Family         : PolarFire
+Die            : MPF300TS_ES
+Package        : FCG1152
+Speed          : -1
+Core Voltage   : 1.0
+Range          : EXT

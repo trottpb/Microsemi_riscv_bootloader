@@ -1,0 +1,156 @@
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(4925): WARNING: net N_8509 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(4926): WARNING: net N_8510 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(4927): WARNING: net N_8511 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(4928): WARNING: net N_8512 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(4929): WARNING: net N_8513 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(4930): WARNING: net N_8514 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(6404): WARNING: net N_8515 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(6405): WARNING: net N_8516 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(6406): WARNING: net N_8517 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(6407): WARNING: net N_8518 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(6408): WARNING: net N_8519 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(6409): WARNING: net N_8520 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(16213): WARNING: net N_8528 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(16214): WARNING: net N_8529 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(16215): WARNING: net N_8530 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(24012): WARNING: net N_8547 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(24013): WARNING: net N_8548 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(24014): WARNING: net N_8549 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(38439): WARNING: net N_8577 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(53080): WARNING: net N_8581 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(155769): WARNING: net N_8588 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(155770): WARNING: net N_8589 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(155857): WARNING: net N_8590 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(180771): WARNING: net N_8602 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(180772): WARNING: net N_8603 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(191759): WARNING: net N_8541 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(191813): WARNING: net N_8543 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(191978): WARNING: net N_8550 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(191979): WARNING: net N_8551 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(191980): WARNING: net N_8552 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(191998): WARNING: net N_8560 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(191999): WARNING: net N_8561 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192000): WARNING: net N_8562 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192019): WARNING: net N_8567 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192023): WARNING: net N_8571 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192024): WARNING: net N_8572 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192025): WARNING: net N_8573 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192026): WARNING: net N_8574 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192027): WARNING: net N_8575 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192028): WARNING: net N_8576 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192053): WARNING: net N_8580 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192141): WARNING: net N_8599 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192142): WARNING: net N_8600 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192143): WARNING: net N_8601 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192144): WARNING: net N_8604 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192145): WARNING: net N_8605 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192146): WARNING: net N_8606 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192147): WARNING: net N_8607 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192148): WARNING: net N_8608 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192149): WARNING: net N_8609 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192150): WARNING: net N_8610 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192151): WARNING: net N_8611 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192152): WARNING: net N_8612 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192153): WARNING: net N_8613 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192154): WARNING: net N_8614 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(192155): WARNING: net N_8615 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(194695): WARNING: net N_8616 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(194696): WARNING: net N_8617 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(195109): WARNING: net N_8618 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(195110): WARNING: net N_8619 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(195526): WARNING: net N_8620 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(195527): WARNING: net N_8621 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(209989): WARNING: net N_8632 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(209990): WARNING: net N_8633 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(209991): WARNING: net N_8634 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(209992): WARNING: net N_8635 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(209993): WARNING: net N_8636 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(209994): WARNING: net N_8637 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(215943): WARNING: net N_8638 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(215944): WARNING: net N_8639 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(215945): WARNING: net N_8640 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(215946): WARNING: net N_8641 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(215947): WARNING: net N_8642 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(215948): WARNING: net N_8643 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(223668): WARNING: net N_8622 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/synthesis/TOP.vm(223669): WARNING: net N_8623 does not have a driver (VDB-1002)
+
+Info: Device 'MPF300TS_ES' requires Two-port LSRAM cells with Read-width > 20 to be remapped 
+      Two-port LSRAM instances with Read-width > 20:                     33
+      Two-port LSRAM instances with Read-width > 20 and a single clock:  33
+      Two-port LSRAM instances with read-width > 20 and two clocks:       0
+      Number of AND gates inserted:                                     132
+      Number of LSRAM cells inserted:                                     0
+
+Info: Following Two-port LSRAM instances with Read-width > 20 and a single clock were remapped: 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R0C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R10C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R11C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R12C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R13C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R14C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R15C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R16C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R17C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R18C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R19C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R1C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R20C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R21C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R22C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R23C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R24C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R25C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R26C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R27C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R28C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R29C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R2C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R30C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R31C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R3C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R4C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R5C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R6C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R7C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R8C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R9C0 
+      PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/dcache/tag_array_0_tag_array_0_0_0 
+
+Info: [127205813]:  CMPPF_149: Added 'ADLIB:ICB_CLKINT' instance type before pin 'CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0:A'.
+Info: [127205813]:  CMPPF_149: Added 'ADLIB:CRN_INT' instance type before pin 'CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0:REF_CLK_0'.
+Info: [127205813]:  CMPPF_149: Added 'ADLIB:ICB_CLKINT' instance type before pin 'CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT:A'.
+Info: [127205813]:  CMPPF_149: Added 'ADLIB:ICB_CLKINT' instance type before pin 'PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint:A'.
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       4 
+      Globals that cannot be demoted:      3 
+      Globals considered for demotion:     1 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    5409   0      0      'CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0' 
+    16     0      1      'PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint' 
+    0      0      1      'CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    292    0      0      'PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint' 
+
+Info: Demotion information: 
+Info: [127205381]:  CMPPF_302: Added 0 row global instances.
+Info: [127205382]:  CMPPF_303: Deleted 0 global instances.
+
+===============================================================================.
+
+Info: Device 'MPF300TS_ES' requires fabric generated global resources driven from the fabric to be gated by the ‘INIT:FABRIC_POR_N’ signal 
+    Chip globals:                  1 
+    Row globals:                   0 
+    Number of AND2 gates inserted: 1 
+Info: Chip global resources driven by the following fabric instances were gated by the ‘INIT:FABRIC_POR_N’ signal: 
+    PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.UJ_JTAG_0/un1_duttck_inferred_clock_RNITU6B

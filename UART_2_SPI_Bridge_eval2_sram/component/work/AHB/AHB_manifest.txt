@@ -1,0 +1,26 @@
+Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.2 (Version 12.200.30.10)
+
+Date      :  Fri Aug 31 13:31:42 2018
+Project   :  C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram
+Component :  AHB
+Family    :  PolarFire
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/core/coreahblite_addrdec.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/core/coreahblite_defaultslavesm.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/core/coreahblite_masterstage.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/core/coreahblite_matrix4x16.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/core/coreahblite_slavearbiter.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/core/coreahblite_slavestage.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_sram/component/work/AHB/AHB.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_sram/component/work/AHB/AHB_0/rtl/vlog/core/coreahblite.v
+
+Stimulus files for all Simulation tools:
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/amba_bfm/bfm_ahbl.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/amba_bfm/bfm_ahbslave.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/amba_bfm/bfm_ahbslaveext.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/amba_bfm/bfm_main.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_sram/component/work/AHB/AHB_0/coreparameters.v
+    C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_sram/component/work/AHB/AHB_0/rtl/vlog/test/user/testbench.v
+
