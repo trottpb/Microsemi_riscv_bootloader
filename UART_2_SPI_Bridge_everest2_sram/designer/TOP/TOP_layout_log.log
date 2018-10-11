@@ -1,0 +1,75 @@
+INFO: Reading User SDC file C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\constraint\TOP_derived_constraints.sdc.
+INFO: Reading User SDC file C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\constraint\jtag_tck_constraint.sdc.
+
+No errors or warnings found.
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+Driver Replication       : OFF
+High-effort              : ON
+Repair min-delay         : OFF
+Incremental              : OFF
+Inter-clock optimization : ON
+TDPR scenario            : place_and_route
+
+INFO: Reading User PDC file C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\constraint\io\EvalkitIO.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\constraint\io\user2.pdc. 0 error(s) and 0 warning(s)
+
+ Running Timing based Global Demotion. 
+        Demoted 0 global pins.
+
+ Timing based Global Demotion completed successfully. 
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 12 fixed I/O macros, 0 unfixed I/O macros
+Info:  I/O Bank and Globals Assigner identified bank 'Bank3' as being fixed at VCCI:3.30V VCCR:n/a
+Info:  I/O Bank and Globals Assigner detected (1) out of (8) I/O Bank(s) with locked I/O technologies.
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 2 seconds
+
+Placer V5.0 - 12.200.30 
+Design: TOP                             Started: Fri Sep 07 16:47:20 2018
+
+Initializing High-Effort Timing-Driven Placement ...
+Clustering ...
+Placing ...
+Improving placement ...
+End of placement.
+
+Placer Runtime Summary   :
+Clustering (1 pass)      : 8 seconds
+Placement                : 41 seconds
+Improvement              : 67 seconds
+
+Placer completed successfully.
+
+Design: TOP                             
+Finished: Fri Sep 07 16:50:22 2018
+Total CPU Time:     00:03:22            Total Elapsed Time: 00:03:02
+Total Memory Usage: 1600.6 Mbytes
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\designer\TOP\TOPStarted: Fri Sep 07 16:50:39 2018
+
+
+Timing-driven Router completed successfully.
+
+Design: C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\designer\TOP\TOP
+Finished: Fri Sep 07 16:53:53 2018
+Total CPU Time:     00:03:09            Total Elapsed Time: 00:03:14
+Total Memory Usage: 6558.8 Mbytes
+                        o - o - o - o - o - o
+
+Resource Usage
++---------------+-------+--------+------------+
+| Type          | Used  | Total  | Percentage |
++---------------+-------+--------+------------+
+| 4LUT          | 15315 | 299544 | 5.11       |
+| DFF           | 8461  | 299544 | 2.82       |
+| I/O Register  | 0     | 510    | 0.00       |
+| Logic Element | 15981 | 299544 | 5.34       |
++---------------+-------+--------+------------+
+

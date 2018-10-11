@@ -1,0 +1,30 @@
+*****************************************************************
+Pin Report - Date: Fri Sep 07 16:54:08 2018 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: PolarFire v2.2
+Version: 12.200.30.10
+Design Name: TOP
+Family: PolarFire
+Die: MPF300TS_ES
+Package: FCG1152
+*****************************************************************
+
+Port        |Pin  |Fixed |Function       |Bank     |I/O Std   |Direction          |User I/O Lock Down             |I/O state in Flash*Freeze mode |Clamp Diode   |Resistor Pull   |Schmitt Trigger |Vcm Input Range    |On Die Termination |Odt Value (Ohm) |Input Delay |Slew              |Output Drive (mA) |Impedance (ohm)  |Output Load (pF)         |Source Termination (Ohm) |Output Delay |
+------------|-----|------|---------------|---------|----------|-------------------|-------------------------------|-------------------------------|--------------|----------------|----------------|-------------------|-------------------|----------------|------------|------------------|------------------|-----------------|-------------------------|-------------------------|-------------|
+GPIO_OUT[0]  U11   Yes    GPIO206NB4      Bank4     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+GPIO_OUT[1]  T5    Yes    GPIO217PB4/DQS  Bank4     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+GPIO_OUT[2]  W8    Yes    GPIO199PB4/DQS  Bank4     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+GPIO_OUT[3]  W9    Yes    GPIO201NB4      Bank4     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+INT_RESET_N  AE23  Yes    HSIO85PB1       Bank1     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+RESET_N      T3    Yes    GPIO209PB4      Bank4     LVCMOS18   Input               No                              LAST_VALUE                      ON             Up               OFF              ---                 OFF                 120              OFF          ---                ---                ---               ---                       ---                       ---           
+SPISCLKO     AF22  Yes    HSIO87PB1/DQS   Bank1     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+SPISDI       AF25  Yes    HSIO86NB1       Bank1     LVCMOS18   Input               No                              LAST_VALUE                      ON             Up               OFF              ---                 OFF                 120              OFF          ---                ---                ---               ---                       ---                       ---           
+SPISDO       AE22  Yes    HSIO87NB1/DQS   Bank1     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+SPISS        AD24  Yes    HSIO89PB1       Bank1     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+TCK          J10   Fixed  TCK             ---       
+TDI          K11   Fixed  TDI             ---       
+TDO          K9    Fixed  TDO             ---       
+TMS          J9    Fixed  TMS             ---       
+TRSTB        N14   Fixed  TRSTB           ---       
+UART_RX      U7    Yes    GPIO218NB4      Bank4     LVCMOS18   Input               No                              LAST_VALUE                      ON             Up               OFF              ---                 OFF                 120              OFF          ---                ---                ---               ---                       ---                       ---           
+UART_TX      V9    Yes    GPIO201PB4      Bank4     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           

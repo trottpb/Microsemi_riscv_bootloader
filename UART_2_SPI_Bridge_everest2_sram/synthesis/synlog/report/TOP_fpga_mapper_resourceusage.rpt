@@ -1,0 +1,52 @@
+Resource Usage Report for TOP 
+
+Mapping to part: mpf300tfcg1152-1
+Cell usage:
+AND3            1 use
+CLKINT          4 uses
+INIT            1 use
+INV             8 uses
+OR2             32 uses
+OR4             320 uses
+OSC_RC160MHZ    1 use
+PLL             1 use
+UJTAG           1 use
+CFG1           30 uses
+CFG2           1154 uses
+CFG3           4123 uses
+CFG4           5470 uses
+
+Carry cells:
+ARI1            983 uses - used for arithmetic functions
+ARI1            152 uses - used for Wide-Mux implementation
+Total ARI1      1135 uses
+
+
+Sequential Cells: 
+SLE            5557 uses
+
+DSP Blocks:    2 of 924 (0%)
+ MACC_PA:         1 MultAdd
+ MACC_PA:         1 Mult
+
+I/O ports: 17
+I/O primitives: 12
+INBUF          3 uses
+OUTBUF         5 uses
+TRIBUFF        4 uses
+
+
+Global Clock Buffers: 4
+
+Total LUTs:    11912
+
+Extra resources required for RAM and MACC_PA interface logic during P&R:
+
+RAM64X12 Interface Logic : SLEs = 96; LUTs = 96;
+RAM1K20  Interface Logic : SLEs = 2736; LUTs = 2736;
+MACC_PA     Interface Logic : SLEs = 72; LUTs = 72;
+MACC_PA_BC_ROM     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  5557 + 96 + 2736 + 72 = 8461;
+Total number of LUTs after P&R:  11912 + 96 + 2736 + 72 = 14816;
+
