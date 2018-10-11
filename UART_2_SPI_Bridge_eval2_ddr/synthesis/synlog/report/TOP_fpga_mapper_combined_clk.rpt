@@ -1,0 +1,29 @@
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+2 non-gated/non-generated clock tree(s) driving 17 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 16937 clock pin(s) of sequential element(s)
+0 instances converted, 16937 sequential instances remain driven by gated/generated clocks
+
+=============================================================================== Non-Gated/Non-Generated Clocks ===============================================================================
+Clock Tree ID     Driving Element                                            Drive Element Type                   Fanout     Sample Instance                                                  
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0004       PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJTAG_0     UJTAG                                16         PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJ_JTAG_0.pauselow
+@K:CKID0005       CLOCKS_RESETS_0.RCOSC_0.RCOSC_0.I_OSC_160                  clock definition on OSC_RC160MHZ     1          CLOCKS_RESETS_0.CCC_100MHz_0.CCC_100MHz_0.pll_inst_0             
+==============================================================================================================================================================================================
+====================================================================================================================================== Gated/Generated Clocks ======================================================================================================================================
+Clock Tree ID     Driving Element                                                         Drive Element Type     Fanout     Sample Instance                                                                  Explanation                                                                            
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       MEMORY_0.DDR3_0.CCC_0.pll_inst_0                                        PLL                    9629       MEMORY_0.DDR3_0.DDRCTRL_0.sdram_sys_top.dfi_rddata_w1_i[13]                      No generated or derived clock directive on output of sequential instance               
+@K:CKID0002       CLOCKS_RESETS_0.CCC_100MHz_0.CCC_100MHz_0.pll_inst_0                    PLL                    7016       CLOCKS_RESETS_0.reset_synchronizer_0.genblk1\.reset_sync_reg[1]                  Multiple clocks on generating sequential element from nets RCOSC_0_RCOSC_160MHZ_GL, GND
+@K:CKID0003       PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJ_JTAG_0.un1_duttck     CFG4                   292        PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.dtm.stickyBusyReg_2     Clock conversion disabled                                                              
+====================================================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

@@ -1,0 +1,33 @@
+Software Version: 12.200.35.9
+Embedded FlashPro5 programmer detected.
+programmer 'E2002D30FM' : FlashPro5
+Opened 'C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\designer\TOP\TOP_fp\TOP.pro'
+The 'open_project' command succeeded.
+Warning: Programming is already enabled for device 'MPF300TS_ES'.
+The 'enable_device' command succeeded.
+IPD file 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/designer/TOP/TOP.ipd' has been loaded successfully.
+DESIGN : TOP;  CHECKSUM : C8FF;  PDB_VERSION : 1.9
+The 'set_programming_file' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer 'E2002D30FM' : Scan Chain...
+programmer 'E2002D30FM' : Check Chain...
+programmer 'E2002D30FM' : Scan and Check Chain PASSED.
+programmer 'E2002D30FM' : device 'MPF300TS_ES' : Executing action PROGRAM
+programmer 'E2002D30FM' : device 'MPF300TS_ES' : EXPORT ISC_ENABLE_RESULT[32] = 00000000
+programmer 'E2002D30FM' : device 'MPF300TS_ES' : EXPORT CRCERR[1] = 0
+programmer 'E2002D30FM' : device 'MPF300TS_ES' : Programming FPGA Array and sNVM...
+programmer 'E2002D30FM' : device 'MPF300TS_ES' : ===================================================================================
+programmer 'E2002D30FM' : device 'MPF300TS_ES' : EXPORT DSN[128] = e597c25af678e3adfc890071cc9a45ff
+programmer 'E2002D30FM' : device 'MPF300TS_ES' : ===================================================================================
+programmer 'E2002D30FM' : device 'MPF300TS_ES' : Finished: Tue Oct 02 12:12:27 2018 (Elapsed time 00:01:38)
+programmer 'E2002D30FM' : device 'MPF300TS_ES' : Executing action PROGRAM PASSED.
+programmer 'E2002D30FM' : Chain programming PASSED.
+Chain Programming Finished: Tue Oct 02 12:12:27 2018 (Elapsed time 00:01:38)
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+The 'set_programming_file' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
