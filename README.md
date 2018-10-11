@@ -10,13 +10,23 @@ From the branch menu above select the project you desire from the 10 listed and 
 They are
 
 UART_2_SCSPI_Bridge_eval2_ddr
+
 UART_2_SCSPI_Bridge_eval2_sram
+
 UART_2_SCSPI_Bridge_everest2_ddr
+
 UART_2_SCSPI_Bridge_everest2_sram
+
 UART_2_SCSPI_Bridge_splash2_ddr
+
 UART_2_SCSPI_Bridge_splash2_sram
+
 UART_2_SPI_Bridge_eval2_ddr
+
 UART_2_SPI_Bridge_eval2_sram
+
 UART_2_SPI_Bridge_everest2_ddr
+
 UART_2_SPI_Bridge_everest2_sram
+
 
