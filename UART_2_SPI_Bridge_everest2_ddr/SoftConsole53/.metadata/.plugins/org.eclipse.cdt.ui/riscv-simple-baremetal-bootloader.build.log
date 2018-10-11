@@ -1,0 +1,25 @@
+10:09:20 **** Incremental Build of configuration Debug for project riscv-simple-baremetal-bootloader ****
+make all 
+Building file: ../bootloader.c
+Invoking: GNU RISC-V Cross C Compiler
+riscv64-unknown-elf-gcc -march=rv32im -mabi=ilp32 -msmall-data-limit=8 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -DMSCC_STDIO_THRU_CORE_UART_APB -I"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_ddr\SoftConsole53\riscv-simple-baremetal-bootloader" -I"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_ddr\SoftConsole53\riscv-simple-baremetal-bootloader\drivers\CoreGPIO" -I"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_ddr\SoftConsole53\riscv-simple-baremetal-bootloader\drivers\CoreSPI" -I"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_ddr\SoftConsole53\riscv-simple-baremetal-bootloader\drivers\CoreTimer" -I"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_ddr\SoftConsole53\riscv-simple-baremetal-bootloader\drivers\CoreUARTapb" -I"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_ddr\SoftConsole53\riscv-simple-baremetal-bootloader\hal" -I"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_ddr\SoftConsole53\riscv-simple-baremetal-bootloader\riscv_hal" -I"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_ddr\SoftConsole53\riscv-simple-baremetal-bootloader\spi_flash" -I"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_ddr\SoftConsole53\riscv-simple-baremetal-bootloader\ymodem" -std=gnu11 -MMD -MP -MF"bootloader.d" -MT"bootloader.o" -c -o "bootloader.o" "../bootloader.c"
+Finished building: ../bootloader.c
+ 
+Building target: riscv-simple-baremetal-bootloader.elf
+Invoking: GNU RISC-V Cross C Linker
+riscv64-unknown-elf-gcc -march=rv32im -mabi=ilp32 -msmall-data-limit=8 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_ddr\SoftConsole53\riscv-simple-baremetal-bootloader\riscv_hal\microsemi-riscv-ram.ld" -nostartfiles -Xlinker --gc-sections -Wl,-Map,"riscv-simple-baremetal-bootloader.map" --specs=nano.specs -o "riscv-simple-baremetal-bootloader.elf"  ./ymodem/ymodem.o  ./spi_flash/spi_flash.o  ./riscv_hal/entry.o ./riscv_hal/init.o ./riscv_hal/riscv_hal.o ./riscv_hal/riscv_hal_stubs.o ./riscv_hal/syscall.o  ./hal/hal_irq.o ./hal/hw_reg_access.o  ./drivers/CoreUARTapb/core_uart_apb.o  ./drivers/CoreTimer/core_timer.o  ./drivers/CoreSPI/core_spi.o  ./drivers/CoreGPIO/core_gpio.o  ./bootloader.o   
+Finished building target: riscv-simple-baremetal-bootloader.elf
+ 
+Invoking: GNU RISC-V Cross Create Flash Image
+riscv64-unknown-elf-objcopy -O ihex "riscv-simple-baremetal-bootloader.elf"  "riscv-simple-baremetal-bootloader.hex"
+Finished building: riscv-simple-baremetal-bootloader.hex
+ 
+Invoking: GNU RISC-V Cross Print Size
+riscv64-unknown-elf-size --format=berkeley "riscv-simple-baremetal-bootloader.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22512	    240	   5616	  28368	   6ed0	riscv-simple-baremetal-bootloader.elf
+Finished building: riscv-simple-baremetal-bootloader.siz
+ 
+
+10:09:29 Build Finished (took 8s.324ms)
+

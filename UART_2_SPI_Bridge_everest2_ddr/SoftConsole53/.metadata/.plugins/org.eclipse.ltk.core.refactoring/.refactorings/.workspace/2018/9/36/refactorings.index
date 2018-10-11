@@ -1,0 +1,12 @@
+1535986639238	Delete 2 resources
+1535986804453	Delete resource 'MiV_uart_blinky/Debug/MiV_uart_blinky.hex'
+1535986830106	Delete resource 'MiV_uart_blinky/Release/MiV_uart_blinky.bin'
+1535993139263	Delete resource 'RV32_simple_gpio/Debug/RV32_simple_gpio_pt.hex'
+1536219741695	Rename resource 'RV32_simple_gpio'
+1536219779551	Delete 2 resources
+1536310955465	Delete resource 'miv-rv32im-interrupt-blinky'
+1536318452219	Delete resource 'riscv-simple-baremetal-bootloader'
+1536318975805	Delete resource 'bootloader_extraputty/drivers/xmodem'
+1536324052785	Delete resource 'bootloader_extraputty/RV32_simple_gpio Debug.launch'
+1536324081047	Delete 3 resources
+1536324138456	Delete resource 'bootloader_extraputty/Debug/RV32_simple_gpio.elf'

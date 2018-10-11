@@ -1,0 +1,12 @@
+Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.2 (Version 12.200.30.10)
+
+Date      :  Fri Aug 03 11:38:46 2018
+Project   :  C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge
+Component :  RCOSC
+Family    :  PolarFire
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/RCOSC/RCOSC.v
+    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/RCOSC/RCOSC_0/RCOSC_RCOSC_0_PF_OSC.v
+

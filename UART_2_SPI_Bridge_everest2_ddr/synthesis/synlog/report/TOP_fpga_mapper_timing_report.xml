@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_ddr\synthesis\synlog\TOP_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0</data>
+<data>100.0 MHz</data>
+<data>82.8 MHz</data>
+<data>-2.077</data>
+</row>
+<row>
+<data>CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160/CLK</data>
+<data>160.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>153.4 MHz</data>
+<data>1.740</data>
+</row>
+<row>
+<data>DDR3_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>146.8 MHz</data>
+<data>3.187</data>
+</row>
+<row>
+<data>System</data>
+<data>100.0 MHz</data>
+<data>271.2 MHz</data>
+<data>6.313</data>
+</row>
+</report_table>
