@@ -1,0 +1,40 @@
+data HELP_TYPE_DES 2
+data DESIGN TOP
+data HPATH 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_ddr/designer/TOP'
+data CPATH 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_ddr/constraint/fp'
+data CDIR 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_ddr/constraint'
+data NLV_HIDE_OPTION_DLG 1
+data REGION_DEFCOLOR_EMPTY 2143322112
+data REGION_DEFCOLOR_INCLUSIVE 2147442270
+data REGION_DEFCOLOR_EXCLUSIVE 2143338688
+data REGION_DEFCOLOR_CLOCK 16735838
+data ETYPE CP
+data FAM PolarFire
+data DIE PA5M300T_ES
+data PACKAGE fcg484
+data SPEED -1
+data HYDRA_EXPORT_DATA 1
+data HYDRA_PRESERVE_DATA_FILES 1
+data VCCI_1.2_VOLTR EXT
+data VCCI_1.5_VOLTR EXT
+data VCCI_1.8_VOLTR EXT
+data VCCI_2.5_VOLTR EXT
+data VCCI_3.3_VOLTR EXT
+data FLOW_TYPE NEW
+data AFL 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_ddr/designer/TOP/COMPILE/TOP.afl'
+data ADL 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_ddr/designer/TOP/TOP.adl'
+data LOC 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_ddr/designer/TOP/COMPILE/TOP.loc'
+data SEG 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_ddr/designer/TOP/COMPILE/TOP.seg'
+
+data FP_PDC_0 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_ddr/constraint/fp/user.pdc'
+data IO_PDC_0 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_ddr/constraint/io/EvalkitIO.pdc'
+data IO_PDC_1 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_ddr/constraint/io/user2.pdc'
+data TARGET_IOPDC  'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_ddr/constraint/io/user2.pdc'
+data TARGET_FPPDC  'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_ddr/constraint/fp/user.pdc'
+data TARGET_DEVICES_FOR_MIGRATION 'PA5M300T_ES '
+data RESTRICTPROBEPINS 1
+data RESTRICTSPIPINS 0
+data GDEV_SKIP_UNASSIGN_CMP_CHECK    1 
+data HIDE_MIGRATION_PINS_MENU        1 
+data IO_DEFT_STD LVCMOS18
+

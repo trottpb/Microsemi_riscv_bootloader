@@ -1,0 +1,7 @@
+CKID0001:@|S:DDR4_0.CCC_0.pll_inst_0@|E:DDR4_0.DDRCTRL_0.sdram_sys_top.dfi_rddata_w0_i[10]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:CLOCKS_RESETS_0.CCC_100MHz_0.CCC_100MHz_0.pll_inst_0@|E:CLOCKS_RESETS_0.reset_synchronizer_0.genblk1\.reset_sync_reg[1]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0003:@|S:DDR4_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.MOVE_LOAD_RESET[1]@|E:DDR4_0.DDRPHY_BLK_0_SYNC_SYS_RST_N_i_rs@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 
+CKID0004:@|S:DDR4_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.MOVE_LOAD_RESET[0]@|E:DDR4_0.DDRPHY_BLK_0_SYNC_SYS_RST_N_i_rs_0@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 
+CKID0005:@|S:PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJ_JTAG_0.un1_duttck@|E:PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.dtm.skipOpReg@|F:@syn_sample_clock_path==CKID0005@|M:ClockId0005 
+CKID0006:@|S:PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJTAG_0@|E:PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJ_JTAG_0.pauselow@|F:@syn_sample_clock_path1==CKID0006@|M:ClockId0006 
+CKID0007:@|S:CLOCKS_RESETS_0.RCOSC_0.RCOSC_0.I_OSC_160@|E:CLOCKS_RESETS_0.CCC_100MHz_0.CCC_100MHz_0.pll_inst_0@|F:@syn_sample_clock_path1==CKID0007@|M:ClockId0007 

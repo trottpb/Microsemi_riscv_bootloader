@@ -1,0 +1,1184 @@
+# Thu Sep 27 13:55:37 2018
+
+
+Copyright (C) 1994-2017 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2017.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_PolarFire_v2.3\SynplifyPro
+OS: Windows 6.1
+
+Hostname: EMEAPC0002
+
+Implementation : synthesis
+Synopsys Generic Technology Pre-mapping, Version mapact2017q4p1, Build 003R, Built Apr 11 2018 11:07:45
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+Reading constraint file: C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_ddr\designer\TOP\synthesis.fdc
+@L: C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_ddr\synthesis\TOP_scck.rpt 
+Printing clock  summary report in "C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_ddr\synthesis\TOP_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 413MB peak: 415MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 413MB peak: 415MB)
+
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances rgsl. Apply syn_hier to module using name v:caxi4interconnect_RegisterSlice_1_1_1_1_1_5s_32s_64s_0s_1s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvdwc. Apply syn_hier to module using name v:caxi4interconnect_SlvDataWidthConverter_Z6.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvProtConv. Apply syn_hier to module using name v:caxi4interconnect_SlvProtocolConverter_Z7.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvCDC. Apply syn_hier to module using name v:caxi4interconnect_SlvClockDomainCrossing_32s_5s_64s_1s_1_68s_74s_8s_73s_4s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances rgsl. Apply syn_hier to module using name v:caxi4interconnect_RegisterSlice_1_1_1_1_1_4s_32s_64s_0s_1s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances genblk2\.mstAHBtoAXI4Conv. Apply syn_hier to module using name v:caxi4interconnect_MstrAHBtoAXI4Converter_32s_32s_1s_0_4s_8_0.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances mstrDWC. Apply syn_hier to module using name v:caxi4interconnect_MstrDataWidthConv_2_0s_8s_4s_32s_64s_32s_1s_10s_16.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances mstrCDC. Apply syn_hier to module using name v:caxi4interconnect_MstrClockDomainCrossing_32s_4s_32s_1s_0_67s_38s_7s_40s_4s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\mstrahbtoaxi4converter.v":23:7:23:46|syn_hier attribute not currently supported on instances AHB_SM_i. Apply syn_hier to module using name v:caxi4interconnect_AHB_SM_Z5.
+
+Start loading timing files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 467MB peak: 468MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 467MB peak: 470MB)
+
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":3626:2:3626:14|Removing user instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_16 because it is equivalent to instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_15. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":3580:2:3580:14|Removing user instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_15 because it is equivalent to instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_14. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":3534:2:3534:14|Removing user instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_14 because it is equivalent to instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_13. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":3488:2:3488:14|Removing user instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_13 because it is equivalent to instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_12. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":3442:2:3442:14|Removing user instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_12 because it is equivalent to instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_11. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":3396:2:3396:14|Removing user instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_11 because it is equivalent to instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_10. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":3304:2:3304:13|Removing user instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_9 because it is equivalent to instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_10. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":3258:2:3258:13|Removing user instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_8 because it is equivalent to instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_10. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":3120:2:3120:13|Removing user instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_5 because it is equivalent to instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_10. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":3074:2:3074:13|Removing user instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_4 because it is equivalent to instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_10. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":3028:2:3028:13|Removing user instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_3 because it is equivalent to instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_10. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":2982:2:2982:13|Removing user instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_2 because it is equivalent to instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_10. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":3350:2:3350:14|Removing user instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_10 because it is equivalent to instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":2936:2:2936:13|Removing user instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_1 because it is equivalent to instance IO_0.AHB_MMIO_0.AHB_MMIO_0.matrix4x16.slavestage_0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_async_queue_source.v":188:75:188:83|Removing user instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.debug_1.dmOuter.dmInner_TLAsyncCrossingSource.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE.widx_gray because it is equivalent to instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.debug_1.dmOuter.dmInner_TLAsyncCrossingSource.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE.widx_bin. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_async_queue_sink.v":198:75:198:83|Removing user instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.debug_1.dmOuter.dmInner_TLAsyncCrossingSource.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK.ridx_gray because it is equivalent to instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.debug_1.dmOuter.dmInner_TLAsyncCrossingSource.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK.ridx_bin. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_async_queue_source_1.v":168:75:168:83|Removing user instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.debug_1.dmOuter.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE.widx_gray because it is equivalent to instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.debug_1.dmOuter.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE.widx_bin. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tl_debug_module_inner_dm_inner.v":7436:2:7436:7|Removing sequential instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.debug_1.dmInner.dmInner.abstractGeneratedMem_1[5] because it is equivalent to instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.debug_1.dmInner.dmInner.abstractGeneratedMem_1[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_async_queue_sink_1.v":193:75:193:83|Removing user instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.debug_1.dmInner.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK.ridx_gray because it is equivalent to instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.debug_1.dmInner.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK.ridx_bin. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_async_queue_source_2.v":193:75:193:83|Removing user instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.debug_1.dmInner.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE.widx_gray because it is equivalent to instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.debug_1.dmInner.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE.widx_bin. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_async_queue_sink_2.v":173:75:173:83|Removing user instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.debug_1.dmInner.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK.ridx_gray because it is equivalent to instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.debug_1.dmInner.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK.ridx_bin. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_d_cache_data_array.v":213:2:213:7|Removing sequential instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.tile.rocket.dcache.data.data_arrays_0_3__T_62_addr_pipe_0[10:0] because it is equivalent to instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.tile.rocket.dcache.data.data_arrays_0_2__T_62_addr_pipe_0[10:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_d_cache_data_array.v":213:2:213:7|Removing sequential instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.tile.rocket.dcache.data.data_arrays_0_2__T_62_addr_pipe_0[10:0] because it is equivalent to instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.tile.rocket.dcache.data.data_arrays_0_1__T_62_addr_pipe_0[10:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_d_cache_data_array.v":213:2:213:7|Removing sequential instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.tile.rocket.dcache.data.data_arrays_0_1__T_62_addr_pipe_0[10:0] because it is equivalent to instance PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.tile.rocket.dcache.data.data_arrays_0_0__T_62_addr_pipe_0[10:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances rgsl. Apply syn_hier to module using name v:caxi4interconnect_RegisterSlice_1_1_1_1_1_5s_32s_64s_0s_1s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvdwc. Apply syn_hier to module using name v:caxi4interconnect_SlvDataWidthConverter_Z6.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvProtConv. Apply syn_hier to module using name v:caxi4interconnect_SlvProtocolConverter_Z7.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvCDC. Apply syn_hier to module using name v:caxi4interconnect_SlvClockDomainCrossing_32s_5s_64s_1s_1_68s_74s_8s_73s_4s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances rgsl. Apply syn_hier to module using name v:caxi4interconnect_RegisterSlice_1_1_1_1_1_4s_32s_64s_0s_1s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances genblk2\.mstAHBtoAXI4Conv. Apply syn_hier to module using name v:caxi4interconnect_MstrAHBtoAXI4Converter_32s_32s_1s_0_4s_8_0.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances mstrDWC. Apply syn_hier to module using name v:caxi4interconnect_MstrDataWidthConv_2_0s_8s_4s_32s_64s_32s_1s_10s_16.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances mstrCDC. Apply syn_hier to module using name v:caxi4interconnect_MstrClockDomainCrossing_32s_4s_32s_1s_0_67s_38s_7s_40s_4s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\mstrahbtoaxi4converter.v":23:7:23:46|syn_hier attribute not currently supported on instances AHB_SM_i. Apply syn_hier to module using name v:caxi4interconnect_AHB_SM_Z5.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances rgsl. Apply syn_hier to module using name v:caxi4interconnect_RegisterSlice_1_1_1_1_1_5s_32s_64s_0s_1s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvdwc. Apply syn_hier to module using name v:caxi4interconnect_SlvDataWidthConverter_Z6.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvProtConv. Apply syn_hier to module using name v:caxi4interconnect_SlvProtocolConverter_Z7.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvCDC. Apply syn_hier to module using name v:caxi4interconnect_SlvClockDomainCrossing_32s_5s_64s_1s_1_68s_74s_8s_73s_4s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances rgsl. Apply syn_hier to module using name v:caxi4interconnect_RegisterSlice_1_1_1_1_1_4s_32s_64s_0s_1s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances genblk2\.mstAHBtoAXI4Conv. Apply syn_hier to module using name v:caxi4interconnect_MstrAHBtoAXI4Converter_32s_32s_1s_0_4s_8_0.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances mstrDWC. Apply syn_hier to module using name v:caxi4interconnect_MstrDataWidthConv_2_0s_8s_4s_32s_64s_32s_1s_10s_16.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances mstrCDC. Apply syn_hier to module using name v:caxi4interconnect_MstrClockDomainCrossing_32s_4s_32s_1s_0_67s_38s_7s_40s_4s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\mstrahbtoaxi4converter.v":23:7:23:46|syn_hier attribute not currently supported on instances AHB_SM_i. Apply syn_hier to module using name v:caxi4interconnect_AHB_SM_Z5.
+@N: MO111 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\coreaxi4interconnect.v":323:2:323:16|Tristate driver MASTER1_ARREADY (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) on net MASTER1_ARREADY (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\coreaxi4interconnect.v":104:2:104:16|Tristate driver MASTER1_AWREADY (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) on net MASTER1_AWREADY (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\coreaxi4interconnect.v":254:2:254:12|Tristate driver MASTER1_BID_1 (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) on net MASTER1_BID_1 (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\coreaxi4interconnect.v":254:2:254:12|Tristate driver MASTER1_BID_2 (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) on net MASTER1_BID_2 (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\coreaxi4interconnect.v":254:2:254:12|Tristate driver MASTER1_BID_3 (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) on net MASTER1_BID_3 (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\coreaxi4interconnect.v":254:2:254:12|Tristate driver MASTER1_BID_4 (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) on net MASTER1_BID_4 (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\coreaxi4interconnect.v":255:2:255:14|Tristate driver MASTER1_BRESP_1 (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) on net MASTER1_BRESP_1 (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\coreaxi4interconnect.v":255:2:255:14|Tristate driver MASTER1_BRESP_2 (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) on net MASTER1_BRESP_2 (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\coreaxi4interconnect.v":256:2:256:14|Tristate driver MASTER1_BUSER_1 (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) on net MASTER1_BUSER_1 (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\coreaxi4interconnect.v":257:2:257:15|Tristate driver MASTER1_BVALID (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) on net MASTER1_BVALID (in view: work.COREAXI4INTERCONNECT_Z2(verilog)) has its enable tied to GND.
+@W: MO129 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\apb_if.v":206:3:206:8|Sequential instance DDR4_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.APB_IF.pready is reduced to a combinational gate by constant propagation.
+@W: MO156 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_queue_16.v":211:2:211:7|RAM ram_address[13:0] removed due to constant propagation. 
+@W: MO156 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_queue_16.v":211:2:211:7|RAM ram_param[1:0] removed due to constant propagation. 
+@W: MO156 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_queue_16.v":211:2:211:7|RAM ram_size[3:0] removed due to constant propagation. 
+@W: MO156 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_queue_16.v":211:2:211:7|RAM ram_source[1:0] removed due to constant propagation. 
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\fifo_upsizing.v":136:6:136:15|Removing instance genblk2\.user_block (in view: work.caxi4interconnect_FIFO_upsizing_16s_36s_72s_1s_15s_11s_16s_4s_11s_15s(verilog)) of type view:work.caxi4interconnect_RAM_BLOCK_16s_4s_1s(verilog) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\trn_cmdaddr.v":707:0:707:5|Removing sequential instance outdly_1_[7:0] (in view: work.trn_cmd_addr(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\trn_cmdaddr.v":707:0:707:5|Removing sequential instance outdly_2_[7:0] (in view: work.trn_cmd_addr(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\trn_cmdaddr.v":707:0:707:5|Removing sequential instance outdly_3_[7:0] (in view: work.trn_cmd_addr(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\trn_cmdaddr.v":707:0:707:5|Removing sequential instance outdly_4_[7:0] (in view: work.trn_cmd_addr(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\trn_cmdaddr.v":707:0:707:5|Removing sequential instance outdly_5_[7:0] (in view: work.trn_cmd_addr(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\trn_cmdaddr.v":707:0:707:5|Removing sequential instance outdly_6_[7:0] (in view: work.trn_cmd_addr(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\trn_cmdaddr.v":707:0:707:5|Removing sequential instance outdly_7_[7:0] (in view: work.trn_cmd_addr(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance mid_2_initlDqs_0[7:0] (in view: work.dq_align_dqs_optimization_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance mid_2_initlDqs_1[7:0] (in view: work.dq_align_dqs_optimization_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance initlDqs_2_mid_0[7:0] (in view: work.dq_align_dqs_optimization_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance initlDqs_2_mid_1[7:0] (in view: work.dq_align_dqs_optimization_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance irs_0[7:0] (in view: work.dq_align_dqs_optimization_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance irs_1[7:0] (in view: work.dq_align_dqs_optimization_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance stw_2_initlDqs_0[7:0] (in view: work.dq_align_dqs_optimization_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance stw_2_initlDqs_1[7:0] (in view: work.dq_align_dqs_optimization_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance ils_0[7:0] (in view: work.dq_align_dqs_optimization_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance ils_1[7:0] (in view: work.dq_align_dqs_optimization_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance initlDqs_2_stw_0[7:0] (in view: work.dq_align_dqs_optimization_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance initlDqs_2_stw_1[7:0] (in view: work.dq_align_dqs_optimization_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance mid_2_initlDqs_0[7:0] (in view: work.dq_align_dqs_optimization_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance mid_2_initlDqs_1[7:0] (in view: work.dq_align_dqs_optimization_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance initlDqs_2_mid_0[7:0] (in view: work.dq_align_dqs_optimization_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance initlDqs_2_mid_1[7:0] (in view: work.dq_align_dqs_optimization_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance irs_0[7:0] (in view: work.dq_align_dqs_optimization_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance irs_1[7:0] (in view: work.dq_align_dqs_optimization_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance stw_2_initlDqs_0[7:0] (in view: work.dq_align_dqs_optimization_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance stw_2_initlDqs_1[7:0] (in view: work.dq_align_dqs_optimization_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance ils_0[7:0] (in view: work.dq_align_dqs_optimization_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance ils_1[7:0] (in view: work.dq_align_dqs_optimization_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance initlDqs_2_stw_0[7:0] (in view: work.dq_align_dqs_optimization_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance initlDqs_2_stw_1[7:0] (in view: work.dq_align_dqs_optimization_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\apb_iog_ctrl_sm.v":234:3:234:8|Removing sequential instance delay_at_oor_reg[7:0] (in view: work.APB_IOG_CTRL_SM(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\tip_ctrl_blk.v":788:8:788:14|Removing instance DLL_MON (in view: work.TIP_CTRL_BLK_Z66(verilog)) of type view:work.DLL_MON(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\ddr4\ddr4.v":2794:0:2794:16|Removing instance PF_DDR_CFG_INIT_0 (in view: work.DDR4(verilog)) of type view:work.PF_DDR_CFG_INIT_Z69(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tl_buffer_1.v":461:61:461:118|Removing instance Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_6 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_1(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_6(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2033:67:2033:80|Removing instance LevelGateway_2 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_29(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2041:67:2041:80|Removing instance LevelGateway_3 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_28(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2049:67:2049:80|Removing instance LevelGateway_4 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_27(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2057:67:2057:80|Removing instance LevelGateway_5 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_26(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2065:67:2065:80|Removing instance LevelGateway_6 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_25(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2073:67:2073:80|Removing instance LevelGateway_7 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_24(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2081:67:2081:80|Removing instance LevelGateway_8 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_23(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2089:67:2089:80|Removing instance LevelGateway_9 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_22(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2097:67:2097:81|Removing instance LevelGateway_10 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_21(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2105:67:2105:81|Removing instance LevelGateway_11 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_20(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2113:67:2113:81|Removing instance LevelGateway_12 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_19(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2121:67:2121:81|Removing instance LevelGateway_13 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_18(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2129:67:2129:81|Removing instance LevelGateway_14 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_17(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2137:67:2137:81|Removing instance LevelGateway_15 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_16(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2145:67:2145:81|Removing instance LevelGateway_16 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_15(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2153:67:2153:81|Removing instance LevelGateway_17 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_14(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2161:67:2161:81|Removing instance LevelGateway_18 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_13(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2169:67:2169:81|Removing instance LevelGateway_19 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_12(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2177:67:2177:81|Removing instance LevelGateway_20 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_11(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2185:67:2185:81|Removing instance LevelGateway_21 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_10(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2193:67:2193:81|Removing instance LevelGateway_22 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_9(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2201:67:2201:81|Removing instance LevelGateway_23 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_8(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2209:67:2209:81|Removing instance LevelGateway_24 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_7(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2217:67:2217:81|Removing instance LevelGateway_25 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_6(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2225:67:2225:81|Removing instance LevelGateway_26 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_5(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2233:67:2233:81|Removing instance LevelGateway_27 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_4(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2241:67:2241:81|Removing instance LevelGateway_28 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_3(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2249:67:2249:81|Removing instance LevelGateway_29 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_2(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2257:67:2257:81|Removing instance LevelGateway_30 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_1(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlplic_plic.v":2265:67:2265:81|Removing instance LevelGateway_31 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_0(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlb.v":349:65:349:67|Removing instance pmp (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLB(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_PMP_CHECKER_0(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tlb_1.v":199:65:199:67|Removing instance pmp (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLB_1(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_PMP_CHECKER_1(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_ptw.v":297:64:297:66|Removing instance arb (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_PTW(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_RR_ARBITER(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tl_buffer_error.v":259:62:259:119|Removing instance Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_4 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_ERROR(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_27(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tl_buffer_error.v":221:62:221:68|Removing instance Queue_2 (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_ERROR(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_25(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v":209:2:209:15|Removing instance address_decode (in view: COREAHBLITE_LIB.COREAHBLITE_MASTERSTAGE_1_1_0_0s_0_1_0_2(verilog)) of type view:COREAHBLITE_LIB.COREAHBLITE_ADDRDEC_Z71_0(verilog) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v":163:0:163:5|Removing sequential instance regHTRANS (in view: COREAHBLITE_LIB.COREAHBLITE_MASTERSTAGE_1_1_0_0s_0_1_0_2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v":639:4:639:19|Removing instance default_slave_sm (in view: COREAHBLITE_LIB.COREAHBLITE_MASTERSTAGE_1_1_0_0s_0_1_0_2(verilog)) of type view:COREAHBLITE_LIB.COREAHBLITE_DEFAULTSLAVESM_0s_0_1_1_0(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v":209:2:209:15|Removing instance address_decode (in view: COREAHBLITE_LIB.COREAHBLITE_MASTERSTAGE_1_1_0_0s_0_1_0_1(verilog)) of type view:COREAHBLITE_LIB.COREAHBLITE_ADDRDEC_Z71_1(verilog) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v":163:0:163:5|Removing sequential instance regHTRANS (in view: COREAHBLITE_LIB.COREAHBLITE_MASTERSTAGE_1_1_0_0s_0_1_0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v":639:4:639:19|Removing instance default_slave_sm (in view: COREAHBLITE_LIB.COREAHBLITE_MASTERSTAGE_1_1_0_0s_0_1_0_1(verilog)) of type view:COREAHBLITE_LIB.COREAHBLITE_DEFAULTSLAVESM_0s_0_1_1_1(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v":209:2:209:15|Removing instance address_decode (in view: COREAHBLITE_LIB.COREAHBLITE_MASTERSTAGE_1_1_0_0s_0_1_0_0(verilog)) of type view:COREAHBLITE_LIB.COREAHBLITE_ADDRDEC_Z71_2(verilog) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v":163:0:163:5|Removing sequential instance regHTRANS (in view: COREAHBLITE_LIB.COREAHBLITE_MASTERSTAGE_1_1_0_0s_0_1_0_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_masterstage.v":639:4:639:19|Removing instance default_slave_sm (in view: COREAHBLITE_LIB.COREAHBLITE_MASTERSTAGE_1_1_0_0s_0_1_0_0(verilog)) of type view:COREAHBLITE_LIB.COREAHBLITE_DEFAULTSLAVESM_0s_0_1_1_2(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":2703:2:2703:14|Removing instance masterstage_1 (in view: COREAHBLITE_LIB.COREAHBLITE_MATRIX4X16_1_1_0_192_0_0_0_0s(verilog)) of type view:COREAHBLITE_LIB.COREAHBLITE_MASTERSTAGE_1_1_0_0s_0_1_0_2(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":2767:2:2767:14|Removing instance masterstage_2 (in view: COREAHBLITE_LIB.COREAHBLITE_MATRIX4X16_1_1_0_192_0_0_0_0s(verilog)) of type view:COREAHBLITE_LIB.COREAHBLITE_MASTERSTAGE_1_1_0_0s_0_1_0_1(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":2831:2:2831:14|Removing instance masterstage_3 (in view: COREAHBLITE_LIB.COREAHBLITE_MATRIX4X16_1_1_0_192_0_0_0_0s(verilog)) of type view:COREAHBLITE_LIB.COREAHBLITE_MASTERSTAGE_1_1_0_0s_0_1_0_0(verilog) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\dwc_upconv_wchan_hold_reg.v":81:2:81:7|Removing sequential instance wlen_mst_out[7:0] (in view: work.caxi4interconnect_DWC_UpConv_WChan_Hold_Reg_32s_1s_64s_8s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":285:0:285:5|Removing sequential instance fifoOneAvail (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_9s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":234:0:234:5|Removing sequential instance fifoRdValid (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_9s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":128:0:128:5|Removing sequential instance fifoNearFull (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_9s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":128:0:128:5|Removing sequential instance fifoOverRunErr (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_9s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":128:0:128:5|Removing sequential instance fifoUnderRunErr (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_9s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":285:0:285:5|Removing sequential instance fifoOneAvail (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_73s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":234:0:234:5|Removing sequential instance fifoRdValid (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_73s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":128:0:128:5|Removing sequential instance fifoNearFull (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_73s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":128:0:128:5|Removing sequential instance fifoOverRunErr (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_73s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":128:0:128:5|Removing sequential instance fifoUnderRunErr (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_73s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":285:0:285:5|Removing sequential instance fifoOneAvail (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_13s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":234:0:234:5|Removing sequential instance fifoRdValid (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_13s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":128:0:128:5|Removing sequential instance fifoNearFull (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_13s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":128:0:128:5|Removing sequential instance fifoOverRunErr (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_13s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":128:0:128:5|Removing sequential instance fifoUnderRunErr (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_13s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":285:0:285:5|Removing sequential instance fifoOneAvail (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_71s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":234:0:234:5|Removing sequential instance fifoRdValid (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_71s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":128:0:128:5|Removing sequential instance fifoNearFull (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_71s_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":128:0:128:5|Removing sequential instance fifoOverRunErr (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_71s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\fifodualport.v":128:0:128:5|Removing sequential instance fifoUnderRunErr (in view: work.caxi4interconnect_FifoDualPort_0_2s_4s_71s_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\trn_clk.v":583:6:583:19|Removing instance u_refclk_flags (in view: work.TRN_CLK_2s_1s_0s_1s_2s_3s_4s(verilog)) of type view:work.flag_generator_1s_1(verilog) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance dq_alignment_done (in view: work.dq_align_dqs_optimization_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\dq_align_dqs_optimization.v":800:3:800:8|Removing sequential instance dq_alignment_done (in view: work.dq_align_dqs_optimization_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\corejtagdebug\2.0.100\rtl\vlog\core\corejtagdebug_uj_jtag.v":413:0:413:5|Removing sequential instance utdodrv (in view: COREJTAGDEBUG_LIB.uj_jtag_85(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\corejtagdebug\2.0.100\rtl\vlog\core\corejtagdebug_uj_jtag.v":210:0:210:5|Removing sequential instance gpout[3:0] (in view: COREJTAGDEBUG_LIB.uj_jtag_85(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_tl_xbar_system_bus.v":1009:2:1009:7|Removing sequential instance _T_2700[0] (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_SYSTEM_BUS(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_29(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_28(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_27(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_26(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_25(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_24(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_23(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_22(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_21(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_20(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_19(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_18(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_17(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_16(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_15(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_14(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_13(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_12(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_11(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_10(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_9(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_8(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_7(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_6(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_5(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_4(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_3(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_2(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_1(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_level_gateway.v":88:2:88:7|Removing sequential instance inFlight (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_0(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_rr_arbiter.v":99:2:99:7|Removing sequential instance lastGrant (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_RR_ARBITER(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_ptw.v":567:2:567:7|Removing sequential instance r_req_dest (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_PTW(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":111:0:111:5|Removing sequential instance full_next_out (in view: CORESPI_LIB.spi_fifo_8s_32s_5_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\corespi\5.2.104\rtl\vlog\core\spi_fifo.v":111:0:111:5|Removing sequential instance empty_next_out (in view: CORESPI_LIB.spi_fifo_8s_32s_5_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\uart\uart_0\rtl\vlog\core\rx_async.v":286:0:286:5|Removing sequential instance stop_strobe (in view: work.UART_UART_0_Rx_async_0s_1s_0s_1s_2s_3s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\fifo_ctrl.v":98:0:98:5|Removing sequential instance fifo_nearly_empty (in view: work.caxi4interconnect_FIFO_CTRL_10s_9s_0s_4s_16s_6s_0(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\fifo_ctrl.v":98:0:98:5|Removing sequential instance fifo_one_from_full (in view: work.caxi4interconnect_FIFO_CTRL_10s_9s_0s_4s_16s_6s_0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\fifo_ctrl.v":98:0:98:5|Removing sequential instance fifo_nearly_empty (in view: work.caxi4interconnect_FIFO_CTRL_10s_9s_1s_4s_16s_6s(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\fifo_ctrl.v":98:0:98:5|Removing sequential instance fifo_one_from_full (in view: work.caxi4interconnect_FIFO_CTRL_10s_9s_1s_4s_16s_6s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+
+Only the first 100 messages of id 'BN362' are reported. To see all messages use 'report_messages -log C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_ddr\synthesis\synlog\TOP_premap.srr -id BN362' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN362} -count unlimited' in the Tcl shell.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_rocket_tile_rocket.v":681:57:681:59|Removing instance ptw (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ROCKET_TILE_ROCKET(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_PTW(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_matrix4x16.v":2890:1:2890:12|Removing instance slavestage_0 (in view: COREAHBLITE_LIB.COREAHBLITE_MATRIX4X16_1_1_0_192_0_0_0_0s(verilog)) of type view:COREAHBLITE_LIB.COREAHBLITE_SLAVESTAGE_0s_0_0_2(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\flag_generator.v":71:20:71:31|Removing instance noise_detect (in view: work.flag_generator_1s_1(verilog)) of type view:work.noisy_data_detector_1s_4(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreddr_tip\1.6.106\rtl\vlog\core\flag_generator.v":72:25:72:41|Removing instance transition_detect (in view: work.flag_generator_1s_1(verilog)) of type view:work.data_transition_detector_1s_4(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\mi_v_processor\mi_v_processor_0\rtl\vlog\core\miv_rv32ima_l1_ahb_jtag_tap_controller.v":124:73:124:79|Removing instance tdoeReg (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_JTAG_TAP_CONTROLLER(verilog)) of type view:CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_NEGATIVE_EDGE_LATCH_0(verilog) because it does not drive other instances.
+@N: BN115 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreahblite\5.2.100\rtl\vlog\core\coreahblite_slavestage.v":87:56:87:68|Removing instance slave_arbiter (in view: COREAHBLITE_LIB.COREAHBLITE_SLAVESTAGE_0s_0_0_2(verilog)) of type view:COREAHBLITE_LIB.COREAHBLITE_SLAVEARBITER_Z72_0(verilog) because it does not drive other instances.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances rgsl. Apply syn_hier to module using name v:caxi4interconnect_RegisterSlice_1_1_1_1_1_5s_32s_64s_0s_1s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvdwc. Apply syn_hier to module using name v:caxi4interconnect_SlvDataWidthConverter_Z6.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvProtConv. Apply syn_hier to module using name v:caxi4interconnect_SlvProtocolConverter_Z7.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvCDC. Apply syn_hier to module using name v:caxi4interconnect_SlvClockDomainCrossing_32s_5s_64s_1s_1_68s_74s_8s_73s_4s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances rgsl. Apply syn_hier to module using name v:caxi4interconnect_RegisterSlice_1_1_1_1_1_4s_32s_64s_0s_1s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances genblk2\.mstAHBtoAXI4Conv. Apply syn_hier to module using name v:caxi4interconnect_MstrAHBtoAXI4Converter_32s_32s_1s_0_4s_8_0.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances mstrDWC. Apply syn_hier to module using name v:caxi4interconnect_MstrDataWidthConv_2_0s_8s_4s_32s_64s_32s_1s_10s_16.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances mstrCDC. Apply syn_hier to module using name v:caxi4interconnect_MstrClockDomainCrossing_32s_4s_32s_1s_0_67s_38s_7s_40s_4s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\mstrahbtoaxi4converter.v":23:7:23:46|syn_hier attribute not currently supported on instances AHB_SM_i. Apply syn_hier to module using name v:caxi4interconnect_AHB_SM_Z5.
+syn_allowed_resources : blockrams=952,dsps=924  set on top level netlist TOP
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 540MB peak: 550MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                                           Requested     Requested     Clock                                                              Clock                   Clock
+Level     Clock                                                           Frequency     Period        Type                                                               Group                   Load 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160/CLK                   160.0 MHz     6.250         declared                                                           default_clkgroup        1    
+1 .         CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     100.0 MHz     10.000        generated (from CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160/CLK)     default_clkgroup        8228 
+                                                                                                                                                                                                      
+0 -       System                                                          100.0 MHz     10.000        system                                                             system_clkgroup         0    
+                                                                                                                                                                                                      
+0 -       DDR4_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock            100.0 MHz     10.000        inferred                                                           Inferred_clkgroup_0     15914
+                                                                                                                                                                                                      
+0 -       COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                       100.0 MHz     10.000        inferred                                                           Inferred_clkgroup_2     351  
+======================================================================================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                              Clock     Source                                                                  Clock Pin                                                                                              Non-clock Pin     Non-clock Pin                                                                                                                                      
+Clock                                                         Load      Pin                                                                     Seq Example                                                                                            Seq Example       Comb Example                                                                                                                                       
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160/CLK                 1         CLOCKS_RESETS_0.RCOSC_0.RCOSC_0.I_OSC_160.CLK(OSC_RC160MHZ)             CLOCKS_RESETS_0.CCC_100MHz_0.CCC_100MHz_0.pll_inst_0.REF_CLK_0                                         -                 CLOCKS_RESETS_0.RCOSC_0.RCOSC_0.I_OSC_160_INT.I(BUFG)                                                                                              
+CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     8228      CLOCKS_RESETS_0.CCC_100MHz_0.CCC_100MHz_0.pll_inst_0.OUT0(PLL)          IO_0.GPIO_0.GPIO_0.xhdl1\.GEN_BITS\[0\]\.REG_GEN\.CONFIG_reg\[0\][7:0].C                               -                 CLOCKS_RESETS_0.CCC_100MHz_0.CCC_100MHz_0.clkint_0.I(BUFG)                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                            
+System                                                        0         -                                                                       -                                                                                                      -                 -                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                                                                                            
+DDR4_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock          15914     DDR4_0.CCC_0.pll_inst_0.OUT1(PLL)                                       DDR4_0.DDRPHY_BLK_0.DFN1_CMD.CLK                                                                       -                 DDR4_0.CCC_0.clkint_4.I(BUFG)                                                                                                                      
+                                                                                                                                                                                                                                                                                                                                                                                                                            
+COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     351       PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJTAG_0.UDRCK(UJTAG)     PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.dmiResetCatch.reset_n_catch_reg.reg_2.q.C     -                 PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.dtm.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_JTAG_TAP_CONTROLLER._T_22.I[0](inv)
+============================================================================================================================================================================================================================================================================================================================================================================================================================
+
+@W: MT530 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4crossbar\resetsycnc.v":44:0:44:5|Found inferred clock DDR4_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock which controls 15914 sequential elements including AXI4_interconnect_0.AXI4_interconnect_0.SlvConvertor_loop\[0\]\.slvcnv.genblk1\.rsync.sysReset_f1. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\corejtagdebug\2.0.100\rtl\vlog\core\corejtagdebug_uj_jtag.v":210:0:210:5|Found inferred clock COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock which controls 351 sequential elements including PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJ_JTAG_0.state[4:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances rgsl. Apply syn_hier to module using name v:caxi4interconnect_RegisterSlice_1_1_1_1_1_5s_32s_64s_0s_1s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvdwc. Apply syn_hier to module using name v:caxi4interconnect_SlvDataWidthConverter_Z6.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvProtConv. Apply syn_hier to module using name v:caxi4interconnect_SlvProtocolConverter_Z7.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slaveconvertor.v":24:7:24:38|syn_hier attribute not currently supported on instances slvCDC. Apply syn_hier to module using name v:caxi4interconnect_SlvClockDomainCrossing_32s_5s_64s_1s_1_68s_74s_8s_73s_4s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances rgsl. Apply syn_hier to module using name v:caxi4interconnect_RegisterSlice_1_1_1_1_1_4s_32s_64s_0s_1s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances genblk2\.mstAHBtoAXI4Conv. Apply syn_hier to module using name v:caxi4interconnect_MstrAHBtoAXI4Converter_32s_32s_1s_0_4s_8_0.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances mstrDWC. Apply syn_hier to module using name v:caxi4interconnect_MstrDataWidthConv_2_0s_8s_4s_32s_64s_32s_1s_10s_16.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\masterconvertor.v":23:7:23:39|syn_hier attribute not currently supported on instances mstrCDC. Apply syn_hier to module using name v:caxi4interconnect_MstrClockDomainCrossing_32s_4s_32s_1s_0_67s_38s_7s_40s_4s.
+@W: BN108 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\mstrahbtoaxi4converter.v":23:7:23:46|syn_hier attribute not currently supported on instances AHB_SM_i. Apply syn_hier to module using name v:caxi4interconnect_AHB_SM_Z5.
+@N: BN225 |Writing default property annotation file C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_ddr\synthesis\TOP.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:20s; Memory used current: 465MB peak: 550MB)
+
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_67s_0_1_3_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\regslicefull.v":185:1:185:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_67s_0_1_3_1(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_67s_0_1_3_0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\regslicefull.v":185:1:185:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_67s_0_1_3_0(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_72s_0_1_3_2(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\regslicefull.v":185:1:185:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_72s_0_1_3_2(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_74s_0_1_3_0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\regslicefull.v":185:1:185:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_74s_0_1_3_0(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_7s_0_1_3_2(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\regslicefull.v":185:1:185:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_7s_0_1_3_2(verilog)); safe FSM implementation is not required.
+Encoding state machine visual_AHB_SM_current[2:0] (in view: work.caxi4interconnect_AHB_SM_Z5(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_68s_0_1_3_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\regslicefull.v":185:1:185:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_68s_0_1_3_1(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_68s_0_1_3_0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\regslicefull.v":185:1:185:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_68s_0_1_3_0(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_73s_0_1_3_2(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\regslicefull.v":185:1:185:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_73s_0_1_3_2(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_74s_0_1_3_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\regslicefull.v":185:1:185:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_74s_0_1_3_1(verilog)); safe FSM implementation is not required.
+Encoding state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_8s_0_1_3_2(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\regslicefull.v":185:1:185:6|There are no possible illegal states for state machine currState[3:0] (in view: work.caxi4interconnect_RegSliceFull_8s_0_1_3_2(verilog)); safe FSM implementation is not required.
+Encoding state machine currStateAWr[1:0] (in view: work.caxi4interconnect_SlvAxi4ProtConvWrite_0s_3_32s_64s_1s_5s_4s_4s_4s_16(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+@N: MO225 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slvaxi4protconvwrite.v":418:1:418:6|There are no possible illegal states for state machine currStateAWr[1:0] (in view: work.caxi4interconnect_SlvAxi4ProtConvWrite_0s_3_32s_64s_1s_5s_4s_4s_4s_16(verilog)); safe FSM implementation is not required.
+Encoding state machine currStateARd[1:0] (in view: work.caxi4interconnect_SlvAxi4ProtConvRead_0s_3_32s_64s_1s_5s_4s_4s_4s_16(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+@N: MO225 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\actel\directcore\coreaxi4interconnect\2.5.100\rtl\vlog\core\axi4convertors\slvaxi4protconvread.v":337:1:337:6|There are no possible illegal states for state machine currStateARd[1:0] (in view: work.caxi4interconnect_SlvAxi4ProtConvRead_0s_3_32s_64s_1s_5s_4s_4s_4s_16(verilog)); safe FSM implementation is not required.
+Encoding state machine state[78:0] (in view: work.C0_ddr4_nwl_phy_init_Z9(verilog))
+original code -> new code
+   0000000 -> 0000000
+   0000001 -> 0000001
+   0000010 -> 0000011
+   0000011 -> 0000010
+   0000100 -> 0000110
+   0000101 -> 0000111
+   0000110 -> 0000101
+   0000111 -> 0000100
+   0001000 -> 0001100
+   0001001 -> 0001101
+   0001010 -> 0001111
+   0001011 -> 0001110
+   0001100 -> 0001010
+   0001101 -> 0001011
+   0001110 -> 0001001
+   0001111 -> 0001000
+   0010000 -> 0011000
+   0010001 -> 0011001
+   0010010 -> 0011011
+   0010011 -> 0011010
+   0010100 -> 0011110
+   0010101 -> 0011111
+   0010110 -> 0011101
+   0010111 -> 0011100
+   0011000 -> 0010100
+   0011001 -> 0010101
+   0011010 -> 0010111
+   0011011 -> 0010110
+   0011100 -> 0010010
+   0011101 -> 0010011
+   0011110 -> 0010001
+   0011111 -> 0010000
+   0100000 -> 0110000
+   0100001 -> 0110001
+   0100010 -> 0110011
+   0100011 -> 0110010
+   0100100 -> 0110110
+   0100101 -> 0110111
+   0100110 -> 0110101
+   0100111 -> 0110100
+   0101000 -> 0111100
+   0101001 -> 0111101
+   0101010 -> 0111111
+   0101011 -> 0111110
+   0101100 -> 0111010
+   0101101 -> 0111011
+   0101110 -> 0111001
+   0101111 -> 0111000
+   0110000 -> 0101000
+   0110001 -> 0101001
+   0110010 -> 0101011
+   0110011 -> 0101010
+   0110100 -> 0101110
+   0110101 -> 0101111
+   0110110 -> 0101101
+   0110111 -> 0101100
+   0111000 -> 0100100
+   0111001 -> 0100101
+   0111010 -> 0100111
+   0111011 -> 0100110
+   0111100 -> 0100010
+   0111101 -> 0100011
+   0111110 -> 0100001
+   0111111 -> 0100000
+   1000000 -> 1100000
+   1000001 -> 1100001
+   1000010 -> 1100011
+   1000011 -> 1100010
+   1000100 -> 1100110
+   1000101 -> 1100111
+   1000110 -> 1100101
+   1000111 -> 1100100
+   1001000 -> 1101100
+   1001001 -> 1101101
+   1001010 -> 1101111
+   1001011 -> 1101110
+   1001100 -> 1101010
+   1001101 -> 1101011
+   1001110 -> 1101001
+Encoding state machine r_wr_addr[2:0] (in view: work.C0_util_lat1_to_lat0_8s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine rd_addr[2:0] (in view: work.C0_util_lat1_to_lat0_8s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine r_wr_addr[2:0] (in view: work.C0_util_lat1_to_lat0_44s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine rd_addr[2:0] (in view: work.C0_util_lat1_to_lat0_44s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine r_wr_addr[2:0] (in view: work.C0_util_lat1_to_lat0_129s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine rd_addr[2:0] (in view: work.C0_util_lat1_to_lat0_129s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine r_wr_addr[2:0] (in view: work.C0_util_lat1_to_lat0_92s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine rd_addr[2:0] (in view: work.C0_util_lat1_to_lat0_92s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine r_wr_addr[2:0] (in view: work.C0_util_lat1_to_lat0_145s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine rd_addr[2:0] (in view: work.C0_util_lat1_to_lat0_145s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine r_wr_addr[2:0] (in view: work.C0_util_lat1_to_lat0_79s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine rd_addr[2:0] (in view: work.C0_util_lat1_to_lat0_79s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine r_wr_addr[2:0] (in view: work.C0_util_lat1_to_lat0_72s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine rd_addr[2:0] (in view: work.C0_util_lat1_to_lat0_72s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine r_wr_addr[2:0] (in view: work.C0_util_lat1_to_lat0_61s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine rd_addr[2:0] (in view: work.C0_util_lat1_to_lat0_61s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine state[3:0] (in view: work.C0_rmw_Z35(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+Encoding state machine shift_enable[4:0] (in view: work.C0_rmw_Z35(verilog))
+original code -> new code
+   000000 -> 00001
+   000001 -> 00010
+   000011 -> 00100
+   000111 -> 01000
+   001111 -> 10000
+Encoding state machine ctrlupd_sm[2:0] (in view: work.C0_fastsdram_Z44(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine hold_sm[5:0] (in view: work.C0_fastsdram_Z44(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+Encoding state machine qm_load_sel[3:0] (in view: work.C0_fastsdram_Z44(verilog))
+original code -> new code
+   0000000000000000 -> 00
+   0000000000000001 -> 01
+   0000000000000010 -> 10
+   0000000000000100 -> 11
+Encoding state machine init_sm[51:0] (in view: work.C0_fastinit_Z50(verilog))
+original code -> new code
+   0000000 -> 000000
+   0000001 -> 000001
+   0000010 -> 000011
+   0000011 -> 000010
+   0000100 -> 000110
+   0000101 -> 000111
+   0000110 -> 000101
+   0000111 -> 000100
+   0001000 -> 001100
+   0001001 -> 001101
+   0001010 -> 001111
+   0001011 -> 001110
+   0001100 -> 001010
+   0001101 -> 001011
+   0001110 -> 001001
+   0001111 -> 001000
+   0010000 -> 011000
+   0010001 -> 011001
+   0010010 -> 011011
+   0010011 -> 011010
+   0010100 -> 011110
+   0011011 -> 011111
+   0011100 -> 011101
+   0011101 -> 011100
+   0011110 -> 010100
+   0011111 -> 010101
+   0100000 -> 010111
+   0100001 -> 010110
+   0100010 -> 010010
+   0100011 -> 010011
+   0101001 -> 010001
+   0101010 -> 010000
+   0101011 -> 110000
+   0101100 -> 110001
+   0101101 -> 110011
+   0101110 -> 110010
+   0101111 -> 110110
+   0110000 -> 110111
+   0110001 -> 110101
+   0110010 -> 110100
+   0110011 -> 111100
+   0110100 -> 111101
+   0110101 -> 111111
+   0110110 -> 111110
+   0110111 -> 111010
+   0111000 -> 111011
+   0111001 -> 111001
+   0111010 -> 111000
+   0111011 -> 101000
+   0111100 -> 101001
+   0111101 -> 101011
+   0111110 -> 101010
+Encoding state machine srx_state[5:0] (in view: work.C0_fastinit_Z50(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+Encoding state machine mr_reload_sm[6:0] (in view: work.C0_fastinit_Z50(verilog))
+original code -> new code
+   000 -> 0000001
+   001 -> 0000010
+   010 -> 0000100
+   011 -> 0001000
+   100 -> 0010000
+   101 -> 0100000
+   110 -> 1000000
+Encoding state machine state[3:0] (in view: work.C0_controller_busy_Z57(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+Encoding state machine visual_Start_current[2:0] (in view: work.APB_IF(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine current_state[22:0] (in view: work.trn_dqsw_1(verilog))
+original code -> new code
+   000000000 -> 00000000000000000000001
+   000000001 -> 00000000000000000000010
+   000000010 -> 00000000000000000000100
+   000000011 -> 00000000000000000001000
+   000000100 -> 00000000000000000010000
+   000000101 -> 00000000000000000100000
+   000000111 -> 00000000000000001000000
+   000001000 -> 00000000000000010000000
+   000001001 -> 00000000000000100000000
+   000001010 -> 00000000000001000000000
+   000001011 -> 00000000000010000000000
+   000001100 -> 00000000000100000000000
+   000001101 -> 00000000001000000000000
+   000001110 -> 00000000010000000000000
+   000001111 -> 00000000100000000000000
+   000010000 -> 00000001000000000000000
+   000010001 -> 00000010000000000000000
+   000010010 -> 00000100000000000000000
+   000010011 -> 00001000000000000000000
+   000010100 -> 00010000000000000000000
+   000010101 -> 00100000000000000000000
+   000010110 -> 01000000000000000000000
+   000010111 -> 10000000000000000000000
+Encoding state machine current_state[22:0] (in view: work.trn_dqsw_0(verilog))
+original code -> new code
+   000000000 -> 00000000000000000000001
+   000000001 -> 00000000000000000000010
+   000000010 -> 00000000000000000000100
+   000000011 -> 00000000000000000001000
+   000000100 -> 00000000000000000010000
+   000000101 -> 00000000000000000100000
+   000000111 -> 00000000000000001000000
+   000001000 -> 00000000000000010000000
+   000001001 -> 00000000000000100000000
+   000001010 -> 00000000000001000000000
+   000001011 -> 00000000000010000000000
+   000001100 -> 00000000000100000000000
+   000001101 -> 00000000001000000000000
+   000001110 -> 00000000010000000000000
+   000001111 -> 00000000100000000000000
+   000010000 -> 00000001000000000000000
+   000010001 -> 00000010000000000000000
+   000010010 -> 00000100000000000000000
+   000010011 -> 00001000000000000000000
+   000010100 -> 00010000000000000000000
+   000010101 -> 00100000000000000000000
+   000010110 -> 01000000000000000000000
+   000010111 -> 10000000000000000000000
+Encoding state machine current_state[15:0] (in view: work.trn_bclksclk(verilog))
+original code -> new code
+   00000 -> 0000000000000001
+   00001 -> 0000000000000010
+   00010 -> 0000000000000100
+   00011 -> 0000000000001000
+   00100 -> 0000000000010000
+   00101 -> 0000000000100000
+   00111 -> 0000000001000000
+   01000 -> 0000000010000000
+   01001 -> 0000000100000000
+   01010 -> 0000001000000000
+   01011 -> 0000010000000000
+   01100 -> 0000100000000000
+   01101 -> 0001000000000000
+   01110 -> 0010000000000000
+   01111 -> 0100000000000000
+   10000 -> 1000000000000000
+Encoding state machine current_state[28:0] (in view: work.trn_cmd_addr(verilog))
+original code -> new code
+   00000000000000000000000000001 -> 00000000000000000000000000001
+   00000000000000000000000000010 -> 00000000000000000000000000010
+   00000000000000000000000000100 -> 00000000000000000000000000100
+   00000000000000000000000001000 -> 00000000000000000000000001000
+   00000000000000000000000010000 -> 00000000000000000000000010000
+   00000000000000000000000100000 -> 00000000000000000000000100000
+   00000000000000000000001000000 -> 00000000000000000000001000000
+   00000000000000000000010000000 -> 00000000000000000000010000000
+   00000000000000000000100000000 -> 00000000000000000000100000000
+   00000000000000000001000000000 -> 00000000000000000001000000000
+   00000000000000000010000000000 -> 00000000000000000010000000000
+   00000000000000000100000000000 -> 00000000000000000100000000000
+   00000000000000001000000000000 -> 00000000000000001000000000000
+   00000000000000010000000000000 -> 00000000000000010000000000000
+   00000000000000100000000000000 -> 00000000000000100000000000000
+   00000000000001000000000000000 -> 00000000000001000000000000000
+   00000000000010000000000000000 -> 00000000000010000000000000000
+   00000000000100000000000000000 -> 00000000000100000000000000000
+   00000000001000000000000000000 -> 00000000001000000000000000000
+   00000000010000000000000000000 -> 00000000010000000000000000000
+   00000000100000000000000000000 -> 00000000100000000000000000000
+   00000001000000000000000000000 -> 00000001000000000000000000000
+   00000010000000000000000000000 -> 00000010000000000000000000000
+   00000100000000000000000000000 -> 00000100000000000000000000000
+   00001000000000000000000000000 -> 00001000000000000000000000000
+   00010000000000000000000000000 -> 00010000000000000000000000000
+   00100000000000000000000000000 -> 00100000000000000000000000000
+   01000000000000000000000000000 -> 01000000000000000000000000000
+   10000000000000000000000000000 -> 10000000000000000000000000000
+Encoding state machine current_state[4:0] (in view: work.TRN_CLK_2s_1s_0s_1s_2s_3s_4s(verilog))
+original code -> new code
+   0000 -> 00001
+   0001 -> 00010
+   0010 -> 00100
+   0011 -> 01000
+   0100 -> 10000
+Encoding state machine visual_gate_training_current[28:0] (in view: work.gate_training_0(verilog))
+original code -> new code
+   00000 -> 00000000000000000000000000001
+   00001 -> 00000000000000000000000000010
+   00010 -> 00000000000000000000000000100
+   00011 -> 00000000000000000000000001000
+   00100 -> 00000000000000000000000010000
+   00101 -> 00000000000000000000000100000
+   00110 -> 00000000000000000000001000000
+   00111 -> 00000000000000000000010000000
+   01000 -> 00000000000000000000100000000
+   01001 -> 00000000000000000001000000000
+   01010 -> 00000000000000000010000000000
+   01011 -> 00000000000000000100000000000
+   01100 -> 00000000000000001000000000000
+   01101 -> 00000000000000010000000000000
+   01110 -> 00000000000000100000000000000
+   01111 -> 00000000000001000000000000000
+   10000 -> 00000000000010000000000000000
+   10001 -> 00000000000100000000000000000
+   10010 -> 00000000001000000000000000000
+   10011 -> 00000000010000000000000000000
+   10100 -> 00000000100000000000000000000
+   10101 -> 00000001000000000000000000000
+   10110 -> 00000010000000000000000000000
+   10111 -> 00000100000000000000000000000
+   11000 -> 00001000000000000000000000000
+   11001 -> 00010000000000000000000000000
+   11010 -> 00100000000000000000000000000
+   11011 -> 01000000000000000000000000000
+   11100 -> 10000000000000000000000000000
+Encoding state machine visual_shim_logic_2_current[2:0] (in view: work.gate_training_0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine visual_shim_logic_1_current[2:0] (in view: work.gate_training_0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine visual_shim_logic_0_current[2:0] (in view: work.gate_training_0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine visual_rx_valid_current[4:0] (in view: work.dq_align_dqs_optimization_0(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+Encoding state machine visual_dq_dqs_optimisation_current[28:0] (in view: work.dq_align_dqs_optimization_0(verilog))
+original code -> new code
+   00000 -> 00000000000000000000000000001
+   00001 -> 00000000000000000000000000010
+   00010 -> 00000000000000000000000000100
+   00011 -> 00000000000000000000000001000
+   00100 -> 00000000000000000000000010000
+   00101 -> 00000000000000000000000100000
+   00110 -> 00000000000000000000001000000
+   00111 -> 00000000000000000000010000000
+   01000 -> 00000000000000000000100000000
+   01001 -> 00000000000000000001000000000
+   01010 -> 00000000000000000010000000000
+   01011 -> 00000000000000000100000000000
+   01100 -> 00000000000000001000000000000
+   01101 -> 00000000000000010000000000000
+   01110 -> 00000000000000100000000000000
+   01111 -> 00000000000001000000000000000
+   10000 -> 00000000000010000000000000000
+   10001 -> 00000000000100000000000000000
+   10010 -> 00000000001000000000000000000
+   10011 -> 00000000010000000000000000000
+   10100 -> 00000000100000000000000000000
+   10101 -> 00000001000000000000000000000
+   10110 -> 00000010000000000000000000000
+   10111 -> 00000100000000000000000000000
+   11000 -> 00001000000000000000000000000
+   11001 -> 00010000000000000000000000000
+   11010 -> 00100000000000000000000000000
+   11011 -> 01000000000000000000000000000
+   11100 -> 10000000000000000000000000000
+Encoding state machine visual_Lane_Fifo_Protect_current[2:0] (in view: work.dq_align_dqs_optimization_0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine visual_gate_training_current[28:0] (in view: work.gate_training_1(verilog))
+original code -> new code
+   00000 -> 00000000000000000000000000001
+   00001 -> 00000000000000000000000000010
+   00010 -> 00000000000000000000000000100
+   00011 -> 00000000000000000000000001000
+   00100 -> 00000000000000000000000010000
+   00101 -> 00000000000000000000000100000
+   00110 -> 00000000000000000000001000000
+   00111 -> 00000000000000000000010000000
+   01000 -> 00000000000000000000100000000
+   01001 -> 00000000000000000001000000000
+   01010 -> 00000000000000000010000000000
+   01011 -> 00000000000000000100000000000
+   01100 -> 00000000000000001000000000000
+   01101 -> 00000000000000010000000000000
+   01110 -> 00000000000000100000000000000
+   01111 -> 00000000000001000000000000000
+   10000 -> 00000000000010000000000000000
+   10001 -> 00000000000100000000000000000
+   10010 -> 00000000001000000000000000000
+   10011 -> 00000000010000000000000000000
+   10100 -> 00000000100000000000000000000
+   10101 -> 00000001000000000000000000000
+   10110 -> 00000010000000000000000000000
+   10111 -> 00000100000000000000000000000
+   11000 -> 00001000000000000000000000000
+   11001 -> 00010000000000000000000000000
+   11010 -> 00100000000000000000000000000
+   11011 -> 01000000000000000000000000000
+   11100 -> 10000000000000000000000000000
+Encoding state machine visual_shim_logic_2_current[2:0] (in view: work.gate_training_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine visual_shim_logic_1_current[2:0] (in view: work.gate_training_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine visual_shim_logic_0_current[2:0] (in view: work.gate_training_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine visual_rx_valid_current[4:0] (in view: work.dq_align_dqs_optimization_1(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+Encoding state machine visual_dq_dqs_optimisation_current[28:0] (in view: work.dq_align_dqs_optimization_1(verilog))
+original code -> new code
+   00000 -> 00000000000000000000000000001
+   00001 -> 00000000000000000000000000010
+   00010 -> 00000000000000000000000000100
+   00011 -> 00000000000000000000000001000
+   00100 -> 00000000000000000000000010000
+   00101 -> 00000000000000000000000100000
+   00110 -> 00000000000000000000001000000
+   00111 -> 00000000000000000000010000000
+   01000 -> 00000000000000000000100000000
+   01001 -> 00000000000000000001000000000
+   01010 -> 00000000000000000010000000000
+   01011 -> 00000000000000000100000000000
+   01100 -> 00000000000000001000000000000
+   01101 -> 00000000000000010000000000000
+   01110 -> 00000000000000100000000000000
+   01111 -> 00000000000001000000000000000
+   10000 -> 00000000000010000000000000000
+   10001 -> 00000000000100000000000000000
+   10010 -> 00000000001000000000000000000
+   10011 -> 00000000010000000000000000000
+   10100 -> 00000000100000000000000000000
+   10101 -> 00000001000000000000000000000
+   10110 -> 00000010000000000000000000000
+   10111 -> 00000100000000000000000000000
+   11000 -> 00001000000000000000000000000
+   11001 -> 00010000000000000000000000000
+   11010 -> 00100000000000000000000000000
+   11011 -> 01000000000000000000000000000
+   11100 -> 10000000000000000000000000000
+Encoding state machine visual_Lane_Fifo_Protect_current[2:0] (in view: work.dq_align_dqs_optimization_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine current_state[16:0] (in view: work.WRLVL_BOT_1(verilog))
+original code -> new code
+   0000000000000000000 -> 00000000000000001
+   0000000000000000010 -> 00000000000000010
+   0000000000000001000 -> 00000000000000100
+   0000000000000010000 -> 00000000000001000
+   0000000000000100000 -> 00000000000010000
+   0000000000001000000 -> 00000000000100000
+   0000000000010000000 -> 00000000001000000
+   0000000000100000000 -> 00000000010000000
+   0000000001000000000 -> 00000000100000000
+   0000000010000000000 -> 00000001000000000
+   0000000100000000000 -> 00000010000000000
+   0000001000000000000 -> 00000100000000000
+   0000010000000000000 -> 00001000000000000
+   0000100000000000000 -> 00010000000000000
+   0001000000000000000 -> 00100000000000000
+   0010000000000000000 -> 01000000000000000
+   1000000000000000000 -> 10000000000000000
+Encoding state machine current_state[16:0] (in view: work.WRLVL_BOT_0(verilog))
+original code -> new code
+   0000000000000000000 -> 00000000000000001
+   0000000000000000010 -> 00000000000000010
+   0000000000000001000 -> 00000000000000100
+   0000000000000010000 -> 00000000000001000
+   0000000000000100000 -> 00000000000010000
+   0000000000001000000 -> 00000000000100000
+   0000000000010000000 -> 00000000001000000
+   0000000000100000000 -> 00000000010000000
+   0000000001000000000 -> 00000000100000000
+   0000000010000000000 -> 00000001000000000
+   0000000100000000000 -> 00000010000000000
+   0000001000000000000 -> 00000100000000000
+   0000010000000000000 -> 00001000000000000
+   0000100000000000000 -> 00010000000000000
+   0001000000000000000 -> 00100000000000000
+   0010000000000000000 -> 01000000000000000
+   1000000000000000000 -> 10000000000000000
+Encoding state machine visual_APB_IOG_CONTROLLER_current[4:0] (in view: work.APB_IOG_CTRL_SM(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+Encoding state machine visual_trn_compl_current[9:0] (in view: work.TRN_COMPLETE_Z64(verilog))
+original code -> new code
+   0000 -> 0000000001
+   0001 -> 0000000010
+   0010 -> 0000000100
+   0011 -> 0000001000
+   0100 -> 0000010000
+   0101 -> 0000100000
+   0110 -> 0001000000
+   0111 -> 0010000000
+   1000 -> 0100000000
+   1001 -> 1000000000
+Encoding state machine current_state[6:0] (in view: work.ddr4_vref(verilog))
+original code -> new code
+   0000 -> 0000001
+   0001 -> 0000010
+   0010 -> 0000100
+   0011 -> 0001000
+   0100 -> 0010000
+   0101 -> 0100000
+   0110 -> 1000000
+Encoding state machine current_state[13:0] (in view: work.write_callibrator_Z65(verilog))
+original code -> new code
+   0000000 -> 00000000000001
+   0000001 -> 00000000000010
+   0000010 -> 00000000000100
+   0000011 -> 00000000001000
+   0000100 -> 00000000010000
+   0000101 -> 00000000100000
+   0000110 -> 00000001000000
+   0000111 -> 00000010000000
+   0001000 -> 00000100000000
+   0001001 -> 00001000000000
+   0001010 -> 00010000000000
+   0001011 -> 00100000000000
+   0001111 -> 01000000000000
+   0010000 -> 10000000000000
+Encoding state machine ctrlStateReg[2:0] (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_INNER_DM_INNER(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine release_state[6:0] (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_D_CACHE_DCACHE(verilog))
+original code -> new code
+   000 -> 0000000
+   001 -> 0000011
+   010 -> 0000101
+   011 -> 0001001
+   101 -> 0010001
+   110 -> 0100001
+   111 -> 1000001
+Encoding state machine state[6:0] (in view: CORERISCVRV32IMA_LIB.Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_MUL_DIV(verilog))
+original code -> new code
+   000 -> 0000000
+   001 -> 0000011
+   010 -> 0000101
+   011 -> 0001001
+   101 -> 0010001
+   110 -> 0100001
+   111 -> 1000001
+Encoding state machine arbRegSMCurrentState[15:0] (in view: COREAHBLITE_LIB.COREAHBLITE_SLAVEARBITER_Z72_0(verilog))
+original code -> new code
+   0000 -> 0000000000000001
+   0001 -> 0000000000000010
+   0010 -> 0000000000000100
+   0011 -> 0000000000001000
+   0100 -> 0000000000010000
+   0101 -> 0000000000100000
+   0110 -> 0000000001000000
+   0111 -> 0000000010000000
+   1000 -> 0000000100000000
+   1001 -> 0000001000000000
+   1010 -> 0000010000000000
+   1011 -> 0000100000000000
+   1100 -> 0001000000000000
+   1101 -> 0010000000000000
+   1110 -> 0100000000000000
+   1111 -> 1000000000000000
+Encoding state machine arbRegSMCurrentState[15:0] (in view: COREAHBLITE_LIB.COREAHBLITE_SLAVEARBITER_Z72_1(verilog))
+original code -> new code
+   0000 -> 0000000000000001
+   0001 -> 0000000000000010
+   0010 -> 0000000000000100
+   0011 -> 0000000000001000
+   0100 -> 0000000000010000
+   0101 -> 0000000000100000
+   0110 -> 0000000001000000
+   0111 -> 0000000010000000
+   1000 -> 0000000100000000
+   1001 -> 0000001000000000
+   1010 -> 0000010000000000
+   1011 -> 0000100000000000
+   1100 -> 0001000000000000
+   1101 -> 0010000000000000
+   1110 -> 0100000000000000
+   1111 -> 1000000000000000
+Encoding state machine ahbToApbSMState[4:0] (in view: COREAHBTOAPB3_LIB.CoreAHBtoAPB3_AhbToApbSM_0s_0_1_0_1_2_3_4(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+Encoding state machine penableSchedulerState[2:0] (in view: COREAHBTOAPB3_LIB.CoreAHBtoAPB3_PenableScheduler_0s_0_1_2(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine mtx_state[5:0] (in view: CORESPI_LIB.spi_chanctrl_Z75(verilog))
+original code -> new code
+   0000 -> 000001
+   0001 -> 000010
+   0010 -> 000100
+   0111 -> 001000
+   1000 -> 010000
+   1001 -> 100000
+Encoding state machine ahbcurr_state[2:0] (in view: work.LSRAM_64kBytes_COREAHBLSRAM_PF_0_CoreAHBLSRAM_AHBLSramIf_Z78(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine sramcurr_state[2:0] (in view: work.LSRAM_64kBytes_COREAHBLSRAM_PF_0_CoreAHBLSRAM_SramCtrlIf_0s_65536s_16_0s_32s_0_1_2(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine xmit_state[6:0] (in view: work.UART_UART_0_Tx_async_0s_1s_0s_1s_2s_3s_4s_5s_6s(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0000001
+   00000000000000000000000000000001 -> 0000010
+   00000000000000000000000000000010 -> 0000100
+   00000000000000000000000000000011 -> 0001000
+   00000000000000000000000000000100 -> 0010000
+   00000000000000000000000000000101 -> 0100000
+   00000000000000000000000000000110 -> 1000000
+Encoding state machine rx_state[3:0] (in view: work.UART_UART_0_Rx_async_0s_1s_0s_1s_2s_3s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\uart\uart_0\rtl\vlog\core\rx_async.v":286:0:286:5|There are no possible illegal states for state machine rx_state[3:0] (in view: work.UART_UART_0_Rx_async_0s_1s_0s_1s_2s_3s(verilog)); safe FSM implementation is not required.
+Encoding state machine rx_state[3:0] (in view: work.UART_UART_0_COREUART_1s_1s_0s_26s_0s_0s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\microsemiprj_pf23\apps\riscv_bootloader\uart_2_scspi_bridge_splash2_ddr\component\work\uart\uart_0\rtl\vlog\core\coreuart.v":293:0:293:5|There are no possible illegal states for state machine rx_state[3:0] (in view: work.UART_UART_0_COREUART_1s_1s_0s_26s_0s_0s(verilog)); safe FSM implementation is not required.
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:24s; Memory used current: 479MB peak: 550MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:25s; Memory used current: 486MB peak: 550MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:25s; Memory used current: 283MB peak: 550MB)
+
+Process took 0h:00m:26s realtime, 0h:00m:25s cputime
+# Thu Sep 27 13:56:04 2018
+
+###########################################################]

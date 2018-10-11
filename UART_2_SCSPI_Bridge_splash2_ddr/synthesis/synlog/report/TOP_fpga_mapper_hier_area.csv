@@ -1,0 +1,742 @@
+
+. Module name, SLE, CFG, ARI1, BUFFER, MACC_PA, RAM1K20, RAM64X12, GLOBAL, IO
+. TOP, 16791, 22823, 3978, 0, 2, 50, 127, 8, 49
+.	. AXI4_interconnect, 1969, 2615, 428, 0, 0, 0, 60, 1, 0
+.	.	. COREAXI4INTERCONNECT_Z2, 1969, 2615, 428, 0, 0, 0, 60, 1, 0
+.	.	.	. caxi4interconnect_MasterConvertor_Z4, 1195, 1733, 18, 0, 0, 0, 21, 0, 0
+.	.	.	.	. caxi4interconnect_MstrAHBtoAXI4Converter_32s_32s_1s_0_4s_8_0, 98, 266, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. caxi4interconnect_AHB_SM_Z5, 98, 266, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. caxi4interconnect_MstrDataWidthConv_2_0s_8s_4s_32s_64s_32s_1s_10s_16, 633, 1222, 18, 0, 0, 0, 21, 0, 0
+.	.	.	.	.	. caxi4interconnect_UpConverter_4s_32s_10s_8s_64s_32s_64s_1s_16, 633, 1222, 18, 0, 0, 0, 21, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_DWC_UpConv_AChannel_32s_4s_1s_32s_64s_30s_0_1_0, 90, 119, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_DWC_UpConv_AChannel_32s_4s_1s_32s_64s_30s_0_1_1, 89, 129, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_DWC_UpConv_BChannel_4s_1s_10s, 18, 45, 0, 0, 0, 0, 1, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_DWC_brespCtrl_1s_4s, 2, 6, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_FIFO_10s_5s_5s_9s_0s_10s_4s_0s_9s, 16, 39, 0, 0, 0, 0, 1, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_FIFO_CTRL_10s_9s_0s_4s_16s_6s_1_0, 16, 37, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_RAM_BLOCK_10s_4s_5s, 0, 2, 0, 0, 0, 0, 1, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_DWC_UpConv_RChannel_4s_1s_16s_8s_64s_32s, 138, 292, 6, 0, 0, 0, 10, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_DWC_UpConv_RChan_Ctrl_64s_32s_4s, 28, 115, 6, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_DWC_UpConv_preCalcRChan_Ctrl_64s_32s_1s_4s, 33, 21, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_Hold_Reg_Ctrl_2_1, 1, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_FIFO_8s_29s_29s_7s_1s_8s_3s_1s_7s, 13, 39, 0, 0, 0, 0, 3, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_FIFO_CTRL_8s_7s_1s_3s_8s_0s, 13, 32, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_RAM_BLOCK_8s_3s_29s, 0, 7, 0, 0, 0, 0, 3, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_FIFO_downsizing_16s_2s_2s_0s_15s_0s_16s_4s_0s_15s, 16, 40, 0, 0, 0, 0, 1, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_FIFO_CTRL_16s_15s_0s_4s_16s_0s, 16, 39, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_RAM_BLOCK_16s_4s_2s, 0, 1, 0, 0, 0, 0, 1, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_FIFO_downsizing_16s_64s_32s_1s_15s_1s_16s_4s_1s_15s, 48, 77, 0, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_FIFO_CTRL_16s_15s_1s_4s_16s_0s, 16, 39, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_RAM_BLOCK_16s_4s_65s, 0, 6, 0, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_DWC_UpConv_WChannel_Z3, 152, 402, 8, 0, 0, 0, 10, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_DWC_UpConv_WChan_Hold_Reg_32s_1s_64s_8s, 25, 15, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_Hold_Reg_Ctrl_0, 1, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_DWC_UpConv_WChan_ReadDataFifoCtrl_3s_4s_0_1, 32, 78, 8, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_DWC_UpConv_Wchan_WriteDataFifoCtrl_32s_1s_64s_4s_2s_8s_3s, 46, 107, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_FIFO_10s_25s_25s_9s_0s_10s_4s_0s_9s, 16, 43, 0, 0, 0, 0, 3, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_FIFO_CTRL_10s_9s_0s_4s_16s_6s_1, 16, 38, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_RAM_BLOCK_10s_4s_25s, 0, 5, 0, 0, 0, 0, 3, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_FIFO_10s_8s_8s_9s_1s_10s_4s_1s_9s, 16, 38, 0, 0, 0, 0, 1, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_FIFO_CTRL_10s_9s_1s_4s_16s_6s, 16, 37, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_RAM_BLOCK_10s_4s_8s, 0, 1, 0, 0, 0, 0, 1, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_FIFO_upsizing_16s_36s_72s_1s_15s_11s_16s_4s_11s_15s, 17, 121, 0, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_FIFO_CTRL_16s_15s_11s_4s_16s_0s, 17, 47, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_RAM_BLOCK_16s_4s_36s, 0, 0, 0, 0, 0, 0, 3, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_RAM_BLOCK_16s_4s_36s_0, 0, 0, 0, 0, 0, 0, 3, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_DWC_UpConv_preCalcAChannel_64s_32s_1s_4s, 73, 113, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_Hold_Reg_Ctrl, 1, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_DWC_UpConv_preCalcAChannel_64s_32s_1s_4s_0, 73, 121, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_Hold_Reg_Ctrl_1, 1, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. caxi4interconnect_RegisterSlice_1_1_1_1_1_4s_32s_64s_0s_1s, 464, 245, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. caxi4interconnect_RegSliceFull_67s_0_1_3_0, 90, 48, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. caxi4interconnect_RegSliceFull_67s_0_1_3_2, 90, 48, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. caxi4interconnect_RegSliceFull_72s_0_1_3_2, 134, 70, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. caxi4interconnect_RegSliceFull_74s_0_1_3_2, 148, 77, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. caxi4interconnect_RegSliceFull_7s_0_1_3_2, 2, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. caxi4interconnect_ResetSycnc_1, 1, 0, 0, 0, 0, 0, 0, 1, 0
+.	.	.	. caxi4interconnect_SlaveConvertor_Z8, 773, 882, 410, 0, 0, 0, 39, 0, 0
+.	.	.	.	. caxi4interconnect_RegisterSlice_1_1_1_1_1_5s_32s_64s_0s_1s, 464, 245, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. caxi4interconnect_RegSliceFull_68s_0_1_3_0, 90, 48, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. caxi4interconnect_RegSliceFull_68s_0_1_3_1, 90, 48, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. caxi4interconnect_RegSliceFull_73s_0_1_3_2, 134, 70, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. caxi4interconnect_RegSliceFull_74s_0_1_3_0, 148, 77, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. caxi4interconnect_RegSliceFull_8s_0_1_3_2, 2, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. caxi4interconnect_ResetSycnc_0, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. caxi4interconnect_SlvClockDomainCrossing_32s_5s_64s_1s_1_68s_74s_8s_73s_4s, 129, 133, 0, 0, 0, 0, 23, 0, 0
+.	.	.	.	.	. caxi4interconnect_CDC_FIFO_4s_68s_2s, 25, 26, 0, 0, 0, 0, 5, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_1s_0s_2s, 3, 11, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_1s_0s_2s_0, 3, 8, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_2s_1s_2s, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_2s_1s_2s_0, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_3s_3s_2s_1_1, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_rdCtrl_2s, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_wrCtrl_2s, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_RAM_BLOCK_4s_2s_68s, 0, 5, 0, 0, 0, 0, 5, 0, 0
+.	.	.	.	.	. caxi4interconnect_CDC_FIFO_4s_68s_2s_0, 25, 26, 0, 0, 0, 0, 5, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_1s_0s_2s_0_1, 3, 8, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_1s_0s_2s_2, 3, 11, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_2s_1s_2s_0_1, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_2s_1s_2s_2, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_3s_3s_2s_1_1_1, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_rdCtrl_2s_2, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_wrCtrl_2s_2, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_RAM_BLOCK_4s_2s_68s_0, 0, 5, 0, 0, 0, 0, 5, 0, 0
+.	.	.	.	.	. caxi4interconnect_CDC_FIFO_4s_73s_2s, 27, 30, 0, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_1s_0s_2s_0_2, 3, 11, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_1s_0s_2s_3, 4, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_Bin2Gray_2s_17, 0, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_2s_1s_2s_0_2, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_2s_1s_2s_3, 4, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_3s_3s_2s_0, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_rdCtrl_2s_0, 1, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_wrCtrl_2s_0, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_RAM_BLOCK_4s_2s_73s, 0, 6, 0, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	. caxi4interconnect_CDC_FIFO_4s_74s_2s, 25, 27, 0, 0, 0, 0, 7, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_1s_0s_2s_0_0, 3, 8, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_1s_0s_2s_1, 3, 11, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_2s_1s_2s_0_0, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_2s_1s_2s_1, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_3s_3s_2s_1_1_0, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_rdCtrl_2s_1, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_wrCtrl_2s_1, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_RAM_BLOCK_4s_2s_74s, 0, 7, 0, 0, 0, 0, 7, 0, 0
+.	.	.	.	.	. caxi4interconnect_CDC_FIFO_4s_8s_2s, 27, 24, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_1s_0s_2s_0_3, 3, 11, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_1s_0s_2s_4, 4, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_Bin2Gray_2s_22, 0, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_2s_1s_2s_0_3, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_2s_1s_2s_4, 4, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_grayCodeCounter_3s_3s_2s_0_0, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_rdCtrl_2s_0_0, 1, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_CDC_wrCtrl_2s_0_0, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. caxi4interconnect_SlvProtocolConverter_Z7, 178, 504, 410, 0, 0, 0, 16, 0, 0
+.	.	.	.	.	. caxi4interconnect_SlvAxi4ProtocolConv_0s_3_32s_64s_1s_5s_4s_4s, 178, 504, 410, 0, 0, 0, 16, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_SlvAxi4ProtConvRead_0s_3_32s_64s_1s_5s_4s_4s_4s_16, 85, 231, 210, 0, 0, 0, 8, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_FifoDualPort_0_2s_4s_13s_1, 15, 34, 0, 0, 0, 0, 2, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_DualPort_RAM_SyncWr_SyncRd_4s_13s_0s_16s, 0, 0, 0, 0, 0, 0, 2, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_FifoDualPort_0_2s_4s_71s_1, 15, 41, 0, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_DualPort_RAM_SyncWr_SyncRd_4s_71s_0s_16s, 0, 6, 0, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	.	. caxi4interconnect_SlvAxi4ProtConvWrite_0s_3_32s_64s_1s_5s_4s_4s_4s_16, 93, 273, 200, 0, 0, 0, 8, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_FifoDualPort_0_2s_4s_73s_1, 15, 41, 0, 0, 0, 0, 7, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_DualPort_RAM_SyncWr_SyncRd_4s_73s_0s_16s, 0, 7, 0, 0, 0, 0, 7, 0, 0
+.	.	.	.	.	.	.	. caxi4interconnect_FifoDualPort_0_2s_4s_9s_1, 15, 34, 0, 0, 0, 0, 1, 0, 0
+.	.	.	.	.	.	.	.	. caxi4interconnect_DualPort_RAM_SyncWr_SyncRd_4s_9s_0s_16s, 0, 1, 0, 0, 0, 0, 1, 0, 0
+.	. CLOCKS_RESETS, 2, 0, 0, 0, 0, 0, 0, 2, 0
+.	.	. CCC_100MHz, 0, 0, 0, 0, 0, 0, 0, 1, 0
+.	.	.	. CCC_100MHz_CCC_100MHz_0_PF_CCC, 0, 0, 0, 0, 0, 0, 0, 1, 0
+.	.	. Init_Monitor, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. Init_Monitor_Init_Monitor_0_PF_INIT_MONITOR, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	. RCOSC, 0, 0, 0, 0, 0, 0, 0, 1, 0
+.	.	.	. RCOSC_RCOSC_0_PF_OSC, 0, 0, 0, 0, 0, 0, 0, 1, 0
+.	.	. reset_synchronizer, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	. DDR4, 9351, 9446, 2432, 0, 0, 6, 59, 3, 42
+.	.	. DDR4_CCC_0_PF_CCC, 0, 0, 0, 0, 0, 0, 0, 1, 0
+.	.	. DDR4_DDRCTRL_0_CoreDDRMemCtrlr_Z63, 7154, 6234, 1481, 0, 0, 6, 45, 1, 0
+.	.	.	. C0_sdram_sys_top_Z62, 7154, 6234, 1481, 0, 0, 6, 45, 1, 0
+.	.	.	.	. C0_phy_top_Z10, 89, 371, 17, 0, 0, 0, 0, 1, 0
+.	.	.	.	.	. C0_ddr4_nwl_phy_init_Z9, 89, 365, 17, 0, 0, 0, 0, 1, 0
+.	.	.	.	.	.	. C0_util_sync_reset, 1, 0, 0, 0, 0, 0, 0, 1, 0
+.	.	.	.	.	.	.	. C0_util_sync_flops_0_7, 1, 0, 0, 0, 0, 0, 0, 1, 0
+.	.	.	.	. C0_sdram_lb_Z61, 6932, 5863, 1464, 0, 0, 6, 45, 0, 0
+.	.	.	.	.	. C0_axi_if_Z14, 3485, 2364, 274, 0, 0, 6, 35, 0, 0
+.	.	.	.	.	.	. C0_util_fifo_Z13, 323, 269, 0, 0, 0, 0, 8, 0, 0
+.	.	.	.	.	.	.	. C0_util_fifo_core_Z12, 323, 261, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_gray_sync_bin_5s, 15, 6, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_gray_to_bin_5s, 0, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_sync_5s_0_0, 10, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_39, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_40, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_41, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_42, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_43, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_gray_sync_bin_5s_1, 15, 6, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_gray_to_bin_5s_0, 0, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_sync_5s_0_0_0, 10, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_44, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_45, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_46, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_47, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_48, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_lat1_to_lat0_92s, 275, 195, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_37, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_38, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_ram_4s_92s_32s_2s_0s_0s_16s, 0, 8, 0, 0, 0, 0, 8, 0, 0
+.	.	.	.	.	.	. C0_util_fifo_Z16, 38, 59, 0, 0, 0, 0, 1, 0, 0
+.	.	.	.	.	.	.	. C0_util_fifo_core_Z15, 38, 58, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_lat1_to_lat0_8s, 17, 16, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_ram_4s_8s_8s_1s_0s_0s_16s, 0, 1, 0, 0, 0, 0, 1, 0, 0
+.	.	.	.	.	.	. C0_util_fifo_Z18, 197, 159, 25, 0, 0, 2, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_fifo_core_Z17, 197, 159, 25, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_gray_sync_bin_8s, 24, 15, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_gray_to_bin_8s, 0, 7, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_sync_8s_0_0, 16, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_10, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_2, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_3, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_4, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_5, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_6, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_8, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_9, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_gray_sync_bin_8s_2, 24, 10, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_gray_to_bin_8s_0, 0, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_sync_8s_0_0_0, 16, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_11, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_12, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_13, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_14, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_15, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_16, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_17, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_18, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_lat1_to_lat0_44s, 131, 95, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_ram_7s_44s_32s_1s_0s_0s_128s, 0, 0, 0, 0, 0, 2, 0, 0, 0
+.	.	.	.	.	.	. C0_util_fifo_Z20, 461, 331, 34, 0, 0, 4, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_fifo_core_Z19, 461, 331, 34, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_gray_sync_bin_8s_3, 24, 15, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_gray_to_bin_8s_1, 0, 7, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_sync_8s_0_0_1, 16, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_21, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_22, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_23, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_24, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_25, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_26, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_27, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_28, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_gray_sync_bin_8s_4, 24, 10, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_gray_to_bin_8s_2, 0, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_sync_8s_0_0_2, 16, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_29, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_30, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_31, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_32, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_33, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_34, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_35, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_36, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_lat1_to_lat0_129s, 395, 274, 1, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_ram_7s_129s_32s_4s_0s_0s_128s, 0, 0, 0, 0, 0, 4, 0, 0, 0
+.	.	.	.	.	.	. C0_util_fifo_Z22, 502, 393, 22, 0, 0, 0, 13, 0, 0
+.	.	.	.	.	.	.	. C0_util_fifo_core_Z21, 502, 380, 22, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_gray_sync_bin_7s, 21, 13, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_gray_to_bin_7s, 0, 6, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_sync_7s_0_0, 14, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_51, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_52, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_53, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_54, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_55, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_56, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_57, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_gray_sync_bin_7s_1, 21, 11, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_gray_to_bin_7s_0, 0, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_sync_7s_0_0_0, 14, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_58, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_59, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_60, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_61, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_62, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_63, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. C0_util_sync_flops_0_64, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_lat1_to_lat0_145s, 443, 307, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_ram_6s_145s_32s_4s_0s_0s_64s, 0, 13, 0, 0, 0, 0, 13, 0, 0
+.	.	.	.	.	.	. C0_util_fifo_Z24, 251, 198, 0, 0, 0, 0, 7, 0, 0
+.	.	.	.	.	.	.	. C0_util_fifo_core_Z23, 251, 191, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_lat1_to_lat0_79s, 230, 157, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_ram_4s_79s_32s_2s_0s_0s_16s, 0, 7, 0, 0, 0, 0, 7, 0, 0
+.	.	.	.	.	.	. C0_util_fifo_Z26, 231, 169, 12, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	.	.	. C0_util_fifo_core_Z25, 231, 163, 12, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_lat1_to_lat0_72s, 206, 142, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_ram_5s_72s_32s_2s_0s_0s_32s, 0, 6, 0, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	.	. C0_wrap_calc_Z11, 0, 437, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. C0_dfi_rddata_align_Z37, 99, 134, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. C0_dfi_timing_gen_Z55, 9, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. C0_fastinit_Z50, 1147, 1490, 565, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_fastsdram_Z44, 1036, 1216, 516, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_odt_gen_Z38, 17, 52, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_openbank_3, 69, 66, 66, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_openbank_3_0, 68, 65, 66, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_openbank_3_1, 68, 65, 66, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_openbank_3_2, 68, 65, 66, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_openrank_Z48, 109, 247, 102, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_rw_tracking_Z45, 16, 90, 15, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_wtr_tracking_Z46, 8, 3, 8, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_wtr_tracking_Z47, 8, 5, 16, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_wtr_tracking_Z47_0, 8, 1, 16, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_preamble_phase_shift_Z39_0, 5, 6, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_prog_pipe_delay_1s_0_2s_2s_66, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_prog_pipe_delay_2s_0_7s_40s, 80, 8, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_prog_pipe_delay_4s_0_7s_40s, 80, 8, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_qm_Z49, 57, 74, 43, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_qm_Z49_0, 59, 97, 43, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_qm_Z49_1, 57, 122, 43, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_param_latency_130s_3s_0s_1s, 69, 16, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_param_latency_48s_3s_1s_1s, 15, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_wrcmd_data_delay_Z41, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_wrcmd_data_delay_Z41_1, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_util_sync_1s_0_0_1, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_sync_flops_0_73, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_util_sync_1s_0_0_2, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_sync_flops_0_74, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. C0_freq_ratio_cac_Z51, 59, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. C0_freq_ratio_data_Z52, 309, 632, 72, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_0, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_1, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_10, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_11, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_12, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_13, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_14, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_15, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_16, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_17, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_18, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_2, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_3, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_4, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_5, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_6, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_7, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_8, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_0_9, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_1, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_10, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_11, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_12, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_13, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_14, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_15, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_2, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_3, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_4, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_5, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_6, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_7, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_8, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_0s_0_9, 5, 17, 2, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_1s_0, 2, 10, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_dynamic_4s_1s_0_1, 3, 10, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_1, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_10, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_11, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_12, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_13, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_14, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_15, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_16, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_17, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_18, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_19, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_2, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_20, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_21, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_22, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_23, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_24, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_25, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_26, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_27, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_28, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_29, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_3, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_30, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_31, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_32, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_33, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_34, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_4, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_5, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_6, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_7, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_8, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_dfi_phase_shift_static_4s_0s_0_158_9, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. C0_init_pda_mrs_interface_Z59, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. C0_merge_read_valid_40s_32s_5s_0_1, 141, 99, 66, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. C0_mpfe_Z31, 431, 407, 51, 0, 0, 0, 9, 0, 0
+.	.	.	.	.	.	. C0_lb_fifo_11s_1s_37s_49s_1s_112s, 187, 94, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_mpfe_req_tracking_Z27, 28, 53, 21, 0, 0, 0, 3, 0, 0
+.	.	.	.	.	.	.	. C0_util_fifo_reg_61s_5s_32s_16s_0s_1s_0s_31s, 19, 36, 6, 0, 0, 0, 3, 0, 0
+.	.	.	.	.	.	. C0_mpfe_req_tracking_Z28, 216, 171, 30, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	.	.	. C0_util_fifo_Z30, 206, 145, 12, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_fifo_core_Z29, 206, 139, 12, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. C0_util_lat1_to_lat0_61s, 182, 122, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. C0_util_ram_5s_61s_32s_1s_0s_0s_32s, 0, 6, 0, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	. C0_prog_pipe_delay_160s_0_1s_1s, 152, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. C0_prog_pipe_delay_64s_1_1s_1s, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. C0_rmw_Z35, 658, 545, 427, 0, 0, 0, 1, 0, 0
+.	.	.	.	.	.	. C0_multiburst_qr_Z36, 73, 112, 40, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_util_param_latency_1s_2s_0_0s, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_util_param_latency_1s_2s_0_0s_0, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_util_param_latency_3s_2s_0_0s, 6, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. C0_util_sync_1s_0_0, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_util_sync_flops_0, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. C0_util_sync_1s_0_0_0, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_util_sync_flops_0_72, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. C0_util_sync_bus_16s_0_1024s, 34, 23, 9, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_util_sync_flops_0_65, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_util_sync_toggle_pos_0s, 5, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_sync_flops_0_66, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_sync_flops_0_68, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. C0_util_sync_toggle_pos_0s_1, 4, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. C0_util_sync_flops_0_71, 2, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. C0_util_sync_reset_0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. C0_util_sync_flops_0_7_0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	. DDR4_DDRPHY_BLK, 2195, 3212, 951, 0, 0, 0, 14, 1, 42
+.	.	.	. COREDDR_TIP_Z68, 2195, 3212, 951, 0, 0, 0, 14, 1, 0
+.	.	.	.	. COREDDR_TIP_INT_Z67, 2195, 3212, 951, 0, 0, 0, 14, 1, 0
+.	.	.	.	.	. LANE_ALIGNMENT_2s_2s_3s_7s, 18, 36, 0, 0, 0, 0, 12, 0, 0
+.	.	.	.	.	.	. FIFO_BLK_3s_2s, 6, 25, 0, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	.	.	. ram_simple_dp_3s_64s_2s_2s, 0, 6, 0, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	.	. FIFO_BLK_3s_2s_0, 6, 6, 0, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	.	.	. ram_simple_dp_3s_64s_2s_2s_0, 0, 6, 0, 0, 0, 0, 6, 0, 0
+.	.	.	.	.	.	. LANE_CTRL_2s_1s, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. TIP_CTRL_BLK_Z66, 2066, 3075, 928, 0, 0, 0, 2, 0, 0
+.	.	.	.	.	.	. LEVELLING_2s_8_8_8_8_8_8_8_8_8, 1191, 1641, 643, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. DELAY_CTRL_8s_1s, 10, 5, 8, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. DELAY_CTRL_8s_1s_0, 10, 5, 8, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. IOG_IF_2s_18s_0_1, 56, 50, 9, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. APB_IOG_CTRL_SM, 26, 15, 9, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. RDLVL_2s_8_8_8_8_8_8_8_8_8, 996, 1458, 590, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. RDLVL_SMS_2s_8_8_8_8_8_8_8_8_8, 996, 1458, 590, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. RDLVL_TRAIN_0, 498, 720, 296, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. dq_align_dqs_optimization_1_0, 237, 297, 237, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. gate_training_1, 261, 423, 59, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. RDLVL_TRAIN_1, 498, 738, 294, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. dq_align_dqs_optimization_1, 237, 297, 237, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. gate_training_0, 261, 440, 57, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. TRN_COMPLETE_Z64, 10, 18, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. VREF_TR_2s, 5, 6, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. WRLVL_2s, 104, 88, 28, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. WRLVL_BOT, 52, 44, 14, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. WRLVL_BOT_0, 52, 44, 14, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. PHY_SIG_MOD_2s_2s, 274, 921, 46, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. TRN_CLK_2s_1s_0s_1s_2s_3s_4s, 341, 338, 198, 0, 0, 0, 2, 0, 0
+.	.	.	.	.	.	.	. flag_generator_1s, 6, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. data_transition_detector_1s_4, 3, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. noisy_data_detector_1s, 3, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. flag_generator_1s_0, 6, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. data_transition_detector_1s_4_0, 3, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. noisy_data_detector_1s_0, 3, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. flag_generator_1s_1, 6, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. data_transition_detector_1s_4_1, 3, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. noisy_data_detector_1s_1, 3, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. flag_generator_1s_2, 6, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. data_transition_detector_1s_4_2, 3, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. noisy_data_detector_1s_2, 3, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. flag_generator_1s_3, 6, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. data_transition_detector_1s_4_3, 3, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. noisy_data_detector_1s_3, 3, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. trn_bclksclk, 50, 51, 19, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. trn_cmd_addr, 99, 95, 61, 0, 0, 0, 2, 0, 0
+.	.	.	.	.	.	.	. trn_dqsw, 78, 87, 59, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. trn_dqsw_0, 78, 78, 59, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. ddr4_vref, 10, 9, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. write_callibrator_Z65, 78, 147, 41, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. ddr_init_iterator, 29, 18, 23, 0, 0, 0, 0, 0, 0
+.	.	.	. DDR4_DDRPHY_BLK_IOD_ACT_N_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 1
+.	.	.	. DDR4_DDRPHY_BLK_IOD_A_11_0_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 12
+.	.	.	. DDR4_DDRPHY_BLK_IOD_A_12_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. DDR4_DDRPHY_BLK_IOD_A_13_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 1
+.	.	.	. DDR4_DDRPHY_BLK_IOD_BA_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 2
+.	.	.	. DDR4_DDRPHY_BLK_IOD_BCLK_TRAINING_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. DDR4_DDRPHY_BLK_IOD_BG_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 1
+.	.	.	. DDR4_DDRPHY_BLK_IOD_CAS_N_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 1
+.	.	.	. DDR4_DDRPHY_BLK_IOD_CKE_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 1
+.	.	.	. DDR4_DDRPHY_BLK_IOD_CS_N_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 1
+.	.	.	. DDR4_DDRPHY_BLK_IOD_ODT_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 1
+.	.	.	. DDR4_DDRPHY_BLK_IOD_RAS_N_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 1
+.	.	.	. DDR4_DDRPHY_BLK_IOD_REF_CLK_TRAINING_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. DDR4_DDRPHY_BLK_IOD_RESET_N_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 1
+.	.	.	. DDR4_DDRPHY_BLK_IOD_WE_N_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 1
+.	.	.	. DDR4_DDRPHY_BLK_LANECTRL_ADDR_CMD_0_PF_LANECTRL, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. DDR4_DDRPHY_BLK_LANE_0_CTRL_PF_LANECTRL, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. DDR4_DDRPHY_BLK_LANE_0_IOD_DM_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. DDR4_DDRPHY_BLK_LANE_0_IOD_DQSW_TRAINING_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. DDR4_DDRPHY_BLK_LANE_0_IOD_DQS_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. DDR4_DDRPHY_BLK_LANE_0_IOD_DQ_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 8
+.	.	.	. DDR4_DDRPHY_BLK_LANE_0_IOD_READ_TRAINING_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. DDR4_DDRPHY_BLK_LANE_1_CTRL_PF_LANECTRL, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. DDR4_DDRPHY_BLK_LANE_1_IOD_DM_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. DDR4_DDRPHY_BLK_LANE_1_IOD_DQSW_TRAINING_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. DDR4_DDRPHY_BLK_LANE_1_IOD_DQS_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. DDR4_DDRPHY_BLK_LANE_1_IOD_DQ_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 8
+.	.	.	. DDR4_DDRPHY_BLK_LANE_1_IOD_READ_TRAINING_PF_IOD, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	. DDR4_DLL_0_PF_CCC, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	. IO, 632, 817, 132, 0, 0, 34, 2, 0, 0
+.	.	. AHB_MMIO, 65, 177, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. CoreAHBLite_Z73, 65, 177, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. COREAHBLITE_MATRIX4X16_1_1_0_192_0_0_0_0s, 65, 177, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. COREAHBLITE_MASTERSTAGE_1_1_0_192_0s_0_1_0, 37, 69, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. COREAHBLITE_ADDRDEC_Z70, 0, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. COREAHBLITE_DEFAULTSLAVESM_0s_0_1_0, 1, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. COREAHBLITE_SLAVESTAGE_0s_0_0_0, 14, 70, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. COREAHBLITE_SLAVEARBITER_Z72_1_0, 13, 17, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. COREAHBLITE_SLAVESTAGE_0s_0_0_1, 14, 38, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. COREAHBLITE_SLAVEARBITER_Z72_1, 13, 17, 0, 0, 0, 0, 0, 0, 0
+.	.	. AHBtoAPB, 51, 39, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. COREAHBTOAPB3_15s_0s, 51, 39, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. CoreAHBtoAPB3_AhbToApbSM_0s_0_1_0_1_2_3_4, 9, 24, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. CoreAHBtoAPB3_ApbAddrData_0s, 40, 13, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. CoreAHBtoAPB3_PenableScheduler_0s_0_1_2, 2, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	. APB_PERIPHERALS, 0, 38, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. CoreAPB3_Z74, 0, 38, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. COREAPB3_MUXPTOB3, 0, 34, 0, 0, 0, 0, 0, 0, 0
+.	.	. CoreSPI_0, 213, 276, 38, 0, 0, 0, 2, 0, 0
+.	.	.	. CORESPI_Z76, 213, 276, 38, 0, 0, 0, 2, 0, 0
+.	.	.	.	. spi_32s_8s_32s_10s_0_0_1_0s, 213, 276, 38, 0, 0, 0, 2, 0, 0
+.	.	.	.	.	. spi_chanctrl_Z75, 134, 149, 14, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. spi_clockmux, 0, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. spi_control_8s, 0, 8, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. spi_fifo_8s_32s_5_0, 18, 28, 6, 0, 0, 0, 1, 0, 0
+.	.	.	.	.	. spi_fifo_8s_32s_5_1, 18, 27, 6, 0, 0, 0, 1, 0, 0
+.	.	.	.	.	. spi_rf_32s_10s_0, 43, 61, 12, 0, 0, 0, 0, 0, 0
+.	.	. GPIO, 44, 57, 16, 0, 0, 0, 0, 0, 0
+.	.	.	. CoreGPIO_Z77, 44, 57, 16, 0, 0, 0, 0, 0, 0
+.	.	. LSRAM_64kBytes, 64, 57, 0, 0, 0, 32, 0, 0, 0
+.	.	.	. LSRAM_64kBytes_COREAHBLSRAM_PF_0_COREAHBLSRAM_PF_26s_65536s_0s_0s_16_32s_32s, 64, 33, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. LSRAM_64kBytes_COREAHBLSRAM_PF_0_CoreAHBLSRAM_AHBLSramIf_Z78, 28, 21, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. LSRAM_64kBytes_COREAHBLSRAM_PF_0_CoreAHBLSRAM_SramCtrlIf_0s_65536s_16_0s_32s_0_1_2, 36, 12, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM, 0, 24, 0, 0, 0, 32, 0, 0, 0
+.	.	. UART, 195, 173, 78, 0, 0, 2, 0, 0, 0
+.	.	.	. UART_UART_0_CoreUARTapb_Z79, 195, 173, 78, 0, 0, 2, 0, 0, 0
+.	.	.	.	. UART_UART_0_COREUART_1s_1s_0s_26s_0s_0s, 171, 149, 70, 0, 0, 2, 0, 0, 0
+.	.	.	.	.	. UART_UART_0_Clock_gen_0s_0s, 19, 10, 14, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. UART_UART_0_Rx_async_0s_1s_0s_1s_2s_3s, 39, 70, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. UART_UART_0_Tx_async_0s_1s_0s_1s_2s_3s_4s_5s_6s, 23, 23, 5, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. UART_UART_0_fifo_256x8_0s_0s, 33, 9, 25, 0, 0, 1, 0, 0, 0
+.	.	.	.	.	.	. UART_UART_0_fifo_ctrl_256_0s_256s_8s_8s, 33, 9, 25, 0, 0, 1, 0, 0, 0
+.	.	.	.	.	.	.	. UART_UART_0_ram256x8_g5, 0, 0, 0, 0, 0, 1, 0, 0, 0
+.	.	.	.	.	. UART_UART_0_fifo_256x8_0s_0s_0, 33, 6, 26, 0, 0, 1, 0, 0, 0
+.	.	.	.	.	.	. UART_UART_0_fifo_ctrl_256_0s_256s_8s_8s_0, 33, 6, 26, 0, 0, 1, 0, 0, 0
+.	.	.	.	.	.	.	. UART_UART_0_ram256x8_g5_0, 0, 0, 0, 0, 0, 1, 0, 0, 0
+.	. PROCESSOR, 4837, 9945, 986, 0, 2, 10, 6, 2, 0
+.	.	. JTAG_DEBUG, 16, 85, 0, 0, 0, 0, 0, 2, 0
+.	.	.	. COREJTAGDEBUG_85_1s, 16, 85, 0, 0, 0, 0, 0, 2, 0
+.	.	.	.	. uj_jtag_85, 16, 83, 0, 0, 0, 0, 0, 0, 0
+.	.	. Mi_V_Processor, 4821, 9860, 986, 0, 2, 10, 6, 0, 0
+.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_28672_0_2s_5s_34s_2s, 4821, 9860, 986, 0, 2, 10, 6, 0, 0
+.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CORE_RISC_VAHB_TOP, 4821, 9860, 986, 0, 2, 10, 6, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_COREPLEX_LOCAL_INTERRUPTER_CLINT, 129, 97, 192, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_DEBUG_TRANSPORT_MODULE_JTAG, 166, 214, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CAPTURE_CHAIN, 32, 17, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CAPTURE_UPDATE_CHAIN, 32, 14, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CAPTURE_UPDATE_CHAIN_1, 41, 85, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_JTAG_BYPASS_CHAIN, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_JTAG_TAP_CONTROLLER, 15, 31, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CAPTURE_UPDATE_CHAIN_2, 5, 6, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_JTAG_STATE_MACHINE, 4, 10, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_90, 4, 5, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_68, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_69, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_70, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_71, 1, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_NEGATIVE_EDGE_LATCH_1, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_NEGATIVE_EDGE_LATCH_2, 5, 7, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_INT_XING, 4, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_RESET_CATCH_AND_SYNC_1, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_89_1, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_72, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_73, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_33_1, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_SYNC_ROCKET_TILE_TILE, 1954, 4844, 689, 0, 2, 10, 6, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_INT_XING_XING, 4, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ROCKET_TILE_ROCKET, 1950, 4844, 689, 0, 2, 10, 6, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_D_CACHE_DCACHE, 389, 786, 122, 0, 0, 5, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_AMOALU, 0, 171, 64, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ARBITER, 0, 83, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ARBITER_1, 0, 118, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_D_CACHE_DATA_ARRAY, 11, 16, 0, 0, 0, 4, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLB, 0, 41, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_FRONTEND_FRONTEND, 576, 944, 54, 0, 0, 5, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_I_CACHE_ICACHE, 183, 472, 24, 0, 0, 5, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_SHIFT_QUEUE, 325, 346, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLB_1, 0, 11, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ROCKET, 972, 2992, 502, 0, 2, 0, 6, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ALU, 0, 450, 33, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_BREAKPOINT_UNIT, 0, 1181, 192, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CSR_FILE, 420, 885, 122, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_I_BUF, 0, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_MUL_DIV, 120, 271, 121, 0, 2, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_TILE_BUS, 13, 122, 11, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC, 140, 250, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_30, 1, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_13, 70, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ATOMIC_AUTOMATA, 122, 428, 32, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_1, 246, 270, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_0, 64, 61, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_1, 76, 78, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_1_0, 40, 43, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_1_1, 39, 57, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_4, 9, 11, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_5, 12, 11, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_7, 5, 7, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_8, 1, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_2, 222, 124, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_10_0, 79, 46, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_9, 143, 78, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_ERROR, 26, 9, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_23, 9, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_24, 12, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_26, 5, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_SYSTEM_BUS, 389, 226, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_14, 161, 87, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_15, 93, 55, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_16, 1, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_17, 127, 69, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_18, 7, 12, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_CACHE_CORK, 32, 228, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_10_1, 13, 20, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_10_2, 5, 15, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_DEBUG, 795, 1859, 14, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_INNER_ASYNC_DM_INNER, 672, 1757, 14, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK_2, 24, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_23, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_26, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_24, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_27, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_25, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_28, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_26, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_29, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_27, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_30, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_3_1, 4, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_28, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_31, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_29, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_32, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_30, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_33, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_4, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_0_1, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_4_1, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_31, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_34, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_5_1, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_32, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_35, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_33, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_36, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_34, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_37, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_RESET_CATCH_AND_SYNC_0, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_89_0, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_33_0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_38, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_39, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK, 83, 5, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK_1, 46, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_3, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_1, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_4, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_2, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_5, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_3, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_6, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE_2, 37, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_11, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_14, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_12, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_15, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_13, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_16, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_14, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_17, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_15, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_18, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_INNER_DM_INNER, 562, 1749, 14, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_OUTER_ASYNC_DM_OUTER, 123, 102, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE_1, 24, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_24, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_56, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_25, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_57, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_26, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_58, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_27, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_59, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_28, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_60, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1_0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_32, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_64, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2_0, 3, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_33, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_65, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_34, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_66, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_35, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_67, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_6, 4, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_1_1, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_1_1, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_29, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_61, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_30, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_62, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_31, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_63, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_DMI_TO_TL_DMI2TL, 0, 43, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SOURCE_DM_INNER, 83, 14, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK, 37, 12, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_12, 1, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_44, 1, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_13, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_45, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_14, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_46, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_15, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_47, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_16, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_48, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE, 46, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_32, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_1, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_33, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_2, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_34, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_3, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_35, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_4, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_36, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_OUTER_DM_OUTER, 15, 35, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC, 14, 5, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2, 1, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_15, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_16, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_17, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_18, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_19, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_20, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_21, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_22, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_23, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_24, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_29, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_30, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2, 1, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_31, 1, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_DMI_XBAR, 1, 7, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ERROR_ERROR, 56, 84, 42, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_21, 9, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_22, 5, 5, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_FRAGMENTER_1, 108, 210, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_REPEATER_0, 23, 20, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_REPEATER_1, 33, 31, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_REPEATER_2, 19, 20, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_TO_AHB, 190, 248, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_20, 81, 97, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_TO_AHB_CONVERTER, 206, 295, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_19, 83, 103, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_PERIPHERY_BUS, 9, 184, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_SYSTEM_BUS, 17, 287, 10, 0, 0, 0, 0, 0, 0
