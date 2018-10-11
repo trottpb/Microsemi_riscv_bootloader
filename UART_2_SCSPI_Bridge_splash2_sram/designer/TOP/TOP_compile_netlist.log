@@ -1,0 +1,180 @@
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(4830): WARNING: net N_9391 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(4831): WARNING: net N_9392 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(4832): WARNING: net N_9393 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(4833): WARNING: net N_9394 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(4834): WARNING: net N_9395 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(4835): WARNING: net N_9396 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(6294): WARNING: net N_9397 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(6295): WARNING: net N_9398 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(6296): WARNING: net N_9399 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(6297): WARNING: net N_9400 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(6298): WARNING: net N_9401 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(6299): WARNING: net N_9402 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(16288): WARNING: net N_9409 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(16289): WARNING: net N_9410 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(16290): WARNING: net N_9411 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(23784): WARNING: net N_9426 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(23785): WARNING: net N_9427 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(23786): WARNING: net N_9428 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(37742): WARNING: net N_9452 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(155066): WARNING: net N_9458 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(155067): WARNING: net N_9459 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(179859): WARNING: net N_9471 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(179860): WARNING: net N_9472 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(179861): WARNING: net N_9473 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(179862): WARNING: net N_9474 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(190823): WARNING: net N_9422 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191027): WARNING: net N_9429 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191028): WARNING: net N_9430 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191029): WARNING: net N_9431 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191047): WARNING: net N_9436 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191048): WARNING: net N_9437 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191049): WARNING: net N_9438 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191070): WARNING: net N_9446 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191071): WARNING: net N_9447 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191072): WARNING: net N_9448 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191073): WARNING: net N_9449 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191074): WARNING: net N_9450 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191075): WARNING: net N_9451 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191100): WARNING: net N_9455 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191186): WARNING: net N_9468 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191187): WARNING: net N_9469 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191188): WARNING: net N_9470 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191189): WARNING: net N_9475 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191190): WARNING: net N_9476 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191191): WARNING: net N_9477 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191192): WARNING: net N_9478 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191193): WARNING: net N_9479 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191194): WARNING: net N_9480 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191195): WARNING: net N_9481 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191196): WARNING: net N_9482 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191197): WARNING: net N_9483 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191198): WARNING: net N_9484 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191199): WARNING: net N_9485 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191200): WARNING: net N_9486 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191201): WARNING: net N_9487 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(191202): WARNING: net N_9488 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(193677): WARNING: net N_9489 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(193678): WARNING: net N_9490 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(193679): WARNING: net N_9491 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(193680): WARNING: net N_9492 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(194091): WARNING: net N_9493 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(194092): WARNING: net N_9494 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(194093): WARNING: net N_9495 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(194094): WARNING: net N_9496 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(194508): WARNING: net N_9497 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(194509): WARNING: net N_9498 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(194510): WARNING: net N_9499 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(194511): WARNING: net N_9500 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(201370): WARNING: net N_9507 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(201371): WARNING: net N_9508 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(201372): WARNING: net N_9509 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(201373): WARNING: net N_9510 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(202795): WARNING: net N_9505 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(202796): WARNING: net N_9506 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(202815): WARNING: net N_9511 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(202816): WARNING: net N_9512 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(205258): WARNING: net N_9513 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(205259): WARNING: net N_9514 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(208369): WARNING: net N_9521 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(208370): WARNING: net N_9522 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(208371): WARNING: net N_9523 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(208372): WARNING: net N_9524 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(219352): WARNING: net N_9537 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(219353): WARNING: net N_9538 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(219354): WARNING: net N_9539 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(219355): WARNING: net N_9540 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(219356): WARNING: net N_9541 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(219357): WARNING: net N_9542 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(225306): WARNING: net N_9543 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(225307): WARNING: net N_9544 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(225308): WARNING: net N_9545 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(225309): WARNING: net N_9546 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(225310): WARNING: net N_9547 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(225311): WARNING: net N_9548 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(233078): WARNING: net N_9501 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(233079): WARNING: net N_9502 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(233080): WARNING: net N_9503 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/synthesis/synthesis_1/TOP.vm(233081): WARNING: net N_9504 does not have a driver (VDB-1002)
+
+Info: Device 'MPF300T_ES' requires Two-port LSRAM cells with Read-width > 20 to be remapped 
+      Two-port LSRAM instances with Read-width > 20:                     33
+      Two-port LSRAM instances with Read-width > 20 and a single clock:  33
+      Two-port LSRAM instances with read-width > 20 and two clocks:       0
+      Number of AND gates inserted:                                     132
+      Number of LSRAM cells inserted:                                     0
+
+Info: Following Two-port LSRAM instances with Read-width > 20 and a single clock were remapped: 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R0C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R10C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R11C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R12C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R13C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R14C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R15C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R16C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R17C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R18C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R19C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R1C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R20C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R21C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R22C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R23C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R24C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R25C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R26C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R27C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R28C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R29C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R2C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R30C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R31C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R3C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R4C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R5C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R6C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R7C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R8C0 
+      IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R9C0 
+      PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/dcache/tag_array_0_tag_array_0_0_0 
+
+Info: [127205813]:  CMPPF_149: Added 'ADLIB:ICB_CLKINT' instance type before pin 'CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0:A'.
+Info: [127205813]:  CMPPF_149: Added 'ADLIB:CRN_INT' instance type before pin 'CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0:REF_CLK_0'.
+Info: [127205813]:  CMPPF_149: Added 'ADLIB:ICB_CLKINT' instance type before pin 'CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT:A'.
+Info: [127205813]:  CMPPF_149: Added 'ADLIB:ICB_CLKINT' instance type before pin 'PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint:A'.
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       5 
+      Globals that cannot be demoted:      3 
+      Globals considered for demotion:     2 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    5513   0      0      'CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0' 
+    16     0      1      'PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint' 
+    0      0      1      'CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    324    0      0      'identify_jtag_tck_ibuf_RNI7PGF' 
+    292    0      0      'PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint' 
+
+Info: Demotion information: 
+Info: [127205381]:  CMPPF_302: Added 0 row global instances.
+Info: [127205382]:  CMPPF_303: Deleted 0 global instances.
+
+===============================================================================.
+
+Info: Device 'MPF300T_ES' requires fabric generated global resources driven from the fabric to be gated by the ‘INIT:FABRIC_POR_N’ signal 
+    Chip globals:                  2 
+    Row globals:                   0 
+    Number of AND2 gates inserted: 2 
+Info: Chip global resources driven by the following fabric instances were gated by the ‘INIT:FABRIC_POR_N’ signal: 
+    PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.UJ_JTAG_0/un1_duttck_inferred_clock_RNITU6B
+    identify_jtag_tck_ibuf/U_IOIN

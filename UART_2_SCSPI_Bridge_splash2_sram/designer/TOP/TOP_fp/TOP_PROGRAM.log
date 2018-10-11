@@ -1,0 +1,33 @@
+Software Version: 12.200.35.9
+Embedded FlashPro5 programmer detected.
+programmer 'E2001X3OXY' : FlashPro5
+Opened 'C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_sram\designer\TOP\TOP_fp\TOP.pro'
+The 'open_project' command succeeded.
+Warning: Programming is already enabled for device 'MPF300T_ES'.
+The 'enable_device' command succeeded.
+IPD file 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_splash2_sram/designer/TOP/TOP.ipd' has been loaded successfully.
+DESIGN : TOP;  CHECKSUM : 79DC;  PDB_VERSION : 1.9
+The 'set_programming_file' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer 'E2001X3OXY' : Scan Chain...
+programmer 'E2001X3OXY' : Check Chain...
+programmer 'E2001X3OXY' : Scan and Check Chain PASSED.
+programmer 'E2001X3OXY' : device 'MPF300T_ES' : Executing action PROGRAM
+programmer 'E2001X3OXY' : device 'MPF300T_ES' : EXPORT ISC_ENABLE_RESULT[32] = 00000000
+programmer 'E2001X3OXY' : device 'MPF300T_ES' : EXPORT CRCERR[1] = 0
+programmer 'E2001X3OXY' : device 'MPF300T_ES' : Programming FPGA Array and sNVM...
+programmer 'E2001X3OXY' : device 'MPF300T_ES' : ===================================================================================
+programmer 'E2001X3OXY' : device 'MPF300T_ES' : EXPORT DSN[128] = 4364d3274234a427c9d94a25199cf1a8
+programmer 'E2001X3OXY' : device 'MPF300T_ES' : ===================================================================================
+programmer 'E2001X3OXY' : device 'MPF300T_ES' : Finished: Tue Oct 02 15:36:53 2018 (Elapsed time 00:01:41)
+programmer 'E2001X3OXY' : device 'MPF300T_ES' : Executing action PROGRAM PASSED.
+programmer 'E2001X3OXY' : Chain programming PASSED.
+Chain Programming Finished: Tue Oct 02 15:36:53 2018 (Elapsed time 00:01:41)
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+The 'set_programming_file' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.

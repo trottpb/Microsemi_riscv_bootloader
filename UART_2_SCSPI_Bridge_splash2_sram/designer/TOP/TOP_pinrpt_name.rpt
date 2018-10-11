@@ -1,0 +1,35 @@
+*****************************************************************
+Pin Report - Date: Fri Sep 14 16:06:06 2018 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: PolarFire v2.2
+Version: 12.200.30.10
+Design Name: TOP
+Family: PolarFire
+Die: MPF300T_ES
+Package: FCG484
+*****************************************************************
+
+Port              |Pin |Fixed |Function           |Bank     |I/O Std   |Direction          |User I/O Lock Down             |I/O state in Flash*Freeze mode |Clamp Diode   |Resistor Pull   |Schmitt Trigger |Vcm Input Range    |On Die Termination |Odt Value (Ohm) |Input Delay |Slew              |Output Drive (mA) |Impedance (ohm)  |Output Load (pF)         |Source Termination (Ohm) |Output Delay |
+------------------|----|------|-------------------|---------|----------|-------------------|-------------------------------|-------------------------------|--------------|----------------|----------------|-------------------|-------------------|----------------|------------|------------------|------------------|-----------------|-------------------------|-------------------------|-------------|
+GPIO_OUT[0]        P7   Yes    GPIO186PB4          Bank4     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+GPIO_OUT[1]        P8   Yes    GPIO186NB4          Bank4     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+GPIO_OUT[2]        N7   Yes    GPIO187PB4/DQS      Bank4     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+GPIO_OUT[3]        N8   Yes    GPIO187NB4/DQS      Bank4     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+identify_jtag_tck  C11  No     GPIO9PB2/CLKIN_S_6  Bank2     LVCMOS18   Input               No                              LAST_VALUE                      ON             Up               OFF              ---                 OFF                 120              OFF          ---                ---                ---               ---                       ---                       ---           
+identify_jtag_tdi  Y6   No     HSIO160PB0          Bank0     LVCMOS18   Input               No                              LAST_VALUE                      ON             Up               OFF              ---                 OFF                 120              OFF          ---                ---                ---               ---                       ---                       ---           
+identify_jtag_tdo  AB4  No     HSIO162NB0          Bank0     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+identify_jtag_tms  U7   No     HSIO161PB0          Bank0     LVCMOS18   Input               No                              LAST_VALUE                      ON             Up               OFF              ---                 OFF                 120              OFF          ---                ---                ---               ---                       ---                       ---           
+IO_CFG_INTF        G9   Fixed  IO_CFG_INTF         ---       
+RESET_N            N4   Yes    GPIO182PB4          Bank4     LVCMOS18   Input               No                              LAST_VALUE                      ON             Up               OFF              ---                 OFF                 120              OFF          ---                ---                ---               ---                       ---                       ---           
+SC_SPI_EN          H10  Fixed  SPI_EN              ---       
+SPI_CLK            G3   Fixed  SCK                 ---       
+SPI_MISO           G10  Fixed  SDI                 ---       
+SPI_MOSI           G5   Fixed  SDO                 ---       
+SPI_SS             G4   Fixed  SS                  ---       
+TCK                F8   Fixed  TCK                 ---       
+TDI                G8   Fixed  TDI                 ---       
+TDO                F6   Fixed  TDO                 ---       
+TMS                F7   Fixed  TMS                 ---       
+TRSTB              G7   Fixed  TRSTB               ---       
+UART_RX            R5   Yes    GPIO183PB4          Bank4     LVCMOS18   Input               No                              LAST_VALUE                      ON             Up               OFF              ---                 OFF                 120              OFF          ---                ---                ---               ---                       ---                       ---           
+UART_TX            R4   Yes    GPIO183NB4          Bank4     LVCMOS18   Output              No                              LAST_VALUE                      ON             ---              ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           

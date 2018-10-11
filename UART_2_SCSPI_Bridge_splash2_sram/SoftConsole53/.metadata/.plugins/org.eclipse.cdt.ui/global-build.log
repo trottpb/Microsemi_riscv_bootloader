@@ -1,0 +1,45 @@
+15:32:19 **** Incremental Build of configuration Debug for project bootloader_extraputty ****
+make all 
+Building file: ../main.c
+Invoking: GNU RISC-V Cross C Compiler
+riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -msmall-data-limit=8 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_sram\SoftConsole53\bootloader_extraputty" -I"C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_sram\SoftConsole53\bootloader_extraputty\hal" -I"C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_sram\SoftConsole53\bootloader_extraputty\riscv_hal" -I"C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_sram\SoftConsole53\bootloader_extraputty\drivers\ymodem" -I"C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_sram\SoftConsole53\bootloader_extraputty\drivers\CoreGPIO" -I"C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_sram\SoftConsole53\bootloader_extraputty\drivers\CoreUARTapb" -I"C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_sram\SoftConsole53\bootloader_extraputty\drivers\CoreSPI" -I"C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_sram\SoftConsole53\bootloader_extraputty\drivers\mt25ql01gbbb" -std=gnu11 -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'External_1_IRQHandler':
+../main.c:223:27: warning: passing argument 2 of 'UART_send' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       UART_send (&g_uart, g_newline_msg, sizeof(g_newline_msg) );
+                           ^~~~~~~~~~~~~
+In file included from ../main.c:19:0:
+../drivers/CoreUARTapb/core_uart_apb.h:212:1: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'const uint8_t * {aka const unsigned char *}'
+ UART_send
+ ^~~~~~~~~
+../main.c: In function 'read_device_id':
+../main.c:471:2: warning: implicit declaration of function 'send_hex_byte' [-Wimplicit-function-declaration]
+  send_hex_byte(manufacturer_id);
+  ^~~~~~~~~~~~~
+../main.c: In function 'application_write':
+../main.c:579:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  address = DDR3_base_address;
+          ^
+../main.c: At top level:
+../main.c:686:6: warning: conflicting types for 'send_hex_byte'
+ void send_hex_byte(unsigned char d)
+      ^~~~~~~~~~~~~
+../main.c:471:2: note: previous implicit declaration of 'send_hex_byte' was here
+  send_hex_byte(manufacturer_id);
+  ^~~~~~~~~~~~~
+Finished building: ../main.c
+ 
+Building target: bootloader_extraputty.elf
+Invoking: GNU RISC-V Cross C Linker
+riscv64-unknown-elf-gcc -march=rv32i -mabi=ilp32 -msmall-data-limit=8 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_sram\SoftConsole53\bootloader_extraputty\riscv_hal\microsemi-riscv-ram7000.ld" -nostartfiles -Xlinker --gc-sections -Wl,-Map,"bootloader_extraputty.map" --specs=nano.specs -o "bootloader_extraputty.elf"  ./riscv_hal/entry.o ./riscv_hal/init.o ./riscv_hal/riscv_hal.o ./riscv_hal/riscv_hal_stubs.o ./riscv_hal/syscall.o  ./hal/hal_irq.o ./hal/hw_reg_access.o  ./drivers/ymodem/ymodem.o  ./drivers/mt25ql01gbbb/mt25ql01gbbb.o  ./drivers/CoreUARTapb/core_uart_apb.o  ./drivers/CoreSPI/core_spi.o  ./drivers/CoreGPIO/core_gpio.o  ./main.o    
+Finished building target: bootloader_extraputty.elf
+ 
+Invoking: GNU RISC-V Cross Create Flash Image
+riscv64-unknown-elf-objcopy -O ihex "bootloader_extraputty.elf"  "bootloader_extraputty.hex"
+Finished building: bootloader_extraputty.hex
+ 
+Invoking: GNU RISC-V Cross Print Size
+riscv64-unknown-elf-size --format=berkeley "bootloader_extraputty.elf"
+   text	   data	    bss	    dec	    hex	filename
+  19488	    128	   9952	  29568	   7380	bootloader_extraputty.elf
+Finished building: bootloader_extraputty.siz
+ 

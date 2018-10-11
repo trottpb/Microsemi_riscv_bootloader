@@ -1,0 +1,76 @@
+# Microsemi I/O Physical Design Constraints file
+
+# User I/O Constraints file 
+
+# Version: PolarFire v2.2 12.200.30.10
+
+# Family: PolarFire , Die: MPF300T_ES , Package: FCG484
+
+# Date generated: Tue Sep 11 08:25:19 2018 
+
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+
+# 
+# User Locked I/O settings
+# 
+
+set_io -port_name RESET_N  \
+    -pin_name N4           \
+    -fixed true            \
+    -DIRECTION INPUT
+
+
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+
+
+#
+#Ports using Dedicated Pins
+
+#
+
+set_io -port_name TCK  \
+    -pin_name F8       \
+    -DIRECTION INPUT
+
+
+set_io -port_name TDI  \
+    -pin_name G8       \
+    -DIRECTION INPUT
+
+
+set_io -port_name TDO  \
+    -pin_name F6       \
+    -DIRECTION OUTPUT
+
+
+set_io -port_name TMS  \
+    -pin_name F7       \
+    -DIRECTION INPUT
+
+
+set_io -port_name TRSTB  \
+    -pin_name G7         \
+    -DIRECTION INPUT
+
+

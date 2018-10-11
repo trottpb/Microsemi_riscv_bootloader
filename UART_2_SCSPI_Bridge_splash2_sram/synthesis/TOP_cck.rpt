@@ -1,0 +1,97 @@
+
+Copyright (C) 1994-2017 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2017.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro
+OS: Windows 6.1
+
+Hostname: EMEAPC0002
+
+Implementation : synthesis
+
+# Written on Tue Sep 11 08:27:43 2018
+
+##### DESIGN INFO #######################################################
+
+Top View:                "TOP"
+Constraint File(s):      "C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_sram\designer\TOP\synthesis.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 2 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                                                      Ending                                                        |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                        CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     |     10.000           |     No paths         |     No paths         |     No paths                         
+System                                                        COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     |     10.000           |     No paths         |     10.000           |     No paths                         
+CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     |     10.000           |     No paths         |     No paths         |     No paths                         
+CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     System                                                        |     10.000           |     No paths         |     No paths         |     No paths                         
+COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     |     10.000           |     10.000           |     5.000            |     5.000                            
+=======================================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:GPIO_OUT[0]
+p:GPIO_OUT[1]
+p:GPIO_OUT[2]
+p:GPIO_OUT[3]
+p:IO_CFG_INTF
+p:RESET_N
+p:SC_SPI_EN
+p:SPI_CLK
+p:SPI_MISO
+p:SPI_MOSI
+p:SPI_SS
+p:TCK
+p:TDI
+p:TDO
+p:TMS
+p:TRSTB
+p:UART_RX
+p:UART_TX
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

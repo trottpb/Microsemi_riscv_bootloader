@@ -1,0 +1,16 @@
+Project Name: UART_2_SCSPI_Bridge_splash2_sram
+Location: C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_splash2_sram
+Description: SPlash kit - DDR4 Write/Read operations
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : MPF300T_ES-1FCG484I
+Family         : PolarFire
+Die            : MPF300T_ES
+Package        : FCG484
+Speed          : -1
+Core Voltage   : 1.0
+Range          : IND
