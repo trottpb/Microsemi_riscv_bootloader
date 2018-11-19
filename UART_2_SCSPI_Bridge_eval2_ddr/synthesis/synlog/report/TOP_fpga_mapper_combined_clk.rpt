@@ -7,22 +7,24 @@
 
 Clock optimization not enabled
 2 non-gated/non-generated clock tree(s) driving 17 clock pin(s) of sequential element(s)
-3 gated/generated clock tree(s) driving 16936 clock pin(s) of sequential element(s)
-0 instances converted, 16936 sequential instances remain driven by gated/generated clocks
+5 gated/generated clock tree(s) driving 16720 clock pin(s) of sequential element(s)
+0 instances converted, 16720 sequential instances remain driven by gated/generated clocks
 
 =============================================================================== Non-Gated/Non-Generated Clocks ===============================================================================
 Clock Tree ID     Driving Element                                            Drive Element Type                   Fanout     Sample Instance                                                  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0004       PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJTAG_0     UJTAG                                16         PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJ_JTAG_0.pauselow
-@K:CKID0005       CLOCKS_RESETS_0.RCOSC_0.RCOSC_0.I_OSC_160                  clock definition on OSC_RC160MHZ     1          CLOCKS_RESETS_0.CCC_100MHz_0.CCC_100MHz_0.pll_inst_0             
+@K:CKID0006       PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJTAG_0     UJTAG                                16         PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJ_JTAG_0.pauselow
+@K:CKID0007       CLOCKS_RESETS_0.RCOSC_0.RCOSC_0.I_OSC_160                  clock definition on OSC_RC160MHZ     1          CLOCKS_RESETS_0.CCC_100MHz_0.CCC_100MHz_0.pll_inst_0             
 ==============================================================================================================================================================================================
-====================================================================================================================================== Gated/Generated Clocks ======================================================================================================================================
-Clock Tree ID     Driving Element                                                         Drive Element Type     Fanout     Sample Instance                                                                  Explanation                                                                            
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       MEMORY_0.DDR3_0.CCC_0.pll_inst_0                                        PLL                    9629       MEMORY_0.DDR3_0.DDRCTRL_0.sdram_sys_top.dfi_rddata_w1_i[13]                      No generated or derived clock directive on output of sequential instance               
-@K:CKID0002       CLOCKS_RESETS_0.CCC_100MHz_0.CCC_100MHz_0.pll_inst_0                    PLL                    7015       CLOCKS_RESETS_0.reset_synchronizer_0.genblk1\.reset_sync_reg[1]                  Multiple clocks on generating sequential element from nets RCOSC_0_RCOSC_160MHZ_GL, GND
-@K:CKID0003       PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJ_JTAG_0.un1_duttck     CFG4                   292        PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.dtm.stickyBusyReg_2     Clock conversion disabled                                                              
-====================================================================================================================================================================================================================================================================================================
+========================================================================================================================================= Gated/Generated Clocks ==========================================================================================================================================
+Clock Tree ID     Driving Element                                                                      Drive Element Type     Fanout     Sample Instance                                                            Explanation                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       MEMORY_0.DDR3_0.CCC_0.pll_inst_0                                                     PLL                    16423      MEMORY_0.DDR3_0.DDRCTRL_0.sdram_sys_top.dfi_rddata_w1_i[13]                Multiple clocks on generating sequential element from nets CLOCKS_RESETS_0_CLK100, GND 
+@K:CKID0002       CLOCKS_RESETS_0.CCC_100MHz_0.CCC_100MHz_0.pll_inst_0                                 PLL                    3          CLOCKS_RESETS_0.reset_synchronizer_0.genblk1\.reset_sync_reg[1]            Multiple clocks on generating sequential element from nets RCOSC_0_RCOSC_160MHZ_GL, GND
+@K:CKID0003       MEMORY_0.DDR3_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.MOVE_LOAD_RESET[1]     CFG2                   1          MEMORY_0.DDR3_0.DDRPHY_BLK_0_SYNC_SYS_RST_N_i_rs                           No clocks found on inputs                                                              
+@K:CKID0004       MEMORY_0.DDR3_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.MOVE_LOAD_RESET[0]     CFG2                   1          MEMORY_0.DDR3_0.DDRPHY_BLK_0_SYNC_SYS_RST_N_i_rs_0                         No clocks found on inputs                                                              
+@K:CKID0005       PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJ_JTAG_0.un1_duttck                  CFG4                   292        PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.dtm.skipOpReg     Clock conversion disabled                                                              
+===========================================================================================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

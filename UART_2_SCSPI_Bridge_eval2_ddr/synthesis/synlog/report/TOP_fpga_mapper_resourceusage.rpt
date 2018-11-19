@@ -22,19 +22,19 @@ PF_SPI          1 use
 PLL             2 uses
 TRIBUFF_FEEDBACK  2 uses
 UJTAG           1 use
-CFG1           148 uses
-CFG2           2901 uses
-CFG3           9052 uses
-CFG4           9493 uses
+CFG1           149 uses
+CFG2           2883 uses
+CFG3           8816 uses
+CFG4           9658 uses
 
 Carry cells:
-ARI1            2974 uses - used for arithmetic functions
-ARI1            698 uses - used for Wide-Mux implementation
-Total ARI1      3672 uses
+ARI1            2921 uses - used for arithmetic functions
+ARI1            678 uses - used for Wide-Mux implementation
+Total ARI1      3599 uses
 
 
 Sequential Cells: 
-SLE            16625 uses
+SLE            16432 uses
 
 DSP Blocks:    2 of 924 (0%)
  MACC_PA:         1 Mult
@@ -50,15 +50,15 @@ TRIBUFF        31 uses
 
 Global Clock Buffers: 8
 
-Total LUTs:    25266
+Total LUTs:    25105
 
 Extra resources required for RAM and MACC_PA interface logic during P&R:
 
-RAM64X12 Interface Logic : SLEs = 1008; LUTs = 1008;
+RAM64X12 Interface Logic : SLEs = 732; LUTs = 732;
 RAM1K20  Interface Logic : SLEs = 2232; LUTs = 2232;
 MACC_PA     Interface Logic : SLEs = 72; LUTs = 72;
 MACC_PA_BC_ROM     Interface Logic : SLEs = 0; LUTs = 0;
 
-Total number of SLEs after P&R:  16625 + 1008 + 2232 + 72 = 19937;
-Total number of LUTs after P&R:  25266 + 1008 + 2232 + 72 = 28578;
+Total number of SLEs after P&R:  16432 + 732 + 2232 + 72 = 19468;
+Total number of LUTs after P&R:  25105 + 732 + 2232 + 72 = 28141;
 

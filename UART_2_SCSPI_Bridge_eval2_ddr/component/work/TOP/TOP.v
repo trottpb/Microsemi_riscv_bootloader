@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Sep 10 16:30:40 2018
-// Version: PolarFire v2.2 12.200.30.10
+// Created by SmartDesign Thu Oct 18 10:15:07 2018
+// Version: PolarFire v2.3 12.200.35.9
 //////////////////////////////////////////////////////////////////////
 
 `timescale 1ns / 100ps
@@ -110,6 +110,7 @@ wire   [3:0]  GPIO_OUT_net_0;
 wire          INT_RESET_N_net_0;
 wire          IO_0_RXRDY;
 wire          IO_CFG_INTF;
+wire          MEMORY_0_SYS_CLK;
 wire          ODT_net_0;
 wire   [31:0] PROCESSOR_0_AHB_MST_MEM_HADDR;
 wire   [2:0]  PROCESSOR_0_AHB_MST_MEM_HBURST;
@@ -163,11 +164,11 @@ wire          CK0_net_1;
 wire          CK0_N_net_1;
 wire          SHIELD0_net_1;
 wire          SHIELD1_net_1;
+wire          SPI_MOSI_0_net_0;
 wire   [3:0]  GPIO_OUT_net_1;
 wire   [1:0]  DM_net_1;
 wire   [2:0]  BA_net_1;
 wire   [15:0] A_net_1;
-wire          SPI_MOSI_0_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -175,17 +176,17 @@ wire          VCC_net;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
+wire   [3:0]  PROCESSOR_0_AHB_MST_MEM_HPROT;
 wire   [6:4]  PROCESSOR_0_AHB_MST_MEM_HPROT_0_6to4;
 wire   [3:0]  PROCESSOR_0_AHB_MST_MEM_HPROT_0_3to0;
 wire   [6:0]  PROCESSOR_0_AHB_MST_MEM_HPROT_0;
-wire   [3:0]  PROCESSOR_0_AHB_MST_MEM_HPROT;
+wire   [30:0] PROCESSOR_0_AHB_MST_MMIO_HADDR;
 wire   [31:31]PROCESSOR_0_AHB_MST_MMIO_HADDR_0_31to31;
 wire   [30:0] PROCESSOR_0_AHB_MST_MMIO_HADDR_0_30to0;
 wire   [31:0] PROCESSOR_0_AHB_MST_MMIO_HADDR_0;
-wire   [30:0] PROCESSOR_0_AHB_MST_MMIO_HADDR;
-wire   [1:0]  PROCESSOR_0_AHB_MST_MMIO_HRESP;
 wire   [0:0]  PROCESSOR_0_AHB_MST_MMIO_HRESP_0_0to0;
 wire          PROCESSOR_0_AHB_MST_MMIO_HRESP_0;
+wire   [1:0]  PROCESSOR_0_AHB_MST_MMIO_HRESP;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -226,6 +227,8 @@ assign SHIELD0_net_1     = SHIELD0_net_0;
 assign SHIELD0           = SHIELD0_net_1;
 assign SHIELD1_net_1     = SHIELD1_net_0;
 assign SHIELD1           = SHIELD1_net_1;
+assign SPI_MOSI_0_net_0  = SPI_MOSI_0;
+assign SPI_MOSI          = SPI_MOSI_0_net_0;
 assign GPIO_OUT_net_1    = GPIO_OUT_net_0;
 assign GPIO_OUT[3:0]     = GPIO_OUT_net_1;
 assign DM_net_1          = DM_net_0;
@@ -234,8 +237,6 @@ assign BA_net_1          = BA_net_0;
 assign BA[2:0]           = BA_net_1;
 assign A_net_1           = A_net_0;
 assign A[15:0]           = A_net_1;
-assign SPI_MOSI_0_net_0  = SPI_MOSI_0;
-assign SPI_MOSI          = SPI_MOSI_0_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -265,28 +266,28 @@ CLOCKS_RESETS CLOCKS_RESETS_0(
 //--------IO
 IO IO_0(
         // Inputs
-        .HCLK         ( CLOCKS_RESETS_0_CLK100 ),
+        .HCLK         ( MEMORY_0_SYS_CLK ),
         .HRESETN      ( INT_RESET_N_net_0 ),
         .RX           ( UART_RX ),
         .HWRITE_M0    ( PROCESSOR_0_AHB_MST_MMIO_HWRITE ),
         .HMASTLOCK_M0 ( PROCESSOR_0_AHB_MST_MMIO_HLOCK ),
+        .SPI_MISO     ( SPI_MISO ),
+        .IO_CFG_INTF  ( IO_CFG_INTF ),
+        .SC_SPI_EN    ( SC_SPI_EN ),
         .HADDR_M0     ( PROCESSOR_0_AHB_MST_MMIO_HADDR_0 ),
         .HTRANS_M0    ( PROCESSOR_0_AHB_MST_MMIO_HTRANS ),
         .HSIZE_M0     ( PROCESSOR_0_AHB_MST_MMIO_HSIZE ),
         .HBURST_M0    ( PROCESSOR_0_AHB_MST_MMIO_HBURST ),
         .HPROT_M0     ( PROCESSOR_0_AHB_MST_MMIO_HPROT ),
         .HWDATA_M0    ( PROCESSOR_0_AHB_MST_MMIO_HWDATA ),
-        .SPI_MISO     ( SPI_MISO ),
-        .IO_CFG_INTF  ( IO_CFG_INTF ),
-        .SC_SPI_EN    ( SC_SPI_EN ),
         // Outputs
         .TX           ( UART_TX_net_0 ),
         .HREADY_M0    ( PROCESSOR_0_AHB_MST_MMIO_HREADY ),
         .RXRDY        ( IO_0_RXRDY ),
+        .SPI_MOSI     ( SPI_MOSI_0 ),
         .GPIO_OUT     ( GPIO_OUT_net_0 ),
         .HRDATA_M0    ( PROCESSOR_0_AHB_MST_MMIO_HRDATA ),
         .HRESP_M0     ( PROCESSOR_0_AHB_MST_MMIO_HRESP ),
-        .SPI_MOSI     ( SPI_MOSI_0 ),
         // Inouts
         .SPI_CLK      ( SPI_CLK ),
         .SPI_SS       ( SPI_SS ) 
@@ -298,9 +299,9 @@ MEMORY MEMORY_0(
         .HCLK         ( CLOCKS_RESETS_0_CLK100 ),
         .HRESETN      ( INT_RESET_N_net_0 ),
         .MASTER0_HSEL ( PROCESSOR_0_AHB_MST_MEM_HSEL ),
-        .HWRITE_M0    ( PROCESSOR_0_AHB_MST_MEM_HWRITE ),
         .HADDR_M0     ( PROCESSOR_0_AHB_MST_MEM_HADDR ),
         .HTRANS_M0    ( PROCESSOR_0_AHB_MST_MEM_HTRANS ),
+        .HWRITE_M0    ( PROCESSOR_0_AHB_MST_MEM_HWRITE ),
         .HSIZE_M0     ( PROCESSOR_0_AHB_MST_MEM_HSIZE ),
         .HBURST_M0    ( PROCESSOR_0_AHB_MST_MEM_HBURST ),
         .HPROT_M0     ( PROCESSOR_0_AHB_MST_MEM_HPROT_0 ),
@@ -317,12 +318,13 @@ MEMORY MEMORY_0(
         .CK0_N        ( CK0_N_net_0 ),
         .SHIELD0      ( SHIELD0_net_0 ),
         .SHIELD1      ( SHIELD1_net_0 ),
-        .HREADY_M0    ( PROCESSOR_0_AHB_MST_MEM_HREADY ),
-        .HRESP_M0     ( PROCESSOR_0_AHB_MST_MEM_HRESP ),
         .DM           ( DM_net_0 ),
         .BA           ( BA_net_0 ),
         .A            ( A_net_0 ),
         .HRDATA_M0    ( PROCESSOR_0_AHB_MST_MEM_HRDATA ),
+        .HREADY_M0    ( PROCESSOR_0_AHB_MST_MEM_HREADY ),
+        .HRESP_M0     ( PROCESSOR_0_AHB_MST_MEM_HRESP ),
+        .SYS_CLK      ( MEMORY_0_SYS_CLK ),
         // Inouts
         .DQ           ( DQ ),
         .DQS          ( DQS ),
@@ -332,7 +334,7 @@ MEMORY MEMORY_0(
 //--------PROCESSOR
 PROCESSOR PROCESSOR_0(
         // Inputs
-        .CLK                 ( CLOCKS_RESETS_0_CLK100 ),
+        .CLK                 ( MEMORY_0_SYS_CLK ),
         .RESETN              ( INT_RESET_N_net_0 ),
         .TRSTB               ( TRSTB ),
         .TCK                 ( TCK ),

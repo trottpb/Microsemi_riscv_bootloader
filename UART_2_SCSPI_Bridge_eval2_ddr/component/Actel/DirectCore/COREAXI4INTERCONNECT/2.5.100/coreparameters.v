@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------
-// Created by Microsemi SmartDesign Fri Aug 31 09:49:26 2018
+// Created by Microsemi SmartDesign Thu Oct 18 10:08:07 2018
 // Parameters for COREAXI4INTERCONNECT
 //--------------------------------------------------------------------
 
@@ -585,7 +585,7 @@ parameter NUM_THREADS = 1;
 parameter OPEN_TRANS_MAX = 2;
 parameter RD_ARB_EN = 0;
 parameter SLAVE0_CHAN_RS = 1;
-parameter SLAVE0_CLOCK_DOMAIN_CROSSING = 1;
+parameter SLAVE0_CLOCK_DOMAIN_CROSSING = 0;
 parameter SLAVE0_DATA_WIDTH = 64;
 parameter SLAVE0_DWC_DATA_FIFO_DEPTH = 16;
 parameter SLAVE0_END_ADDR = 'h8fffffff;

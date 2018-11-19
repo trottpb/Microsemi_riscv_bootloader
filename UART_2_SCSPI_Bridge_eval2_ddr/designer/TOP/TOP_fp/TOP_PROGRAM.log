@@ -6,7 +6,7 @@ The 'open_project' command succeeded.
 Warning: Programming is already enabled for device 'MPF300TS_ES'.
 The 'enable_device' command succeeded.
 IPD file 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_ddr/designer/TOP/TOP.ipd' has been loaded successfully.
-DESIGN : TOP;  CHECKSUM : DA7E;  PDB_VERSION : 1.9
+DESIGN : TOP;  CHECKSUM : 6440;  PDB_VERSION : 1.9
 The 'set_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
 programmer 'E2002D30FM' : Scan Chain...
@@ -19,10 +19,10 @@ programmer 'E2002D30FM' : device 'MPF300TS_ES' : Programming FPGA Array and sNVM
 programmer 'E2002D30FM' : device 'MPF300TS_ES' : ===================================================================================
 programmer 'E2002D30FM' : device 'MPF300TS_ES' : EXPORT DSN[128] = e597c25af678e3adfc890071cc9a45ff
 programmer 'E2002D30FM' : device 'MPF300TS_ES' : ===================================================================================
-programmer 'E2002D30FM' : device 'MPF300TS_ES' : Finished: Tue Oct 02 13:28:57 2018 (Elapsed time 00:01:37)
+programmer 'E2002D30FM' : device 'MPF300TS_ES' : Finished: Thu Nov 08 17:05:42 2018 (Elapsed time 00:01:44)
 programmer 'E2002D30FM' : device 'MPF300TS_ES' : Executing action PROGRAM PASSED.
 programmer 'E2002D30FM' : Chain programming PASSED.
-Chain Programming Finished: Tue Oct 02 13:28:57 2018 (Elapsed time 00:01:37)
+Chain Programming Finished: Thu Nov 08 17:05:42 2018 (Elapsed time 00:01:44)
 
                         o - o - o - o - o - o
 

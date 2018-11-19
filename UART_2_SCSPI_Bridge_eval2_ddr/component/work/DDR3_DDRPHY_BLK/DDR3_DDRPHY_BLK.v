@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Aug 31 09:48:21 2018
-// Version: PolarFire v2.2 12.200.30.10
+// Created by SmartDesign Thu Oct 18 10:17:05 2018
+// Version: PolarFire v2.3 12.200.35.9
 //////////////////////////////////////////////////////////////////////
 
 `timescale 1ns / 100ps
@@ -701,6 +701,46 @@ wire             IOD_TRAINING_0_CMD_OE;
 wire             IOD_TRAINING_0_CMD_RESET_LANE;
 wire   [0:0]     IOD_TRAINING_0_DELAY_LINE_SEL_RD0to0;
 wire   [1:1]     IOD_TRAINING_0_DELAY_LINE_SEL_RD1to1;
+wire   [0:0]     IOD_TRAINING_0_DFI_BANK_P0_OUT0to0;
+wire   [1:1]     IOD_TRAINING_0_DFI_BANK_P0_OUT1to1;
+wire   [2:2]     IOD_TRAINING_0_DFI_BANK_P0_OUT2to2;
+wire   [0:0]     IOD_TRAINING_0_DFI_BANK_P1_OUT0to0;
+wire   [1:1]     IOD_TRAINING_0_DFI_BANK_P1_OUT1to1;
+wire   [2:2]     IOD_TRAINING_0_DFI_BANK_P1_OUT2to2;
+wire   [0:0]     IOD_TRAINING_0_DFI_BANK_P2_OUT0to0;
+wire   [1:1]     IOD_TRAINING_0_DFI_BANK_P2_OUT1to1;
+wire   [2:2]     IOD_TRAINING_0_DFI_BANK_P2_OUT2to2;
+wire   [0:0]     IOD_TRAINING_0_DFI_BANK_P3_OUT0to0;
+wire   [1:1]     IOD_TRAINING_0_DFI_BANK_P3_OUT1to1;
+wire   [2:2]     IOD_TRAINING_0_DFI_BANK_P3_OUT2to2;
+wire             IOD_TRAINING_0_DFI_CAS_N_P0_OUT;
+wire             IOD_TRAINING_0_DFI_CAS_N_P1_OUT;
+wire             IOD_TRAINING_0_DFI_CAS_N_P2_OUT;
+wire             IOD_TRAINING_0_DFI_CAS_N_P3_OUT;
+wire             IOD_TRAINING_0_DFI_CKE_P0_OUT;
+wire             IOD_TRAINING_0_DFI_CKE_P1_OUT;
+wire             IOD_TRAINING_0_DFI_CKE_P2_OUT;
+wire             IOD_TRAINING_0_DFI_CKE_P3_OUT;
+wire             IOD_TRAINING_0_DFI_CS_N_P0_OUT;
+wire             IOD_TRAINING_0_DFI_CS_N_P1_OUT;
+wire             IOD_TRAINING_0_DFI_CS_N_P2_OUT;
+wire             IOD_TRAINING_0_DFI_CS_N_P3_OUT;
+wire             IOD_TRAINING_0_DFI_ODT_P0_OUT;
+wire             IOD_TRAINING_0_DFI_ODT_P1_OUT;
+wire             IOD_TRAINING_0_DFI_ODT_P2_OUT;
+wire             IOD_TRAINING_0_DFI_ODT_P3_OUT;
+wire             IOD_TRAINING_0_DFI_RAS_N_P0_OUT;
+wire             IOD_TRAINING_0_DFI_RAS_N_P1_OUT;
+wire             IOD_TRAINING_0_DFI_RAS_N_P2_OUT;
+wire             IOD_TRAINING_0_DFI_RAS_N_P3_OUT;
+wire             IOD_TRAINING_0_DFI_RESET_N_P0_OUT;
+wire             IOD_TRAINING_0_DFI_RESET_N_P1_OUT;
+wire             IOD_TRAINING_0_DFI_RESET_N_P2_OUT;
+wire             IOD_TRAINING_0_DFI_RESET_N_P3_OUT;
+wire             IOD_TRAINING_0_DFI_WE_N_P0_OUT;
+wire             IOD_TRAINING_0_DFI_WE_N_P1_OUT;
+wire             IOD_TRAINING_0_DFI_WE_N_P2_OUT;
+wire             IOD_TRAINING_0_DFI_WE_N_P3_OUT;
 wire   [0:0]     IOD_TRAINING_0_DIRECTION0to0;
 wire   [1:1]     IOD_TRAINING_0_DIRECTION1to1;
 wire   [2:2]     IOD_TRAINING_0_DIRECTION2to2;
@@ -755,10 +795,70 @@ wire   [7:0]     IOD_TRAINING_0_DQSW_SELA7to0;
 wire   [15:8]    IOD_TRAINING_0_DQSW_SELA15to8;
 wire   [0:0]     IOD_TRAINING_0_INIT_PAUSE0to0;
 wire   [1:1]     IOD_TRAINING_0_INIT_PAUSE1to1;
-wire             IOD_TRAINING_0_IOG_ADDRESS_P0;
-wire             IOD_TRAINING_0_IOG_ADDRESS_P1;
-wire             IOD_TRAINING_0_IOG_ADDRESS_P2;
-wire             IOD_TRAINING_0_IOG_ADDRESS_P3;
+wire   [0:0]     IOD_TRAINING_0_IOG_ADDRESS_P00to0;
+wire   [1:1]     IOD_TRAINING_0_IOG_ADDRESS_P01to1;
+wire   [2:2]     IOD_TRAINING_0_IOG_ADDRESS_P02to2;
+wire   [3:3]     IOD_TRAINING_0_IOG_ADDRESS_P03to3;
+wire   [4:4]     IOD_TRAINING_0_IOG_ADDRESS_P04to4;
+wire   [5:5]     IOD_TRAINING_0_IOG_ADDRESS_P05to5;
+wire   [6:6]     IOD_TRAINING_0_IOG_ADDRESS_P06to6;
+wire   [7:7]     IOD_TRAINING_0_IOG_ADDRESS_P07to7;
+wire   [8:8]     IOD_TRAINING_0_IOG_ADDRESS_P08to8;
+wire   [9:9]     IOD_TRAINING_0_IOG_ADDRESS_P09to9;
+wire   [0:0]     IOD_TRAINING_0_IOG_ADDRESS_P10to0;
+wire   [10:10]   IOD_TRAINING_0_IOG_ADDRESS_P010to10;
+wire   [1:1]     IOD_TRAINING_0_IOG_ADDRESS_P11to1;
+wire   [11:11]   IOD_TRAINING_0_IOG_ADDRESS_P011to11;
+wire   [2:2]     IOD_TRAINING_0_IOG_ADDRESS_P12to2;
+wire   [12:12]   IOD_TRAINING_0_IOG_ADDRESS_P012to12;
+wire   [3:3]     IOD_TRAINING_0_IOG_ADDRESS_P13to3;
+wire   [13:13]   IOD_TRAINING_0_IOG_ADDRESS_P013to13;
+wire   [4:4]     IOD_TRAINING_0_IOG_ADDRESS_P14to4;
+wire   [14:14]   IOD_TRAINING_0_IOG_ADDRESS_P014to14;
+wire   [5:5]     IOD_TRAINING_0_IOG_ADDRESS_P15to5;
+wire   [15:15]   IOD_TRAINING_0_IOG_ADDRESS_P015to15;
+wire   [6:6]     IOD_TRAINING_0_IOG_ADDRESS_P16to6;
+wire   [7:7]     IOD_TRAINING_0_IOG_ADDRESS_P17to7;
+wire   [8:8]     IOD_TRAINING_0_IOG_ADDRESS_P18to8;
+wire   [9:9]     IOD_TRAINING_0_IOG_ADDRESS_P19to9;
+wire   [0:0]     IOD_TRAINING_0_IOG_ADDRESS_P20to0;
+wire   [1:1]     IOD_TRAINING_0_IOG_ADDRESS_P21to1;
+wire   [2:2]     IOD_TRAINING_0_IOG_ADDRESS_P22to2;
+wire   [3:3]     IOD_TRAINING_0_IOG_ADDRESS_P23to3;
+wire   [4:4]     IOD_TRAINING_0_IOG_ADDRESS_P24to4;
+wire   [5:5]     IOD_TRAINING_0_IOG_ADDRESS_P25to5;
+wire   [6:6]     IOD_TRAINING_0_IOG_ADDRESS_P26to6;
+wire   [7:7]     IOD_TRAINING_0_IOG_ADDRESS_P27to7;
+wire   [8:8]     IOD_TRAINING_0_IOG_ADDRESS_P28to8;
+wire   [9:9]     IOD_TRAINING_0_IOG_ADDRESS_P29to9;
+wire   [0:0]     IOD_TRAINING_0_IOG_ADDRESS_P30to0;
+wire   [1:1]     IOD_TRAINING_0_IOG_ADDRESS_P31to1;
+wire   [2:2]     IOD_TRAINING_0_IOG_ADDRESS_P32to2;
+wire   [3:3]     IOD_TRAINING_0_IOG_ADDRESS_P33to3;
+wire   [4:4]     IOD_TRAINING_0_IOG_ADDRESS_P34to4;
+wire   [5:5]     IOD_TRAINING_0_IOG_ADDRESS_P35to5;
+wire   [6:6]     IOD_TRAINING_0_IOG_ADDRESS_P36to6;
+wire   [7:7]     IOD_TRAINING_0_IOG_ADDRESS_P37to7;
+wire   [8:8]     IOD_TRAINING_0_IOG_ADDRESS_P38to8;
+wire   [9:9]     IOD_TRAINING_0_IOG_ADDRESS_P39to9;
+wire   [10:10]   IOD_TRAINING_0_IOG_ADDRESS_P110to10;
+wire   [11:11]   IOD_TRAINING_0_IOG_ADDRESS_P111to11;
+wire   [12:12]   IOD_TRAINING_0_IOG_ADDRESS_P112to12;
+wire   [13:13]   IOD_TRAINING_0_IOG_ADDRESS_P113to13;
+wire   [14:14]   IOD_TRAINING_0_IOG_ADDRESS_P114to14;
+wire   [15:15]   IOD_TRAINING_0_IOG_ADDRESS_P115to15;
+wire   [10:10]   IOD_TRAINING_0_IOG_ADDRESS_P210to10;
+wire   [11:11]   IOD_TRAINING_0_IOG_ADDRESS_P211to11;
+wire   [12:12]   IOD_TRAINING_0_IOG_ADDRESS_P212to12;
+wire   [13:13]   IOD_TRAINING_0_IOG_ADDRESS_P213to13;
+wire   [14:14]   IOD_TRAINING_0_IOG_ADDRESS_P214to14;
+wire   [15:15]   IOD_TRAINING_0_IOG_ADDRESS_P215to15;
+wire   [10:10]   IOD_TRAINING_0_IOG_ADDRESS_P310to10;
+wire   [11:11]   IOD_TRAINING_0_IOG_ADDRESS_P311to11;
+wire   [12:12]   IOD_TRAINING_0_IOG_ADDRESS_P312to12;
+wire   [13:13]   IOD_TRAINING_0_IOG_ADDRESS_P313to13;
+wire   [14:14]   IOD_TRAINING_0_IOG_ADDRESS_P314to14;
+wire   [15:15]   IOD_TRAINING_0_IOG_ADDRESS_P315to15;
 wire   [0:0]     IOD_TRAINING_0_IOG_DM_TXDATA_OUT0to0;
 wire   [1:1]     IOD_TRAINING_0_IOG_DM_TXDATA_OUT1to1;
 wire   [2:2]     IOD_TRAINING_0_IOG_DM_TXDATA_OUT2to2;
@@ -1442,6 +1542,22 @@ wire   [0:0]     IOG_WRDATA_MASK_P3_slice_0;
 wire   [1:1]     IOG_WRDATA_MASK_P3_slice_1;
 wire   [2:2]     IOG_WRDATA_MASK_P3_slice_2;
 wire   [3:3]     IOG_WRDATA_MASK_P3_slice_3;
+wire   [16:16]   IOG_ADDRESS_P0_slice_0;
+wire   [17:17]   IOG_ADDRESS_P0_slice_1;
+wire   [18:18]   IOG_ADDRESS_P0_slice_2;
+wire   [19:19]   IOG_ADDRESS_P0_slice_3;
+wire   [16:16]   IOG_ADDRESS_P1_slice_0;
+wire   [17:17]   IOG_ADDRESS_P1_slice_1;
+wire   [18:18]   IOG_ADDRESS_P1_slice_2;
+wire   [19:19]   IOG_ADDRESS_P1_slice_3;
+wire   [16:16]   IOG_ADDRESS_P2_slice_0;
+wire   [17:17]   IOG_ADDRESS_P2_slice_1;
+wire   [18:18]   IOG_ADDRESS_P2_slice_2;
+wire   [19:19]   IOG_ADDRESS_P2_slice_3;
+wire   [16:16]   IOG_ADDRESS_P3_slice_0;
+wire   [17:17]   IOG_ADDRESS_P3_slice_1;
+wire   [18:18]   IOG_ADDRESS_P3_slice_2;
+wire   [19:19]   IOG_ADDRESS_P3_slice_3;
 wire   [0:0]     RX_DATA_0_slice_14;
 wire   [1:1]     RX_DATA_0_slice_15;
 wire   [2:2]     RX_DATA_0_slice_16;
@@ -1604,10 +1720,18 @@ wire   [1:0]     DQSW270_IGEAR_RX8_net_0;
 wire   [1:0]     DQSW_DELAY_LINE_OOR_net_0;
 wire   [1:0]     DQSW270_DELAY_LINE_OOR_net_0;
 wire   [1:0]     INIT_PAUSE_net_0;
+wire   [19:0]    DFI_ADDRESS_P0_net_0;
+wire   [19:0]    DFI_ADDRESS_P1_net_0;
+wire   [19:0]    DFI_ADDRESS_P2_net_0;
+wire   [19:0]    DFI_ADDRESS_P3_net_0;
 wire   [3:0]     IOG_WRDATA_MASK_P0_net_0;
 wire   [3:0]     IOG_WRDATA_MASK_P1_net_0;
 wire   [3:0]     IOG_WRDATA_MASK_P2_net_0;
 wire   [3:0]     IOG_WRDATA_MASK_P3_net_0;
+wire   [19:0]    IOG_ADDRESS_P0_net_0;
+wire   [19:0]    IOG_ADDRESS_P1_net_0;
+wire   [19:0]    IOG_ADDRESS_P2_net_0;
+wire   [19:0]    IOG_ADDRESS_P3_net_0;
 wire   [3:0]     BCLK_IGEAR_RX_net_0;
 wire   [3:0]     DQSW270_IGEAR_RX_net_0;
 wire   [3:0]     DQSW_IGEAR_RX_net_0;
@@ -1615,6 +1739,14 @@ wire   [127:0]   IOG_DQ_TXDATA_IN_net_0;
 wire   [127:0]   IOG_DQ_TXDATA_OUT_net_0;
 wire   [15:0]    IOG_DM_TXDATA_IN_net_0;
 wire   [15:0]    IOG_DM_TXDATA_OUT_net_0;
+wire   [3:0]     DFI_BANK_P0_net_0;
+wire   [3:0]     DFI_BANK_P1_net_0;
+wire   [3:0]     DFI_BANK_P2_net_0;
+wire   [3:0]     DFI_BANK_P3_net_0;
+wire   [3:0]     DFI_BANK_P0_OUT_net_0;
+wire   [3:0]     DFI_BANK_P1_OUT_net_0;
+wire   [3:0]     DFI_BANK_P2_OUT_net_0;
+wire   [3:0]     DFI_BANK_P3_OUT_net_0;
 wire   [7:0]     RX_DATA_0_net_3;
 wire   [7:0]     RX_DATA_1_net_0;
 wire   [7:0]     RX_DATA_2_net_0;
@@ -8518,6 +8650,18 @@ assign IOD_TRAINING_0_CLK_SEL4to4[4]                       = CLK_SEL_net_0[4:4];
 assign IOD_TRAINING_0_CLK_SEL5to5[5]                       = CLK_SEL_net_0[5:5];
 assign IOD_TRAINING_0_DELAY_LINE_SEL_RD0to0[0]             = DELAY_LINE_SEL_RD_net_0[0:0];
 assign IOD_TRAINING_0_DELAY_LINE_SEL_RD1to1[1]             = DELAY_LINE_SEL_RD_net_0[1:1];
+assign IOD_TRAINING_0_DFI_BANK_P0_OUT0to0[0]               = DFI_BANK_P0_OUT_net_0[0:0];
+assign IOD_TRAINING_0_DFI_BANK_P0_OUT1to1[1]               = DFI_BANK_P0_OUT_net_0[1:1];
+assign IOD_TRAINING_0_DFI_BANK_P0_OUT2to2[2]               = DFI_BANK_P0_OUT_net_0[2:2];
+assign IOD_TRAINING_0_DFI_BANK_P1_OUT0to0[0]               = DFI_BANK_P1_OUT_net_0[0:0];
+assign IOD_TRAINING_0_DFI_BANK_P1_OUT1to1[1]               = DFI_BANK_P1_OUT_net_0[1:1];
+assign IOD_TRAINING_0_DFI_BANK_P1_OUT2to2[2]               = DFI_BANK_P1_OUT_net_0[2:2];
+assign IOD_TRAINING_0_DFI_BANK_P2_OUT0to0[0]               = DFI_BANK_P2_OUT_net_0[0:0];
+assign IOD_TRAINING_0_DFI_BANK_P2_OUT1to1[1]               = DFI_BANK_P2_OUT_net_0[1:1];
+assign IOD_TRAINING_0_DFI_BANK_P2_OUT2to2[2]               = DFI_BANK_P2_OUT_net_0[2:2];
+assign IOD_TRAINING_0_DFI_BANK_P3_OUT0to0[0]               = DFI_BANK_P3_OUT_net_0[0:0];
+assign IOD_TRAINING_0_DFI_BANK_P3_OUT1to1[1]               = DFI_BANK_P3_OUT_net_0[1:1];
+assign IOD_TRAINING_0_DFI_BANK_P3_OUT2to2[2]               = DFI_BANK_P3_OUT_net_0[2:2];
 assign IOD_TRAINING_0_DIRECTION0to0[0]                     = DIRECTION_net_0[0:0];
 assign IOD_TRAINING_0_DIRECTION1to1[1]                     = DIRECTION_net_0[1:1];
 assign IOD_TRAINING_0_DIRECTION2to2[2]                     = DIRECTION_net_0[2:2];
@@ -8572,6 +8716,70 @@ assign IOD_TRAINING_0_DQSW_SELA7to0                        = DQSW_SELA_net_0[7:0
 assign IOD_TRAINING_0_DQSW_SELA15to8                       = DQSW_SELA_net_0[15:8];
 assign IOD_TRAINING_0_INIT_PAUSE0to0[0]                    = INIT_PAUSE_net_0[0:0];
 assign IOD_TRAINING_0_INIT_PAUSE1to1[1]                    = INIT_PAUSE_net_0[1:1];
+assign IOD_TRAINING_0_IOG_ADDRESS_P00to0[0]                = IOG_ADDRESS_P0_net_0[0:0];
+assign IOD_TRAINING_0_IOG_ADDRESS_P01to1[1]                = IOG_ADDRESS_P0_net_0[1:1];
+assign IOD_TRAINING_0_IOG_ADDRESS_P02to2[2]                = IOG_ADDRESS_P0_net_0[2:2];
+assign IOD_TRAINING_0_IOG_ADDRESS_P03to3[3]                = IOG_ADDRESS_P0_net_0[3:3];
+assign IOD_TRAINING_0_IOG_ADDRESS_P04to4[4]                = IOG_ADDRESS_P0_net_0[4:4];
+assign IOD_TRAINING_0_IOG_ADDRESS_P05to5[5]                = IOG_ADDRESS_P0_net_0[5:5];
+assign IOD_TRAINING_0_IOG_ADDRESS_P06to6[6]                = IOG_ADDRESS_P0_net_0[6:6];
+assign IOD_TRAINING_0_IOG_ADDRESS_P07to7[7]                = IOG_ADDRESS_P0_net_0[7:7];
+assign IOD_TRAINING_0_IOG_ADDRESS_P08to8[8]                = IOG_ADDRESS_P0_net_0[8:8];
+assign IOD_TRAINING_0_IOG_ADDRESS_P09to9[9]                = IOG_ADDRESS_P0_net_0[9:9];
+assign IOD_TRAINING_0_IOG_ADDRESS_P10to0[0]                = IOG_ADDRESS_P1_net_0[0:0];
+assign IOD_TRAINING_0_IOG_ADDRESS_P010to10[10]             = IOG_ADDRESS_P0_net_0[10:10];
+assign IOD_TRAINING_0_IOG_ADDRESS_P11to1[1]                = IOG_ADDRESS_P1_net_0[1:1];
+assign IOD_TRAINING_0_IOG_ADDRESS_P011to11[11]             = IOG_ADDRESS_P0_net_0[11:11];
+assign IOD_TRAINING_0_IOG_ADDRESS_P12to2[2]                = IOG_ADDRESS_P1_net_0[2:2];
+assign IOD_TRAINING_0_IOG_ADDRESS_P012to12[12]             = IOG_ADDRESS_P0_net_0[12:12];
+assign IOD_TRAINING_0_IOG_ADDRESS_P13to3[3]                = IOG_ADDRESS_P1_net_0[3:3];
+assign IOD_TRAINING_0_IOG_ADDRESS_P013to13[13]             = IOG_ADDRESS_P0_net_0[13:13];
+assign IOD_TRAINING_0_IOG_ADDRESS_P14to4[4]                = IOG_ADDRESS_P1_net_0[4:4];
+assign IOD_TRAINING_0_IOG_ADDRESS_P014to14[14]             = IOG_ADDRESS_P0_net_0[14:14];
+assign IOD_TRAINING_0_IOG_ADDRESS_P15to5[5]                = IOG_ADDRESS_P1_net_0[5:5];
+assign IOD_TRAINING_0_IOG_ADDRESS_P015to15[15]             = IOG_ADDRESS_P0_net_0[15:15];
+assign IOD_TRAINING_0_IOG_ADDRESS_P16to6[6]                = IOG_ADDRESS_P1_net_0[6:6];
+assign IOD_TRAINING_0_IOG_ADDRESS_P17to7[7]                = IOG_ADDRESS_P1_net_0[7:7];
+assign IOD_TRAINING_0_IOG_ADDRESS_P18to8[8]                = IOG_ADDRESS_P1_net_0[8:8];
+assign IOD_TRAINING_0_IOG_ADDRESS_P19to9[9]                = IOG_ADDRESS_P1_net_0[9:9];
+assign IOD_TRAINING_0_IOG_ADDRESS_P20to0[0]                = IOG_ADDRESS_P2_net_0[0:0];
+assign IOD_TRAINING_0_IOG_ADDRESS_P21to1[1]                = IOG_ADDRESS_P2_net_0[1:1];
+assign IOD_TRAINING_0_IOG_ADDRESS_P22to2[2]                = IOG_ADDRESS_P2_net_0[2:2];
+assign IOD_TRAINING_0_IOG_ADDRESS_P23to3[3]                = IOG_ADDRESS_P2_net_0[3:3];
+assign IOD_TRAINING_0_IOG_ADDRESS_P24to4[4]                = IOG_ADDRESS_P2_net_0[4:4];
+assign IOD_TRAINING_0_IOG_ADDRESS_P25to5[5]                = IOG_ADDRESS_P2_net_0[5:5];
+assign IOD_TRAINING_0_IOG_ADDRESS_P26to6[6]                = IOG_ADDRESS_P2_net_0[6:6];
+assign IOD_TRAINING_0_IOG_ADDRESS_P27to7[7]                = IOG_ADDRESS_P2_net_0[7:7];
+assign IOD_TRAINING_0_IOG_ADDRESS_P28to8[8]                = IOG_ADDRESS_P2_net_0[8:8];
+assign IOD_TRAINING_0_IOG_ADDRESS_P29to9[9]                = IOG_ADDRESS_P2_net_0[9:9];
+assign IOD_TRAINING_0_IOG_ADDRESS_P30to0[0]                = IOG_ADDRESS_P3_net_0[0:0];
+assign IOD_TRAINING_0_IOG_ADDRESS_P31to1[1]                = IOG_ADDRESS_P3_net_0[1:1];
+assign IOD_TRAINING_0_IOG_ADDRESS_P32to2[2]                = IOG_ADDRESS_P3_net_0[2:2];
+assign IOD_TRAINING_0_IOG_ADDRESS_P33to3[3]                = IOG_ADDRESS_P3_net_0[3:3];
+assign IOD_TRAINING_0_IOG_ADDRESS_P34to4[4]                = IOG_ADDRESS_P3_net_0[4:4];
+assign IOD_TRAINING_0_IOG_ADDRESS_P35to5[5]                = IOG_ADDRESS_P3_net_0[5:5];
+assign IOD_TRAINING_0_IOG_ADDRESS_P36to6[6]                = IOG_ADDRESS_P3_net_0[6:6];
+assign IOD_TRAINING_0_IOG_ADDRESS_P37to7[7]                = IOG_ADDRESS_P3_net_0[7:7];
+assign IOD_TRAINING_0_IOG_ADDRESS_P38to8[8]                = IOG_ADDRESS_P3_net_0[8:8];
+assign IOD_TRAINING_0_IOG_ADDRESS_P39to9[9]                = IOG_ADDRESS_P3_net_0[9:9];
+assign IOD_TRAINING_0_IOG_ADDRESS_P110to10[10]             = IOG_ADDRESS_P1_net_0[10:10];
+assign IOD_TRAINING_0_IOG_ADDRESS_P111to11[11]             = IOG_ADDRESS_P1_net_0[11:11];
+assign IOD_TRAINING_0_IOG_ADDRESS_P112to12[12]             = IOG_ADDRESS_P1_net_0[12:12];
+assign IOD_TRAINING_0_IOG_ADDRESS_P113to13[13]             = IOG_ADDRESS_P1_net_0[13:13];
+assign IOD_TRAINING_0_IOG_ADDRESS_P114to14[14]             = IOG_ADDRESS_P1_net_0[14:14];
+assign IOD_TRAINING_0_IOG_ADDRESS_P115to15[15]             = IOG_ADDRESS_P1_net_0[15:15];
+assign IOD_TRAINING_0_IOG_ADDRESS_P210to10[10]             = IOG_ADDRESS_P2_net_0[10:10];
+assign IOD_TRAINING_0_IOG_ADDRESS_P211to11[11]             = IOG_ADDRESS_P2_net_0[11:11];
+assign IOD_TRAINING_0_IOG_ADDRESS_P212to12[12]             = IOG_ADDRESS_P2_net_0[12:12];
+assign IOD_TRAINING_0_IOG_ADDRESS_P213to13[13]             = IOG_ADDRESS_P2_net_0[13:13];
+assign IOD_TRAINING_0_IOG_ADDRESS_P214to14[14]             = IOG_ADDRESS_P2_net_0[14:14];
+assign IOD_TRAINING_0_IOG_ADDRESS_P215to15[15]             = IOG_ADDRESS_P2_net_0[15:15];
+assign IOD_TRAINING_0_IOG_ADDRESS_P310to10[10]             = IOG_ADDRESS_P3_net_0[10:10];
+assign IOD_TRAINING_0_IOG_ADDRESS_P311to11[11]             = IOG_ADDRESS_P3_net_0[11:11];
+assign IOD_TRAINING_0_IOG_ADDRESS_P312to12[12]             = IOG_ADDRESS_P3_net_0[12:12];
+assign IOD_TRAINING_0_IOG_ADDRESS_P313to13[13]             = IOG_ADDRESS_P3_net_0[13:13];
+assign IOD_TRAINING_0_IOG_ADDRESS_P314to14[14]             = IOG_ADDRESS_P3_net_0[14:14];
+assign IOD_TRAINING_0_IOG_ADDRESS_P315to15[15]             = IOG_ADDRESS_P3_net_0[15:15];
 assign IOD_TRAINING_0_IOG_DM_TXDATA_OUT0to0[0]             = IOG_DM_TXDATA_OUT_net_0[0:0];
 assign IOD_TRAINING_0_IOG_DM_TXDATA_OUT1to1[1]             = IOG_DM_TXDATA_OUT_net_0[1:1];
 assign IOD_TRAINING_0_IOG_DM_TXDATA_OUT2to2[2]             = IOG_DM_TXDATA_OUT_net_0[2:2];
@@ -8944,6 +9152,22 @@ assign IOG_WRDATA_MASK_P3_slice_0[0]                       = IOG_WRDATA_MASK_P3_
 assign IOG_WRDATA_MASK_P3_slice_1[1]                       = IOG_WRDATA_MASK_P3_net_0[1:1];
 assign IOG_WRDATA_MASK_P3_slice_2[2]                       = IOG_WRDATA_MASK_P3_net_0[2:2];
 assign IOG_WRDATA_MASK_P3_slice_3[3]                       = IOG_WRDATA_MASK_P3_net_0[3:3];
+assign IOG_ADDRESS_P0_slice_0[16]                          = IOG_ADDRESS_P0_net_0[16:16];
+assign IOG_ADDRESS_P0_slice_1[17]                          = IOG_ADDRESS_P0_net_0[17:17];
+assign IOG_ADDRESS_P0_slice_2[18]                          = IOG_ADDRESS_P0_net_0[18:18];
+assign IOG_ADDRESS_P0_slice_3[19]                          = IOG_ADDRESS_P0_net_0[19:19];
+assign IOG_ADDRESS_P1_slice_0[16]                          = IOG_ADDRESS_P1_net_0[16:16];
+assign IOG_ADDRESS_P1_slice_1[17]                          = IOG_ADDRESS_P1_net_0[17:17];
+assign IOG_ADDRESS_P1_slice_2[18]                          = IOG_ADDRESS_P1_net_0[18:18];
+assign IOG_ADDRESS_P1_slice_3[19]                          = IOG_ADDRESS_P1_net_0[19:19];
+assign IOG_ADDRESS_P2_slice_0[16]                          = IOG_ADDRESS_P2_net_0[16:16];
+assign IOG_ADDRESS_P2_slice_1[17]                          = IOG_ADDRESS_P2_net_0[17:17];
+assign IOG_ADDRESS_P2_slice_2[18]                          = IOG_ADDRESS_P2_net_0[18:18];
+assign IOG_ADDRESS_P2_slice_3[19]                          = IOG_ADDRESS_P2_net_0[19:19];
+assign IOG_ADDRESS_P3_slice_0[16]                          = IOG_ADDRESS_P3_net_0[16:16];
+assign IOG_ADDRESS_P3_slice_1[17]                          = IOG_ADDRESS_P3_net_0[17:17];
+assign IOG_ADDRESS_P3_slice_2[18]                          = IOG_ADDRESS_P3_net_0[18:18];
+assign IOG_ADDRESS_P3_slice_3[19]                          = IOG_ADDRESS_P3_net_0[19:19];
 assign RX_DATA_0_slice_14[0]                               = RX_DATA_0_net_5[0:0];
 assign RX_DATA_0_slice_15[1]                               = RX_DATA_0_net_5[1:1];
 assign RX_DATA_0_slice_16[2]                               = RX_DATA_0_net_5[2:2];
@@ -8959,33 +9183,33 @@ assign RX_DATA_0_slice_25[5]                               = RX_DATA_0_net_8[5:5
 //--------------------------------------------------------------------
 // Concatenation assignments
 //--------------------------------------------------------------------
-assign TX_DATA_0_net_0                 = { DFI_ADDRESS_P3_slice_0[0] , DFI_ADDRESS_P2_slice_0[0] , DFI_ADDRESS_P1_slice_0[0] , DFI_ADDRESS_P0_slice_0[0] };
-assign TX_DATA_1_net_0                 = { DFI_ADDRESS_P3_slice_1[1] , DFI_ADDRESS_P2_slice_1[1] , DFI_ADDRESS_P1_slice_1[1] , DFI_ADDRESS_P0_slice_1[1] };
-assign TX_DATA_2_net_0                 = { DFI_ADDRESS_P3_slice_2[2] , DFI_ADDRESS_P2_slice_2[2] , DFI_ADDRESS_P1_slice_2[2] , DFI_ADDRESS_P0_slice_2[2] };
-assign TX_DATA_3_net_0                 = { DFI_ADDRESS_P3_slice_3[3] , DFI_ADDRESS_P2_slice_3[3] , DFI_ADDRESS_P1_slice_3[3] , DFI_ADDRESS_P0_slice_3[3] };
-assign TX_DATA_4_net_0                 = { DFI_ADDRESS_P3_slice_4[4] , DFI_ADDRESS_P2_slice_4[4] , DFI_ADDRESS_P1_slice_4[4] , DFI_ADDRESS_P0_slice_4[4] };
-assign TX_DATA_5_net_0                 = { DFI_ADDRESS_P3_slice_5[5] , DFI_ADDRESS_P2_slice_5[5] , DFI_ADDRESS_P1_slice_5[5] , DFI_ADDRESS_P0_slice_5[5] };
-assign TX_DATA_6_net_0                 = { DFI_ADDRESS_P3_slice_6[6] , DFI_ADDRESS_P2_slice_6[6] , DFI_ADDRESS_P1_slice_6[6] , DFI_ADDRESS_P0_slice_6[6] };
-assign TX_DATA_7_net_0                 = { DFI_ADDRESS_P3_slice_7[7] , DFI_ADDRESS_P2_slice_7[7] , DFI_ADDRESS_P1_slice_7[7] , DFI_ADDRESS_P0_slice_7[7] };
-assign TX_DATA_8_net_0                 = { DFI_ADDRESS_P3_slice_8[8] , DFI_ADDRESS_P2_slice_8[8] , DFI_ADDRESS_P1_slice_8[8] , DFI_ADDRESS_P0_slice_8[8] };
-assign TX_DATA_9_net_0                 = { DFI_ADDRESS_P3_slice_9[9] , DFI_ADDRESS_P2_slice_9[9] , DFI_ADDRESS_P1_slice_9[9] , DFI_ADDRESS_P0_slice_9[9] };
-assign TX_DATA_10_net_0                = { DFI_ADDRESS_P3_slice_10[10] , DFI_ADDRESS_P2_slice_10[10] , DFI_ADDRESS_P1_slice_10[10] , DFI_ADDRESS_P0_slice_10[10] };
-assign TX_DATA_11_net_0                = { DFI_ADDRESS_P3_slice_11[11] , DFI_ADDRESS_P2_slice_11[11] , DFI_ADDRESS_P1_slice_11[11] , DFI_ADDRESS_P0_slice_11[11] };
-assign TX_DATA_0_net_1                 = { IOD_TRAINING_0_IOG_ADDRESS_P3 , IOD_TRAINING_0_IOG_ADDRESS_P2 , IOD_TRAINING_0_IOG_ADDRESS_P1 , IOD_TRAINING_0_IOG_ADDRESS_P0 };
+assign TX_DATA_0_net_0                 = { IOD_TRAINING_0_IOG_ADDRESS_P30to0[0] , IOD_TRAINING_0_IOG_ADDRESS_P20to0[0] , IOD_TRAINING_0_IOG_ADDRESS_P10to0[0] , IOD_TRAINING_0_IOG_ADDRESS_P00to0[0] };
+assign TX_DATA_1_net_0                 = { IOD_TRAINING_0_IOG_ADDRESS_P31to1[1] , IOD_TRAINING_0_IOG_ADDRESS_P21to1[1] , IOD_TRAINING_0_IOG_ADDRESS_P11to1[1] , IOD_TRAINING_0_IOG_ADDRESS_P01to1[1] };
+assign TX_DATA_2_net_0                 = { IOD_TRAINING_0_IOG_ADDRESS_P32to2[2] , IOD_TRAINING_0_IOG_ADDRESS_P22to2[2] , IOD_TRAINING_0_IOG_ADDRESS_P12to2[2] , IOD_TRAINING_0_IOG_ADDRESS_P02to2[2] };
+assign TX_DATA_3_net_0                 = { IOD_TRAINING_0_IOG_ADDRESS_P33to3[3] , IOD_TRAINING_0_IOG_ADDRESS_P23to3[3] , IOD_TRAINING_0_IOG_ADDRESS_P13to3[3] , IOD_TRAINING_0_IOG_ADDRESS_P03to3[3] };
+assign TX_DATA_4_net_0                 = { IOD_TRAINING_0_IOG_ADDRESS_P34to4[4] , IOD_TRAINING_0_IOG_ADDRESS_P24to4[4] , IOD_TRAINING_0_IOG_ADDRESS_P14to4[4] , IOD_TRAINING_0_IOG_ADDRESS_P04to4[4] };
+assign TX_DATA_5_net_0                 = { IOD_TRAINING_0_IOG_ADDRESS_P35to5[5] , IOD_TRAINING_0_IOG_ADDRESS_P25to5[5] , IOD_TRAINING_0_IOG_ADDRESS_P15to5[5] , IOD_TRAINING_0_IOG_ADDRESS_P05to5[5] };
+assign TX_DATA_6_net_0                 = { IOD_TRAINING_0_IOG_ADDRESS_P36to6[6] , IOD_TRAINING_0_IOG_ADDRESS_P26to6[6] , IOD_TRAINING_0_IOG_ADDRESS_P16to6[6] , IOD_TRAINING_0_IOG_ADDRESS_P06to6[6] };
+assign TX_DATA_7_net_0                 = { IOD_TRAINING_0_IOG_ADDRESS_P37to7[7] , IOD_TRAINING_0_IOG_ADDRESS_P27to7[7] , IOD_TRAINING_0_IOG_ADDRESS_P17to7[7] , IOD_TRAINING_0_IOG_ADDRESS_P07to7[7] };
+assign TX_DATA_8_net_0                 = { IOD_TRAINING_0_IOG_ADDRESS_P38to8[8] , IOD_TRAINING_0_IOG_ADDRESS_P28to8[8] , IOD_TRAINING_0_IOG_ADDRESS_P18to8[8] , IOD_TRAINING_0_IOG_ADDRESS_P08to8[8] };
+assign TX_DATA_9_net_0                 = { IOD_TRAINING_0_IOG_ADDRESS_P39to9[9] , IOD_TRAINING_0_IOG_ADDRESS_P29to9[9] , IOD_TRAINING_0_IOG_ADDRESS_P19to9[9] , IOD_TRAINING_0_IOG_ADDRESS_P09to9[9] };
+assign TX_DATA_10_net_0                = { IOD_TRAINING_0_IOG_ADDRESS_P310to10[10] , IOD_TRAINING_0_IOG_ADDRESS_P210to10[10] , IOD_TRAINING_0_IOG_ADDRESS_P110to10[10] , IOD_TRAINING_0_IOG_ADDRESS_P010to10[10] };
+assign TX_DATA_11_net_0                = { IOD_TRAINING_0_IOG_ADDRESS_P311to11[11] , IOD_TRAINING_0_IOG_ADDRESS_P211to11[11] , IOD_TRAINING_0_IOG_ADDRESS_P111to11[11] , IOD_TRAINING_0_IOG_ADDRESS_P011to11[11] };
+assign TX_DATA_0_net_1                 = { IOD_TRAINING_0_IOG_ADDRESS_P312to12[12] , IOD_TRAINING_0_IOG_ADDRESS_P212to12[12] , IOD_TRAINING_0_IOG_ADDRESS_P112to12[12] , IOD_TRAINING_0_IOG_ADDRESS_P012to12[12] };
 assign OE_DATA_0_net_0                 = { IOD_TRAINING_0_CMD_OE , IOD_TRAINING_0_CMD_OE , IOD_TRAINING_0_CMD_OE , IOD_TRAINING_0_CMD_OE };
-assign TX_DATA_0_net_2                 = { DFI_ADDRESS_P3_slice_13[13] , DFI_ADDRESS_P2_slice_13[13] , DFI_ADDRESS_P1_slice_13[13] , DFI_ADDRESS_P0_slice_13[13] };
-assign TX_DATA_0_net_3                 = { DFI_ADDRESS_P3_slice_14[14] , DFI_ADDRESS_P2_slice_14[14] , DFI_ADDRESS_P1_slice_14[14] , DFI_ADDRESS_P0_slice_14[14] };
-assign TX_DATA_0_net_4                 = { DFI_ADDRESS_P3_slice_15[15] , DFI_ADDRESS_P2_slice_15[15] , DFI_ADDRESS_P1_slice_15[15] , DFI_ADDRESS_P0_slice_15[15] };
-assign TX_DATA_0_net_5                 = { DFI_BANK_P3_slice_0[0] , DFI_BANK_P2_slice_0[0] , DFI_BANK_P1_slice_0[0] , DFI_BANK_P0_slice_0[0] };
-assign TX_DATA_1_net_1                 = { DFI_BANK_P3_slice_1[1] , DFI_BANK_P2_slice_1[1] , DFI_BANK_P1_slice_1[1] , DFI_BANK_P0_slice_1[1] };
-assign TX_DATA_2_net_1                 = { DFI_BANK_P3_slice_2[2] , DFI_BANK_P2_slice_2[2] , DFI_BANK_P1_slice_2[2] , DFI_BANK_P0_slice_2[2] };
-assign TX_DATA_0_net_6                 = { DFI_CAS_N_P3 , DFI_CAS_N_P2 , DFI_CAS_N_P1 , DFI_CAS_N_P0 };
-assign TX_DATA_0_net_7                 = { DFI_CKE_P3[0] , DFI_CKE_P2[0] , DFI_CKE_P1[0] , DFI_CKE_P0[0] };
-assign TX_DATA_0_net_8                 = { DFI_CS_N_P3[0] , DFI_CS_N_P2[0] , DFI_CS_N_P1[0] , DFI_CS_N_P0[0] };
-assign TX_DATA_0_net_9                 = { DFI_ODT_P3[0] , DFI_ODT_P2[0] , DFI_ODT_P1[0] , DFI_ODT_P0[0] };
-assign TX_DATA_0_net_10                = { DFI_RAS_N_P3 , DFI_RAS_N_P2 , DFI_RAS_N_P1 , DFI_RAS_N_P0 };
-assign TX_DATA_0_net_11                = { DFI_RESET_N_P3 , DFI_RESET_N_P2 , DFI_RESET_N_P1 , DFI_RESET_N_P0 };
-assign TX_DATA_0_net_12                = { DFI_WE_N_P3 , DFI_WE_N_P2 , DFI_WE_N_P1 , DFI_WE_N_P0 };
+assign TX_DATA_0_net_2                 = { IOD_TRAINING_0_IOG_ADDRESS_P313to13[13] , IOD_TRAINING_0_IOG_ADDRESS_P213to13[13] , IOD_TRAINING_0_IOG_ADDRESS_P113to13[13] , IOD_TRAINING_0_IOG_ADDRESS_P013to13[13] };
+assign TX_DATA_0_net_3                 = { IOD_TRAINING_0_IOG_ADDRESS_P314to14[14] , IOD_TRAINING_0_IOG_ADDRESS_P214to14[14] , IOD_TRAINING_0_IOG_ADDRESS_P114to14[14] , IOD_TRAINING_0_IOG_ADDRESS_P014to14[14] };
+assign TX_DATA_0_net_4                 = { IOD_TRAINING_0_IOG_ADDRESS_P315to15[15] , IOD_TRAINING_0_IOG_ADDRESS_P215to15[15] , IOD_TRAINING_0_IOG_ADDRESS_P115to15[15] , IOD_TRAINING_0_IOG_ADDRESS_P015to15[15] };
+assign TX_DATA_0_net_5                 = { IOD_TRAINING_0_DFI_BANK_P3_OUT0to0[0] , IOD_TRAINING_0_DFI_BANK_P2_OUT0to0[0] , IOD_TRAINING_0_DFI_BANK_P1_OUT0to0[0] , IOD_TRAINING_0_DFI_BANK_P0_OUT0to0[0] };
+assign TX_DATA_1_net_1                 = { IOD_TRAINING_0_DFI_BANK_P3_OUT1to1[1] , IOD_TRAINING_0_DFI_BANK_P2_OUT1to1[1] , IOD_TRAINING_0_DFI_BANK_P1_OUT1to1[1] , IOD_TRAINING_0_DFI_BANK_P0_OUT1to1[1] };
+assign TX_DATA_2_net_1                 = { IOD_TRAINING_0_DFI_BANK_P3_OUT2to2[2] , IOD_TRAINING_0_DFI_BANK_P2_OUT2to2[2] , IOD_TRAINING_0_DFI_BANK_P1_OUT2to2[2] , IOD_TRAINING_0_DFI_BANK_P0_OUT2to2[2] };
+assign TX_DATA_0_net_6                 = { IOD_TRAINING_0_DFI_CAS_N_P3_OUT , IOD_TRAINING_0_DFI_CAS_N_P2_OUT , IOD_TRAINING_0_DFI_CAS_N_P1_OUT , IOD_TRAINING_0_DFI_CAS_N_P0_OUT };
+assign TX_DATA_0_net_7                 = { IOD_TRAINING_0_DFI_CKE_P3_OUT , IOD_TRAINING_0_DFI_CKE_P2_OUT , IOD_TRAINING_0_DFI_CKE_P1_OUT , IOD_TRAINING_0_DFI_CKE_P0_OUT };
+assign TX_DATA_0_net_8                 = { IOD_TRAINING_0_DFI_CS_N_P3_OUT , IOD_TRAINING_0_DFI_CS_N_P2_OUT , IOD_TRAINING_0_DFI_CS_N_P1_OUT , IOD_TRAINING_0_DFI_CS_N_P0_OUT };
+assign TX_DATA_0_net_9                 = { IOD_TRAINING_0_DFI_ODT_P3_OUT , IOD_TRAINING_0_DFI_ODT_P2_OUT , IOD_TRAINING_0_DFI_ODT_P1_OUT , IOD_TRAINING_0_DFI_ODT_P0_OUT };
+assign TX_DATA_0_net_10                = { IOD_TRAINING_0_DFI_RAS_N_P3_OUT , IOD_TRAINING_0_DFI_RAS_N_P2_OUT , IOD_TRAINING_0_DFI_RAS_N_P1_OUT , IOD_TRAINING_0_DFI_RAS_N_P0_OUT };
+assign TX_DATA_0_net_11                = { IOD_TRAINING_0_DFI_RESET_N_P3_OUT , IOD_TRAINING_0_DFI_RESET_N_P2_OUT , IOD_TRAINING_0_DFI_RESET_N_P1_OUT , IOD_TRAINING_0_DFI_RESET_N_P0_OUT };
+assign TX_DATA_0_net_12                = { IOD_TRAINING_0_DFI_WE_N_P3_OUT , IOD_TRAINING_0_DFI_WE_N_P2_OUT , IOD_TRAINING_0_DFI_WE_N_P1_OUT , IOD_TRAINING_0_DFI_WE_N_P0_OUT };
 assign HS_IO_CLK_net_0                 = { HS_IO_CLK_270 , HS_IO_CLK };
 assign READ_CLK_SEL_net_0              = { IOD_TRAINING_0_CLK_SEL2to2[2] , IOD_TRAINING_0_CLK_SEL1to1[1] , IOD_TRAINING_0_CLK_SEL0to0[0] };
 assign TX_DATA_0_net_13                = { IOD_TRAINING_0_IOG_DM_TXDATA_OUT7to7[7] , IOD_TRAINING_0_IOG_DM_TXDATA_OUT6to6[6] , IOD_TRAINING_0_IOG_DM_TXDATA_OUT5to5[5] , IOD_TRAINING_0_IOG_DM_TXDATA_OUT4to4[4] , IOD_TRAINING_0_IOG_DM_TXDATA_OUT3to3[3] , IOD_TRAINING_0_IOG_DM_TXDATA_OUT2to2[2] , IOD_TRAINING_0_IOG_DM_TXDATA_OUT1to1[1] , IOD_TRAINING_0_IOG_DM_TXDATA_OUT0to0[0] };
@@ -9045,11 +9269,35 @@ assign DQSW270_EYE_MONITOR_LATE_net_0  = { LANE_1_IOD_READ_TRAINING_EYE_MONITOR_
 assign DQSW270_IGEAR_RX8_net_0         = { LANE_1_IOD_READ_TRAINING_RX_DATA_06to6[6] , LANE_0_IOD_READ_TRAINING_RX_DATA_06to6[6] };
 assign DQSW_DELAY_LINE_OOR_net_0       = { LANE_1_IOD_DQSW_TRAINING_DELAY_LINE_OUT_OF_RANGE_0 , LANE_0_IOD_DQSW_TRAINING_DELAY_LINE_OUT_OF_RANGE_0 };
 assign DQSW270_DELAY_LINE_OOR_net_0    = { LANE_1_IOD_READ_TRAINING_DELAY_LINE_OUT_OF_RANGE_0 , LANE_0_IOD_READ_TRAINING_DELAY_LINE_OUT_OF_RANGE_0 };
+wire   [0:0]                               DFI_ADDRESS_P0_1919_unconnected;
+wire   [0:0]                               DFI_ADDRESS_P0_1818_unconnected;
+wire   [0:0]                               DFI_ADDRESS_P0_1717_unconnected;
+wire   [0:0]                               DFI_ADDRESS_P0_1616_unconnected;
+assign DFI_ADDRESS_P0_net_0            = { DFI_ADDRESS_P0_1919_unconnected , DFI_ADDRESS_P0_1818_unconnected , DFI_ADDRESS_P0_1717_unconnected , DFI_ADDRESS_P0_1616_unconnected , DFI_ADDRESS_P0_slice_15[15] , DFI_ADDRESS_P0_slice_14[14] , DFI_ADDRESS_P0_slice_13[13] , DFI_ADDRESS_P0_slice_12[12] , DFI_ADDRESS_P0_slice_11[11] , DFI_ADDRESS_P0_slice_10[10] , DFI_ADDRESS_P0_slice_9[9] , DFI_ADDRESS_P0_slice_8[8] , DFI_ADDRESS_P0_slice_7[7] , DFI_ADDRESS_P0_slice_6[6] , DFI_ADDRESS_P0_slice_5[5] , DFI_ADDRESS_P0_slice_4[4] , DFI_ADDRESS_P0_slice_3[3] , DFI_ADDRESS_P0_slice_2[2] , DFI_ADDRESS_P0_slice_1[1] , DFI_ADDRESS_P0_slice_0[0] };
+wire   [0:0]                               DFI_ADDRESS_P1_1919_unconnected;
+wire   [0:0]                               DFI_ADDRESS_P1_1818_unconnected;
+wire   [0:0]                               DFI_ADDRESS_P1_1717_unconnected;
+wire   [0:0]                               DFI_ADDRESS_P1_1616_unconnected;
+assign DFI_ADDRESS_P1_net_0            = { DFI_ADDRESS_P1_1919_unconnected , DFI_ADDRESS_P1_1818_unconnected , DFI_ADDRESS_P1_1717_unconnected , DFI_ADDRESS_P1_1616_unconnected , DFI_ADDRESS_P1_slice_15[15] , DFI_ADDRESS_P1_slice_14[14] , DFI_ADDRESS_P1_slice_13[13] , DFI_ADDRESS_P1_slice_12[12] , DFI_ADDRESS_P1_slice_11[11] , DFI_ADDRESS_P1_slice_10[10] , DFI_ADDRESS_P1_slice_9[9] , DFI_ADDRESS_P1_slice_8[8] , DFI_ADDRESS_P1_slice_7[7] , DFI_ADDRESS_P1_slice_6[6] , DFI_ADDRESS_P1_slice_5[5] , DFI_ADDRESS_P1_slice_4[4] , DFI_ADDRESS_P1_slice_3[3] , DFI_ADDRESS_P1_slice_2[2] , DFI_ADDRESS_P1_slice_1[1] , DFI_ADDRESS_P1_slice_0[0] };
+wire   [0:0]                               DFI_ADDRESS_P2_1919_unconnected;
+wire   [0:0]                               DFI_ADDRESS_P2_1818_unconnected;
+wire   [0:0]                               DFI_ADDRESS_P2_1717_unconnected;
+wire   [0:0]                               DFI_ADDRESS_P2_1616_unconnected;
+assign DFI_ADDRESS_P2_net_0            = { DFI_ADDRESS_P2_1919_unconnected , DFI_ADDRESS_P2_1818_unconnected , DFI_ADDRESS_P2_1717_unconnected , DFI_ADDRESS_P2_1616_unconnected , DFI_ADDRESS_P2_slice_15[15] , DFI_ADDRESS_P2_slice_14[14] , DFI_ADDRESS_P2_slice_13[13] , DFI_ADDRESS_P2_slice_12[12] , DFI_ADDRESS_P2_slice_11[11] , DFI_ADDRESS_P2_slice_10[10] , DFI_ADDRESS_P2_slice_9[9] , DFI_ADDRESS_P2_slice_8[8] , DFI_ADDRESS_P2_slice_7[7] , DFI_ADDRESS_P2_slice_6[6] , DFI_ADDRESS_P2_slice_5[5] , DFI_ADDRESS_P2_slice_4[4] , DFI_ADDRESS_P2_slice_3[3] , DFI_ADDRESS_P2_slice_2[2] , DFI_ADDRESS_P2_slice_1[1] , DFI_ADDRESS_P2_slice_0[0] };
+wire   [0:0]                               DFI_ADDRESS_P3_1919_unconnected;
+wire   [0:0]                               DFI_ADDRESS_P3_1818_unconnected;
+wire   [0:0]                               DFI_ADDRESS_P3_1717_unconnected;
+wire   [0:0]                               DFI_ADDRESS_P3_1616_unconnected;
+assign DFI_ADDRESS_P3_net_0            = { DFI_ADDRESS_P3_1919_unconnected , DFI_ADDRESS_P3_1818_unconnected , DFI_ADDRESS_P3_1717_unconnected , DFI_ADDRESS_P3_1616_unconnected , DFI_ADDRESS_P3_slice_15[15] , DFI_ADDRESS_P3_slice_14[14] , DFI_ADDRESS_P3_slice_13[13] , DFI_ADDRESS_P3_slice_12[12] , DFI_ADDRESS_P3_slice_11[11] , DFI_ADDRESS_P3_slice_10[10] , DFI_ADDRESS_P3_slice_9[9] , DFI_ADDRESS_P3_slice_8[8] , DFI_ADDRESS_P3_slice_7[7] , DFI_ADDRESS_P3_slice_6[6] , DFI_ADDRESS_P3_slice_5[5] , DFI_ADDRESS_P3_slice_4[4] , DFI_ADDRESS_P3_slice_3[3] , DFI_ADDRESS_P3_slice_2[2] , DFI_ADDRESS_P3_slice_1[1] , DFI_ADDRESS_P3_slice_0[0] };
 assign BCLK_IGEAR_RX_net_0             = { IOD_BCLK_TRAINING_RX_DATA_06to6[6] , IOD_BCLK_TRAINING_RX_DATA_04to4[4] , IOD_BCLK_TRAINING_RX_DATA_02to2[2] , IOD_BCLK_TRAINING_RX_DATA_00to0[0] };
 assign DQSW270_IGEAR_RX_net_0          = { LANE_1_IOD_READ_TRAINING_RX_DATA_07to7[7] , LANE_1_IOD_READ_TRAINING_RX_DATA_06to6[6] , LANE_0_IOD_READ_TRAINING_RX_DATA_07to7[7] , LANE_0_IOD_READ_TRAINING_RX_DATA_06to6[6] };
 assign DQSW_IGEAR_RX_net_0             = { LANE_1_IOD_DQSW_TRAINING_RX_DATA_01to1[1] , LANE_1_IOD_DQSW_TRAINING_RX_DATA_00to0[0] , LANE_0_IOD_DQSW_TRAINING_RX_DATA_01to1[1] , LANE_0_IOD_DQSW_TRAINING_RX_DATA_00to0[0] };
 assign IOG_DQ_TXDATA_IN_net_0          = { DFI_WRDATA_P3_slice_31[31] , DFI_WRDATA_P3_slice_30[15] , DFI_WRDATA_P2_slice_31[31] , DFI_WRDATA_P2_slice_30[15] , DFI_WRDATA_P1_slice_31[31] , DFI_WRDATA_P1_slice_30[15] , DFI_WRDATA_P0_slice_31[31] , DFI_WRDATA_P0_slice_30[15] , DFI_WRDATA_P3_slice_29[30] , DFI_WRDATA_P3_slice_28[14] , DFI_WRDATA_P2_slice_29[30] , DFI_WRDATA_P2_slice_28[14] , DFI_WRDATA_P1_slice_29[30] , DFI_WRDATA_P1_slice_28[14] , DFI_WRDATA_P0_slice_29[30] , DFI_WRDATA_P0_slice_28[14] , DFI_WRDATA_P3_slice_27[29] , DFI_WRDATA_P3_slice_26[13] , DFI_WRDATA_P2_slice_27[29] , DFI_WRDATA_P2_slice_26[13] , DFI_WRDATA_P1_slice_27[29] , DFI_WRDATA_P1_slice_26[13] , DFI_WRDATA_P0_slice_27[29] , DFI_WRDATA_P0_slice_26[13] , DFI_WRDATA_P3_slice_25[28] , DFI_WRDATA_P3_slice_24[12] , DFI_WRDATA_P2_slice_25[28] , DFI_WRDATA_P2_slice_24[12] , DFI_WRDATA_P1_slice_25[28] , DFI_WRDATA_P1_slice_24[12] , DFI_WRDATA_P0_slice_25[28] , DFI_WRDATA_P0_slice_24[12] , DFI_WRDATA_P3_slice_23[27] , DFI_WRDATA_P3_slice_22[11] , DFI_WRDATA_P2_slice_23[27] , DFI_WRDATA_P2_slice_22[11] , DFI_WRDATA_P1_slice_23[27] , DFI_WRDATA_P1_slice_22[11] , DFI_WRDATA_P0_slice_23[27] , DFI_WRDATA_P0_slice_22[11] , DFI_WRDATA_P3_slice_21[26] , DFI_WRDATA_P3_slice_20[10] , DFI_WRDATA_P2_slice_21[26] , DFI_WRDATA_P2_slice_20[10] , DFI_WRDATA_P1_slice_21[26] , DFI_WRDATA_P1_slice_20[10] , DFI_WRDATA_P0_slice_21[26] , DFI_WRDATA_P0_slice_20[10] , DFI_WRDATA_P3_slice_19[25] , DFI_WRDATA_P3_slice_18[9] , DFI_WRDATA_P2_slice_19[25] , DFI_WRDATA_P2_slice_18[9] , DFI_WRDATA_P1_slice_19[25] , DFI_WRDATA_P1_slice_18[9] , DFI_WRDATA_P0_slice_19[25] , DFI_WRDATA_P0_slice_18[9] , DFI_WRDATA_P3_slice_17[24] , DFI_WRDATA_P3_slice_16[8] , DFI_WRDATA_P2_slice_17[24] , DFI_WRDATA_P2_slice_16[8] , DFI_WRDATA_P1_slice_17[24] , DFI_WRDATA_P1_slice_16[8] , DFI_WRDATA_P0_slice_17[24] , DFI_WRDATA_P0_slice_16[8] , DFI_WRDATA_P3_slice_15[23] , DFI_WRDATA_P3_slice_14[7] , DFI_WRDATA_P2_slice_15[23] , DFI_WRDATA_P2_slice_14[7] , DFI_WRDATA_P1_slice_15[23] , DFI_WRDATA_P1_slice_14[7] , DFI_WRDATA_P0_slice_15[23] , DFI_WRDATA_P0_slice_14[7] , DFI_WRDATA_P3_slice_13[22] , DFI_WRDATA_P3_slice_12[6] , DFI_WRDATA_P2_slice_13[22] , DFI_WRDATA_P2_slice_12[6] , DFI_WRDATA_P1_slice_13[22] , DFI_WRDATA_P1_slice_12[6] , DFI_WRDATA_P0_slice_13[22] , DFI_WRDATA_P0_slice_12[6] , DFI_WRDATA_P3_slice_11[21] , DFI_WRDATA_P3_slice_10[5] , DFI_WRDATA_P2_slice_11[21] , DFI_WRDATA_P2_slice_10[5] , DFI_WRDATA_P1_slice_11[21] , DFI_WRDATA_P1_slice_10[5] , DFI_WRDATA_P0_slice_11[21] , DFI_WRDATA_P0_slice_10[5] , DFI_WRDATA_P3_slice_9[20] , DFI_WRDATA_P3_slice_8[4] , DFI_WRDATA_P2_slice_9[20] , DFI_WRDATA_P2_slice_8[4] , DFI_WRDATA_P1_slice_9[20] , DFI_WRDATA_P1_slice_8[4] , DFI_WRDATA_P0_slice_9[20] , DFI_WRDATA_P0_slice_8[4] , DFI_WRDATA_P3_slice_7[19] , DFI_WRDATA_P3_slice_6[3] , DFI_WRDATA_P2_slice_7[19] , DFI_WRDATA_P2_slice_6[3] , DFI_WRDATA_P1_slice_7[19] , DFI_WRDATA_P1_slice_6[3] , DFI_WRDATA_P0_slice_7[19] , DFI_WRDATA_P0_slice_6[3] , DFI_WRDATA_P3_slice_5[18] , DFI_WRDATA_P3_slice_4[2] , DFI_WRDATA_P2_slice_5[18] , DFI_WRDATA_P2_slice_4[2] , DFI_WRDATA_P1_slice_5[18] , DFI_WRDATA_P1_slice_4[2] , DFI_WRDATA_P0_slice_5[18] , DFI_WRDATA_P0_slice_4[2] , DFI_WRDATA_P3_slice_3[17] , DFI_WRDATA_P3_slice_2[1] , DFI_WRDATA_P2_slice_3[17] , DFI_WRDATA_P2_slice_2[1] , DFI_WRDATA_P1_slice_3[17] , DFI_WRDATA_P1_slice_2[1] , DFI_WRDATA_P0_slice_3[17] , DFI_WRDATA_P0_slice_2[1] , DFI_WRDATA_P3_slice_1[16] , DFI_WRDATA_P3_slice_0[0] , DFI_WRDATA_P2_slice_1[16] , DFI_WRDATA_P2_slice_0[0] , DFI_WRDATA_P1_slice_1[16] , DFI_WRDATA_P1_slice_0[0] , DFI_WRDATA_P0_slice_1[16] , DFI_WRDATA_P0_slice_0[0] };
 assign IOG_DM_TXDATA_IN_net_0          = { DFI_WRDATA_MASK_P3_slice_3[3] , DFI_WRDATA_MASK_P3_slice_2[1] , DFI_WRDATA_MASK_P2_slice_3[3] , DFI_WRDATA_MASK_P2_slice_2[1] , DFI_WRDATA_MASK_P1_slice_3[3] , DFI_WRDATA_MASK_P1_slice_2[1] , DFI_WRDATA_MASK_P0_slice_3[3] , DFI_WRDATA_MASK_P0_slice_2[1] , DFI_WRDATA_MASK_P3_slice_1[2] , DFI_WRDATA_MASK_P3_slice_0[0] , DFI_WRDATA_MASK_P2_slice_1[2] , DFI_WRDATA_MASK_P2_slice_0[0] , DFI_WRDATA_MASK_P1_slice_1[2] , DFI_WRDATA_MASK_P1_slice_0[0] , DFI_WRDATA_MASK_P0_slice_1[2] , DFI_WRDATA_MASK_P0_slice_0[0] };
+assign DFI_BANK_P0_net_0               = { DFI_BANK_P0_slice_2[2] , DFI_BANK_P0_slice_1[1] , DFI_BANK_P0_slice_0[0] };
+assign DFI_BANK_P1_net_0               = { DFI_BANK_P1_slice_2[2] , DFI_BANK_P1_slice_1[1] , DFI_BANK_P1_slice_0[0] };
+assign DFI_BANK_P2_net_0               = { DFI_BANK_P2_slice_2[2] , DFI_BANK_P2_slice_1[1] , DFI_BANK_P2_slice_0[0] };
+assign DFI_BANK_P3_net_0               = { DFI_BANK_P3_slice_2[2] , DFI_BANK_P3_slice_1[1] , DFI_BANK_P3_slice_0[0] };
 assign PAD_net_0                       = { DQ[7:7] , DQ[6:6] , DQ[5:5] , DQ[4:4] , DQ[3:3] , DQ[2:2] , DQ[1:1] , DQ[0:0] };
 assign PAD_net_1                       = { DQ[15:15] , DQ[14:14] , DQ[13:13] , DQ[12:12] , DQ[11:11] , DQ[10:10] , DQ[9:9] , DQ[8:8] };
 //--------------------------------------------------------------------
@@ -9072,7 +9320,7 @@ DFN1 DFN1_CMD(
         .Q   ( DFN1_CMD_Q ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_A_11_0_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_A_11_0_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_A_11_0_PF_IOD IOD_A_11_0(
         // Inputs
         .ARST_N                     ( LANECTRL_ADDR_CMD_0_ARST_N ),
@@ -9169,7 +9417,7 @@ DDR3_DDRPHY_BLK_IOD_A_11_0_PF_IOD IOD_A_11_0(
         .PAD_O                      ( PAD_O_net_0 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_A_12_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_A_12_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_A_12_PF_IOD IOD_A_12(
         // Inputs
         .RX_P_0                    ( OB_A_12_Y ),
@@ -9195,7 +9443,7 @@ DDR3_DDRPHY_BLK_IOD_A_12_PF_IOD IOD_A_12(
         .RX_DATA_0                 ( RX_DATA_0_net_0 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_A_13_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_A_13_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_A_13_PF_IOD IOD_A_13(
         // Inputs
         .ARST_N                    ( LANECTRL_ADDR_CMD_0_ARST_N ),
@@ -9215,7 +9463,7 @@ DDR3_DDRPHY_BLK_IOD_A_13_PF_IOD IOD_A_13(
         .PAD_O                     ( A_12 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_A_14_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_A_14_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_A_14_PF_IOD IOD_A_14(
         // Inputs
         .ARST_N                    ( LANECTRL_ADDR_CMD_0_ARST_N ),
@@ -9235,7 +9483,7 @@ DDR3_DDRPHY_BLK_IOD_A_14_PF_IOD IOD_A_14(
         .PAD_O                     ( A_13 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_A_15_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_A_15_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_A_15_PF_IOD IOD_A_15(
         // Inputs
         .ARST_N                    ( LANECTRL_ADDR_CMD_0_ARST_N ),
@@ -9255,7 +9503,7 @@ DDR3_DDRPHY_BLK_IOD_A_15_PF_IOD IOD_A_15(
         .PAD_O                     ( A_14 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_BA_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_BA_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_BA_PF_IOD IOD_BA(
         // Inputs
         .ARST_N                    ( LANECTRL_ADDR_CMD_0_ARST_N ),
@@ -9289,7 +9537,7 @@ DDR3_DDRPHY_BLK_IOD_BA_PF_IOD IOD_BA(
         .PAD_O                     ( BA_net_0 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_BCLK_TRAINING_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_BCLK_TRAINING_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_BCLK_TRAINING_PF_IOD IOD_BCLK_TRAINING(
         // Inputs
         .ARST_N                    ( VCC_net ), // tied to 1'b1 from definition
@@ -9309,7 +9557,7 @@ DDR3_DDRPHY_BLK_IOD_BCLK_TRAINING_PF_IOD IOD_BCLK_TRAINING(
         .RX_DATA_0                 ( RX_DATA_0_net_1 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_CAS_N_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_CAS_N_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_CAS_N_PF_IOD IOD_CAS_N(
         // Inputs
         .ARST_N                    ( LANECTRL_ADDR_CMD_0_ARST_N ),
@@ -9329,7 +9577,7 @@ DDR3_DDRPHY_BLK_IOD_CAS_N_PF_IOD IOD_CAS_N(
         .PAD_O                     ( CAS_N_net_0 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_CKE_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_CKE_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_CKE_PF_IOD IOD_CKE(
         // Inputs
         .ARST_N                    ( LANECTRL_ADDR_CMD_0_ARST_N ),
@@ -9349,7 +9597,7 @@ DDR3_DDRPHY_BLK_IOD_CKE_PF_IOD IOD_CKE(
         .PAD_O                     ( CKE_net_0 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_CS_N_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_CS_N_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_CS_N_PF_IOD IOD_CS_N(
         // Inputs
         .ARST_N                    ( LANECTRL_ADDR_CMD_0_ARST_N ),
@@ -9369,7 +9617,7 @@ DDR3_DDRPHY_BLK_IOD_CS_N_PF_IOD IOD_CS_N(
         .PAD_O                     ( CS_N_net_0 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_ODT_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_ODT_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_ODT_PF_IOD IOD_ODT(
         // Inputs
         .ARST_N                    ( LANECTRL_ADDR_CMD_0_ARST_N ),
@@ -9389,7 +9637,7 @@ DDR3_DDRPHY_BLK_IOD_ODT_PF_IOD IOD_ODT(
         .PAD_O                     ( ODT_net_0 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_RAS_N_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_RAS_N_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_RAS_N_PF_IOD IOD_RAS_N(
         // Inputs
         .ARST_N                    ( LANECTRL_ADDR_CMD_0_ARST_N ),
@@ -9409,7 +9657,7 @@ DDR3_DDRPHY_BLK_IOD_RAS_N_PF_IOD IOD_RAS_N(
         .PAD_O                     ( RAS_N_net_0 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_REF_CLK_TRAINING_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_REF_CLK_TRAINING_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_REF_CLK_TRAINING_PF_IOD IOD_REF_CLK_TRAINING(
         // Inputs
         .RX_P_0                    ( OB_DIFF_CK0_Y ),
@@ -9427,7 +9675,7 @@ DDR3_DDRPHY_BLK_IOD_REF_CLK_TRAINING_PF_IOD IOD_REF_CLK_TRAINING(
         .RX_DATA_0                 ( RX_DATA_0_net_2 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_RESET_N_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_RESET_N_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_RESET_N_PF_IOD IOD_RESET_N(
         // Inputs
         .ARST_N                    ( LANECTRL_ADDR_CMD_0_ARST_N ),
@@ -9447,7 +9695,7 @@ DDR3_DDRPHY_BLK_IOD_RESET_N_PF_IOD IOD_RESET_N(
         .PAD_O                     ( RESET_N_net_0 ) 
         );
 
-//--------COREDDR_TIP   -   Actel:DirectCore:COREDDR_TIP:1.5.100
+//--------COREDDR_TIP   -   Actel:DirectCore:COREDDR_TIP:1.6.106
 COREDDR_TIP #( 
         .FAMILY             ( 26 ),
         .FIFO_ADDRESS_WIDTH ( 7 ),
@@ -9463,6 +9711,7 @@ COREDDR_TIP #(
         .IOG_DQ_WIDTH_L8    ( 8 ),
         .IOG_DQS_LANES      ( 2 ),
         .NUM_BCLKS          ( 1 ),
+        .PIPELINE           ( 0 ),
         .SIM_TRAINING       ( 0 ) )
 IOD_TRAINING_0(
         // Inputs
@@ -9536,10 +9785,10 @@ IOD_TRAINING_0(
         .DFI_WRDATA_MASK_P1            (  ),
         .DFI_WRDATA_MASK_P2            (  ),
         .DFI_WRDATA_MASK_P3            (  ),
-        .DFI_ADDRESS_P0                ( DFI_ADDRESS_P0_slice_12 ),
-        .DFI_ADDRESS_P1                ( DFI_ADDRESS_P1_slice_12 ),
-        .DFI_ADDRESS_P2                ( DFI_ADDRESS_P2_slice_12 ),
-        .DFI_ADDRESS_P3                ( DFI_ADDRESS_P3_slice_12 ),
+        .DFI_ADDRESS_P0                ( DFI_ADDRESS_P0_net_0 ),
+        .DFI_ADDRESS_P1                ( DFI_ADDRESS_P1_net_0 ),
+        .DFI_ADDRESS_P2                ( DFI_ADDRESS_P2_net_0 ),
+        .DFI_ADDRESS_P3                ( DFI_ADDRESS_P3_net_0 ),
         .BCLK_IGEAR_RX                 ( BCLK_IGEAR_RX_net_0 ),
         .CMD_IGEAR_RX8                 ( IOD_A_12_RX_DATA_03to3 ),
         .DQSW270_IGEAR_RX              ( DQSW270_IGEAR_RX_net_0 ),
@@ -9566,6 +9815,46 @@ IOD_TRAINING_0(
         .ADDR_WAIT_COUNT               ( ADDR_WAIT_COUNT ),
         .WRCAL_WRITE_COUNTER_VALUE     ( WRCAL_WRITE_COUNTER_VALUE ),
         .RDGATE_MIN_READS_THRESHOLD    ( RDGATE_MIN_READS_THRESHOLD ),
+        .DFI_RESET_N_P0                ( DFI_RESET_N_P0 ),
+        .DFI_RESET_N_P1                ( DFI_RESET_N_P1 ),
+        .DFI_RESET_N_P2                ( DFI_RESET_N_P2 ),
+        .DFI_RESET_N_P3                ( DFI_RESET_N_P3 ),
+        .DFI_BANK_P0                   ( DFI_BANK_P0_net_0 ),
+        .DFI_BANK_P1                   ( DFI_BANK_P1_net_0 ),
+        .DFI_BANK_P2                   ( DFI_BANK_P2_net_0 ),
+        .DFI_BANK_P3                   ( DFI_BANK_P3_net_0 ),
+        .DFI_CS_N_P0                   ( DFI_CS_N_P0 ),
+        .DFI_CS_N_P1                   ( DFI_CS_N_P1 ),
+        .DFI_CS_N_P2                   ( DFI_CS_N_P2 ),
+        .DFI_CS_N_P3                   ( DFI_CS_N_P3 ),
+        .DFI_ODT_P0                    ( DFI_ODT_P0 ),
+        .DFI_ODT_P1                    ( DFI_ODT_P1 ),
+        .DFI_ODT_P2                    ( DFI_ODT_P2 ),
+        .DFI_ODT_P3                    ( DFI_ODT_P3 ),
+        .DFI_CKE_P0                    ( DFI_CKE_P0 ),
+        .DFI_CKE_P1                    ( DFI_CKE_P1 ),
+        .DFI_CKE_P2                    ( DFI_CKE_P2 ),
+        .DFI_CKE_P3                    ( DFI_CKE_P3 ),
+        .DFI_RAS_N_P0                  ( DFI_RAS_N_P0 ),
+        .DFI_RAS_N_P1                  ( DFI_RAS_N_P1 ),
+        .DFI_RAS_N_P2                  ( DFI_RAS_N_P2 ),
+        .DFI_RAS_N_P3                  ( DFI_RAS_N_P3 ),
+        .DFI_CAS_N_P0                  ( DFI_CAS_N_P0 ),
+        .DFI_CAS_N_P1                  ( DFI_CAS_N_P1 ),
+        .DFI_CAS_N_P2                  ( DFI_CAS_N_P2 ),
+        .DFI_CAS_N_P3                  ( DFI_CAS_N_P3 ),
+        .DFI_WE_N_P0                   ( DFI_WE_N_P0 ),
+        .DFI_WE_N_P1                   ( DFI_WE_N_P1 ),
+        .DFI_WE_N_P2                   ( DFI_WE_N_P2 ),
+        .DFI_WE_N_P3                   ( DFI_WE_N_P3 ),
+        .DFI_ACT_N_P0                  (  ),
+        .DFI_ACT_N_P1                  (  ),
+        .DFI_ACT_N_P2                  (  ),
+        .DFI_ACT_N_P3                  (  ),
+        .DFI_BG_P0                     (  ),
+        .DFI_BG_P1                     (  ),
+        .DFI_BG_P2                     (  ),
+        .DFI_BG_P3                     (  ),
         // Outputs
         .DFI_INIT_COMPLETE             ( DFI_INIT_COMPLETE_net_0 ),
         .DFI_RDLVL_RESP                ( DFI_RDLVL_RESP_net_0 ),
@@ -9643,10 +9932,10 @@ IOD_TRAINING_0(
         .IOG_WRDATA_MASK_P1            ( IOG_WRDATA_MASK_P1_net_0 ),
         .IOG_WRDATA_MASK_P2            ( IOG_WRDATA_MASK_P2_net_0 ),
         .IOG_WRDATA_MASK_P3            ( IOG_WRDATA_MASK_P3_net_0 ),
-        .IOG_ADDRESS_P0                ( IOD_TRAINING_0_IOG_ADDRESS_P0 ),
-        .IOG_ADDRESS_P1                ( IOD_TRAINING_0_IOG_ADDRESS_P1 ),
-        .IOG_ADDRESS_P2                ( IOD_TRAINING_0_IOG_ADDRESS_P2 ),
-        .IOG_ADDRESS_P3                ( IOD_TRAINING_0_IOG_ADDRESS_P3 ),
+        .IOG_ADDRESS_P0                ( IOG_ADDRESS_P0_net_0 ),
+        .IOG_ADDRESS_P1                ( IOG_ADDRESS_P1_net_0 ),
+        .IOG_ADDRESS_P2                ( IOG_ADDRESS_P2_net_0 ),
+        .IOG_ADDRESS_P3                ( IOG_ADDRESS_P3_net_0 ),
         .CMD_RESET_LANE                ( IOD_TRAINING_0_CMD_RESET_LANE ),
         .CAL_INIT_MR_W_REQ             (  ),
         .CAL_INIT_MR_ADDR              (  ),
@@ -9661,10 +9950,50 @@ IOD_TRAINING_0(
         .CAL_L_DATAIN                  ( CAL_L_DATAIN_net_0 ),
         .CAL_L_DM_IN                   ( CAL_L_DM_IN_net_0 ),
         .CAL_SELECT                    ( CAL_SELECT_net_0 ),
-        .ITER_COUNT                    ( ITER_COUNT_net_0 ) 
+        .ITER_COUNT                    ( ITER_COUNT_net_0 ),
+        .DFI_RESET_N_P0_OUT            ( IOD_TRAINING_0_DFI_RESET_N_P0_OUT ),
+        .DFI_RESET_N_P1_OUT            ( IOD_TRAINING_0_DFI_RESET_N_P1_OUT ),
+        .DFI_RESET_N_P2_OUT            ( IOD_TRAINING_0_DFI_RESET_N_P2_OUT ),
+        .DFI_RESET_N_P3_OUT            ( IOD_TRAINING_0_DFI_RESET_N_P3_OUT ),
+        .DFI_BANK_P0_OUT               ( DFI_BANK_P0_OUT_net_0 ),
+        .DFI_BANK_P1_OUT               ( DFI_BANK_P1_OUT_net_0 ),
+        .DFI_BANK_P2_OUT               ( DFI_BANK_P2_OUT_net_0 ),
+        .DFI_BANK_P3_OUT               ( DFI_BANK_P3_OUT_net_0 ),
+        .DFI_CS_N_P0_OUT               ( IOD_TRAINING_0_DFI_CS_N_P0_OUT ),
+        .DFI_CS_N_P1_OUT               ( IOD_TRAINING_0_DFI_CS_N_P1_OUT ),
+        .DFI_CS_N_P2_OUT               ( IOD_TRAINING_0_DFI_CS_N_P2_OUT ),
+        .DFI_CS_N_P3_OUT               ( IOD_TRAINING_0_DFI_CS_N_P3_OUT ),
+        .DFI_ODT_P0_OUT                ( IOD_TRAINING_0_DFI_ODT_P0_OUT ),
+        .DFI_ODT_P1_OUT                ( IOD_TRAINING_0_DFI_ODT_P1_OUT ),
+        .DFI_ODT_P2_OUT                ( IOD_TRAINING_0_DFI_ODT_P2_OUT ),
+        .DFI_ODT_P3_OUT                ( IOD_TRAINING_0_DFI_ODT_P3_OUT ),
+        .DFI_CKE_P0_OUT                ( IOD_TRAINING_0_DFI_CKE_P0_OUT ),
+        .DFI_CKE_P1_OUT                ( IOD_TRAINING_0_DFI_CKE_P1_OUT ),
+        .DFI_CKE_P2_OUT                ( IOD_TRAINING_0_DFI_CKE_P2_OUT ),
+        .DFI_CKE_P3_OUT                ( IOD_TRAINING_0_DFI_CKE_P3_OUT ),
+        .DFI_RAS_N_P0_OUT              ( IOD_TRAINING_0_DFI_RAS_N_P0_OUT ),
+        .DFI_RAS_N_P1_OUT              ( IOD_TRAINING_0_DFI_RAS_N_P1_OUT ),
+        .DFI_RAS_N_P2_OUT              ( IOD_TRAINING_0_DFI_RAS_N_P2_OUT ),
+        .DFI_RAS_N_P3_OUT              ( IOD_TRAINING_0_DFI_RAS_N_P3_OUT ),
+        .DFI_CAS_N_P0_OUT              ( IOD_TRAINING_0_DFI_CAS_N_P0_OUT ),
+        .DFI_CAS_N_P1_OUT              ( IOD_TRAINING_0_DFI_CAS_N_P1_OUT ),
+        .DFI_CAS_N_P2_OUT              ( IOD_TRAINING_0_DFI_CAS_N_P2_OUT ),
+        .DFI_CAS_N_P3_OUT              ( IOD_TRAINING_0_DFI_CAS_N_P3_OUT ),
+        .DFI_WE_N_P0_OUT               ( IOD_TRAINING_0_DFI_WE_N_P0_OUT ),
+        .DFI_WE_N_P1_OUT               ( IOD_TRAINING_0_DFI_WE_N_P1_OUT ),
+        .DFI_WE_N_P2_OUT               ( IOD_TRAINING_0_DFI_WE_N_P2_OUT ),
+        .DFI_WE_N_P3_OUT               ( IOD_TRAINING_0_DFI_WE_N_P3_OUT ),
+        .DFI_ACT_N_P0_OUT              (  ),
+        .DFI_ACT_N_P1_OUT              (  ),
+        .DFI_ACT_N_P2_OUT              (  ),
+        .DFI_ACT_N_P3_OUT              (  ),
+        .DFI_BG_P0_OUT                 (  ),
+        .DFI_BG_P1_OUT                 (  ),
+        .DFI_BG_P2_OUT                 (  ),
+        .DFI_BG_P3_OUT                 (  ) 
         );
 
-//--------DDR3_DDRPHY_BLK_IOD_WE_N_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_IOD_WE_N_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_IOD_WE_N_PF_IOD IOD_WE_N(
         // Inputs
         .ARST_N                    ( LANECTRL_ADDR_CMD_0_ARST_N ),
@@ -9723,7 +10052,7 @@ DDR3_DDRPHY_BLK_LANE_0_CTRL_PF_LANECTRL LANE_0_CTRL(
         .A_OUT_RST_N                (  ) 
         );
 
-//--------DDR3_DDRPHY_BLK_LANE_0_IOD_DM_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_LANE_0_IOD_DM_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_LANE_0_IOD_DM_PF_IOD LANE_0_IOD_DM(
         // Inputs
         .ARST_N                    ( LANE_0_CTRL_ARST_N ),
@@ -9744,7 +10073,7 @@ DDR3_DDRPHY_BLK_LANE_0_IOD_DM_PF_IOD LANE_0_IOD_DM(
         .RX_FB                     ( LANE_0_IOD_DM_RX_FB ) 
         );
 
-//--------DDR3_DDRPHY_BLK_LANE_0_IOD_DQ_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_LANE_0_IOD_DQ_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_LANE_0_IOD_DQ_PF_IOD LANE_0_IOD_DQ(
         // Inputs
         .ARST_N                    ( LANE_0_CTRL_ARST_N ),
@@ -9858,7 +10187,7 @@ DDR3_DDRPHY_BLK_LANE_0_IOD_DQ_PF_IOD LANE_0_IOD_DQ(
         .PAD                       ( { DQ[7:7] , DQ[6:6] , DQ[5:5] , DQ[4:4] , DQ[3:3] , DQ[2:2] , DQ[1:1] , DQ[0:0] } ) 
         );
 
-//--------DDR3_DDRPHY_BLK_LANE_0_IOD_DQS_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_LANE_0_IOD_DQS_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_LANE_0_IOD_DQS_PF_IOD LANE_0_IOD_DQS(
         // Inputs
         .ARST_N                    ( LANE_0_CTRL_ARST_N ),
@@ -9890,7 +10219,7 @@ DDR3_DDRPHY_BLK_LANE_0_IOD_DQS_PF_IOD LANE_0_IOD_DQS(
         .PAD_N                     ( DQS_N[0:0] ) 
         );
 
-//--------DDR3_DDRPHY_BLK_LANE_0_IOD_DQSW_TRAINING_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_LANE_0_IOD_DQSW_TRAINING_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_LANE_0_IOD_DQSW_TRAINING_PF_IOD LANE_0_IOD_DQSW_TRAINING(
         // Inputs
         .RX_N_0                    ( LANE_0_IOD_DM_RX_FB ),
@@ -9912,7 +10241,7 @@ DDR3_DDRPHY_BLK_LANE_0_IOD_DQSW_TRAINING_PF_IOD LANE_0_IOD_DQSW_TRAINING(
         .RX_DATA_0                 ( RX_DATA_0_net_4 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_LANE_0_IOD_READ_TRAINING_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_LANE_0_IOD_READ_TRAINING_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_LANE_0_IOD_READ_TRAINING_PF_IOD LANE_0_IOD_READ_TRAINING(
         // Inputs
         .RX_P_0                    ( LANE_0_IOD_DQS_DQS_N ),
@@ -9979,7 +10308,7 @@ DDR3_DDRPHY_BLK_LANE_1_CTRL_PF_LANECTRL LANE_1_CTRL(
         .A_OUT_RST_N                (  ) 
         );
 
-//--------DDR3_DDRPHY_BLK_LANE_1_IOD_DM_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_LANE_1_IOD_DM_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_LANE_1_IOD_DM_PF_IOD LANE_1_IOD_DM(
         // Inputs
         .ARST_N                    ( LANE_1_CTRL_ARST_N ),
@@ -10000,7 +10329,7 @@ DDR3_DDRPHY_BLK_LANE_1_IOD_DM_PF_IOD LANE_1_IOD_DM(
         .RX_FB                     ( LANE_1_IOD_DM_RX_FB ) 
         );
 
-//--------DDR3_DDRPHY_BLK_LANE_1_IOD_DQ_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_LANE_1_IOD_DQ_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_LANE_1_IOD_DQ_PF_IOD LANE_1_IOD_DQ(
         // Inputs
         .ARST_N                    ( LANE_1_CTRL_ARST_N ),
@@ -10114,7 +10443,7 @@ DDR3_DDRPHY_BLK_LANE_1_IOD_DQ_PF_IOD LANE_1_IOD_DQ(
         .PAD                       ( { DQ[15:15] , DQ[14:14] , DQ[13:13] , DQ[12:12] , DQ[11:11] , DQ[10:10] , DQ[9:9] , DQ[8:8] } ) 
         );
 
-//--------DDR3_DDRPHY_BLK_LANE_1_IOD_DQS_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_LANE_1_IOD_DQS_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_LANE_1_IOD_DQS_PF_IOD LANE_1_IOD_DQS(
         // Inputs
         .ARST_N                    ( LANE_1_CTRL_ARST_N ),
@@ -10146,7 +10475,7 @@ DDR3_DDRPHY_BLK_LANE_1_IOD_DQS_PF_IOD LANE_1_IOD_DQS(
         .PAD_N                     ( DQS_N[1:1] ) 
         );
 
-//--------DDR3_DDRPHY_BLK_LANE_1_IOD_DQSW_TRAINING_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_LANE_1_IOD_DQSW_TRAINING_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_LANE_1_IOD_DQSW_TRAINING_PF_IOD LANE_1_IOD_DQSW_TRAINING(
         // Inputs
         .RX_N_0                    ( LANE_1_IOD_DM_RX_FB ),
@@ -10168,7 +10497,7 @@ DDR3_DDRPHY_BLK_LANE_1_IOD_DQSW_TRAINING_PF_IOD LANE_1_IOD_DQSW_TRAINING(
         .RX_DATA_0                 ( RX_DATA_0_net_7 ) 
         );
 
-//--------DDR3_DDRPHY_BLK_LANE_1_IOD_READ_TRAINING_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.204
+//--------DDR3_DDRPHY_BLK_LANE_1_IOD_READ_TRAINING_PF_IOD   -   Actel:SgCore:PF_IOD:1.0.210
 DDR3_DDRPHY_BLK_LANE_1_IOD_READ_TRAINING_PF_IOD LANE_1_IOD_READ_TRAINING(
         // Inputs
         .RX_P_0                    ( LANE_1_IOD_DQS_DQS_N ),

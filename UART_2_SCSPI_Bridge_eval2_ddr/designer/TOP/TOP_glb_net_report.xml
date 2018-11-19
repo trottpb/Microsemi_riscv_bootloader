@@ -2,8 +2,8 @@
 <?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
 <doc>
 <title>Global Net Report</title>
-<text>Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.2 (Version 12.200.30.10)</text>
-<text>Date: Mon Sep 10 16:46:56 2018
+<text>Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.3 (Version 12.200.35.9)</text>
+<text>Date: Thu Nov 08 16:45:45 2018
 </text>
 <section>
 <name>Global Nets Information</name>
@@ -18,63 +18,63 @@
 <row>
  <cell>1</cell>
  <cell>MEMORY_0/DDR3_0/CCC_0/clkint_4/U0</cell>
- <cell>(1164, 162)</cell>
+ <cell>(1165, 162)</cell>
  <cell>MEMORY_0/DDR3_0/CCC_0/clkint_4/U0_Y</cell>
- <cell>9823</cell>
+ <cell>16683</cell>
 </row>
 <row>
  <cell>2</cell>
- <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0</cell>
- <cell>(1167, 163)</cell>
- <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_Y</cell>
- <cell>7081</cell>
+ <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_RNIHTV3[0]/U0</cell>
+ <cell>(1166, 162)</cell>
+ <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_RNIHTV3[0]/U0_Y</cell>
+ <cell>4886</cell>
 </row>
 <row>
  <cell>3</cell>
- <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_RNIHTV3[0]/U0</cell>
- <cell>(1167, 162)</cell>
- <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_RNIHTV3[0]/U0_Y</cell>
- <cell>4887</cell>
+ <cell>MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_224/MSC_i_225/MSC_i_226/MSC_i_227/s1_RNIPSG9/U0</cell>
+ <cell>(1169, 162)</cell>
+ <cell>MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_224/MSC_i_225/MSC_i_226/MSC_i_227/s1_RNIPSG9/U0_Y</cell>
+ <cell>3946</cell>
 </row>
 <row>
  <cell>4</cell>
- <cell>MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_225/MSC_i_226/MSC_i_227/MSC_i_228/s1_RNIPSG9/U0</cell>
- <cell>(1170, 162)</cell>
- <cell>MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_225/MSC_i_226/MSC_i_227/MSC_i_228/s1_RNIPSG9/U0_Y</cell>
- <cell>3994</cell>
-</row>
-<row>
- <cell>5</cell>
- <cell>IO_0/CoreSPI_0_0/CoreSPI_0_0/USPI/UCC/ssel_rx_q2_RNIHUF9/U0</cell>
- <cell>(1166, 162)</cell>
- <cell>IO_0/CoreSPI_0_0/CoreSPI_0_0/USPI/UCC/ssel_rx_q2_RNIHUF9/U0_Y</cell>
- <cell>1777</cell>
-</row>
-<row>
- <cell>6</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint/U0</cell>
- <cell>(1169, 162)</cell>
+ <cell>(1168, 162)</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint/U0_Y</cell>
  <cell>292</cell>
 </row>
 <row>
- <cell>7</cell>
+ <cell>5</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0</cell>
- <cell>(1158, 163)</cell>
+ <cell>(1152, 163)</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0_Y</cell>
- <cell>17</cell>
+ <cell>15</cell>
 </row>
 <row>
- <cell>8</cell>
+ <cell>6</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0</cell>
+ <cell>(1164, 162)</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_Y</cell>
+ <cell>3</cell>
+</row>
+<row>
+ <cell>7</cell>
  <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/CLKINT_CMD/U0</cell>
- <cell>(1168, 162)</cell>
+ <cell>(1167, 162)</cell>
  <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/CLKINT_CMD/U0_Y</cell>
  <cell>3</cell>
 </row>
 <row>
+ <cell>8</cell>
+ <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0_GB0</cell>
+ <cell>(1164, 163)</cell>
+ <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0_gbs_1</cell>
+ <cell>2</cell>
+</row>
+<row>
  <cell>9</cell>
  <cell>CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT/U0</cell>
- <cell>(1153, 162)</cell>
+ <cell>(1165, 163)</cell>
  <cell>CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT/U0_Y</cell>
  <cell>1</cell>
 </row>
@@ -100,7 +100,7 @@
 <row>
  <cell>1</cell>
  <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_RNIHTV3[0]_CLK_GATING_AND2:Y</cell>
- <cell>(1896, 342)</cell>
+ <cell>(1510, 246)</cell>
  <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_RNIHTV3[0]/U0</cell>
  <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int[0]_CLK_GATING</cell>
  <cell>ROUTED</cell>
@@ -108,48 +108,48 @@
 </row>
 <row>
  <cell>2</cell>
- <cell>MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_225/MSC_i_226/MSC_i_227/MSC_i_228/s1_RNIPSG9_CLK_GATING_AND2:Y</cell>
- <cell>(2046, 342)</cell>
- <cell>MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_225/MSC_i_226/MSC_i_227/MSC_i_228/s1_RNIPSG9/U0</cell>
- <cell>MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_225/MSC_i_226/MSC_i_227/MSC_i_228/MSC_net_4_CLK_GATING</cell>
+ <cell>MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_224/MSC_i_225/MSC_i_226/MSC_i_227/s1_RNIPSG9_CLK_GATING_AND2:Y</cell>
+ <cell>(1212, 189)</cell>
+ <cell>MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_224/MSC_i_225/MSC_i_226/MSC_i_227/s1_RNIPSG9/U0</cell>
+ <cell>MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_224/MSC_i_225/MSC_i_226/MSC_i_227/MSC_net_4_CLK_GATING</cell>
  <cell>ROUTED</cell>
  <cell>1</cell>
 </row>
 <row>
  <cell>3</cell>
- <cell>IO_0/CoreSPI_0_0/CoreSPI_0_0/USPI/UCC/ssel_rx_q2_RNIHUF9_CLK_GATING_AND2:Y</cell>
- <cell>(1719, 171)</cell>
- <cell>IO_0/CoreSPI_0_0/CoreSPI_0_0/USPI/UCC/ssel_rx_q2_RNIHUF9/U0</cell>
- <cell>IO_0/CoreSPI_0_0/CoreSPI_0_0/USPI/UCC/ssel_rx_q2_Z_CLK_GATING</cell>
- <cell>ROUTED</cell>
- <cell>1</cell>
-</row>
-<row>
- <cell>4</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint_CLK_GATING_AND2:Y</cell>
- <cell>(554, 18)</cell>
+ <cell>(1220, 189)</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint/U0</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/un1_duttck_i_0_CLK_GATING</cell>
  <cell>ROUTED</cell>
  <cell>1</cell>
 </row>
 <row>
- <cell>5</cell>
+ <cell>4</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.UJTAG_0:UDRCK</cell>
  <cell>(504, 2)</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint_NET</cell>
  <cell>HARDWIRED</cell>
- <cell>1</cell>
+ <cell>2</cell>
 </row>
 <row>
- <cell>6</cell>
+ <cell>5</cell>
  <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/CLKINT_CMD_CLK_GATING_AND2:Y</cell>
- <cell>(2059, 342)</cell>
+ <cell>(2163, 366)</cell>
  <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/CLKINT_CMD/U0</cell>
  <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/DFN1_CMD_Q_CLK_GATING</cell>
  <cell>ROUTED</cell>
  <cell>1</cell>
+</row>
+<row>
+ <cell>6</cell>
+ <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.UJTAG_0:UDRCK</cell>
+ <cell>(504, 2)</cell>
+ <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0_GB0</cell>
+ <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint_NET</cell>
+ <cell>HARDWIRED</cell>
+ <cell>2</cell>
 </row>
 <row>
  <cell>7</cell>
@@ -187,7 +187,7 @@
 <row>
  <cell>2</cell>
  <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0:OUT0</cell>
- <cell>(0, 5)</cell>
+ <cell>(2461, 377)</cell>
  <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0</cell>
  <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0_NET</cell>
  <cell>HARDWIRED</cell>
@@ -222,9 +222,9 @@
 <row>
  <cell>2</cell>
  <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0_DELAY:REF_CLK_0_OUT</cell>
- <cell>(7, 4)</cell>
+ <cell>(2468, 376)</cell>
  <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0:REF_CLK_0</cell>
- <cell>(0, 5)</cell>
+ <cell>(2461, 377)</cell>
  <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/REF_CLK_0_OUT</cell>
  <cell>HARDWIRED</cell>
  <cell>1</cell>
@@ -252,12 +252,12 @@
 <row>
  <cell>1</cell>
  <cell>MEMORY_0/DDR3_0/CCC_0/clkint_4/U0</cell>
- <cell>(1164, 162)</cell>
+ <cell>(1165, 162)</cell>
  <cell>MEMORY_0/DDR3_0/CCC_0/clkint_4/U0_Y</cell>
- <cell>9823</cell>
+ <cell>16683</cell>
  <cell>1</cell>
- <cell>(1740, 285)</cell>
- <cell>2</cell>
+ <cell>(1743, 177)</cell>
+ <cell>164</cell>
 </row>
 <row>
  <cell> </cell>
@@ -266,8 +266,8 @@
  <cell></cell>
  <cell></cell>
  <cell>2</cell>
- <cell>(1740, 312)</cell>
- <cell>154</cell>
+ <cell>(1743, 204)</cell>
+ <cell>317</cell>
 </row>
 <row>
  <cell> </cell>
@@ -276,8 +276,8 @@
  <cell></cell>
  <cell></cell>
  <cell>3</cell>
- <cell>(1740, 339)</cell>
- <cell>700</cell>
+ <cell>(1743, 231)</cell>
+ <cell>890</cell>
 </row>
 <row>
  <cell> </cell>
@@ -286,8 +286,8 @@
  <cell></cell>
  <cell></cell>
  <cell>4</cell>
- <cell>(1740, 366)</cell>
- <cell>442</cell>
+ <cell>(1743, 258)</cell>
+ <cell>872</cell>
 </row>
 <row>
  <cell> </cell>
@@ -296,8 +296,8 @@
  <cell></cell>
  <cell></cell>
  <cell>5</cell>
- <cell>(1746, 285)</cell>
- <cell>1469</cell>
+ <cell>(1743, 285)</cell>
+ <cell>559</cell>
 </row>
 <row>
  <cell> </cell>
@@ -306,8 +306,8 @@
  <cell></cell>
  <cell></cell>
  <cell>6</cell>
- <cell>(1746, 312)</cell>
- <cell>2394</cell>
+ <cell>(1743, 312)</cell>
+ <cell>471</cell>
 </row>
 <row>
  <cell> </cell>
@@ -316,8 +316,8 @@
  <cell></cell>
  <cell></cell>
  <cell>7</cell>
- <cell>(1746, 339)</cell>
- <cell>2459</cell>
+ <cell>(1743, 339)</cell>
+ <cell>459</cell>
 </row>
 <row>
  <cell> </cell>
@@ -326,88 +326,8 @@
  <cell></cell>
  <cell></cell>
  <cell>8</cell>
- <cell>(1746, 366)</cell>
- <cell>2203</cell>
-</row>
-<row>
- <cell>2</cell>
- <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0</cell>
- <cell>(1167, 163)</cell>
- <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_Y</cell>
- <cell>7081</cell>
- <cell>1</cell>
- <cell>(1745, 179)</cell>
- <cell>63</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>2</cell>
- <cell>(1745, 206)</cell>
- <cell>310</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>3</cell>
- <cell>(1745, 233)</cell>
- <cell>651</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>4</cell>
- <cell>(1745, 260)</cell>
- <cell>1219</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>5</cell>
- <cell>(1745, 287)</cell>
- <cell>976</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>6</cell>
- <cell>(1745, 314)</cell>
- <cell>610</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>7</cell>
- <cell>(1745, 341)</cell>
- <cell>48</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>8</cell>
- <cell>(1751, 149)</cell>
- <cell>50</cell>
+ <cell>(1743, 366)</cell>
+ <cell>331</cell>
 </row>
 <row>
  <cell> </cell>
@@ -416,8 +336,8 @@
  <cell></cell>
  <cell></cell>
  <cell>9</cell>
- <cell>(1751, 179)</cell>
- <cell>624</cell>
+ <cell>(1749, 177)</cell>
+ <cell>302</cell>
 </row>
 <row>
  <cell> </cell>
@@ -426,8 +346,8 @@
  <cell></cell>
  <cell></cell>
  <cell>10</cell>
- <cell>(1751, 206)</cell>
- <cell>728</cell>
+ <cell>(1749, 204)</cell>
+ <cell>881</cell>
 </row>
 <row>
  <cell> </cell>
@@ -436,8 +356,8 @@
  <cell></cell>
  <cell></cell>
  <cell>11</cell>
- <cell>(1751, 233)</cell>
- <cell>673</cell>
+ <cell>(1749, 231)</cell>
+ <cell>800</cell>
 </row>
 <row>
  <cell> </cell>
@@ -446,8 +366,8 @@
  <cell></cell>
  <cell></cell>
  <cell>12</cell>
- <cell>(1751, 260)</cell>
- <cell>691</cell>
+ <cell>(1749, 258)</cell>
+ <cell>1232</cell>
 </row>
 <row>
  <cell> </cell>
@@ -456,8 +376,8 @@
  <cell></cell>
  <cell></cell>
  <cell>13</cell>
- <cell>(1751, 287)</cell>
- <cell>433</cell>
+ <cell>(1749, 285)</cell>
+ <cell>1939</cell>
 </row>
 <row>
  <cell> </cell>
@@ -466,8 +386,8 @@
  <cell></cell>
  <cell></cell>
  <cell>14</cell>
- <cell>(1751, 314)</cell>
- <cell>4</cell>
+ <cell>(1749, 312)</cell>
+ <cell>2639</cell>
 </row>
 <row>
  <cell> </cell>
@@ -476,148 +396,28 @@
  <cell></cell>
  <cell></cell>
  <cell>15</cell>
- <cell>(1751, 368)</cell>
- <cell>1</cell>
+ <cell>(1749, 339)</cell>
+ <cell>2627</cell>
 </row>
 <row>
- <cell>3</cell>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>16</cell>
+ <cell>(1749, 366)</cell>
+ <cell>2200</cell>
+</row>
+<row>
+ <cell>2</cell>
  <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_RNIHTV3[0]/U0</cell>
- <cell>(1167, 162)</cell>
- <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_RNIHTV3[0]/U0_Y</cell>
- <cell>4887</cell>
- <cell>1</cell>
- <cell>(1744, 314)</cell>
- <cell>65</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>2</cell>
- <cell>(1744, 341)</cell>
- <cell>664</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>3</cell>
- <cell>(1744, 368)</cell>
- <cell>422</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>4</cell>
- <cell>(1750, 287)</cell>
- <cell>866</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>5</cell>
- <cell>(1750, 314)</cell>
- <cell>723</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>6</cell>
- <cell>(1750, 341)</cell>
- <cell>740</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>7</cell>
- <cell>(1750, 368)</cell>
- <cell>1407</cell>
-</row>
-<row>
- <cell>4</cell>
- <cell>MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_225/MSC_i_226/MSC_i_227/MSC_i_228/s1_RNIPSG9/U0</cell>
- <cell>(1170, 162)</cell>
- <cell>MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_225/MSC_i_226/MSC_i_227/MSC_i_228/s1_RNIPSG9/U0_Y</cell>
- <cell>3994</cell>
- <cell>1</cell>
- <cell>(1742, 339)</cell>
- <cell>17</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>2</cell>
- <cell>(1742, 366)</cell>
- <cell>15</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>3</cell>
- <cell>(1748, 285)</cell>
- <cell>561</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>4</cell>
- <cell>(1748, 312)</cell>
- <cell>1303</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>5</cell>
- <cell>(1748, 339)</cell>
- <cell>1603</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>6</cell>
- <cell>(1748, 366)</cell>
- <cell>495</cell>
-</row>
-<row>
- <cell>5</cell>
- <cell>IO_0/CoreSPI_0_0/CoreSPI_0_0/USPI/UCC/ssel_rx_q2_RNIHUF9/U0</cell>
  <cell>(1166, 162)</cell>
- <cell>IO_0/CoreSPI_0_0/CoreSPI_0_0/USPI/UCC/ssel_rx_q2_RNIHUF9/U0_Y</cell>
- <cell>1777</cell>
+ <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_RNIHTV3[0]/U0_Y</cell>
+ <cell>4886</cell>
  <cell>1</cell>
- <cell>(1741, 260)</cell>
- <cell>38</cell>
+ <cell>(1741, 179)</cell>
+ <cell>2</cell>
 </row>
 <row>
  <cell> </cell>
@@ -626,8 +426,8 @@
  <cell></cell>
  <cell></cell>
  <cell>2</cell>
- <cell>(1741, 287)</cell>
- <cell>352</cell>
+ <cell>(1741, 314)</cell>
+ <cell>142</cell>
 </row>
 <row>
  <cell> </cell>
@@ -636,8 +436,8 @@
  <cell></cell>
  <cell></cell>
  <cell>3</cell>
- <cell>(1741, 314)</cell>
- <cell>592</cell>
+ <cell>(1741, 341)</cell>
+ <cell>418</cell>
 </row>
 <row>
  <cell> </cell>
@@ -646,8 +446,8 @@
  <cell></cell>
  <cell></cell>
  <cell>4</cell>
- <cell>(1741, 341)</cell>
- <cell>46</cell>
+ <cell>(1741, 368)</cell>
+ <cell>328</cell>
 </row>
 <row>
  <cell> </cell>
@@ -657,7 +457,7 @@
  <cell></cell>
  <cell>5</cell>
  <cell>(1747, 260)</cell>
- <cell>336</cell>
+ <cell>170</cell>
 </row>
 <row>
  <cell> </cell>
@@ -667,17 +467,47 @@
  <cell></cell>
  <cell>6</cell>
  <cell>(1747, 287)</cell>
- <cell>413</cell>
+ <cell>947</cell>
 </row>
 <row>
- <cell>6</cell>
- <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint/U0</cell>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>7</cell>
+ <cell>(1747, 314)</cell>
+ <cell>643</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>8</cell>
+ <cell>(1747, 341)</cell>
+ <cell>850</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>9</cell>
+ <cell>(1747, 368)</cell>
+ <cell>1386</cell>
+</row>
+<row>
+ <cell>3</cell>
+ <cell>MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_224/MSC_i_225/MSC_i_226/MSC_i_227/s1_RNIPSG9/U0</cell>
  <cell>(1169, 162)</cell>
- <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint/U0_Y</cell>
- <cell>292</cell>
+ <cell>MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_224/MSC_i_225/MSC_i_226/MSC_i_227/s1_RNIPSG9/U0_Y</cell>
+ <cell>3946</cell>
  <cell>1</cell>
- <cell>(1743, 232)</cell>
- <cell>171</cell>
+ <cell>(1743, 340)</cell>
+ <cell>13</cell>
 </row>
 <row>
  <cell> </cell>
@@ -686,37 +516,127 @@
  <cell></cell>
  <cell></cell>
  <cell>2</cell>
- <cell>(1743, 259)</cell>
- <cell>121</cell>
+ <cell>(1743, 367)</cell>
+ <cell>2</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(1749, 286)</cell>
+ <cell>193</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>4</cell>
+ <cell>(1749, 313)</cell>
+ <cell>1686</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>5</cell>
+ <cell>(1749, 340)</cell>
+ <cell>1567</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>6</cell>
+ <cell>(1749, 367)</cell>
+ <cell>485</cell>
+</row>
+<row>
+ <cell>4</cell>
+ <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint/U0</cell>
+ <cell>(1168, 162)</cell>
+ <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint/U0_Y</cell>
+ <cell>292</cell>
+ <cell>1</cell>
+ <cell>(1740, 205)</cell>
+ <cell>114</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(1740, 232)</cell>
+ <cell>178</cell>
+</row>
+<row>
+ <cell>5</cell>
+ <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0</cell>
+ <cell>(1152, 163)</cell>
+ <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0_Y</cell>
+ <cell>15</cell>
+ <cell> </cell>
+ <cell>(583, 147)</cell>
+ <cell>15</cell>
+</row>
+<row>
+ <cell>6</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0</cell>
+ <cell>(1164, 162)</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_Y</cell>
+ <cell>3</cell>
+ <cell>1</cell>
+ <cell>(1740, 231)</cell>
+ <cell>2</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(1746, 366)</cell>
+ <cell>1</cell>
 </row>
 <row>
  <cell>7</cell>
- <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0</cell>
- <cell>(1158, 163)</cell>
- <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0_Y</cell>
- <cell>17</cell>
- <cell> </cell>
- <cell>(580, 13)</cell>
- <cell>17</cell>
-</row>
-<row>
- <cell>8</cell>
  <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/CLKINT_CMD/U0</cell>
- <cell>(1168, 162)</cell>
+ <cell>(1167, 162)</cell>
  <cell>MEMORY_0/DDR3_0/DDRPHY_BLK_0/CLKINT_CMD/U0_Y</cell>
  <cell>3</cell>
  <cell> </cell>
- <cell>(1746, 367)</cell>
+ <cell>(1750, 368)</cell>
  <cell>3</cell>
+</row>
+<row>
+ <cell>8</cell>
+ <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0_GB0</cell>
+ <cell>(1164, 163)</cell>
+ <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0_gbs_1</cell>
+ <cell>2</cell>
+ <cell> </cell>
+ <cell>(1741, 177)</cell>
+ <cell>2</cell>
 </row>
 <row>
  <cell>9</cell>
  <cell>CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT/U0</cell>
- <cell>(1153, 162)</cell>
+ <cell>(1165, 163)</cell>
  <cell>CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT/U0_Y</cell>
  <cell>1</cell>
  <cell> </cell>
- <cell>(579, 12)</cell>
+ <cell>(1750, 366)</cell>
  <cell>1</cell>
 </row>
 </table>

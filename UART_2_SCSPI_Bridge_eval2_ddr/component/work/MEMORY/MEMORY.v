@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Aug 31 09:50:04 2018
-// Version: PolarFire v2.2 12.200.30.10
+// Created by SmartDesign Thu Oct 18 10:12:57 2018
+// Version: PolarFire v2.3 12.200.35.9
 //////////////////////////////////////////////////////////////////////
 
 `timescale 1ns / 100ps
@@ -35,6 +35,7 @@ module MEMORY(
     RESET_N,
     SHIELD0,
     SHIELD1,
+    SYS_CLK,
     WE_N,
     // Inouts
     DQ,
@@ -74,6 +75,7 @@ output        RAS_N;
 output        RESET_N;
 output        SHIELD0;
 output        SHIELD1;
+output        SYS_CLK;
 output        WE_N;
 //--------------------------------------------------------------------
 // Inout
@@ -139,7 +141,6 @@ wire          CK0_net_0;
 wire          CK0_N_net_0;
 wire          CKE_net_0;
 wire          CS_N_net_0;
-wire          DDR3_0_SYS_CLK;
 wire   [1:0]  DM_net_0;
 wire   [15:0] DQ;
 wire   [1:0]  DQS;
@@ -152,6 +153,7 @@ wire          RAS_N_net_0;
 wire          RESET_N_net_0;
 wire          SHIELD0_net_0;
 wire          SHIELD1_net_0;
+wire          SYS_CLK_net_0;
 wire          WE_N_net_0;
 wire          CKE_net_1;
 wire          CS_N_net_1;
@@ -170,33 +172,32 @@ wire   [15:0] A_net_1;
 wire   [31:0] AHBmmaster0_HRDATA_net_0;
 wire          AHBmmaster0_HREADY_net_0;
 wire          AHBmmaster0_HRESP_net_0;
+wire          SYS_CLK_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
 wire          GND_net;
-wire   [3:0]  AXI0_AWUSERTAG_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
+wire   [4:0]  AXI_INTERCONNECT_0_AXI4mslave0_ARID;
 wire   [5:5]  AXI_INTERCONNECT_0_AXI4mslave0_ARID_0_5to5;
 wire   [4:0]  AXI_INTERCONNECT_0_AXI4mslave0_ARID_0_4to0;
 wire   [5:0]  AXI_INTERCONNECT_0_AXI4mslave0_ARID_0;
-wire   [4:0]  AXI_INTERCONNECT_0_AXI4mslave0_ARID;
+wire   [4:0]  AXI_INTERCONNECT_0_AXI4mslave0_AWID;
 wire   [5:5]  AXI_INTERCONNECT_0_AXI4mslave0_AWID_0_5to5;
 wire   [4:0]  AXI_INTERCONNECT_0_AXI4mslave0_AWID_0_4to0;
 wire   [5:0]  AXI_INTERCONNECT_0_AXI4mslave0_AWID_0;
-wire   [4:0]  AXI_INTERCONNECT_0_AXI4mslave0_AWID;
-wire   [5:0]  AXI_INTERCONNECT_0_AXI4mslave0_BID;
 wire   [4:0]  AXI_INTERCONNECT_0_AXI4mslave0_BID_0_4to0;
 wire   [4:0]  AXI_INTERCONNECT_0_AXI4mslave0_BID_0;
+wire   [5:0]  AXI_INTERCONNECT_0_AXI4mslave0_BID;
+wire   [5:0]  AXI_INTERCONNECT_0_AXI4mslave0_RID;
 wire   [4:0]  AXI_INTERCONNECT_0_AXI4mslave0_RID_0_4to0;
 wire   [4:0]  AXI_INTERCONNECT_0_AXI4mslave0_RID_0;
-wire   [5:0]  AXI_INTERCONNECT_0_AXI4mslave0_RID;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
-assign GND_net                    = 1'b0;
-assign AXI0_AWUSERTAG_const_net_0 = 4'h0;
+assign GND_net    = 1'b0;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
@@ -234,6 +235,8 @@ assign AHBmmaster0_HREADY_net_0 = AHBmmaster0_HREADY;
 assign HREADY_M0                = AHBmmaster0_HREADY_net_0;
 assign AHBmmaster0_HRESP_net_0  = AHBmmaster0_HRESP;
 assign HRESP_M0                 = AHBmmaster0_HRESP_net_0;
+assign SYS_CLK_net_1            = SYS_CLK_net_0;
+assign SYS_CLK                  = SYS_CLK_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -257,7 +260,7 @@ assign AXI_INTERCONNECT_0_AXI4mslave0_RID_0 = { AXI_INTERCONNECT_0_AXI4mslave0_R
 //--------AXI_INTERCONNECT
 AXI_INTERCONNECT AXI_INTERCONNECT_0(
         // Inputs
-        .ACLK              ( HCLK ),
+        .ACLK              ( SYS_CLK_net_0 ),
         .ARESETN           ( HRESETN ),
         .MASTER0_HMASTLOCK ( GND_net ),
         .MASTER0_HNONSEC   ( GND_net ),
@@ -282,7 +285,6 @@ AXI_INTERCONNECT AXI_INTERCONNECT_0(
         .MASTER0_HBURST    ( HBURST_M0 ),
         .MASTER0_HPROT     ( HPROT_M0 ),
         .MASTER0_HWDATA    ( HWDATA_M0 ),
-        .S_CLK0            ( DDR3_0_SYS_CLK ),
         // Outputs
         .SLAVE0_AWID       ( AXI_INTERCONNECT_0_AXI4mslave0_AWID ),
         .SLAVE0_AWADDR     ( AXI_INTERCONNECT_0_AXI4mslave0_AWADDR ),
@@ -323,67 +325,65 @@ AXI_INTERCONNECT AXI_INTERCONNECT_0(
 //--------DDR3
 DDR3 DDR3_0(
         // Inputs
-        .PLL_REF_CLK    ( HCLK ),
-        .SYS_RESET_N    ( HRESETN ),
-        .axi0_awid      ( AXI_INTERCONNECT_0_AXI4mslave0_AWID_0 ),
-        .axi0_awaddr    ( AXI_INTERCONNECT_0_AXI4mslave0_AWADDR ),
-        .axi0_awlen     ( AXI_INTERCONNECT_0_AXI4mslave0_AWLEN ),
-        .axi0_awsize    ( AXI_INTERCONNECT_0_AXI4mslave0_AWSIZE ),
-        .axi0_awburst   ( AXI_INTERCONNECT_0_AXI4mslave0_AWBURST ),
-        .axi0_awlock    ( AXI_INTERCONNECT_0_AXI4mslave0_AWLOCK ),
-        .axi0_awcache   ( AXI_INTERCONNECT_0_AXI4mslave0_AWCACHE ),
-        .axi0_awprot    ( AXI_INTERCONNECT_0_AXI4mslave0_AWPROT ),
-        .axi0_awvalid   ( AXI_INTERCONNECT_0_AXI4mslave0_AWVALID ),
-        .axi0_wdata     ( AXI_INTERCONNECT_0_AXI4mslave0_WDATA ),
-        .axi0_wstrb     ( AXI_INTERCONNECT_0_AXI4mslave0_WSTRB ),
-        .axi0_wlast     ( AXI_INTERCONNECT_0_AXI4mslave0_WLAST ),
-        .axi0_wvalid    ( AXI_INTERCONNECT_0_AXI4mslave0_WVALID ),
-        .axi0_bready    ( AXI_INTERCONNECT_0_AXI4mslave0_BREADY ),
-        .axi0_arid      ( AXI_INTERCONNECT_0_AXI4mslave0_ARID_0 ),
-        .axi0_araddr    ( AXI_INTERCONNECT_0_AXI4mslave0_ARADDR ),
-        .axi0_arlen     ( AXI_INTERCONNECT_0_AXI4mslave0_ARLEN ),
-        .axi0_arsize    ( AXI_INTERCONNECT_0_AXI4mslave0_ARSIZE ),
-        .axi0_arburst   ( AXI_INTERCONNECT_0_AXI4mslave0_ARBURST ),
-        .axi0_arlock    ( AXI_INTERCONNECT_0_AXI4mslave0_ARLOCK ),
-        .axi0_arcache   ( AXI_INTERCONNECT_0_AXI4mslave0_ARCACHE ),
-        .axi0_arprot    ( AXI_INTERCONNECT_0_AXI4mslave0_ARPROT ),
-        .axi0_arvalid   ( AXI_INTERCONNECT_0_AXI4mslave0_ARVALID ),
-        .axi0_rready    ( AXI_INTERCONNECT_0_AXI4mslave0_RREADY ),
-        .AXI0_AWUSERTAG ( AXI0_AWUSERTAG_const_net_0 ),
+        .PLL_REF_CLK  ( HCLK ),
+        .SYS_RESET_N  ( HRESETN ),
+        .axi0_awid    ( AXI_INTERCONNECT_0_AXI4mslave0_AWID_0 ),
+        .axi0_awaddr  ( AXI_INTERCONNECT_0_AXI4mslave0_AWADDR ),
+        .axi0_awlen   ( AXI_INTERCONNECT_0_AXI4mslave0_AWLEN ),
+        .axi0_awsize  ( AXI_INTERCONNECT_0_AXI4mslave0_AWSIZE ),
+        .axi0_awburst ( AXI_INTERCONNECT_0_AXI4mslave0_AWBURST ),
+        .axi0_awlock  ( AXI_INTERCONNECT_0_AXI4mslave0_AWLOCK ),
+        .axi0_awcache ( AXI_INTERCONNECT_0_AXI4mslave0_AWCACHE ),
+        .axi0_awprot  ( AXI_INTERCONNECT_0_AXI4mslave0_AWPROT ),
+        .axi0_awvalid ( AXI_INTERCONNECT_0_AXI4mslave0_AWVALID ),
+        .axi0_wdata   ( AXI_INTERCONNECT_0_AXI4mslave0_WDATA ),
+        .axi0_wstrb   ( AXI_INTERCONNECT_0_AXI4mslave0_WSTRB ),
+        .axi0_wlast   ( AXI_INTERCONNECT_0_AXI4mslave0_WLAST ),
+        .axi0_wvalid  ( AXI_INTERCONNECT_0_AXI4mslave0_WVALID ),
+        .axi0_bready  ( AXI_INTERCONNECT_0_AXI4mslave0_BREADY ),
+        .axi0_arid    ( AXI_INTERCONNECT_0_AXI4mslave0_ARID_0 ),
+        .axi0_araddr  ( AXI_INTERCONNECT_0_AXI4mslave0_ARADDR ),
+        .axi0_arlen   ( AXI_INTERCONNECT_0_AXI4mslave0_ARLEN ),
+        .axi0_arsize  ( AXI_INTERCONNECT_0_AXI4mslave0_ARSIZE ),
+        .axi0_arburst ( AXI_INTERCONNECT_0_AXI4mslave0_ARBURST ),
+        .axi0_arlock  ( AXI_INTERCONNECT_0_AXI4mslave0_ARLOCK ),
+        .axi0_arcache ( AXI_INTERCONNECT_0_AXI4mslave0_ARCACHE ),
+        .axi0_arprot  ( AXI_INTERCONNECT_0_AXI4mslave0_ARPROT ),
+        .axi0_arvalid ( AXI_INTERCONNECT_0_AXI4mslave0_ARVALID ),
+        .axi0_rready  ( AXI_INTERCONNECT_0_AXI4mslave0_RREADY ),
         // Outputs
-        .DM             ( DM_net_0 ),
-        .CKE            ( CKE_net_0 ),
-        .CS_N           ( CS_N_net_0 ),
-        .ODT            ( ODT_net_0 ),
-        .RAS_N          ( RAS_N_net_0 ),
-        .CAS_N          ( CAS_N_net_0 ),
-        .WE_N           ( WE_N_net_0 ),
-        .BA             ( BA_net_0 ),
-        .RESET_N        ( RESET_N_net_0 ),
-        .A              ( A_net_0 ),
-        .CK0            ( CK0_net_0 ),
-        .CK0_N          ( CK0_N_net_0 ),
-        .SHIELD0        ( SHIELD0_net_0 ),
-        .SHIELD1        ( SHIELD1_net_0 ),
-        .SYS_CLK        ( DDR3_0_SYS_CLK ),
-        .PLL_LOCK       (  ),
-        .axi0_awready   ( AXI_INTERCONNECT_0_AXI4mslave0_AWREADY ),
-        .axi0_wready    ( AXI_INTERCONNECT_0_AXI4mslave0_WREADY ),
-        .axi0_bid       ( AXI_INTERCONNECT_0_AXI4mslave0_BID ),
-        .axi0_bresp     ( AXI_INTERCONNECT_0_AXI4mslave0_BRESP ),
-        .axi0_bvalid    ( AXI_INTERCONNECT_0_AXI4mslave0_BVALID ),
-        .axi0_arready   ( AXI_INTERCONNECT_0_AXI4mslave0_ARREADY ),
-        .axi0_rid       ( AXI_INTERCONNECT_0_AXI4mslave0_RID ),
-        .axi0_rdata     ( AXI_INTERCONNECT_0_AXI4mslave0_RDATA ),
-        .axi0_rresp     ( AXI_INTERCONNECT_0_AXI4mslave0_RRESP ),
-        .axi0_rlast     ( AXI_INTERCONNECT_0_AXI4mslave0_RLAST ),
-        .axi0_rvalid    ( AXI_INTERCONNECT_0_AXI4mslave0_RVALID ),
-        .AXI0_BUSERTAG  (  ),
-        .CTRLR_READY    (  ),
+        .DM           ( DM_net_0 ),
+        .CKE          ( CKE_net_0 ),
+        .CS_N         ( CS_N_net_0 ),
+        .ODT          ( ODT_net_0 ),
+        .RAS_N        ( RAS_N_net_0 ),
+        .CAS_N        ( CAS_N_net_0 ),
+        .WE_N         ( WE_N_net_0 ),
+        .BA           ( BA_net_0 ),
+        .RESET_N      ( RESET_N_net_0 ),
+        .A            ( A_net_0 ),
+        .CK0          ( CK0_net_0 ),
+        .CK0_N        ( CK0_N_net_0 ),
+        .SHIELD0      ( SHIELD0_net_0 ),
+        .SHIELD1      ( SHIELD1_net_0 ),
+        .SYS_CLK      ( SYS_CLK_net_0 ),
+        .PLL_LOCK     (  ),
+        .axi0_awready ( AXI_INTERCONNECT_0_AXI4mslave0_AWREADY ),
+        .axi0_wready  ( AXI_INTERCONNECT_0_AXI4mslave0_WREADY ),
+        .axi0_bid     ( AXI_INTERCONNECT_0_AXI4mslave0_BID ),
+        .axi0_bresp   ( AXI_INTERCONNECT_0_AXI4mslave0_BRESP ),
+        .axi0_bvalid  ( AXI_INTERCONNECT_0_AXI4mslave0_BVALID ),
+        .axi0_arready ( AXI_INTERCONNECT_0_AXI4mslave0_ARREADY ),
+        .axi0_rid     ( AXI_INTERCONNECT_0_AXI4mslave0_RID ),
+        .axi0_rdata   ( AXI_INTERCONNECT_0_AXI4mslave0_RDATA ),
+        .axi0_rresp   ( AXI_INTERCONNECT_0_AXI4mslave0_RRESP ),
+        .axi0_rlast   ( AXI_INTERCONNECT_0_AXI4mslave0_RLAST ),
+        .axi0_rvalid  ( AXI_INTERCONNECT_0_AXI4mslave0_RVALID ),
+        .CTRLR_READY  (  ),
         // Inouts
-        .DQ             ( DQ ),
-        .DQS            ( DQS ),
-        .DQS_N          ( DQS_N ) 
+        .DQ           ( DQ ),
+        .DQS          ( DQS ),
+        .DQS_N        ( DQS_N ) 
         );
 
 

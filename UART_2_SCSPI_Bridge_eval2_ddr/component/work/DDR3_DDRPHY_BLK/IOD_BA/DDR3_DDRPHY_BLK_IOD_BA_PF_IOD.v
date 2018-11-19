@@ -1,5 +1,5 @@
 `timescale 1 ns/100 ps
-// Version: PolarFire v2.2 12.200.30.10
+// Version: PolarFire v2.3 12.200.35.9
 
 
 module DDR3_DDRPHY_BLK_IOD_BA_PF_IOD(
@@ -67,7 +67,7 @@ input  ODT_EN_2;
     
     TRIBUFF I_TRIBUFF_0 (.D(D_I_TRIBUFF_0_net), .E(E_I_TRIBUFF_0_net), 
         .PAD(PAD_O[0]));
-    IOD #( .DATA_RATE(1332.0), .FORMAL_NAME("BA2"), .INTERFACE_NAME("DDR3")
+    IOD #( .DATA_RATE(888.888), .FORMAL_NAME("BA2"), .INTERFACE_NAME("DDR3")
         , .DELAY_LINE_SIMULATION_MODE("ENABLED"), .RESERVED_0(1'b0), .RX_CLK_EN(1'b0)
         , .RX_CLK_INV(1'b0), .TX_CLK_EN(1'b1), .TX_CLK_INV(1'b0), .HS_IO_CLK_SEL(3'b000)
         , .QDR_EN(1'b0), .EDGE_DETECT_EN(1'b0), .DELAY_LINE_MODE(2'b10)
@@ -109,7 +109,7 @@ input  ODT_EN_2;
         .INFF_EN_OUT(), .RX_CLK_OUT(), .TX_CLK_OUT());
     TRIBUFF I_TRIBUFF_2 (.D(D_I_TRIBUFF_2_net), .E(E_I_TRIBUFF_2_net), 
         .PAD(PAD_O[2]));
-    IOD #( .DATA_RATE(1332.0), .FORMAL_NAME("BA1"), .INTERFACE_NAME("DDR3")
+    IOD #( .DATA_RATE(888.888), .FORMAL_NAME("BA1"), .INTERFACE_NAME("DDR3")
         , .DELAY_LINE_SIMULATION_MODE("ENABLED"), .RESERVED_0(1'b0), .RX_CLK_EN(1'b0)
         , .RX_CLK_INV(1'b0), .TX_CLK_EN(1'b1), .TX_CLK_INV(1'b0), .HS_IO_CLK_SEL(3'b000)
         , .QDR_EN(1'b0), .EDGE_DETECT_EN(1'b0), .DELAY_LINE_MODE(2'b10)
@@ -153,7 +153,7 @@ input  ODT_EN_2;
     GND gnd_inst (.Y(GND_net));
     TRIBUFF I_TRIBUFF_1 (.D(D_I_TRIBUFF_1_net), .E(E_I_TRIBUFF_1_net), 
         .PAD(PAD_O[1]));
-    IOD #( .DATA_RATE(1332.0), .FORMAL_NAME("BA0"), .INTERFACE_NAME("DDR3")
+    IOD #( .DATA_RATE(888.888), .FORMAL_NAME("BA0"), .INTERFACE_NAME("DDR3")
         , .DELAY_LINE_SIMULATION_MODE("ENABLED"), .RESERVED_0(1'b0), .RX_CLK_EN(1'b0)
         , .RX_CLK_INV(1'b0), .TX_CLK_EN(1'b1), .TX_CLK_INV(1'b0), .HS_IO_CLK_SEL(3'b000)
         , .QDR_EN(1'b0), .EDGE_DETECT_EN(1'b0), .DELAY_LINE_MODE(2'b10)

@@ -1,5 +1,5 @@
 `timescale 1 ns/100 ps
-// Version: PolarFire v2.2 12.200.30.10
+// Version: PolarFire v2.3 12.200.35.9
 
 
 module DDR3_DLL_0_PF_CCC(

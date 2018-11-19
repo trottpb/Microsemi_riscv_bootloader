@@ -2,11 +2,11 @@
 
 # User I/O Constraints file 
 
-# Version: PolarFire v2.2 12.200.30.10
+# Version: PolarFire v2.3 12.200.35.9
 
 # Family: PolarFire , Die: MPF300TS_ES , Package: FCG1152
 
-# Date generated: Thu Aug 30 13:56:11 2018 
+# Date generated: Thu Oct 18 11:46:56 2018 
 
 
 # 
@@ -334,30 +334,6 @@ set_io -port_name SHIELD0  \
 set_io -port_name SHIELD1  \
     -pin_name AM20         \
     -fixed true            \
-    -DIRECTION OUTPUT
-
-
-set_io -port_name SPISCLKO  \
-    -pin_name H19           \
-    -fixed true             \
-    -DIRECTION OUTPUT
-
-
-set_io -port_name SPISDI  \
-    -pin_name C18         \
-    -fixed true           \
-    -DIRECTION INPUT
-
-
-set_io -port_name SPISDO  \
-    -pin_name G19         \
-    -fixed true           \
-    -DIRECTION OUTPUT
-
-
-set_io -port_name SPISS  \
-    -pin_name A20        \
-    -fixed true          \
     -DIRECTION OUTPUT
 
 

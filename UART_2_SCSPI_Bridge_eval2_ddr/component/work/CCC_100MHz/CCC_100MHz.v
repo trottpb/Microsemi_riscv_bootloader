@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Aug 31 09:46:46 2018
-// Version: PolarFire v2.2 12.200.30.10
+// Created by SmartDesign Thu Oct 18 10:14:11 2018
+// Version: PolarFire v2.3 12.200.35.9
 //////////////////////////////////////////////////////////////////////
 
 `timescale 1ns / 100ps
@@ -61,7 +61,7 @@ assign PLL_LOCK_0          = PLL_LOCK_0_net_1;
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
-//--------CCC_100MHz_CCC_100MHz_0_PF_CCC   -   Actel:SgCore:PF_CCC:1.0.113
+//--------CCC_100MHz_CCC_100MHz_0_PF_CCC   -   Actel:SgCore:PF_CCC:1.0.115
 CCC_100MHz_CCC_100MHz_0_PF_CCC CCC_100MHz_0(
         // Inputs
         .REF_CLK_0     ( REF_CLK_0 ),

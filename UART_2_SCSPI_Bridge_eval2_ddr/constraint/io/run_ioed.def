@@ -1,8 +1,8 @@
 data HELP_TYPE_DES 2
 data DESIGN TOP
-data HPATH 'C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/designer/TOP'
-data CPATH 'C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/constraint/io'
-data CDIR 'C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/constraint'
+data HPATH 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_ddr/designer/TOP'
+data CPATH 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_ddr/constraint/io'
+data CDIR 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_ddr/constraint'
 data NLV_HIDE_OPTION_DLG 1
 data REGION_DEFCOLOR_EMPTY 2143322112
 data REGION_DEFCOLOR_INCLUSIVE 2147442270
@@ -22,15 +22,16 @@ data VCCI_2.5_VOLTR EXT
 data VCCI_3.3_VOLTR EXT
 data FLOW_TYPE NEW
 data PLANNER_IOMODE 1
-data AFL 'C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/designer/TOP/COMPILE/TOP.afl'
-data ADL 'C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/designer/TOP/TOP.adl'
-data LOC 'C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/designer/TOP/COMPILE/TOP.loc'
-data SEG 'C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/designer/TOP/COMPILE/TOP.seg'
+data AFL 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_ddr/designer/TOP/COMPILE/TOP.afl'
+data ADL 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_ddr/designer/TOP/TOP.adl'
+data LOC 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_ddr/designer/TOP/COMPILE/TOP.loc'
+data SEG 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_ddr/designer/TOP/COMPILE/TOP.seg'
 
-data IO_PDC_0 'C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/constraint/io/EvalkitIO.pdc'
-data IO_PDC_1 'C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/constraint/io/user.pdc'
-data TARGET_IOPDC  'C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/constraint/io/user.pdc'
-data TARGET_FPPDC  'C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_everest2_ddr/constraint/fp/user.pdc'
+data IO_PDC_0 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_ddr/constraint/io/EvalkitIO.pdc'
+data IO_PDC_1 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_ddr/constraint/io/user.pdc'
+data FP_PDC_0 'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_ddr/constraint/fp/user.pdc'
+data TARGET_IOPDC  'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_ddr/constraint/io/user.pdc'
+data TARGET_FPPDC  'C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_ddr/constraint/fp/user.pdc'
 data TARGET_DEVICES_FOR_MIGRATION 'PA5M300TS_ES '
 data RESTRICTPROBEPINS 1
 data RESTRICTSPIPINS 0

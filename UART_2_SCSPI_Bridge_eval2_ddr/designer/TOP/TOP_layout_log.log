@@ -1,10 +1,12 @@
-INFO: Reading User SDC file C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\constraint\TOP_derived_constraints.sdc.
-INFO: Reading User SDC file C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\constraint\jtag_tck_constraint.sdc.
+INFO: Reading User SDC file C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\constraint\TOP_derived_constraints.sdc.
+INFO: Reading User SDC file C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\constraint\jtag_tck_constraint.sdc.
 
 No errors or warnings found.
 ***** Place and Route Configurations *****
 Timing-driven            : ON
 Power-driven             : OFF
+I/O Register Combining   : OFF
+Global Pins Demotion     : ON
 Driver Replication       : OFF
 High-effort              : ON
 Repair min-delay         : OFF
@@ -12,12 +14,12 @@ Incremental              : OFF
 Inter-clock optimization : ON
 TDPR scenario            : place_and_route
 
-INFO: Reading User PDC file C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\constraint\io\EvalkitIO.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\constraint\fp\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\constraint\io\EvalkitIO.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\constraint\fp\user.pdc. 0 error(s) and 0 warning(s)
 
  Running Timing based Global Demotion. 
-        Demoted 0 global pins.
+        Moved all 1740 async pins from global to its source 'IO_0/CoreSPI_0_0/CoreSPI_0_0/USPI/UCC/ssel_rx_q2'.
 
  Timing based Global Demotion completed successfully. 
 
@@ -29,8 +31,8 @@ Info:  I/O Bank and Globals Assigner detected (1) out of (8) I/O Bank(s) with lo
 I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 4 seconds
 
-Placer V5.0 - 12.200.30 
-Design: TOP                             Started: Mon Sep 10 16:42:13 2018
+Placer V5.0 - 12.200.35 
+Design: TOP                             Started: Thu Nov 08 16:40:03 2018
 
 Initializing High-Effort Timing-Driven Placement ...
 Clustering ...
@@ -39,38 +41,38 @@ Improving placement ...
 End of placement.
 
 Placer Runtime Summary   :
-Clustering (1 pass)      : 17 seconds
-Placement                : 65 seconds
-Improvement              : 97 seconds
+Clustering (1 pass)      : 18 seconds
+Placement                : 78 seconds
+Improvement              : 128 seconds
 
 Placer completed successfully.
 
 Design: TOP                             
-Finished: Mon Sep 10 16:46:48 2018
-Total CPU Time:     00:05:23            Total Elapsed Time: 00:04:35
-Total Memory Usage: 2047.8 Mbytes
+Finished: Thu Nov 08 16:45:38 2018
+Total CPU Time:     00:06:26            Total Elapsed Time: 00:05:35
+Total Memory Usage: 2033.5 Mbytes
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\designer\TOP\TOPStarted: Mon Sep 10 16:47:18 2018
+Design: C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\designer\TOP\TOPStarted: Thu Nov 08 16:46:07 2018
 
 
 Timing-driven Router completed successfully.
 
-Design: C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\designer\TOP\TOP
-Finished: Mon Sep 10 16:51:29 2018
-Total CPU Time:     00:04:05            Total Elapsed Time: 00:04:11
-Total Memory Usage: 6942.5 Mbytes
+Design: C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\designer\TOP\TOP
+Finished: Thu Nov 08 16:50:03 2018
+Total CPU Time:     00:03:50            Total Elapsed Time: 00:03:56
+Total Memory Usage: 6930.7 Mbytes
                         o - o - o - o - o - o
 
 Resource Usage
 +---------------+-------+--------+------------+
 | Type          | Used  | Total  | Percentage |
 +---------------+-------+--------+------------+
-| 4LUT          | 29144 | 299544 | 9.73       |
-| DFF           | 19948 | 299544 | 6.66       |
+| 4LUT          | 28706 | 299544 | 9.58       |
+| DFF           | 19479 | 299544 | 6.50       |
 | I/O Register  | 0     | 510    | 0.00       |
-| Logic Element | 32926 | 299544 | 10.99      |
+| Logic Element | 32473 | 299544 | 10.84      |
 +---------------+-------+--------+------------+
 

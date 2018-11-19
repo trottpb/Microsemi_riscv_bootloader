@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Aug 31 09:48:49 2018
-// Version: PolarFire v2.2 12.200.30.10
+// Created by SmartDesign Thu Oct 18 10:17:36 2018
+// Version: PolarFire v2.3 12.200.35.9
 //////////////////////////////////////////////////////////////////////
 
 `timescale 1ns / 100ps
@@ -8,7 +8,6 @@
 // DDR3
 module DDR3(
     // Inputs
-    AXI0_AWUSERTAG,
     PLL_REF_CLK,
     SYS_RESET_N,
     axi0_araddr,
@@ -37,7 +36,6 @@ module DDR3(
     axi0_wvalid,
     // Outputs
     A,
-    AXI0_BUSERTAG,
     BA,
     CAS_N,
     CK0,
@@ -74,7 +72,6 @@ module DDR3(
 //--------------------------------------------------------------------
 // Input
 //--------------------------------------------------------------------
-input  [3:0]  AXI0_AWUSERTAG;
 input         PLL_REF_CLK;
 input         SYS_RESET_N;
 input  [31:0] axi0_araddr;
@@ -105,7 +102,6 @@ input         axi0_wvalid;
 // Output
 //--------------------------------------------------------------------
 output [15:0] A;
-output [3:0]  AXI0_BUSERTAG;
 output [2:0]  BA;
 output        CAS_N;
 output        CK0;
@@ -143,8 +139,6 @@ inout  [1:0]  DQS_N;
 // Nets
 //--------------------------------------------------------------------
 wire   [15:0]  A_net_0;
-wire   [3:0]   AXI0_AWUSERTAG;
-wire   [3:0]   AXI0_BUSERTAG_net_0;
 wire   [31:0]  axi0_araddr;
 wire   [1:0]   axi0_arburst;
 wire   [3:0]   axi0_arcache;
@@ -570,7 +564,6 @@ wire   [63:0]  AXI4slave0_RDATA_net_0;
 wire   [1:0]   AXI4slave0_RRESP_net_0;
 wire           AXI4slave0_RLAST_net_0;
 wire           AXI4slave0_RVALID_net_0;
-wire   [3:0]   AXI0_BUSERTAG_net_1;
 wire           CTRLR_READY_net_1;
 wire   [19:16] dfi_address_p0_ext_slice_0;
 wire   [19:16] dfi_address_p1_ext_slice_0;
@@ -673,6 +666,7 @@ wire   [10:0]  l_b_size_const_net_0;
 wire   [127:0] l_datain_const_net_0;
 wire   [15:0]  l_dm_in_const_net_0;
 wire   [5:0]   axi0_wid_const_net_0;
+wire   [3:0]   axi0_awusertag_const_net_0;
 wire   [2:0]   l_req_pri_p0_const_net_0;
 wire   [51:0]  l_req_tag_p0_const_net_0;
 wire   [36:0]  l_addr_p0_const_net_0;
@@ -931,6 +925,7 @@ assign l_b_size_const_net_0                         = 11'h000;
 assign l_datain_const_net_0                         = 128'h00000000000000000000000000000000;
 assign l_dm_in_const_net_0                          = 16'h0000;
 assign axi0_wid_const_net_0                         = 6'h00;
+assign axi0_awusertag_const_net_0                   = 4'h0;
 assign l_req_pri_p0_const_net_0                     = 3'h0;
 assign l_req_tag_p0_const_net_0                     = 52'h0000000000000;
 assign l_addr_p0_const_net_0                        = 37'h0000000000;
@@ -1186,8 +1181,6 @@ assign AXI4slave0_RLAST_net_0   = AXI4slave0_RLAST;
 assign axi0_rlast               = AXI4slave0_RLAST_net_0;
 assign AXI4slave0_RVALID_net_0  = AXI4slave0_RVALID;
 assign axi0_rvalid              = AXI4slave0_RVALID_net_0;
-assign AXI0_BUSERTAG_net_1      = AXI0_BUSERTAG_net_0;
-assign AXI0_BUSERTAG[3:0]       = AXI0_BUSERTAG_net_1;
 assign CTRLR_READY_net_1        = CTRLR_READY_net_0;
 assign CTRLR_READY              = CTRLR_READY_net_1;
 //--------------------------------------------------------------------
@@ -1240,7 +1233,7 @@ assign DFI_RDDATA_EN_P3_net_0 = { 14'h0000 , DDRCTRL_0_dfi_rddata_en_p3_ext };
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
-//--------DDR3_CCC_0_PF_CCC   -   Actel:SgCore:PF_CCC:1.0.113
+//--------DDR3_CCC_0_PF_CCC   -   Actel:SgCore:PF_CCC:1.0.115
 DDR3_CCC_0_PF_CCC CCC_0(
         // Inputs
         .REF_CLK_0         ( PLL_REF_CLK ),
@@ -1393,7 +1386,7 @@ DDRCTRL_0(
         .axi0_arprot                          ( axi0_arprot ),
         .axi0_arvalid                         ( axi0_arvalid ),
         .axi0_rready                          ( axi0_rready ),
-        .axi0_awusertag                       ( AXI0_AWUSERTAG ),
+        .axi0_awusertag                       ( axi0_awusertag_const_net_0 ), // tied to 4'h0 from definition
         .l_auto_pch_p0                        ( GND_net ), // tied to 1'b0 from definition
         .l_r_req_p0                           ( GND_net ), // tied to 1'b0 from definition
         .l_w_req_p0                           ( GND_net ), // tied to 1'b0 from definition
@@ -2031,7 +2024,7 @@ DDRCTRL_0(
         .axi0_rresp                           ( AXI4slave0_RRESP ),
         .axi0_rlast                           ( AXI4slave0_RLAST ),
         .axi0_rvalid                          ( AXI4slave0_RVALID ),
-        .axi0_busertag                        ( AXI0_BUSERTAG_net_0 ),
+        .axi0_busertag                        (  ),
         .l_busy_p0                            (  ),
         .l_r_valid_p0                         (  ),
         .l_r_valid_last_p0                    (  ),
@@ -2468,7 +2461,7 @@ DDR3_DDRPHY_BLK DDRPHY_BLK_0(
         .DQS_N                      ( DQS_N ) 
         );
 
-//--------DDR3_DLL_0_PF_CCC   -   Actel:SgCore:PF_CCC:1.0.113
+//--------DDR3_DLL_0_PF_CCC   -   Actel:SgCore:PF_CCC:1.0.115
 DDR3_DLL_0_PF_CCC DLL_0(
         // Inputs
         .DLL_REF_CLK     ( GND_net ),
@@ -2571,7 +2564,7 @@ PF_DDR_CFG_INIT #(
         .DEF_CFG_EMR3                             ( 0 ),
         .DEF_CFG_EN_MASK                          ( 0 ),
         .DEF_CFG_ERROR_GROUP_SEL                  ( 0 ),
-        .DEF_CFG_FAW                              ( 20 ),
+        .DEF_CFG_FAW                              ( 14 ),
         .DEF_CFG_FAW_DLR                          ( 0 ),
         .DEF_CFG_FINE_GRAN_REF_MODE               ( 0 ),
         .DEF_CFG_GEARDOWN_MODE                    ( 0 ),
@@ -2635,9 +2628,9 @@ PF_DDR_CFG_INIT #(
         .DEF_CFG_PRE_TRIG_CYCS                    ( 0 ),
         .DEF_CFG_QOFF                             ( 0 ),
         .DEF_CFG_QUAD_RANK                        ( 0 ),
-        .DEF_CFG_RAS                              ( 24 ),
-        .DEF_CFG_RC                               ( 33 ),
-        .DEF_CFG_RCD                              ( 9 ),
+        .DEF_CFG_RAS                              ( 16 ),
+        .DEF_CFG_RC                               ( 22 ),
+        .DEF_CFG_RCD                              ( 6 ),
         .DEF_CFG_RCD_STAB                         ( 0 ),
         .DEF_CFG_RD_PREAMB_TRN_MODE               ( 0 ),
         .DEF_CFG_RD_PREAMBLE                      ( 0 ),
@@ -2648,9 +2641,9 @@ PF_DDR_CFG_INIT #(
         .DEF_CFG_READ_TO_READ_ODT                 ( 1 ),
         .DEF_CFG_READ_TO_WRITE                    ( 1 ),
         .DEF_CFG_READ_TO_WRITE_ODT                ( 1 ),
-        .DEF_CFG_REF_PER                          ( 5195 ),
+        .DEF_CFG_REF_PER                          ( 3467 ),
         .DEF_CFG_REGDIMM                          ( 0 ),
-        .DEF_CFG_RFC                              ( 234 ),
+        .DEF_CFG_RFC                              ( 156 ),
         .DEF_CFG_RFC1                             ( 0 ),
         .DEF_CFG_RFC2                             ( 0 ),
         .DEF_CFG_RFC4                             ( 0 ),
@@ -2663,18 +2656,18 @@ PF_DDR_CFG_INIT #(
         .DEF_CFG_ROWADDR_MAP_1                    ( 224744525 ),
         .DEF_CFG_ROWADDR_MAP_2                    ( 114976133 ),
         .DEF_CFG_ROWADDR_MAP_3                    ( 1884 ),
-        .DEF_CFG_RP                               ( 9 ),
-        .DEF_CFG_RRD                              ( 5 ),
+        .DEF_CFG_RP                               ( 6 ),
+        .DEF_CFG_RRD                              ( 4 ),
         .DEF_CFG_RRD_DLR                          ( 0 ),
         .DEF_CFG_RRD_L                            ( 0 ),
         .DEF_CFG_RRD_S                            ( 0 ),
-        .DEF_CFG_RTP                              ( 5 ),
+        .DEF_CFG_RTP                              ( 4 ),
         .DEF_CFG_RTT                              ( 0 ),
         .DEF_CFG_RTT_PARK                         ( 0 ),
         .DEF_CFG_RTT_WR                           ( 0 ),
         .DEF_CFG_SR_ABORT                         ( 0 ),
         .DEF_CFG_SRT                              ( 0 ),
-        .DEF_CFG_STARTUP_DELAY                    ( 133200 ),
+        .DEF_CFG_STARTUP_DELAY                    ( 88889 ),
         .DEF_CFG_STARVE_TIMEOUT_P0                ( 0 ),
         .DEF_CFG_STARVE_TIMEOUT_P1                ( 0 ),
         .DEF_CFG_STARVE_TIMEOUT_P2                ( 0 ),
@@ -2695,7 +2688,7 @@ PF_DDR_CFG_INIT #(
         .DEF_CFG_VREFDQ_TRN_RANGE                 ( 0 ),
         .DEF_CFG_VREFDQ_TRN_VALUE                 ( 0 ),
         .DEF_CFG_WL                               ( 0 ),
-        .DEF_CFG_WR                               ( 10 ),
+        .DEF_CFG_WR                               ( 7 ),
         .DEF_CFG_WR_CMD_LAT_CRC_DM                ( 0 ),
         .DEF_CFG_WR_CRC_DM                        ( 0 ),
         .DEF_CFG_WR_PREAMBLE                      ( 0 ),
@@ -2711,12 +2704,12 @@ PF_DDR_CFG_INIT #(
         .DEF_CFG_WTR_S                            ( 0 ),
         .DEF_CFG_WTR_S_CRC_DM                     ( 0 ),
         .DEF_CFG_XP                               ( 0 ),
-        .DEF_CFG_XPR                              ( 240 ),
-        .DEF_CFG_XS                               ( 240 ),
+        .DEF_CFG_XPR                              ( 160 ),
+        .DEF_CFG_XS                               ( 160 ),
         .DEF_CFG_XSDLL                            ( 0 ),
         .DEF_CFG_XSR                              ( 0 ),
         .DEF_CFG_ZQ_CAL_L_DURATION                ( 256 ),
-        .DEF_CFG_ZQ_CAL_PER                       ( 133200 ),
+        .DEF_CFG_ZQ_CAL_PER                       ( 88889 ),
         .DEF_CFG_ZQ_CAL_R_DURATION                ( 0 ),
         .DEF_CFG_ZQ_CAL_S_DURATION                ( 64 ),
         .DEF_CFG_ZQ_CAL_TYPE                      ( 0 ),

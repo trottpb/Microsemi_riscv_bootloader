@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\synthesis\synlog\TOP_fpga_mapper.srr</data>
+<data>C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_ddr\synthesis\synlog\TOP_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -16,9 +16,9 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 </row>
 <row>
 <data>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0</data>
-<data>100.0 MHz</data>
-<data>91.2 MHz</data>
-<data>-0.960</data>
+<data>111.1 MHz</data>
+<data>273.3 MHz</data>
+<data>5.340</data>
 </row>
 <row>
 <data>CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160/CLK</data>
@@ -29,19 +29,37 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>147.2 MHz</data>
-<data>1.604</data>
+<data>144.2 MHz</data>
+<data>1.534</data>
 </row>
 <row>
-<data>DDR3_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock</data>
-<data>100.0 MHz</data>
-<data>132.0 MHz</data>
-<data>2.422</data>
+<data>MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT0</data>
+<data>444.4 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT1</data>
+<data>111.1 MHz</data>
+<data>82.3 MHz</data>
+<data>-3.157</data>
+</row>
+<row>
+<data>MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT2</data>
+<data>444.4 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT3</data>
+<data>444.4 MHz</data>
+<data>NA</data>
+<data>NA</data>
 </row>
 <row>
 <data>System</data>
 <data>100.0 MHz</data>
-<data>306.8 MHz</data>
-<data>6.741</data>
+<data>252.4 MHz</data>
+<data>6.039</data>
 </row>
 </report_table>
