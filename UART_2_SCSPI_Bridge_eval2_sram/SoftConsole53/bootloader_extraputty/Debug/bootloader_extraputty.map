@@ -1293,20 +1293,20 @@ END GROUP
                 0x0000000070007380                __stack_top = .
 OUTPUT(bootloader_extraputty.elf elf32-littleriscv)
 
-.debug_line     0x0000000000000000     0x5859
+.debug_line     0x0000000000000000     0x587d
  .debug_line    0x0000000000000000      0x237 ./riscv_hal/entry.o
  .debug_line    0x0000000000000237      0x404 ./riscv_hal/init.o
  .debug_line    0x000000000000063b      0x58f ./riscv_hal/riscv_hal.o
  .debug_line    0x0000000000000bca      0x6b5 ./riscv_hal/riscv_hal_stubs.o
  .debug_line    0x000000000000127f      0x6e4 ./riscv_hal/syscall.o
- .debug_line    0x0000000000001963      0x320 ./hal/hal_irq.o
- .debug_line    0x0000000000001c83      0x185 ./hal/hw_reg_access.o
- .debug_line    0x0000000000001e08      0x9b9 ./drivers/ymodem/ymodem.o
- .debug_line    0x00000000000027c1      0x88c ./drivers/mt25ql01gbbb/mt25ql01gbbb.o
- .debug_line    0x000000000000304d      0x53d ./drivers/CoreUARTapb/core_uart_apb.o
- .debug_line    0x000000000000358a      0xd2e ./drivers/CoreSPI/core_spi.o
- .debug_line    0x00000000000042b8      0x7dc ./drivers/CoreGPIO/core_gpio.o
- .debug_line    0x0000000000004a94      0xdc5 ./main.o
+ .debug_line    0x0000000000001963      0x324 ./hal/hal_irq.o
+ .debug_line    0x0000000000001c87      0x185 ./hal/hw_reg_access.o
+ .debug_line    0x0000000000001e0c      0x9c1 ./drivers/ymodem/ymodem.o
+ .debug_line    0x00000000000027cd      0x898 ./drivers/mt25ql01gbbb/mt25ql01gbbb.o
+ .debug_line    0x0000000000003065      0x541 ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_line    0x00000000000035a6      0xd32 ./drivers/CoreSPI/core_spi.o
+ .debug_line    0x00000000000042d8      0x7e0 ./drivers/CoreGPIO/core_gpio.o
+ .debug_line    0x0000000000004ab8      0xdc5 ./main.o
 
 .debug_info     0x0000000000000000     0x79b7
  .debug_info    0x0000000000000000       0x26 ./riscv_hal/entry.o
@@ -1366,31 +1366,31 @@ OUTPUT(bootloader_extraputty.elf elf32-littleriscv)
  .debug_aranges
                 0x0000000000000530       0xa0 ./main.o
 
-.debug_str      0x0000000000000000     0xe2af
- .debug_str     0x0000000000000000       0x91 ./riscv_hal/entry.o
- .debug_str     0x0000000000000091     0x8a7f ./riscv_hal/init.o
-                                       0x8d6e (size before relaxing)
- .debug_str     0x0000000000008b10      0x53b ./riscv_hal/riscv_hal.o
-                                       0x921c (size before relaxing)
- .debug_str     0x000000000000904b      0x316 ./riscv_hal/riscv_hal_stubs.o
-                                       0x65da (size before relaxing)
- .debug_str     0x0000000000009361     0x12f4 ./riscv_hal/syscall.o
-                                       0xa01f (size before relaxing)
- .debug_str     0x000000000000a655      0x788 ./hal/hal_irq.o
-                                       0x4ab1 (size before relaxing)
- .debug_str     0x000000000000addd       0x17 ./hal/hw_reg_access.o
-                                         0x93 (size before relaxing)
- .debug_str     0x000000000000adf4      0x412 ./drivers/ymodem/ymodem.o
-                                       0x65d1 (size before relaxing)
- .debug_str     0x000000000000b206      0x7fa ./drivers/mt25ql01gbbb/mt25ql01gbbb.o
-                                       0x6ac8 (size before relaxing)
- .debug_str     0x000000000000ba00      0x6f2 ./drivers/CoreUARTapb/core_uart_apb.o
-                                       0x4308 (size before relaxing)
- .debug_str     0x000000000000c0f2     0x13a6 ./drivers/CoreSPI/core_spi.o
-                                       0x7f15 (size before relaxing)
- .debug_str     0x000000000000d498      0x9d7 ./drivers/CoreGPIO/core_gpio.o
-                                       0x451b (size before relaxing)
- .debug_str     0x000000000000de6f      0x440 ./main.o
+.debug_str      0x0000000000000000     0xe23f
+ .debug_str     0x0000000000000000       0x95 ./riscv_hal/entry.o
+ .debug_str     0x0000000000000095     0x8a7f ./riscv_hal/init.o
+                                       0x8d72 (size before relaxing)
+ .debug_str     0x0000000000008b14      0x53b ./riscv_hal/riscv_hal.o
+                                       0x9220 (size before relaxing)
+ .debug_str     0x000000000000904f      0x316 ./riscv_hal/riscv_hal_stubs.o
+                                       0x65de (size before relaxing)
+ .debug_str     0x0000000000009365     0x12f4 ./riscv_hal/syscall.o
+                                       0xa023 (size before relaxing)
+ .debug_str     0x000000000000a659      0x788 ./hal/hal_irq.o
+                                       0x4ab5 (size before relaxing)
+ .debug_str     0x000000000000ade1       0x17 ./hal/hw_reg_access.o
+                                         0x97 (size before relaxing)
+ .debug_str     0x000000000000adf8      0x412 ./drivers/ymodem/ymodem.o
+                                       0x65d5 (size before relaxing)
+ .debug_str     0x000000000000b20a      0x7fa ./drivers/mt25ql01gbbb/mt25ql01gbbb.o
+                                       0x6acc (size before relaxing)
+ .debug_str     0x000000000000ba04      0x6f2 ./drivers/CoreUARTapb/core_uart_apb.o
+                                       0x430c (size before relaxing)
+ .debug_str     0x000000000000c0f6     0x13a6 ./drivers/CoreSPI/core_spi.o
+                                       0x7f19 (size before relaxing)
+ .debug_str     0x000000000000d49c      0x9d7 ./drivers/CoreGPIO/core_gpio.o
+                                       0x451f (size before relaxing)
+ .debug_str     0x000000000000de73      0x3cc ./main.o
                                        0x9e94 (size before relaxing)
 
 .debug_ranges   0x0000000000000000      0x4e0

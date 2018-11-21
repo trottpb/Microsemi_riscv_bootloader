@@ -4943,12 +4943,6 @@
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_HAVE_DWARF2_CFI_ASM" value="1">
-                        						
-                        <flag value="BUILTIN|READONLY"/>
-                        					
-                    </entry>
-                    					
                     <entry kind="macro" name="__GCC_IEC_559" value="0">
                         						
                         <flag value="BUILTIN|READONLY"/>

@@ -18,15 +18,15 @@ Idx Name           Size      VMA       LMA       File off  Algn  Flags
   4 .bss           00000010  80001220  80001220  00002210  2**4  ALLOC
   5 .heap          00000800  80001230  80001230  00002210  2**4  ALLOC
   6 .stack         00000800  80001a30  80001a30  00002210  2**4  ALLOC
-  7 .debug_line    00002cc2  00000000  00000000  00002210  2**0  CONTENTS, READONLY, DEBUGGING
-  8 .debug_info    00003a72  00000000  00000000  00004ed2  2**0  CONTENTS, READONLY, DEBUGGING
-  9 .debug_abbrev  00000bda  00000000  00000000  00008944  2**0  CONTENTS, READONLY, DEBUGGING
- 10 .debug_aranges 000003a8  00000000  00000000  00009520  2**3  CONTENTS, READONLY, DEBUGGING
- 11 .debug_str     0000c1ab  00000000  00000000  000098c8  2**0  CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges  000002f8  00000000  00000000  00015a73  2**0  CONTENTS, READONLY, DEBUGGING
- 13 .debug_macro   000035bc  00000000  00000000  00015d6b  2**0  CONTENTS, READONLY, DEBUGGING
- 14 .comment       00000058  00000000  00000000  00019327  2**0  CONTENTS, READONLY
- 15 .debug_frame   00000c30  00000000  00000000  00019380  2**2  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line    00002cc8  00000000  00000000  00002210  2**0  CONTENTS, READONLY, DEBUGGING
+  8 .debug_info    00003a72  00000000  00000000  00004ed8  2**0  CONTENTS, READONLY, DEBUGGING
+  9 .debug_abbrev  00000bda  00000000  00000000  0000894a  2**0  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_aranges 000003a8  00000000  00000000  00009528  2**3  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_str     0000c1ac  00000000  00000000  000098d0  2**0  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges  000002f8  00000000  00000000  00015a7c  2**0  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_macro   000035bc  00000000  00000000  00015d74  2**0  CONTENTS, READONLY, DEBUGGING
+ 14 .comment       00000058  00000000  00000000  00019330  2**0  CONTENTS, READONLY
+ 15 .debug_frame   00000c30  00000000  00000000  00019388  2**2  CONTENTS, READONLY, DEBUGGING
 SYMBOL TABLE:
 80000000 l    d  .text	00000000 .text
 80001160 l    d  .sdata	00000000 .sdata
@@ -155,7 +155,7 @@ Disassembly of section .text:
 
 80000000 <_start>:
 _start():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:30
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:30
 
   .section      .text.entry
   .globl _start
@@ -166,7 +166,7 @@ _start:
 
 80000004 <nmi_vector>:
 nmi_vector():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:33
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:33
 
 nmi_vector:
   j nmi_vector
@@ -174,7 +174,7 @@ nmi_vector:
 
 80000008 <trap_vector>:
 trap_vector():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:36
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:36
 
 trap_vector:
   j trap_entry
@@ -182,22 +182,22 @@ trap_vector:
 
 8000000c <handle_reset>:
 handle_reset():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:39
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:39
 
 handle_reset:
   la t0, trap_entry
 8000000c:	00000297          	auipc	t0,0x0
 80000010:	02828293          	addi	t0,t0,40 # 80000034 <trap_entry>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:40
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:40
   csrw mtvec, t0
 80000014:	30529073          	csrw	mtvec,t0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:41
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:41
   csrwi mstatus, 0
 80000018:	30005073          	csrwi	mstatus,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:42
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:42
   csrwi mie, 0
 8000001c:	30405073          	csrwi	mie,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:64
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:64
 
 # Ensure the instruction is not optimized, since gp is not yet set
 
@@ -206,7 +206,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
   la gp, __global_pointer$
 80000020:	00002197          	auipc	gp,0x2
 80000024:	94018193          	addi	gp,gp,-1728 # 80001960 <__global_pointer$>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:69
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:69
 
 .option pop
 
@@ -214,7 +214,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
   la sp, __stack_top
 80000028:	00002117          	auipc	sp,0x2
 8000002c:	20810113          	addi	sp,sp,520 # 80002230 <__stack_top>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:72
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:72
 
   # perform the rest of initialization in C
   j _init
@@ -222,244 +222,244 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000034 <trap_entry>:
 trap_entry():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:76
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:76
 
 
 trap_entry:
   addi sp, sp, -32*REGBYTES
 80000034:	f8010113          	addi	sp,sp,-128
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:78
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:78
 
   SREG x1, 0 * REGBYTES(sp)
 80000038:	00112023          	sw	ra,0(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:79
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:79
   SREG x2, 1 * REGBYTES(sp)
 8000003c:	00212223          	sw	sp,4(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:80
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:80
   SREG x3, 2 * REGBYTES(sp)
 80000040:	00312423          	sw	gp,8(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:81
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:81
   SREG x4, 3 * REGBYTES(sp)
 80000044:	00412623          	sw	tp,12(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:82
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:82
   SREG x5, 4 * REGBYTES(sp)
 80000048:	00512823          	sw	t0,16(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:83
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:83
   SREG x6, 5 * REGBYTES(sp)
 8000004c:	00612a23          	sw	t1,20(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:84
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:84
   SREG x7, 6 * REGBYTES(sp)
 80000050:	00712c23          	sw	t2,24(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:85
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:85
   SREG x8, 7 * REGBYTES(sp)
 80000054:	00812e23          	sw	s0,28(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:86
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:86
   SREG x9, 8 * REGBYTES(sp)
 80000058:	02912023          	sw	s1,32(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:87
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:87
   SREG x10, 9 * REGBYTES(sp)
 8000005c:	02a12223          	sw	a0,36(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:88
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:88
   SREG x11, 10 * REGBYTES(sp)
 80000060:	02b12423          	sw	a1,40(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:89
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:89
   SREG x12, 11 * REGBYTES(sp)
 80000064:	02c12623          	sw	a2,44(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:90
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:90
   SREG x13, 12 * REGBYTES(sp)
 80000068:	02d12823          	sw	a3,48(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:91
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:91
   SREG x14, 13 * REGBYTES(sp)
 8000006c:	02e12a23          	sw	a4,52(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:92
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:92
   SREG x15, 14 * REGBYTES(sp)
 80000070:	02f12c23          	sw	a5,56(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:93
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:93
   SREG x16, 15 * REGBYTES(sp)
 80000074:	03012e23          	sw	a6,60(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:94
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:94
   SREG x17, 16 * REGBYTES(sp)
 80000078:	05112023          	sw	a7,64(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:95
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:95
   SREG x18, 17 * REGBYTES(sp)
 8000007c:	05212223          	sw	s2,68(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:96
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:96
   SREG x19, 18 * REGBYTES(sp)
 80000080:	05312423          	sw	s3,72(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:97
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:97
   SREG x20, 19 * REGBYTES(sp)
 80000084:	05412623          	sw	s4,76(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:98
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:98
   SREG x21, 20 * REGBYTES(sp)
 80000088:	05512823          	sw	s5,80(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:99
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:99
   SREG x22, 21 * REGBYTES(sp)
 8000008c:	05612a23          	sw	s6,84(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:100
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:100
   SREG x23, 22 * REGBYTES(sp)
 80000090:	05712c23          	sw	s7,88(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:101
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:101
   SREG x24, 23 * REGBYTES(sp)
 80000094:	05812e23          	sw	s8,92(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:102
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:102
   SREG x25, 24 * REGBYTES(sp)
 80000098:	07912023          	sw	s9,96(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:103
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:103
   SREG x26, 25 * REGBYTES(sp)
 8000009c:	07a12223          	sw	s10,100(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:104
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:104
   SREG x27, 26 * REGBYTES(sp)
 800000a0:	07b12423          	sw	s11,104(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:105
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:105
   SREG x28, 27 * REGBYTES(sp)
 800000a4:	07c12623          	sw	t3,108(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:106
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:106
   SREG x29, 28 * REGBYTES(sp)
 800000a8:	07d12823          	sw	t4,112(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:107
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:107
   SREG x30, 29 * REGBYTES(sp)
 800000ac:	07e12a23          	sw	t5,116(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:108
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:108
   SREG x31, 30 * REGBYTES(sp)
 800000b0:	07f12c23          	sw	t6,120(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:111
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:111
 
 
   csrr t0, mepc
 800000b4:	341022f3          	csrr	t0,mepc
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:112
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:112
   SREG t0, 31 * REGBYTES(sp)
 800000b8:	06512e23          	sw	t0,124(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:114
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:114
 
   csrr a0, mcause
 800000bc:	34202573          	csrr	a0,mcause
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:115
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:115
   csrr a1, mepc
 800000c0:	341025f3          	csrr	a1,mepc
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:116
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:116
   mv a2, sp
 800000c4:	00010613          	mv	a2,sp
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:117
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:117
   jal handle_trap
 800000c8:	490000ef          	jal	ra,80000558 <handle_trap>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:118
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:118
   csrw mepc, a0
 800000cc:	34151073          	csrw	mepc,a0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:121
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:121
 
   # Remain in M-mode after mret
   li t0, MSTATUS_MPP
 800000d0:	000022b7          	lui	t0,0x2
 800000d4:	80028293          	addi	t0,t0,-2048 # 1800 <HEAP_SIZE+0x1000>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:122
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:122
   csrs mstatus, t0
 800000d8:	3002a073          	csrs	mstatus,t0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:124
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:124
 
   LREG x1, 0 * REGBYTES(sp)
 800000dc:	00012083          	lw	ra,0(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:125
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:125
   LREG x2, 1 * REGBYTES(sp)
 800000e0:	00412103          	lw	sp,4(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:126
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:126
   LREG x3, 2 * REGBYTES(sp)
 800000e4:	00812183          	lw	gp,8(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:127
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:127
   LREG x4, 3 * REGBYTES(sp)
 800000e8:	00c12203          	lw	tp,12(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:128
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:128
   LREG x5, 4 * REGBYTES(sp)
 800000ec:	01012283          	lw	t0,16(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:129
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:129
   LREG x6, 5 * REGBYTES(sp)
 800000f0:	01412303          	lw	t1,20(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:130
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:130
   LREG x7, 6 * REGBYTES(sp)
 800000f4:	01812383          	lw	t2,24(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:131
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:131
   LREG x8, 7 * REGBYTES(sp)
 800000f8:	01c12403          	lw	s0,28(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:132
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:132
   LREG x9, 8 * REGBYTES(sp)
 800000fc:	02012483          	lw	s1,32(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:133
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:133
   LREG x10, 9 * REGBYTES(sp)
 80000100:	02412503          	lw	a0,36(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:134
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:134
   LREG x11, 10 * REGBYTES(sp)
 80000104:	02812583          	lw	a1,40(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:135
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:135
   LREG x12, 11 * REGBYTES(sp)
 80000108:	02c12603          	lw	a2,44(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:136
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:136
   LREG x13, 12 * REGBYTES(sp)
 8000010c:	03012683          	lw	a3,48(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:137
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:137
   LREG x14, 13 * REGBYTES(sp)
 80000110:	03412703          	lw	a4,52(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:138
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:138
   LREG x15, 14 * REGBYTES(sp)
 80000114:	03812783          	lw	a5,56(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:139
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:139
   LREG x16, 15 * REGBYTES(sp)
 80000118:	03c12803          	lw	a6,60(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:140
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:140
   LREG x17, 16 * REGBYTES(sp)
 8000011c:	04012883          	lw	a7,64(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:141
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:141
   LREG x18, 17 * REGBYTES(sp)
 80000120:	04412903          	lw	s2,68(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:142
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:142
   LREG x19, 18 * REGBYTES(sp)
 80000124:	04812983          	lw	s3,72(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:143
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:143
   LREG x20, 19 * REGBYTES(sp)
 80000128:	04c12a03          	lw	s4,76(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:144
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:144
   LREG x21, 20 * REGBYTES(sp)
 8000012c:	05012a83          	lw	s5,80(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:145
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:145
   LREG x22, 21 * REGBYTES(sp)
 80000130:	05412b03          	lw	s6,84(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:146
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:146
   LREG x23, 22 * REGBYTES(sp)
 80000134:	05812b83          	lw	s7,88(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:147
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:147
   LREG x24, 23 * REGBYTES(sp)
 80000138:	05c12c03          	lw	s8,92(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:148
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:148
   LREG x25, 24 * REGBYTES(sp)
 8000013c:	06012c83          	lw	s9,96(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:149
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:149
   LREG x26, 25 * REGBYTES(sp)
 80000140:	06412d03          	lw	s10,100(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:150
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:150
   LREG x27, 26 * REGBYTES(sp)
 80000144:	06812d83          	lw	s11,104(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:151
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:151
   LREG x28, 27 * REGBYTES(sp)
 80000148:	06c12e03          	lw	t3,108(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:152
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:152
   LREG x29, 28 * REGBYTES(sp)
 8000014c:	07012e83          	lw	t4,112(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:153
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:153
   LREG x30, 29 * REGBYTES(sp)
 80000150:	07412f03          	lw	t5,116(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:154
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:154
   LREG x31, 30 * REGBYTES(sp)
 80000154:	07812f83          	lw	t6,120(sp)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:156
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:156
 
   addi sp, sp, 32*REGBYTES
 80000158:	08010113          	addi	sp,sp,128
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:157
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/entry.S:157
   mret
 8000015c:	30200073          	mret
 
 80000160 <copy_section>:
 copy_section():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:37
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:37
 extern uint32_t     __bss_start;
 extern uint32_t     __bss_end;
 
@@ -472,32 +472,32 @@ static void copy_section(uint32_t * p_load, uint32_t * p_vma, uint32_t * p_vma_e
 8000016c:	fea42623          	sw	a0,-20(s0)
 80000170:	feb42423          	sw	a1,-24(s0)
 80000174:	fec42223          	sw	a2,-28(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:38
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:38
     while(p_vma <= p_vma_end)
 80000178:	02c0006f          	j	800001a4 <copy_section+0x44>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:40
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:40
     {
         *p_vma = *p_load;
 8000017c:	fec42783          	lw	a5,-20(s0)
 80000180:	0007a703          	lw	a4,0(a5)
 80000184:	fe842783          	lw	a5,-24(s0)
 80000188:	00e7a023          	sw	a4,0(a5)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:41
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:41
         ++p_load;
 8000018c:	fec42783          	lw	a5,-20(s0)
 80000190:	00478793          	addi	a5,a5,4
 80000194:	fef42623          	sw	a5,-20(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:42
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:42
         ++p_vma;
 80000198:	fe842783          	lw	a5,-24(s0)
 8000019c:	00478793          	addi	a5,a5,4
 800001a0:	fef42423          	sw	a5,-24(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:38
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:38
     while(p_vma <= p_vma_end)
 800001a4:	fe842703          	lw	a4,-24(s0)
 800001a8:	fe442783          	lw	a5,-28(s0)
 800001ac:	fce7f8e3          	bleu	a4,a5,8000017c <copy_section+0x1c>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:44
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:44
     }
 }
 800001b0:	00000013          	nop
@@ -507,7 +507,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800001c0 <zero_section>:
 zero_section():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:47
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:47
 
 static void zero_section(uint32_t * start, uint32_t * end)
 {
@@ -516,30 +516,30 @@ static void zero_section(uint32_t * start, uint32_t * end)
 800001c8:	03010413          	addi	s0,sp,48
 800001cc:	fca42e23          	sw	a0,-36(s0)
 800001d0:	fcb42c23          	sw	a1,-40(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:48
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:48
     uint32_t * p_zero = start;
 800001d4:	fdc42783          	lw	a5,-36(s0)
 800001d8:	fef42623          	sw	a5,-20(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:50
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:50
     
     while(p_zero <= end)
 800001dc:	0180006f          	j	800001f4 <zero_section+0x34>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:52
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:52
     {
         *p_zero = 0;
 800001e0:	fec42783          	lw	a5,-20(s0)
 800001e4:	0007a023          	sw	zero,0(a5)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:53
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:53
         ++p_zero;
 800001e8:	fec42783          	lw	a5,-20(s0)
 800001ec:	00478793          	addi	a5,a5,4
 800001f0:	fef42623          	sw	a5,-20(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:50
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:50
     while(p_zero <= end)
 800001f4:	fec42703          	lw	a4,-20(s0)
 800001f8:	fd842783          	lw	a5,-40(s0)
 800001fc:	fee7f2e3          	bleu	a4,a5,800001e0 <zero_section+0x20>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:55
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:55
     }
 }
 80000200:	00000013          	nop
@@ -549,7 +549,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000210 <_init>:
 _init():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:58
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:58
 
 void _init(void)
 {
@@ -557,19 +557,19 @@ void _init(void)
 80000214:	00112e23          	sw	ra,28(sp)
 80000218:	00812c23          	sw	s0,24(sp)
 8000021c:	02010413          	addi	s0,sp,32
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:60
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:60
     extern int main(int, char**);
     const char *argv0 = "hello";
 80000220:	800017b7          	lui	a5,0x80001
 80000224:	15078793          	addi	a5,a5,336 # 80001150 <__stack_top+0xffffef20>
 80000228:	fef42623          	sw	a5,-20(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:61
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:61
     char *argv[] = {(char *)argv0, NULL, NULL};
 8000022c:	fec42783          	lw	a5,-20(s0)
 80000230:	fef42023          	sw	a5,-32(s0)
 80000234:	fe042223          	sw	zero,-28(s0)
 80000238:	fe042423          	sw	zero,-24(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:63
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:63
 
     copy_section(&__sdata_load, &__sdata_start, &__sdata_end);
 8000023c:	800017b7          	lui	a5,0x80001
@@ -579,7 +579,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 8000024c:	800017b7          	lui	a5,0x80001
 80000250:	16078513          	addi	a0,a5,352 # 80001160 <__stack_top+0xffffef30>
 80000254:	f0dff0ef          	jal	ra,80000160 <copy_section>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:64
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:64
     copy_section(&__data_load, &__data_start, &__data_end);
 80000258:	8b018613          	addi	a2,gp,-1872 # 80001210 <__data_end>
 8000025c:	800017b7          	lui	a5,0x80001
@@ -587,24 +587,24 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000264:	800017b7          	lui	a5,0x80001
 80000268:	16078513          	addi	a0,a5,352 # 80001160 <__stack_top+0xffffef30>
 8000026c:	ef5ff0ef          	jal	ra,80000160 <copy_section>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:65
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:65
     zero_section(&__sbss_start, &__sbss_end);
 80000270:	8c018593          	addi	a1,gp,-1856 # 80001220 <__sbss_end>
 80000274:	8b018513          	addi	a0,gp,-1872 # 80001210 <__data_end>
 80000278:	f49ff0ef          	jal	ra,800001c0 <zero_section>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:66
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:66
     zero_section(&__bss_start, &__bss_end);
 8000027c:	8d018593          	addi	a1,gp,-1840 # 80001230 <__bss_end>
 80000280:	8c018513          	addi	a0,gp,-1856 # 80001220 <__sbss_end>
 80000284:	f3dff0ef          	jal	ra,800001c0 <zero_section>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:68
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:68
     
     main(1, argv);
 80000288:	fe040793          	addi	a5,s0,-32
 8000028c:	00078593          	mv	a1,a5
 80000290:	00100513          	li	a0,1
 80000294:	5d1000ef          	jal	ra,80001064 <main>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:69
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:69
 }
 80000298:	00000013          	nop
 8000029c:	01c12083          	lw	ra,28(sp)
@@ -614,7 +614,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800002ac <_fini>:
 _fini():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:74
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:74
 
 /* Function called after main() finishes */
 void
@@ -623,7 +623,7 @@ _fini()
 800002ac:	ff010113          	addi	sp,sp,-16
 800002b0:	00812623          	sw	s0,12(sp)
 800002b4:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:75
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/init.c:75
 }
 800002b8:	00000013          	nop
 800002bc:	00c12403          	lw	s0,12(sp)
@@ -632,7 +632,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800002c8 <PLIC_DisableIRQ>:
 PLIC_DisableIRQ():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:113
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:113
 
         ret_val = SUCCESS;
     }
@@ -730,7 +730,7 @@ PLIC_CompleteIRQ():
 
 80000410 <handle_m_timer_interrupt>:
 handle_m_timer_interrupt():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:119
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:119
 
 /*------------------------------------------------------------------------------
  * RISC-V interrupt handler for machine timer interrupts.
@@ -741,16 +741,16 @@ static void handle_m_timer_interrupt(void)
 80000414:	00112e23          	sw	ra,28(sp)
 80000418:	00812c23          	sw	s0,24(sp)
 8000041c:	02010413          	addi	s0,sp,32
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:120
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:120
     clear_csr(mie, MIP_MTIP);
 80000420:	08000793          	li	a5,128
 80000424:	3047b7f3          	csrrc	a5,mie,a5
 80000428:	fef42623          	sw	a5,-20(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:122
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:122
 
     SysTick_Handler();
 8000042c:	240000ef          	jal	ra,8000066c <SysTick_Handler>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:124
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:124
 
     PRCI->MTIMECMP[read_csr(mhartid)] = PRCI->MTIME + g_systick_increment;
 80000430:	44000737          	lui	a4,0x44000
@@ -779,13 +779,13 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 8000048c:	00e50733          	add	a4,a0,a4
 80000490:	00f72023          	sw	a5,0(a4)
 80000494:	01072223          	sw	a6,4(a4)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:126
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:126
 
     set_csr(mie, MIP_MTIP);
 80000498:	08000793          	li	a5,128
 8000049c:	3047a7f3          	csrrs	a5,mie,a5
 800004a0:	fef42223          	sw	a5,-28(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:127
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:127
 }
 800004a4:	00000013          	nop
 800004a8:	01c12083          	lw	ra,28(sp)
@@ -795,7 +795,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800004b8 <handle_m_ext_interrupt>:
 handle_m_ext_interrupt():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:172
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:172
 
 /*------------------------------------------------------------------------------
  *
@@ -806,14 +806,14 @@ static void handle_m_ext_interrupt(void)
 800004bc:	00112e23          	sw	ra,28(sp)
 800004c0:	00812c23          	sw	s0,24(sp)
 800004c4:	02010413          	addi	s0,sp,32
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:173
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:173
     uint32_t int_num  = PLIC_ClaimIRQ();
 800004c8:	eb9ff0ef          	jal	ra,80000380 <PLIC_ClaimIRQ>
 800004cc:	fea42623          	sw	a0,-20(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:174
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:174
     uint8_t disable = EXT_IRQ_KEEP_ENABLED;
 800004d0:	fe0405a3          	sb	zero,-21(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:176
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:176
 
     disable = ext_irq_handler_table[int_num]();
 800004d4:	800017b7          	lui	a5,0x80001
@@ -825,23 +825,23 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 800004ec:	000780e7          	jalr	a5
 800004f0:	00050793          	mv	a5,a0
 800004f4:	fef405a3          	sb	a5,-21(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:178
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:178
 
     PLIC_CompleteIRQ(int_num);
 800004f8:	fec42503          	lw	a0,-20(s0)
 800004fc:	ec9ff0ef          	jal	ra,800003c4 <PLIC_CompleteIRQ>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:180
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:180
 
     if(EXT_IRQ_DISABLE == disable)
 80000500:	feb44703          	lbu	a4,-21(s0)
 80000504:	00100793          	li	a5,1
 80000508:	00f71663          	bne	a4,a5,80000514 <handle_m_ext_interrupt+0x5c>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:182
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:182
     {
         PLIC_DisableIRQ((IRQn_Type)int_num);
 8000050c:	fec42503          	lw	a0,-20(s0)
 80000510:	db9ff0ef          	jal	ra,800002c8 <PLIC_DisableIRQ>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:184
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:184
     }
 }
 80000514:	00000013          	nop
@@ -852,7 +852,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000528 <handle_m_soft_interrupt>:
 handle_m_soft_interrupt():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:187
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:187
 
 static void handle_m_soft_interrupt(void)
 {
@@ -860,16 +860,16 @@ static void handle_m_soft_interrupt(void)
 8000052c:	00112623          	sw	ra,12(sp)
 80000530:	00812423          	sw	s0,8(sp)
 80000534:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:188
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:188
     Software_IRQHandler();
 80000538:	11c000ef          	jal	ra,80000654 <Software_IRQHandler>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:191
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:191
 
     /*Clear software interrupt*/
     PRCI->MSIP[0] = 0x00U;
 8000053c:	440007b7          	lui	a5,0x44000
 80000540:	0007a023          	sw	zero,0(a5) # 44000000 <RAM_SIZE+0x43ff0000>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:192
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:192
 }
 80000544:	00000013          	nop
 80000548:	00c12083          	lw	ra,12(sp)
@@ -879,7 +879,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000558 <handle_trap>:
 handle_trap():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:198
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:198
 
 /*------------------------------------------------------------------------------
  * Trap/Interrupt handler
@@ -892,57 +892,57 @@ uintptr_t handle_trap(uintptr_t mcause, uintptr_t mepc)
 80000564:	05010413          	addi	s0,sp,80
 80000568:	faa42e23          	sw	a0,-68(s0)
 8000056c:	fab42c23          	sw	a1,-72(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:199
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:199
     if ((mcause & MCAUSE_INT) && ((mcause & MCAUSE_CAUSE)  == IRQ_M_EXT))
 80000570:	fbc42783          	lw	a5,-68(s0)
 80000574:	0207d263          	bgez	a5,80000598 <handle_trap+0x40>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:199 (discriminator 1)
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:199 (discriminator 1)
 80000578:	fbc42703          	lw	a4,-68(s0)
 8000057c:	800007b7          	lui	a5,0x80000
 80000580:	fff7c793          	not	a5,a5
 80000584:	00f77733          	and	a4,a4,a5
 80000588:	00b00793          	li	a5,11
 8000058c:	00f71663          	bne	a4,a5,80000598 <handle_trap+0x40>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:201
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:201
     {
         handle_m_ext_interrupt();
 80000590:	f29ff0ef          	jal	ra,800004b8 <handle_m_ext_interrupt>
 80000594:	0a80006f          	j	8000063c <handle_trap+0xe4>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:203
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:203
     }
     else if ((mcause & MCAUSE_INT) && ((mcause & MCAUSE_CAUSE)  == IRQ_M_TIMER))
 80000598:	fbc42783          	lw	a5,-68(s0)
 8000059c:	0207d263          	bgez	a5,800005c0 <handle_trap+0x68>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:203 (discriminator 1)
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:203 (discriminator 1)
 800005a0:	fbc42703          	lw	a4,-68(s0)
 800005a4:	800007b7          	lui	a5,0x80000
 800005a8:	fff7c793          	not	a5,a5
 800005ac:	00f77733          	and	a4,a4,a5
 800005b0:	00700793          	li	a5,7
 800005b4:	00f71663          	bne	a4,a5,800005c0 <handle_trap+0x68>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:205
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:205
     {
         handle_m_timer_interrupt();
 800005b8:	e59ff0ef          	jal	ra,80000410 <handle_m_timer_interrupt>
 800005bc:	0800006f          	j	8000063c <handle_trap+0xe4>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:207
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:207
     }
     else if ( (mcause & MCAUSE_INT) && ((mcause & MCAUSE_CAUSE)  == IRQ_M_SOFT))
 800005c0:	fbc42783          	lw	a5,-68(s0)
 800005c4:	0207d263          	bgez	a5,800005e8 <handle_trap+0x90>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:207 (discriminator 1)
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:207 (discriminator 1)
 800005c8:	fbc42703          	lw	a4,-68(s0)
 800005cc:	800007b7          	lui	a5,0x80000
 800005d0:	fff7c793          	not	a5,a5
 800005d4:	00f77733          	and	a4,a4,a5
 800005d8:	00300793          	li	a5,3
 800005dc:	00f71663          	bne	a4,a5,800005e8 <handle_trap+0x90>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:209
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:209
     {
         handle_m_soft_interrupt();
 800005e0:	f49ff0ef          	jal	ra,80000528 <handle_m_soft_interrupt>
 800005e4:	0580006f          	j	8000063c <handle_trap+0xe4>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:234
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:234
          B Instruction page fault
          C Load page fault                (mtval/mbadaddr is the address)
          E Store page fault               (mtval/mbadaddr is the address)
@@ -953,43 +953,43 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 800005ec:	fef42623          	sw	a5,-20(s0)
 800005f0:	fec42783          	lw	a5,-20(s0)
 800005f4:	fef42423          	sw	a5,-24(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:235
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:235
          uintptr_t mbadaddr = read_csr(mbadaddr); /* additional info and meaning depends on mcause */
 800005f8:	343027f3          	csrr	a5,mbadaddr
 800005fc:	fef42223          	sw	a5,-28(s0)
 80000600:	fe442783          	lw	a5,-28(s0)
 80000604:	fef42023          	sw	a5,-32(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:236
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:236
          uintptr_t mtvec    = read_csr(mtvec);    /* trap vector */
 80000608:	305027f3          	csrr	a5,mtvec
 8000060c:	fcf42e23          	sw	a5,-36(s0)
 80000610:	fdc42783          	lw	a5,-36(s0)
 80000614:	fcf42c23          	sw	a5,-40(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:237
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:237
          uintptr_t mscratch = read_csr(mscratch); /* temporary, sometimes might hold temporary value of a0 */
 80000618:	340027f3          	csrr	a5,mscratch
 8000061c:	fcf42a23          	sw	a5,-44(s0)
 80000620:	fd442783          	lw	a5,-44(s0)
 80000624:	fcf42823          	sw	a5,-48(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:238
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:238
          uintptr_t mstatus  = read_csr(mstatus);  /* status contains many smaller fields: */
 80000628:	300027f3          	csrr	a5,mstatus
 8000062c:	fcf42623          	sw	a5,-52(s0)
 80000630:	fcc42783          	lw	a5,-52(s0)
 80000634:	fcf42423          	sw	a5,-56(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:241
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:241
 
 		/* breakpoint*/
         __asm("ebreak");
 80000638:	00100073          	ebreak
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:246
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:246
 #else
         _exit(1 + mcause);
 #endif
     }
     return mepc;
 8000063c:	fb842783          	lw	a5,-72(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:247
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal.c:247
 }
 80000640:	00078513          	mv	a0,a5
 80000644:	04c12083          	lw	ra,76(sp)
@@ -999,7 +999,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000654 <Software_IRQHandler>:
 Software_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:23
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:23
 extern "C" {
 #endif
 
@@ -1010,14 +1010,14 @@ __attribute__((weak)) void Software_IRQHandler(void)
 80000658:	00112623          	sw	ra,12(sp)
 8000065c:	00812423          	sw	s0,8(sp)
 80000660:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:24
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:24
     _exit(10);
 80000664:	00a00513          	li	a0,10
 80000668:	420000ef          	jal	ra,80000a88 <_exit>
 
 8000066c <SysTick_Handler>:
 SysTick_Handler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:29
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:29
 }
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
@@ -1026,7 +1026,7 @@ __attribute__((weak)) void SysTick_Handler(void)
 8000066c:	ff010113          	addi	sp,sp,-16
 80000670:	00812623          	sw	s0,12(sp)
 80000674:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:31
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:31
 	/*Default handler*/
 }
 80000678:	00000013          	nop
@@ -1036,7 +1036,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000688 <Invalid_IRQHandler>:
 Invalid_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:35
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:35
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t Invalid_IRQHandler(void)
@@ -1044,10 +1044,10 @@ __attribute__((weak)) uint8_t Invalid_IRQHandler(void)
 80000688:	ff010113          	addi	sp,sp,-16
 8000068c:	00812623          	sw	s0,12(sp)
 80000690:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:36
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:36
     return(0U); /*Default handler*/
 80000694:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:37
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:37
 }
 80000698:	00078513          	mv	a0,a5
 8000069c:	00c12403          	lw	s0,12(sp)
@@ -1056,7 +1056,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800006a8 <External_1_IRQHandler>:
 External_1_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:41
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:41
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_1_IRQHandler(void)
@@ -1064,10 +1064,10 @@ __attribute__((weak)) uint8_t External_1_IRQHandler(void)
 800006a8:	ff010113          	addi	sp,sp,-16
 800006ac:	00812623          	sw	s0,12(sp)
 800006b0:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:42
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:42
     return(0U); /*Default handler*/
 800006b4:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:43
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:43
 }
 800006b8:	00078513          	mv	a0,a5
 800006bc:	00c12403          	lw	s0,12(sp)
@@ -1076,7 +1076,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800006c8 <External_2_IRQHandler>:
 External_2_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:47
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:47
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_2_IRQHandler(void)
@@ -1084,10 +1084,10 @@ __attribute__((weak)) uint8_t External_2_IRQHandler(void)
 800006c8:	ff010113          	addi	sp,sp,-16
 800006cc:	00812623          	sw	s0,12(sp)
 800006d0:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:48
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:48
     return(0U); /*Default handler*/
 800006d4:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:49
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:49
 }
 800006d8:	00078513          	mv	a0,a5
 800006dc:	00c12403          	lw	s0,12(sp)
@@ -1096,7 +1096,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800006e8 <External_3_IRQHandler>:
 External_3_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:53
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:53
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_3_IRQHandler(void)
@@ -1104,10 +1104,10 @@ __attribute__((weak)) uint8_t External_3_IRQHandler(void)
 800006e8:	ff010113          	addi	sp,sp,-16
 800006ec:	00812623          	sw	s0,12(sp)
 800006f0:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:54
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:54
     return(0U); /*Default handler*/
 800006f4:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:55
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:55
 }
 800006f8:	00078513          	mv	a0,a5
 800006fc:	00c12403          	lw	s0,12(sp)
@@ -1116,7 +1116,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000708 <External_4_IRQHandler>:
 External_4_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:59
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:59
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_4_IRQHandler(void)
@@ -1124,10 +1124,10 @@ __attribute__((weak)) uint8_t External_4_IRQHandler(void)
 80000708:	ff010113          	addi	sp,sp,-16
 8000070c:	00812623          	sw	s0,12(sp)
 80000710:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:60
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:60
 	return(0U); /*Default handler*/
 80000714:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:61
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:61
 }
 80000718:	00078513          	mv	a0,a5
 8000071c:	00c12403          	lw	s0,12(sp)
@@ -1136,7 +1136,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000728 <External_5_IRQHandler>:
 External_5_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:65
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:65
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_5_IRQHandler(void)
@@ -1144,10 +1144,10 @@ __attribute__((weak)) uint8_t External_5_IRQHandler(void)
 80000728:	ff010113          	addi	sp,sp,-16
 8000072c:	00812623          	sw	s0,12(sp)
 80000730:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:66
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:66
     return(0U); /*Default handler*/
 80000734:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:67
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:67
 }
 80000738:	00078513          	mv	a0,a5
 8000073c:	00c12403          	lw	s0,12(sp)
@@ -1156,7 +1156,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000748 <External_6_IRQHandler>:
 External_6_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:71
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:71
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_6_IRQHandler(void)
@@ -1164,10 +1164,10 @@ __attribute__((weak)) uint8_t External_6_IRQHandler(void)
 80000748:	ff010113          	addi	sp,sp,-16
 8000074c:	00812623          	sw	s0,12(sp)
 80000750:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:72
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:72
     return(0U); /*Default handler*/
 80000754:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:73
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:73
 }
 80000758:	00078513          	mv	a0,a5
 8000075c:	00c12403          	lw	s0,12(sp)
@@ -1176,7 +1176,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000768 <External_7_IRQHandler>:
 External_7_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:77
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:77
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_7_IRQHandler(void)
@@ -1184,10 +1184,10 @@ __attribute__((weak)) uint8_t External_7_IRQHandler(void)
 80000768:	ff010113          	addi	sp,sp,-16
 8000076c:	00812623          	sw	s0,12(sp)
 80000770:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:78
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:78
     return(0U); /*Default handler*/
 80000774:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:79
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:79
 }
 80000778:	00078513          	mv	a0,a5
 8000077c:	00c12403          	lw	s0,12(sp)
@@ -1196,7 +1196,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000788 <External_8_IRQHandler>:
 External_8_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:83
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:83
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_8_IRQHandler(void)
@@ -1204,10 +1204,10 @@ __attribute__((weak)) uint8_t External_8_IRQHandler(void)
 80000788:	ff010113          	addi	sp,sp,-16
 8000078c:	00812623          	sw	s0,12(sp)
 80000790:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:84
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:84
     return(0U); /*Default handler*/
 80000794:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:85
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:85
 }
 80000798:	00078513          	mv	a0,a5
 8000079c:	00c12403          	lw	s0,12(sp)
@@ -1216,7 +1216,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800007a8 <External_9_IRQHandler>:
 External_9_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:89
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:89
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_9_IRQHandler(void)
@@ -1224,10 +1224,10 @@ __attribute__((weak)) uint8_t External_9_IRQHandler(void)
 800007a8:	ff010113          	addi	sp,sp,-16
 800007ac:	00812623          	sw	s0,12(sp)
 800007b0:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:90
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:90
     return(0U); /*Default handler*/
 800007b4:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:91
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:91
 }
 800007b8:	00078513          	mv	a0,a5
 800007bc:	00c12403          	lw	s0,12(sp)
@@ -1236,7 +1236,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800007c8 <External_10_IRQHandler>:
 External_10_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:95
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:95
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_10_IRQHandler(void)
@@ -1244,10 +1244,10 @@ __attribute__((weak)) uint8_t External_10_IRQHandler(void)
 800007c8:	ff010113          	addi	sp,sp,-16
 800007cc:	00812623          	sw	s0,12(sp)
 800007d0:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:96
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:96
     return(0U); /*Default handler*/
 800007d4:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:97
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:97
 }
 800007d8:	00078513          	mv	a0,a5
 800007dc:	00c12403          	lw	s0,12(sp)
@@ -1256,7 +1256,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800007e8 <External_11_IRQHandler>:
 External_11_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:101
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:101
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_11_IRQHandler(void)
@@ -1264,10 +1264,10 @@ __attribute__((weak)) uint8_t External_11_IRQHandler(void)
 800007e8:	ff010113          	addi	sp,sp,-16
 800007ec:	00812623          	sw	s0,12(sp)
 800007f0:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:102
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:102
     return(0U); /*Default handler*/
 800007f4:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:103
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:103
 }
 800007f8:	00078513          	mv	a0,a5
 800007fc:	00c12403          	lw	s0,12(sp)
@@ -1276,7 +1276,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000808 <External_12_IRQHandler>:
 External_12_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:107
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:107
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_12_IRQHandler(void)
@@ -1284,10 +1284,10 @@ __attribute__((weak)) uint8_t External_12_IRQHandler(void)
 80000808:	ff010113          	addi	sp,sp,-16
 8000080c:	00812623          	sw	s0,12(sp)
 80000810:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:108
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:108
 	return(0U); /*Default handler*/
 80000814:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:109
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:109
 }
 80000818:	00078513          	mv	a0,a5
 8000081c:	00c12403          	lw	s0,12(sp)
@@ -1296,7 +1296,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000828 <External_13_IRQHandler>:
 External_13_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:113
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:113
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_13_IRQHandler(void)
@@ -1304,10 +1304,10 @@ __attribute__((weak)) uint8_t External_13_IRQHandler(void)
 80000828:	ff010113          	addi	sp,sp,-16
 8000082c:	00812623          	sw	s0,12(sp)
 80000830:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:114
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:114
 	return(0U); /*Default handler*/
 80000834:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:115
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:115
 }
 80000838:	00078513          	mv	a0,a5
 8000083c:	00c12403          	lw	s0,12(sp)
@@ -1316,7 +1316,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000848 <External_14_IRQHandler>:
 External_14_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:119
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:119
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_14_IRQHandler(void)
@@ -1324,10 +1324,10 @@ __attribute__((weak)) uint8_t External_14_IRQHandler(void)
 80000848:	ff010113          	addi	sp,sp,-16
 8000084c:	00812623          	sw	s0,12(sp)
 80000850:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:120
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:120
 	return(0U); /*Default handler*/
 80000854:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:121
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:121
 }
 80000858:	00078513          	mv	a0,a5
 8000085c:	00c12403          	lw	s0,12(sp)
@@ -1336,7 +1336,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000868 <External_15_IRQHandler>:
 External_15_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:125
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:125
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_15_IRQHandler(void)
@@ -1344,10 +1344,10 @@ __attribute__((weak)) uint8_t External_15_IRQHandler(void)
 80000868:	ff010113          	addi	sp,sp,-16
 8000086c:	00812623          	sw	s0,12(sp)
 80000870:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:126
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:126
 	return(0U); /*Default handler*/
 80000874:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:127
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:127
 }
 80000878:	00078513          	mv	a0,a5
 8000087c:	00c12403          	lw	s0,12(sp)
@@ -1356,7 +1356,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000888 <External_16_IRQHandler>:
 External_16_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:131
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:131
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_16_IRQHandler(void)
@@ -1364,10 +1364,10 @@ __attribute__((weak)) uint8_t External_16_IRQHandler(void)
 80000888:	ff010113          	addi	sp,sp,-16
 8000088c:	00812623          	sw	s0,12(sp)
 80000890:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:132
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:132
 	return(0U); /*Default handler*/
 80000894:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:133
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:133
 }
 80000898:	00078513          	mv	a0,a5
 8000089c:	00c12403          	lw	s0,12(sp)
@@ -1376,7 +1376,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800008a8 <External_17_IRQHandler>:
 External_17_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:137
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:137
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_17_IRQHandler(void)
@@ -1384,10 +1384,10 @@ __attribute__((weak)) uint8_t External_17_IRQHandler(void)
 800008a8:	ff010113          	addi	sp,sp,-16
 800008ac:	00812623          	sw	s0,12(sp)
 800008b0:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:138
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:138
 	return(0U); /*Default handler*/
 800008b4:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:139
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:139
 }
 800008b8:	00078513          	mv	a0,a5
 800008bc:	00c12403          	lw	s0,12(sp)
@@ -1396,7 +1396,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800008c8 <External_18_IRQHandler>:
 External_18_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:143
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:143
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_18_IRQHandler(void)
@@ -1404,10 +1404,10 @@ __attribute__((weak)) uint8_t External_18_IRQHandler(void)
 800008c8:	ff010113          	addi	sp,sp,-16
 800008cc:	00812623          	sw	s0,12(sp)
 800008d0:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:144
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:144
 	return(0U); /*Default handler*/
 800008d4:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:145
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:145
 }
 800008d8:	00078513          	mv	a0,a5
 800008dc:	00c12403          	lw	s0,12(sp)
@@ -1416,7 +1416,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800008e8 <External_19_IRQHandler>:
 External_19_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:149
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:149
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_19_IRQHandler(void)
@@ -1424,10 +1424,10 @@ __attribute__((weak)) uint8_t External_19_IRQHandler(void)
 800008e8:	ff010113          	addi	sp,sp,-16
 800008ec:	00812623          	sw	s0,12(sp)
 800008f0:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:150
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:150
 	return(0U); /*Default handler*/
 800008f4:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:151
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:151
 }
 800008f8:	00078513          	mv	a0,a5
 800008fc:	00c12403          	lw	s0,12(sp)
@@ -1436,7 +1436,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000908 <External_20_IRQHandler>:
 External_20_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:155
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:155
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_20_IRQHandler(void)
@@ -1444,10 +1444,10 @@ __attribute__((weak)) uint8_t External_20_IRQHandler(void)
 80000908:	ff010113          	addi	sp,sp,-16
 8000090c:	00812623          	sw	s0,12(sp)
 80000910:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:156
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:156
 	return(0U); /*Default handler*/
 80000914:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:157
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:157
 }
 80000918:	00078513          	mv	a0,a5
 8000091c:	00c12403          	lw	s0,12(sp)
@@ -1456,7 +1456,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000928 <External_21_IRQHandler>:
 External_21_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:161
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:161
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_21_IRQHandler(void)
@@ -1464,10 +1464,10 @@ __attribute__((weak)) uint8_t External_21_IRQHandler(void)
 80000928:	ff010113          	addi	sp,sp,-16
 8000092c:	00812623          	sw	s0,12(sp)
 80000930:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:162
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:162
 	return(0U); /*Default handler*/
 80000934:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:163
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:163
 }
 80000938:	00078513          	mv	a0,a5
 8000093c:	00c12403          	lw	s0,12(sp)
@@ -1476,7 +1476,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000948 <External_22_IRQHandler>:
 External_22_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:167
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:167
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_22_IRQHandler(void)
@@ -1484,10 +1484,10 @@ __attribute__((weak)) uint8_t External_22_IRQHandler(void)
 80000948:	ff010113          	addi	sp,sp,-16
 8000094c:	00812623          	sw	s0,12(sp)
 80000950:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:168
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:168
 	return(0U); /*Default handler*/
 80000954:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:169
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:169
 }
 80000958:	00078513          	mv	a0,a5
 8000095c:	00c12403          	lw	s0,12(sp)
@@ -1496,7 +1496,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000968 <External_23_IRQHandler>:
 External_23_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:173
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:173
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_23_IRQHandler(void)
@@ -1504,10 +1504,10 @@ __attribute__((weak)) uint8_t External_23_IRQHandler(void)
 80000968:	ff010113          	addi	sp,sp,-16
 8000096c:	00812623          	sw	s0,12(sp)
 80000970:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:174
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:174
 	return(0U); /*Default handler*/
 80000974:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:175
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:175
 }
 80000978:	00078513          	mv	a0,a5
 8000097c:	00c12403          	lw	s0,12(sp)
@@ -1516,7 +1516,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000988 <External_24_IRQHandler>:
 External_24_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:179
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:179
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_24_IRQHandler(void)
@@ -1524,10 +1524,10 @@ __attribute__((weak)) uint8_t External_24_IRQHandler(void)
 80000988:	ff010113          	addi	sp,sp,-16
 8000098c:	00812623          	sw	s0,12(sp)
 80000990:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:180
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:180
 	return(0U); /*Default handler*/
 80000994:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:181
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:181
 }
 80000998:	00078513          	mv	a0,a5
 8000099c:	00c12403          	lw	s0,12(sp)
@@ -1536,7 +1536,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800009a8 <External_25_IRQHandler>:
 External_25_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:185
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:185
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_25_IRQHandler(void)
@@ -1544,10 +1544,10 @@ __attribute__((weak)) uint8_t External_25_IRQHandler(void)
 800009a8:	ff010113          	addi	sp,sp,-16
 800009ac:	00812623          	sw	s0,12(sp)
 800009b0:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:186
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:186
 	return(0U); /*Default handler*/
 800009b4:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:187
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:187
 }
 800009b8:	00078513          	mv	a0,a5
 800009bc:	00c12403          	lw	s0,12(sp)
@@ -1556,7 +1556,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800009c8 <External_26_IRQHandler>:
 External_26_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:191
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:191
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_26_IRQHandler(void)
@@ -1564,10 +1564,10 @@ __attribute__((weak)) uint8_t External_26_IRQHandler(void)
 800009c8:	ff010113          	addi	sp,sp,-16
 800009cc:	00812623          	sw	s0,12(sp)
 800009d0:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:192
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:192
 	return(0U); /*Default handler*/
 800009d4:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:193
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:193
 }
 800009d8:	00078513          	mv	a0,a5
 800009dc:	00c12403          	lw	s0,12(sp)
@@ -1576,7 +1576,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 800009e8 <External_27_IRQHandler>:
 External_27_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:197
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:197
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_27_IRQHandler(void)
@@ -1584,10 +1584,10 @@ __attribute__((weak)) uint8_t External_27_IRQHandler(void)
 800009e8:	ff010113          	addi	sp,sp,-16
 800009ec:	00812623          	sw	s0,12(sp)
 800009f0:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:198
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:198
 	return(0U); /*Default handler*/
 800009f4:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:199
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:199
 }
 800009f8:	00078513          	mv	a0,a5
 800009fc:	00c12403          	lw	s0,12(sp)
@@ -1596,7 +1596,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000a08 <External_28_IRQHandler>:
 External_28_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:203
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:203
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_28_IRQHandler(void)
@@ -1604,10 +1604,10 @@ __attribute__((weak)) uint8_t External_28_IRQHandler(void)
 80000a08:	ff010113          	addi	sp,sp,-16
 80000a0c:	00812623          	sw	s0,12(sp)
 80000a10:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:204
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:204
 	return(0U); /*Default handler*/
 80000a14:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:205
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:205
 }
 80000a18:	00078513          	mv	a0,a5
 80000a1c:	00c12403          	lw	s0,12(sp)
@@ -1616,7 +1616,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000a28 <External_29_IRQHandler>:
 External_29_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:209
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:209
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_29_IRQHandler(void)
@@ -1624,10 +1624,10 @@ __attribute__((weak)) uint8_t External_29_IRQHandler(void)
 80000a28:	ff010113          	addi	sp,sp,-16
 80000a2c:	00812623          	sw	s0,12(sp)
 80000a30:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:210
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:210
 	return(0U); /*Default handler*/
 80000a34:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:211
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:211
 }
 80000a38:	00078513          	mv	a0,a5
 80000a3c:	00c12403          	lw	s0,12(sp)
@@ -1636,7 +1636,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000a48 <External_30_IRQHandler>:
 External_30_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:215
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:215
 
 /*Weakly linked handler. Will be replaced with user's definition if provided*/
 __attribute__((weak)) uint8_t External_30_IRQHandler(void)
@@ -1644,10 +1644,10 @@ __attribute__((weak)) uint8_t External_30_IRQHandler(void)
 80000a48:	ff010113          	addi	sp,sp,-16
 80000a4c:	00812623          	sw	s0,12(sp)
 80000a50:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:216
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:216
 	return(0U); /*Default handler*/
 80000a54:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:217
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:217
 }
 80000a58:	00078513          	mv	a0,a5
 80000a5c:	00c12403          	lw	s0,12(sp)
@@ -1656,7 +1656,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000a68 <External_31_IRQHandler>:
 External_31_IRQHandler():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:221
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:221
 
 /*Weakly linked handler. Will be replaced with user's definition if provide*/
 __attribute__((weak)) uint8_t External_31_IRQHandler(void)
@@ -1664,10 +1664,10 @@ __attribute__((weak)) uint8_t External_31_IRQHandler(void)
 80000a68:	ff010113          	addi	sp,sp,-16
 80000a6c:	00812623          	sw	s0,12(sp)
 80000a70:	01010413          	addi	s0,sp,16
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:222
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:222
 	return(0U); /*Default handler*/
 80000a74:	00000793          	li	a5,0
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:223
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/riscv_hal_stubs.c:223
 }
 80000a78:	00078513          	mv	a0,a5
 80000a7c:	00c12403          	lw	s0,12(sp)
@@ -1676,7 +1676,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000a88 <_exit>:
 _exit():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/syscall.c:74
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/syscall.c:74
     }
 }
 
@@ -1687,7 +1687,7 @@ void _exit(int code)
 80000a8c:	00812e23          	sw	s0,28(sp)
 80000a90:	02010413          	addi	s0,sp,32
 80000a94:	fea42623          	sw	a0,-20(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/syscall.c:82 (discriminator 1)
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../riscv_hal/syscall.c:82 (discriminator 1)
 
     write(STDERR_FILENO, message, strlen(message));
     write_hex(STDERR_FILENO, code);
@@ -1698,7 +1698,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000a9c <HW_set_32bit_reg>:
 HW_set_32bit_reg():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:36
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:36
  *
  * a0:   addr_t reg_addr
  * a1:   uint32_t value
@@ -1706,13 +1706,13 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 HW_set_32bit_reg:
     sw a1, 0(a0)
 80000a9c:	00b52023          	sw	a1,0(a0) # 44000000 <RAM_SIZE+0x43ff0000>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:37
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:37
     ret
 80000aa0:	00008067          	ret
 
 80000aa4 <HW_get_32bit_reg>:
 HW_get_32bit_reg():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:47
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:47
  *
  * R0:   addr_t reg_addr
  * @return          32 bits value read from the peripheral register.
@@ -1720,13 +1720,13 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 HW_get_32bit_reg:
     lw a0, 0(a0)
 80000aa4:	00052503          	lw	a0,0(a0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:48
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:48
     ret
 80000aa8:	00008067          	ret
 
 80000aac <HW_set_32bit_reg_field>:
 HW_set_32bit_reg_field():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:60
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:60
  * a1:   int_fast8_t shift
  * a2:   uint32_t mask
  * a3:   uint32_t value
@@ -1734,37 +1734,37 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 HW_set_32bit_reg_field:
     mv t3, a3
 80000aac:	00068e13          	mv	t3,a3
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:61
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:61
     sll t3, t3, a1
 80000ab0:	00be1e33          	sll	t3,t3,a1
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:62
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:62
     and  t3, t3, a2
 80000ab4:	00ce7e33          	and	t3,t3,a2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:63
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:63
     lw t1, 0(a0)
 80000ab8:	00052303          	lw	t1,0(a0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:64
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:64
     mv t2, a2
 80000abc:	00060393          	mv	t2,a2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:65
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:65
     not t2, t2
 80000ac0:	fff3c393          	not	t2,t2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:66
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:66
     and t1, t1, t2
 80000ac4:	00737333          	and	t1,t1,t2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:67
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:67
     or t1, t1, t3
 80000ac8:	01c36333          	or	t1,t1,t3
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:68
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:68
     sw t1, 0(a0)
 80000acc:	00652023          	sw	t1,0(a0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:69
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:69
     ret
 80000ad0:	00008067          	ret
 
 80000ad4 <HW_get_32bit_reg_field>:
 HW_get_32bit_reg_field():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:83
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:83
  *
  * @return          32 bits value containing the register field value specified
  *                  as parameter.
@@ -1772,19 +1772,19 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 HW_get_32bit_reg_field:
     lw a0, 0(a0)
 80000ad4:	00052503          	lw	a0,0(a0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:84
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:84
     and a0, a0, a2
 80000ad8:	00c57533          	and	a0,a0,a2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:85
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:85
     srl a0, a0, a1
 80000adc:	00b55533          	srl	a0,a0,a1
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:86
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:86
     ret
 80000ae0:	00008067          	ret
 
 80000ae4 <HW_set_16bit_reg>:
 HW_set_16bit_reg():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:96
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:96
  *
  * a0:   addr_t reg_addr
  * a1:   uint_fast16_t value
@@ -1792,13 +1792,13 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 HW_set_16bit_reg:
     sh a1, 0(a0)
 80000ae4:	00b51023          	sh	a1,0(a0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:97
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:97
     ret
 80000ae8:	00008067          	ret
 
 80000aec <HW_get_16bit_reg>:
 HW_get_16bit_reg():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:107
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:107
  *
  * a0:   addr_t reg_addr
  * @return          16 bits value read from the peripheral register.
@@ -1806,13 +1806,13 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 HW_get_16bit_reg:
     lh a0, (a0)
 80000aec:	00051503          	lh	a0,0(a0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:108
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:108
     ret
 80000af0:	00008067          	ret
 
 80000af4 <HW_set_16bit_reg_field>:
 HW_set_16bit_reg_field():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:121
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:121
  * a2:   uint_fast16_t mask
  * a3:   uint_fast16_t value
  * @param value     Value to be written in the specified field.
@@ -1820,37 +1820,37 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 HW_set_16bit_reg_field:
     mv t3, a3
 80000af4:	00068e13          	mv	t3,a3
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:122
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:122
     sll t3, t3, a1
 80000af8:	00be1e33          	sll	t3,t3,a1
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:123
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:123
     and  t3, t3, a2
 80000afc:	00ce7e33          	and	t3,t3,a2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:124
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:124
     lh t1, 0(a0)
 80000b00:	00051303          	lh	t1,0(a0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:125
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:125
     mv t2, a2
 80000b04:	00060393          	mv	t2,a2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:126
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:126
     not t2, t2
 80000b08:	fff3c393          	not	t2,t2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:127
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:127
     and t1, t1, t2
 80000b0c:	00737333          	and	t1,t1,t2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:128
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:128
     or t1, t1, t3
 80000b10:	01c36333          	or	t1,t1,t3
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:129
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:129
     sh t1, 0(a0)
 80000b14:	00651023          	sh	t1,0(a0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:130
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:130
     ret
 80000b18:	00008067          	ret
 
 80000b1c <HW_get_16bit_reg_field>:
 HW_get_16bit_reg_field():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:144
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:144
  *
  * @return          16 bits value containing the register field value specified
  *                  as parameter.
@@ -1858,19 +1858,19 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 HW_get_16bit_reg_field:
     lh a0, 0(a0)
 80000b1c:	00051503          	lh	a0,0(a0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:145
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:145
     and a0, a0, a2
 80000b20:	00c57533          	and	a0,a0,a2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:146
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:146
     srl a0, a0, a1
 80000b24:	00b55533          	srl	a0,a0,a1
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:147
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:147
     ret
 80000b28:	00008067          	ret
 
 80000b2c <HW_set_8bit_reg>:
 HW_set_8bit_reg():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:157
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:157
  *
  * a0:   addr_t reg_addr
  * a1:   uint_fast8_t value
@@ -1878,13 +1878,13 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 HW_set_8bit_reg:
     sb a1, 0(a0)
 80000b2c:	00b50023          	sb	a1,0(a0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:158
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:158
     ret
 80000b30:	00008067          	ret
 
 80000b34 <HW_get_8bit_reg>:
 HW_get_8bit_reg():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:168
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:168
  *
  * a0:   addr_t reg_addr
  * @return          8 bits value read from the peripheral register.
@@ -1892,13 +1892,13 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 HW_get_8bit_reg:
     lb a0, 0(a0)
 80000b34:	00050503          	lb	a0,0(a0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:169
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:169
     ret
 80000b38:	00008067          	ret
 
 80000b3c <HW_set_8bit_reg_field>:
 HW_set_8bit_reg_field():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:181
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:181
  * a1:   int_fast8_t shift
  * a2:   uint_fast8_t mask
  * a3:   uint_fast8_t value
@@ -1906,37 +1906,37 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 HW_set_8bit_reg_field:
     mv t3, a3
 80000b3c:	00068e13          	mv	t3,a3
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:182
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:182
     sll t3, t3, a1
 80000b40:	00be1e33          	sll	t3,t3,a1
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:183
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:183
     and  t3, t3, a2
 80000b44:	00ce7e33          	and	t3,t3,a2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:184
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:184
     lb t1, 0(a0)
 80000b48:	00050303          	lb	t1,0(a0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:185
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:185
     mv t2, a2
 80000b4c:	00060393          	mv	t2,a2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:186
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:186
     not t2, t2
 80000b50:	fff3c393          	not	t2,t2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:187
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:187
     and t1, t1, t2
 80000b54:	00737333          	and	t1,t1,t2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:188
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:188
     or t1, t1, t3
 80000b58:	01c36333          	or	t1,t1,t3
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:189
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:189
     sb t1, 0(a0)
 80000b5c:	00650023          	sb	t1,0(a0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:190
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:190
     ret
 80000b60:	00008067          	ret
 
 80000b64 <HW_get_8bit_reg_field>:
 HW_get_8bit_reg_field():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:204
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:204
  *
  * @return          8 bits value containing the register field value specified
  *                  as parameter.
@@ -1944,19 +1944,19 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 HW_get_8bit_reg_field:
     lb a0, 0(a0)
 80000b64:	00050503          	lb	a0,0(a0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:205
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:205
     and a0, a0, a2
 80000b68:	00c57533          	and	a0,a0,a2
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:206
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:206
     srl a0, a0, a1
 80000b6c:	00b55533          	srl	a0,a0,a1
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:207
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../hal/hw_reg_access.S:207
     ret
 80000b70:	00008067          	ret
 
 80000b74 <UART_init>:
 UART_init():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:226
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:226
             this_uart->status |= new_status;
             rx_full = new_status & STATUS_RXFULL_MASK;
         }
@@ -2036,7 +2036,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000c8c <UART_polled_tx_string>:
 UART_polled_tx_string():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:238
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:238
 UART_polled_tx_string
 ( 
     UART_instance_t * this_uart, 
@@ -2049,7 +2049,7 @@ UART_polled_tx_string
 80000c98:	03010413          	addi	s0,sp,48
 80000c9c:	fca42e23          	sw	a0,-36(s0)
 80000ca0:	fcb42c23          	sw	a1,-40(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:245
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:245
     uint8_t tx_ready;
 
     HAL_ASSERT( this_uart != NULL_INSTANCE )
@@ -2058,17 +2058,17 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
     if( ( this_uart != NULL_INSTANCE ) && ( p_sz_string != NULL_BUFFER ) )
 80000ca4:	fdc42783          	lw	a5,-36(s0)
 80000ca8:	08078063          	beqz	a5,80000d28 <UART_polled_tx_string+0x9c>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:245 (discriminator 1)
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:245 (discriminator 1)
 80000cac:	fd842783          	lw	a5,-40(s0)
 80000cb0:	06078c63          	beqz	a5,80000d28 <UART_polled_tx_string+0x9c>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:247
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:247
     {
         char_idx = 0U;
 80000cb4:	fe042623          	sw	zero,-20(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:248
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:248
         while( 0U != p_sz_string[char_idx] )
 80000cb8:	05c0006f          	j	80000d14 <UART_polled_tx_string+0x88>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:252 (discriminator 1)
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:252 (discriminator 1)
         {
             /* Wait for UART to become ready to transmit. */
             do {
@@ -2081,12 +2081,12 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000cd0:	00050793          	mv	a5,a0
 80000cd4:	0017f793          	andi	a5,a5,1
 80000cd8:	fef405a3          	sb	a5,-21(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:254 (discriminator 1)
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:254 (discriminator 1)
                                                               STATUS_TXRDY_MASK;
             } while ( !tx_ready );
 80000cdc:	feb44783          	lbu	a5,-21(s0)
 80000ce0:	fc078ee3          	beqz	a5,80000cbc <UART_polled_tx_string+0x30>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:256
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:256
             /* Send next character in the buffer. */
             HAL_set_8bit_reg( this_uart->base_address, TXDATA,
 80000ce4:	fdc42783          	lw	a5,-36(s0)
@@ -2098,20 +2098,20 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000cfc:	00078593          	mv	a1,a5
 80000d00:	00068513          	mv	a0,a3
 80000d04:	e29ff0ef          	jal	ra,80000b2c <HW_set_8bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:258
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:258
                               (uint_fast8_t)p_sz_string[char_idx] );
             char_idx++;
 80000d08:	fec42783          	lw	a5,-20(s0)
 80000d0c:	00178793          	addi	a5,a5,1
 80000d10:	fef42623          	sw	a5,-20(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:248
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:248
         while( 0U != p_sz_string[char_idx] )
 80000d14:	fd842703          	lw	a4,-40(s0)
 80000d18:	fec42783          	lw	a5,-20(s0)
 80000d1c:	00f707b3          	add	a5,a4,a5
 80000d20:	0007c783          	lbu	a5,0(a5)
 80000d24:	f8079ce3          	bnez	a5,80000cbc <UART_polled_tx_string+0x30>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:261
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreUARTapb/core_uart_apb.c:261
         }
     }
 }
@@ -2123,7 +2123,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000d3c <GPIO_init>:
 GPIO_init():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:37
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:37
 (
     gpio_instance_t *   this_gpio,
     addr_t              base_addr,
@@ -2137,25 +2137,25 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000d4c:	fca42e23          	sw	a0,-36(s0)
 80000d50:	fcb42c23          	sw	a1,-40(s0)
 80000d54:	fcc42a23          	sw	a2,-44(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:38
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:38
     uint8_t i = 0;
 80000d58:	fe0407a3          	sb	zero,-17(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:39
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:39
     addr_t cfg_reg_addr = base_addr;
 80000d5c:	fd842783          	lw	a5,-40(s0)
 80000d60:	fef42423          	sw	a5,-24(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:41
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:41
     
     this_gpio->base_addr = base_addr;
 80000d64:	fdc42783          	lw	a5,-36(s0)
 80000d68:	fd842703          	lw	a4,-40(s0)
 80000d6c:	00e7a023          	sw	a4,0(a5)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:42
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:42
     this_gpio->apb_bus_width = bus_width;
 80000d70:	fdc42783          	lw	a5,-36(s0)
 80000d74:	fd442703          	lw	a4,-44(s0)
 80000d78:	00e7a223          	sw	a4,4(a5)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:45
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:45
     
     /* Clear configuration. */
     for( i = 0, cfg_reg_addr = base_addr; i < NB_OF_GPIO; ++i )
@@ -2163,27 +2163,27 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000d80:	fd842783          	lw	a5,-40(s0)
 80000d84:	fef42423          	sw	a5,-24(s0)
 80000d88:	0280006f          	j	80000db0 <GPIO_init+0x74>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:47 (discriminator 3)
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:47 (discriminator 3)
     {
         HW_set_8bit_reg( cfg_reg_addr, 0 );
 80000d8c:	00000593          	li	a1,0
 80000d90:	fe842503          	lw	a0,-24(s0)
 80000d94:	d99ff0ef          	jal	ra,80000b2c <HW_set_8bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:48 (discriminator 3)
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:48 (discriminator 3)
         cfg_reg_addr += 4;
 80000d98:	fe842783          	lw	a5,-24(s0)
 80000d9c:	00478793          	addi	a5,a5,4
 80000da0:	fef42423          	sw	a5,-24(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:45 (discriminator 3)
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:45 (discriminator 3)
     for( i = 0, cfg_reg_addr = base_addr; i < NB_OF_GPIO; ++i )
 80000da4:	fef44783          	lbu	a5,-17(s0)
 80000da8:	00178793          	addi	a5,a5,1
 80000dac:	fef407a3          	sb	a5,-17(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:45 (discriminator 1)
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:45 (discriminator 1)
 80000db0:	fef44703          	lbu	a4,-17(s0)
 80000db4:	01f00793          	li	a5,31
 80000db8:	fce7fae3          	bleu	a4,a5,80000d8c <GPIO_init+0x50>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:51
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:51
     }
     /* Clear any pending interrupts */
     switch( this_gpio->apb_bus_width )
@@ -2195,7 +2195,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000dd0:	06e7e463          	bltu	a5,a4,80000e38 <GPIO_init+0xfc>
 80000dd4:	00200713          	li	a4,2
 80000dd8:	00e78463          	beq	a5,a4,80000de0 <GPIO_init+0xa4>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:71
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:71
             HAL_set_8bit_reg( this_gpio->base_addr, IRQ3, (uint8_t)CLEAR_ALL_IRQ8 );
             break;
             
@@ -2203,7 +2203,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
             HAL_ASSERT(0);
             break;
 80000ddc:	0c00006f          	j	80000e9c <GPIO_init+0x160>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:54
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:54
             HAL_set_32bit_reg( this_gpio->base_addr, IRQ, CLEAR_ALL_IRQ32 );
 80000de0:	fdc42783          	lw	a5,-36(s0)
 80000de4:	0007a783          	lw	a5,0(a5)
@@ -2211,10 +2211,10 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000dec:	fff00593          	li	a1,-1
 80000df0:	00078513          	mv	a0,a5
 80000df4:	ca9ff0ef          	jal	ra,80000a9c <HW_set_32bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:55
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:55
             break;
 80000df8:	0a40006f          	j	80000e9c <GPIO_init+0x160>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:58
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:58
             HAL_set_16bit_reg( this_gpio->base_addr, IRQ0, (uint16_t)CLEAR_ALL_IRQ16 );
 80000dfc:	fdc42783          	lw	a5,-36(s0)
 80000e00:	0007a783          	lw	a5,0(a5)
@@ -2223,7 +2223,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000e0c:	fff78593          	addi	a1,a5,-1 # ffff <HEAP_SIZE+0xf7ff>
 80000e10:	00070513          	mv	a0,a4
 80000e14:	cd1ff0ef          	jal	ra,80000ae4 <HW_set_16bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:59
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:59
             HAL_set_16bit_reg( this_gpio->base_addr, IRQ1, (uint16_t)CLEAR_ALL_IRQ16 );
 80000e18:	fdc42783          	lw	a5,-36(s0)
 80000e1c:	0007a783          	lw	a5,0(a5)
@@ -2232,10 +2232,10 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000e28:	fff78593          	addi	a1,a5,-1 # ffff <HEAP_SIZE+0xf7ff>
 80000e2c:	00070513          	mv	a0,a4
 80000e30:	cb5ff0ef          	jal	ra,80000ae4 <HW_set_16bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:60
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:60
             break;
 80000e34:	0680006f          	j	80000e9c <GPIO_init+0x160>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:63
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:63
             HAL_set_8bit_reg( this_gpio->base_addr, IRQ0, (uint8_t)CLEAR_ALL_IRQ8 );
 80000e38:	fdc42783          	lw	a5,-36(s0)
 80000e3c:	0007a783          	lw	a5,0(a5)
@@ -2243,7 +2243,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000e44:	0ff00593          	li	a1,255
 80000e48:	00078513          	mv	a0,a5
 80000e4c:	ce1ff0ef          	jal	ra,80000b2c <HW_set_8bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:64
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:64
             HAL_set_8bit_reg( this_gpio->base_addr, IRQ1, (uint8_t)CLEAR_ALL_IRQ8 );
 80000e50:	fdc42783          	lw	a5,-36(s0)
 80000e54:	0007a783          	lw	a5,0(a5)
@@ -2251,7 +2251,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000e5c:	0ff00593          	li	a1,255
 80000e60:	00078513          	mv	a0,a5
 80000e64:	cc9ff0ef          	jal	ra,80000b2c <HW_set_8bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:65
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:65
             HAL_set_8bit_reg( this_gpio->base_addr, IRQ2, (uint8_t)CLEAR_ALL_IRQ8 );
 80000e68:	fdc42783          	lw	a5,-36(s0)
 80000e6c:	0007a783          	lw	a5,0(a5)
@@ -2259,7 +2259,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000e74:	0ff00593          	li	a1,255
 80000e78:	00078513          	mv	a0,a5
 80000e7c:	cb1ff0ef          	jal	ra,80000b2c <HW_set_8bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:66
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:66
             HAL_set_8bit_reg( this_gpio->base_addr, IRQ3, (uint8_t)CLEAR_ALL_IRQ8 );
 80000e80:	fdc42783          	lw	a5,-36(s0)
 80000e84:	0007a783          	lw	a5,0(a5)
@@ -2267,10 +2267,10 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000e8c:	0ff00593          	li	a1,255
 80000e90:	00078513          	mv	a0,a5
 80000e94:	c99ff0ef          	jal	ra,80000b2c <HW_set_8bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:67
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:67
             break;
 80000e98:	00000013          	nop
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:73
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:73
     }
 }
 80000e9c:	00000013          	nop
@@ -2281,7 +2281,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000eb0 <GPIO_config>:
 GPIO_config():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:85
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:85
 (
     gpio_instance_t *   this_gpio,
     gpio_id_t           port_id,
@@ -2295,32 +2295,32 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000ec0:	fca42e23          	sw	a0,-36(s0)
 80000ec4:	fcb42c23          	sw	a1,-40(s0)
 80000ec8:	fcc42a23          	sw	a2,-44(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:88
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:88
     HAL_ASSERT( port_id < NB_OF_GPIO );
     
     if ( port_id < NB_OF_GPIO )
 80000ecc:	fd842703          	lw	a4,-40(s0)
 80000ed0:	01f00793          	li	a5,31
 80000ed4:	02e7e863          	bltu	a5,a4,80000f04 <GPIO_config+0x54>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:90
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:90
     {
         uint32_t cfg_reg_addr = this_gpio->base_addr;
 80000ed8:	fdc42783          	lw	a5,-36(s0)
 80000edc:	0007a783          	lw	a5,0(a5)
 80000ee0:	fef42623          	sw	a5,-20(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:91
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:91
         cfg_reg_addr += (port_id * 4);
 80000ee4:	fd842783          	lw	a5,-40(s0)
 80000ee8:	00279793          	slli	a5,a5,0x2
 80000eec:	fec42703          	lw	a4,-20(s0)
 80000ef0:	00f707b3          	add	a5,a4,a5
 80000ef4:	fef42623          	sw	a5,-20(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:92
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:92
         HW_set_32bit_reg( cfg_reg_addr, config );
 80000ef8:	fd442583          	lw	a1,-44(s0)
 80000efc:	fec42503          	lw	a0,-20(s0)
 80000f00:	b9dff0ef          	jal	ra,80000a9c <HW_set_32bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:103
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:103
          * It may also indicate that the base address passed as parameter to
          * GPIO_init() was incorrect.
          */
@@ -2335,7 +2335,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80000f18 <GPIO_set_outputs>:
 GPIO_set_outputs():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:114
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:114
 void GPIO_set_outputs
 (
     gpio_instance_t *   this_gpio,
@@ -2348,7 +2348,7 @@ void GPIO_set_outputs
 80000f24:	02010413          	addi	s0,sp,32
 80000f28:	fea42623          	sw	a0,-20(s0)
 80000f2c:	feb42423          	sw	a1,-24(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:115
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:115
     switch( this_gpio->apb_bus_width )
 80000f30:	fec42783          	lw	a5,-20(s0)
 80000f34:	0047a783          	lw	a5,4(a5)
@@ -2358,7 +2358,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000f44:	06e7ee63          	bltu	a5,a4,80000fc0 <GPIO_set_outputs+0xa8>
 80000f48:	00200713          	li	a4,2
 80000f4c:	00e78463          	beq	a5,a4,80000f54 <GPIO_set_outputs+0x3c>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:135
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:135
             HAL_set_8bit_reg( this_gpio->base_addr, GPIO_OUT3, (uint8_t)(value >> 24) );
             break;
             
@@ -2366,7 +2366,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
             HAL_ASSERT(0);
             break;
 80000f50:	1000006f          	j	80001050 <GPIO_set_outputs+0x138>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:118
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:118
             HAL_set_32bit_reg( this_gpio->base_addr, GPIO_OUT, value );
 80000f54:	fec42783          	lw	a5,-20(s0)
 80000f58:	0007a783          	lw	a5,0(a5)
@@ -2374,10 +2374,10 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000f60:	fe842583          	lw	a1,-24(s0)
 80000f64:	00078513          	mv	a0,a5
 80000f68:	b35ff0ef          	jal	ra,80000a9c <HW_set_32bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:119
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:119
             break;
 80000f6c:	0e40006f          	j	80001050 <GPIO_set_outputs+0x138>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:122
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:122
             HAL_set_16bit_reg( this_gpio->base_addr, GPIO_OUT0, (uint16_t)value );
 80000f70:	fec42783          	lw	a5,-20(s0)
 80000f74:	0007a783          	lw	a5,0(a5)
@@ -2388,7 +2388,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000f88:	00070593          	mv	a1,a4
 80000f8c:	00078513          	mv	a0,a5
 80000f90:	b55ff0ef          	jal	ra,80000ae4 <HW_set_16bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:123
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:123
             HAL_set_16bit_reg( this_gpio->base_addr, GPIO_OUT1, (uint16_t)(value >> 16) );
 80000f94:	fec42783          	lw	a5,-20(s0)
 80000f98:	0007a783          	lw	a5,0(a5)
@@ -2400,10 +2400,10 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000fb0:	00078593          	mv	a1,a5
 80000fb4:	00070513          	mv	a0,a4
 80000fb8:	b2dff0ef          	jal	ra,80000ae4 <HW_set_16bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:124
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:124
             break;
 80000fbc:	0940006f          	j	80001050 <GPIO_set_outputs+0x138>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:127
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:127
             HAL_set_8bit_reg( this_gpio->base_addr, GPIO_OUT0, (uint8_t)value );
 80000fc0:	fec42783          	lw	a5,-20(s0)
 80000fc4:	0007a783          	lw	a5,0(a5)
@@ -2413,7 +2413,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000fd4:	00070593          	mv	a1,a4
 80000fd8:	00078513          	mv	a0,a5
 80000fdc:	b51ff0ef          	jal	ra,80000b2c <HW_set_8bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:128
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:128
             HAL_set_8bit_reg( this_gpio->base_addr, GPIO_OUT1, (uint8_t)(value >> 8) );
 80000fe0:	fec42783          	lw	a5,-20(s0)
 80000fe4:	0007a783          	lw	a5,0(a5)
@@ -2424,7 +2424,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80000ff8:	00078593          	mv	a1,a5
 80000ffc:	00070513          	mv	a0,a4
 80001000:	b2dff0ef          	jal	ra,80000b2c <HW_set_8bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:129
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:129
             HAL_set_8bit_reg( this_gpio->base_addr, GPIO_OUT2, (uint8_t)(value >> 16) );
 80001004:	fec42783          	lw	a5,-20(s0)
 80001008:	0007a783          	lw	a5,0(a5)
@@ -2435,7 +2435,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 8000101c:	00078593          	mv	a1,a5
 80001020:	00070513          	mv	a0,a4
 80001024:	b09ff0ef          	jal	ra,80000b2c <HW_set_8bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:130
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:130
             HAL_set_8bit_reg( this_gpio->base_addr, GPIO_OUT3, (uint8_t)(value >> 24) );
 80001028:	fec42783          	lw	a5,-20(s0)
 8000102c:	0007a783          	lw	a5,0(a5)
@@ -2446,10 +2446,10 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80001040:	00078593          	mv	a1,a5
 80001044:	00070513          	mv	a0,a4
 80001048:	ae5ff0ef          	jal	ra,80000b2c <HW_set_8bit_reg>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:131
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:131
             break;
 8000104c:	00000013          	nop
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:146
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../drivers/CoreGPIO/core_gpio.c:146
      * the number of GPIOs selected in the CoreGPIO hardware flow configuration.
      * It may also indicate that the base address or APB bus width passed as
      * parameter to the GPIO_init() function do not match the hardware design.
@@ -2464,7 +2464,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 
 80001064 <main>:
 main():
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:45
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:45
 
 /*-----------------------------------------------------------------------------
  * main
@@ -2475,10 +2475,10 @@ int main()
 80001068:	00112e23          	sw	ra,28(sp)
 8000106c:	00812c23          	sw	s0,24(sp)
 80001070:	02010413          	addi	s0,sp,32
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:46
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:46
     volatile int32_t delay_count = 0;
 80001074:	fe042423          	sw	zero,-24(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:53
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:53
 
     /**************************************************************************
      * Initialize the CoreGPIO driver with the base address of the CoreGPIO
@@ -2489,7 +2489,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 8000107c:	600005b7          	lui	a1,0x60000
 80001080:	8c018513          	addi	a0,gp,-1856 # 80001220 <__sbss_end>
 80001084:	cb9ff0ef          	jal	ra,80000d3c <GPIO_init>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:58
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:58
 
     /**************************************************************************
      * Configure the GPIOs.
@@ -2499,25 +2499,25 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 8000108c:	00000593          	li	a1,0
 80001090:	8c018513          	addi	a0,gp,-1856 # 80001220 <__sbss_end>
 80001094:	e1dff0ef          	jal	ra,80000eb0 <GPIO_config>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:59
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:59
     GPIO_config( &g_gpio_out, GPIO_1, GPIO_OUTPUT_MODE );
 80001098:	00500613          	li	a2,5
 8000109c:	00100593          	li	a1,1
 800010a0:	8c018513          	addi	a0,gp,-1856 # 80001220 <__sbss_end>
 800010a4:	e0dff0ef          	jal	ra,80000eb0 <GPIO_config>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:60
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:60
     GPIO_config( &g_gpio_out, GPIO_2, GPIO_OUTPUT_MODE );
 800010a8:	00500613          	li	a2,5
 800010ac:	00200593          	li	a1,2
 800010b0:	8c018513          	addi	a0,gp,-1856 # 80001220 <__sbss_end>
 800010b4:	dfdff0ef          	jal	ra,80000eb0 <GPIO_config>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:61
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:61
     GPIO_config( &g_gpio_out, GPIO_3, GPIO_OUTPUT_MODE );
 800010b8:	00500613          	li	a2,5
 800010bc:	00300593          	li	a1,3
 800010c0:	8c018513          	addi	a0,gp,-1856 # 80001220 <__sbss_end>
 800010c4:	dedff0ef          	jal	ra,80000eb0 <GPIO_config>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:68
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:68
 
     /**************************************************************************
      * Initialize CoreUARTapb with its base address, baud value, and line
@@ -2525,11 +2525,11 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
      *************************************************************************/
     UART_init(&g_uart,
 800010c8:	00100693          	li	a3,1
-800010cc:	03b00613          	li	a2,59
+800010cc:	03500613          	li	a2,53
 800010d0:	600105b7          	lui	a1,0x60010
 800010d4:	8c818513          	addi	a0,gp,-1848 # 80001228 <g_uart>
 800010d8:	a9dff0ef          	jal	ra,80000b74 <UART_init>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:76
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:76
 			  (DATA_8_BITS | NO_PARITY));
 
     /**************************************************************************
@@ -2539,7 +2539,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 800010dc:	88018593          	addi	a1,gp,-1920 # 800011e0 <testmsg>
 800010e0:	8c818513          	addi	a0,gp,-1848 # 80001228 <g_uart>
 800010e4:	ba9ff0ef          	jal	ra,80000c8c <UART_polled_tx_string>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:81
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:81
 
     /*
      * Set initial delay used to blink the LED.
@@ -2547,10 +2547,10 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
     delay_count = DELAY_LOAD_VALUE;
 800010e8:	008007b7          	lui	a5,0x800
 800010ec:	fef42423          	sw	a5,-24(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:82
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:82
 	gpio_pattern = 0x00000000;
 800010f0:	fe042623          	sw	zero,-20(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:92
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:92
     for(;;)
     {
     	/*
@@ -2560,7 +2560,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 800010f4:	fe842783          	lw	a5,-24(s0)
 800010f8:	fff78793          	addi	a5,a5,-1 # 7fffff <RAM_SIZE+0x7effff>
 800010fc:	fef42423          	sw	a5,-24(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:97
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:97
 
     	/*
     	 * Check if delay expired.
@@ -2568,7 +2568,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
     	if ( delay_count <= 0 )
 80001100:	fe842783          	lw	a5,-24(s0)
 80001104:	fef048e3          	bgtz	a5,800010f4 <main+0x90>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:102
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:102
     	{
     		/*
     		 * Reload delay counter.
@@ -2576,7 +2576,7 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
     		delay_count = DELAY_LOAD_VALUE;
 80001108:	008007b7          	lui	a5,0x800
 8000110c:	fef42423          	sw	a5,-24(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:108
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:108
 
     		/*
     		 * Toggle GPIO output pattern by doing an exclusive OR of all
@@ -2586,26 +2586,26 @@ C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftCon
 80001110:	fec42783          	lw	a5,-20(s0)
 80001114:	00178793          	addi	a5,a5,1 # 800001 <RAM_SIZE+0x7f0001>
 80001118:	fef42623          	sw	a5,-20(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:109
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:109
     		GPIO_set_outputs( &g_gpio_out, gpio_pattern );
 8000111c:	fec42583          	lw	a1,-20(s0)
 80001120:	8c018513          	addi	a0,gp,-1856 # 80001220 <__sbss_end>
 80001124:	df5ff0ef          	jal	ra,80000f18 <GPIO_set_outputs>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:110
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:110
     		if (gpio_pattern >= 0x0000000f)
 80001128:	fec42703          	lw	a4,-20(s0)
 8000112c:	00e00793          	li	a5,14
 80001130:	fce7f2e3          	bleu	a4,a5,800010f4 <main+0x90>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:112
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:112
     		{
     			gpio_pattern = 0x00000000;
 80001134:	fe042623          	sw	zero,-20(s0)
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:113
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:113
     		    UART_polled_tx_string(&g_uart, (const uint8_t *)&testmsg2);
 80001138:	89418593          	addi	a1,gp,-1900 # 800011f4 <testmsg2>
 8000113c:	8c818513          	addi	a0,gp,-1848 # 80001228 <g_uart>
 80001140:	b4dff0ef          	jal	ra,80000c8c <UART_polled_tx_string>
-C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:92
+C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\SoftConsole53\MiV_uart_blinky\Debug/../main.c:92
     	--delay_count;
 80001144:	fb1ff06f          	j	800010f4 <main+0x90>
 	...

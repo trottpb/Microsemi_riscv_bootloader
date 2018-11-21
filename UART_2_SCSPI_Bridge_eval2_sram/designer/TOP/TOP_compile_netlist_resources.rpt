@@ -1,6 +1,6 @@
 Compile Report
-Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.2 (Version 12.200.30.10)
-Date: Mon Sep 10 15:37:32 2018
+Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.3 (Version 12.200.35.9)
+Date: Wed Nov 21 16:20:09 2018
 
 Device Selection
 +------------------------+-------------+
@@ -15,11 +15,11 @@ Device Selection
 +------------------------+-------------+
 
 Source Files
-+---------+------------------------------------------------------------------------------------------+
-| Topcell | TOP                                                                                      |
-| Format  | Verilog                                                                                  |
-| Source  | C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\synthesis\TOP.vm |
-+---------+------------------------------------------------------------------------------------------+
++---------+--------------------------------------------------------------------------------------------+
+| Topcell | TOP                                                                                        |
+| Format  | Verilog                                                                                    |
+| Source  | C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\synthesis\TOP.vm |
++---------+--------------------------------------------------------------------------------------------+
 
 Options
 +----------------------------------------------------+----+
@@ -30,8 +30,8 @@ Resource Usage
 +---------------------------+-------+--------+------------+
 | Type                      | Used  | Total  | Percentage |
 +---------------------------+-------+--------+------------+
-| 4LUT                      | 15288 | 299544 | 5.10       |
-| DFF                       | 8461  | 299544 | 2.82       |
+| 4LUT                      | 15851 | 299544 | 5.29       |
+| DFF                       | 8457  | 299544 | 2.82       |
 | I/O Register              | 0     | 1536   | 0.00       |
 | User I/O                  | 10    | 512    | 1.95       |
 | -- Single-ended I/O       | 10    | 512    | 1.95       |
@@ -56,19 +56,19 @@ Detailed Logic Resource Usage
 +-----------------------+-------+------+
 | Type                  | 4LUT  | DFF  |
 +-----------------------+-------+------+
-| Fabric Logic          | 12384 | 5557 |
+| Fabric Logic          | 12947 | 5553 |
 | uSRAM Interface Logic | 96    | 96   |
 | LSRAM Interface Logic | 2736  | 2736 |
 | Math Interface Logic  | 72    | 72   |
-| Total Used            | 15288 | 8461 |
+| Total Used            | 15851 | 8457 |
 +-----------------------+-------+------+
 
 Detailed Carry Chains Resource Usage
 +--------+------+
 | Length | Used |
-| 2      | 64   |
-| 5      | 2    |
-| 6      | 3    |
+| 2      | 69   |
+| 5      | 3    |
+| 6      | 2    |
 | 7      | 3    |
 | 8      | 4    |
 | 9      | 4    |
@@ -83,7 +83,7 @@ Detailed Carry Chains Resource Usage
 | 58     | 2    |
 | 64     | 1    |
 | 65     | 1    |
-| Total  | 114  |
+| Total  | 119  |
 +--------+------+
 
 Detailed Math Chains Resource Usage
@@ -108,7 +108,7 @@ Nets assigned to chip global resources
 +--------+---------+----------------------------------------------------------------------------+
 | Fanout | Type    | Name                                                                       |
 +--------+---------+----------------------------------------------------------------------------+
-| 5409   | INT_NET | Net   : CLOCKS_RESETS_0_CLK100                                             |
+| 5405   | INT_NET | Net   : CLOCKS_RESETS_0_CLK100                                             |
 |        |         | Driver: CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_RGB1         |
 |        |         | Source: NETLIST                                                            |
 | 292    | INT_NET | Net   : PROCESSOR_0/JTAG_DEBUG_0_TGT_TCK                                   |
@@ -132,51 +132,51 @@ High fanout nets
 +--------+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Fanout | Type    | Name                                                                                                                                                                                                                                            |
 +--------+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 1750   | INT_NET | Net   : INT_RESET_N_c                                                                                                                                                                                                                           |
+| 1748   | INT_NET | Net   : INT_RESET_N_c                                                                                                                                                                                                                           |
 |        |         | Driver: CLOCKS_RESETS_0/reset_synchronizer_0/genblk1.reset_sync_reg[1]                                                                                                                                                                          |
-| 592    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/_T_164                                                                                                                                                         |
+| 590    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/_T_164                                                                                                                                                         |
 |        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_RESET_CATCH_AND_SYNC/reset_n_catch_reg/reg_0/q                                                              |
-| 293    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[2]                                                                                                                 |
+| 294    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[2]                                                                                                                 |
 |        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[2] |
-| 249    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[7]                                                                                                                 |
+| 260    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_2284_Z                                                                                                                                                 |
+|        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_2284                                                                                                                                                   |
+| 250    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[7]                                                                                                                 |
 |        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[7] |
-| 226    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[3]                                                                                                                 |
+| 230    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[3]                                                                                                                 |
 |        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[3] |
-| 162    | INT_NET | Net   : CFG0_GND_INST_NET                                                                                                                                                                                                                       |
-|        |         | Driver: CFG0_GND_INST                                                                                                                                                                                                                           |
+| 167    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/valid_0                                                                                                                                                            |
+|        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/frontend/fq/valid_0                                                                                                                                                |
 | 130    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core_io_imem_flush_icache                                                                                                                                          |
 |        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/io_imem_flush_icache                                                                                                                                          |
+| 129    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_1036_Z                                                                                                                                                 |
+|        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_1036                                                                                                                                                   |
 | 128    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/frontend/icache/un1__GEN_14_2_sqmuxa_or                                                                                                                            |
 |        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/frontend/icache/refill_one_beat_RNI769K                                                                                                                            |
-| 117    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243_Z                                                                                                                                            |
-|        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243                                                                                                                                              |
-| 117    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243_1_Z                                                                                                                                          |
-|        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243_1                                                                                                                                            |
 +--------+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 High fanout nets (through buffer trees)
 +--------+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Fanout | Type    | Name                                                                                                                                                                                                                                            |
 +--------+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 1750   | INT_NET | Net   : INT_RESET_N_c                                                                                                                                                                                                                           |
+| 1748   | INT_NET | Net   : INT_RESET_N_c                                                                                                                                                                                                                           |
 |        |         | Driver: CLOCKS_RESETS_0/reset_synchronizer_0/genblk1.reset_sync_reg[1]                                                                                                                                                                          |
-| 592    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/_T_164                                                                                                                                                         |
+| 590    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/_T_164                                                                                                                                                         |
 |        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_RESET_CATCH_AND_SYNC/reset_n_catch_reg/reg_0/q                                                              |
-| 293    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[2]                                                                                                                 |
+| 294    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[2]                                                                                                                 |
 |        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[2] |
-| 249    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[7]                                                                                                                 |
+| 260    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_2284_Z                                                                                                                                                 |
+|        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_2284                                                                                                                                                   |
+| 250    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[7]                                                                                                                 |
 |        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[7] |
-| 226    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[3]                                                                                                                 |
+| 230    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[3]                                                                                                                 |
 |        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[3] |
-| 162    | INT_NET | Net   : CFG0_GND_INST_NET                                                                                                                                                                                                                       |
-|        |         | Driver: CFG0_GND_INST                                                                                                                                                                                                                           |
+| 167    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/valid_0                                                                                                                                                            |
+|        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/frontend/fq/valid_0                                                                                                                                                |
 | 130    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core_io_imem_flush_icache                                                                                                                                          |
 |        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/io_imem_flush_icache                                                                                                                                          |
+| 129    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_1036_Z                                                                                                                                                 |
+|        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_1036                                                                                                                                                   |
 | 128    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/frontend/icache/un1__GEN_14_2_sqmuxa_or                                                                                                                            |
 |        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/frontend/icache/refill_one_beat_RNI769K                                                                                                                            |
-| 117    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243_Z                                                                                                                                            |
-|        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243                                                                                                                                              |
-| 117    | INT_NET | Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243_1_Z                                                                                                                                          |
-|        |         | Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243_1                                                                                                                                            |
 +--------+---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 

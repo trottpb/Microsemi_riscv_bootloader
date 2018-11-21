@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Aug 31 13:30:52 2018
-// Version: PolarFire v2.2 12.200.30.10
+// Created by SmartDesign Wed Nov 21 09:56:21 2018
+// Version: PolarFire v2.3 12.200.35.9
 //////////////////////////////////////////////////////////////////////
 
 `timescale 1ns / 100ps
@@ -164,7 +164,7 @@ wire   [39:0]  W_DATA_net_0;
 wire   [13:0]  W_ADDR_net_0;
 wire   [13:0]  R_ADDR_net_0;
 wire   [39:0]  R_DATA_net_0;
-wire   [39:0]  WBYTE_EN_net_0;
+wire   [3:0]   WBYTE_EN_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -284,7 +284,7 @@ assign mem_rdata_net_0 = { PF_TPSRAM_AHB_AXI_0_R_DATA37to37[37] , PF_TPSRAM_AHB_
 assign W_DATA_net_0    = { 1'b0 , 1'b0 , COREAHBLSRAM_PF_0_mem_wdata31to31[31] , COREAHBLSRAM_PF_0_mem_wdata30to30[30] , COREAHBLSRAM_PF_0_mem_wdata29to29[29] , COREAHBLSRAM_PF_0_mem_wdata28to28[28] , COREAHBLSRAM_PF_0_mem_wdata27to27[27] , COREAHBLSRAM_PF_0_mem_wdata26to26[26] , COREAHBLSRAM_PF_0_mem_wdata25to25[25] , COREAHBLSRAM_PF_0_mem_wdata24to24[24] , 1'b0 , 1'b0 , COREAHBLSRAM_PF_0_mem_wdata23to23[23] , COREAHBLSRAM_PF_0_mem_wdata22to22[22] , COREAHBLSRAM_PF_0_mem_wdata21to21[21] , COREAHBLSRAM_PF_0_mem_wdata20to20[20] , COREAHBLSRAM_PF_0_mem_wdata19to19[19] , COREAHBLSRAM_PF_0_mem_wdata18to18[18] , COREAHBLSRAM_PF_0_mem_wdata17to17[17] , COREAHBLSRAM_PF_0_mem_wdata16to16[16] , 1'b0 , 1'b0 , COREAHBLSRAM_PF_0_mem_wdata15to15[15] , COREAHBLSRAM_PF_0_mem_wdata14to14[14] , COREAHBLSRAM_PF_0_mem_wdata13to13[13] , COREAHBLSRAM_PF_0_mem_wdata12to12[12] , COREAHBLSRAM_PF_0_mem_wdata11to11[11] , COREAHBLSRAM_PF_0_mem_wdata10to10[10] , COREAHBLSRAM_PF_0_mem_wdata9to9[9] , COREAHBLSRAM_PF_0_mem_wdata8to8[8] , 1'b0 , 1'b0 , COREAHBLSRAM_PF_0_mem_wdata7to7[7] , COREAHBLSRAM_PF_0_mem_wdata6to6[6] , COREAHBLSRAM_PF_0_mem_wdata5to5[5] , COREAHBLSRAM_PF_0_mem_wdata4to4[4] , COREAHBLSRAM_PF_0_mem_wdata3to3[3] , COREAHBLSRAM_PF_0_mem_wdata2to2[2] , COREAHBLSRAM_PF_0_mem_wdata1to1[1] , COREAHBLSRAM_PF_0_mem_wdata0to0[0] };
 assign W_ADDR_net_0    = { COREAHBLSRAM_PF_0_mem_addr13to13[13] , COREAHBLSRAM_PF_0_mem_addr12to12[12] , COREAHBLSRAM_PF_0_mem_addr11to11[11] , COREAHBLSRAM_PF_0_mem_addr10to10[10] , COREAHBLSRAM_PF_0_mem_addr9to9[9] , COREAHBLSRAM_PF_0_mem_addr8to8[8] , COREAHBLSRAM_PF_0_mem_addr7to7[7] , COREAHBLSRAM_PF_0_mem_addr6to6[6] , COREAHBLSRAM_PF_0_mem_addr5to5[5] , COREAHBLSRAM_PF_0_mem_addr4to4[4] , COREAHBLSRAM_PF_0_mem_addr3to3[3] , COREAHBLSRAM_PF_0_mem_addr2to2[2] , COREAHBLSRAM_PF_0_mem_addr1to1[1] , COREAHBLSRAM_PF_0_mem_addr0to0[0] };
 assign R_ADDR_net_0    = { COREAHBLSRAM_PF_0_mem_addr13to13[13] , COREAHBLSRAM_PF_0_mem_addr12to12[12] , COREAHBLSRAM_PF_0_mem_addr11to11[11] , COREAHBLSRAM_PF_0_mem_addr10to10[10] , COREAHBLSRAM_PF_0_mem_addr9to9[9] , COREAHBLSRAM_PF_0_mem_addr8to8[8] , COREAHBLSRAM_PF_0_mem_addr7to7[7] , COREAHBLSRAM_PF_0_mem_addr6to6[6] , COREAHBLSRAM_PF_0_mem_addr5to5[5] , COREAHBLSRAM_PF_0_mem_addr4to4[4] , COREAHBLSRAM_PF_0_mem_addr3to3[3] , COREAHBLSRAM_PF_0_mem_addr2to2[2] , COREAHBLSRAM_PF_0_mem_addr1to1[1] , COREAHBLSRAM_PF_0_mem_addr0to0[0] };
-assign WBYTE_EN_net_0  = { COREAHBLSRAM_PF_0_mem_byteen3to3[3] , COREAHBLSRAM_PF_0_mem_byteen3to3[3] , COREAHBLSRAM_PF_0_mem_byteen3to3[3] , COREAHBLSRAM_PF_0_mem_byteen3to3[3] , COREAHBLSRAM_PF_0_mem_byteen3to3[3] , COREAHBLSRAM_PF_0_mem_byteen3to3[3] , COREAHBLSRAM_PF_0_mem_byteen3to3[3] , COREAHBLSRAM_PF_0_mem_byteen3to3[3] , COREAHBLSRAM_PF_0_mem_byteen3to3[3] , COREAHBLSRAM_PF_0_mem_byteen3to3[3] , COREAHBLSRAM_PF_0_mem_byteen2to2[2] , COREAHBLSRAM_PF_0_mem_byteen2to2[2] , COREAHBLSRAM_PF_0_mem_byteen2to2[2] , COREAHBLSRAM_PF_0_mem_byteen2to2[2] , COREAHBLSRAM_PF_0_mem_byteen2to2[2] , COREAHBLSRAM_PF_0_mem_byteen2to2[2] , COREAHBLSRAM_PF_0_mem_byteen2to2[2] , COREAHBLSRAM_PF_0_mem_byteen2to2[2] , COREAHBLSRAM_PF_0_mem_byteen2to2[2] , COREAHBLSRAM_PF_0_mem_byteen2to2[2] , COREAHBLSRAM_PF_0_mem_byteen1to1[1] , COREAHBLSRAM_PF_0_mem_byteen1to1[1] , COREAHBLSRAM_PF_0_mem_byteen1to1[1] , COREAHBLSRAM_PF_0_mem_byteen1to1[1] , COREAHBLSRAM_PF_0_mem_byteen1to1[1] , COREAHBLSRAM_PF_0_mem_byteen1to1[1] , COREAHBLSRAM_PF_0_mem_byteen1to1[1] , COREAHBLSRAM_PF_0_mem_byteen1to1[1] , COREAHBLSRAM_PF_0_mem_byteen1to1[1] , COREAHBLSRAM_PF_0_mem_byteen1to1[1] , COREAHBLSRAM_PF_0_mem_byteen0to0[0] , COREAHBLSRAM_PF_0_mem_byteen0to0[0] , COREAHBLSRAM_PF_0_mem_byteen0to0[0] , COREAHBLSRAM_PF_0_mem_byteen0to0[0] , COREAHBLSRAM_PF_0_mem_byteen0to0[0] , COREAHBLSRAM_PF_0_mem_byteen0to0[0] , COREAHBLSRAM_PF_0_mem_byteen0to0[0] , COREAHBLSRAM_PF_0_mem_byteen0to0[0] , COREAHBLSRAM_PF_0_mem_byteen0to0[0] , COREAHBLSRAM_PF_0_mem_byteen0to0[0] };
+assign WBYTE_EN_net_0  = { COREAHBLSRAM_PF_0_mem_byteen3to3[3] , COREAHBLSRAM_PF_0_mem_byteen2to2[2] , COREAHBLSRAM_PF_0_mem_byteen1to1[1] , COREAHBLSRAM_PF_0_mem_byteen0to0[0] };
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------

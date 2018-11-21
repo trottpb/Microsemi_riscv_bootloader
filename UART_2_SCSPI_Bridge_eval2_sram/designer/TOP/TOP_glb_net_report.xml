@@ -2,8 +2,8 @@
 <?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
 <doc>
 <title>Global Net Report</title>
-<text>Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.2 (Version 12.200.30.10)</text>
-<text>Date: Mon Sep 10 15:45:36 2018
+<text>Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.3 (Version 12.200.35.9)</text>
+<text>Date: Wed Nov 21 16:24:45 2018
 </text>
 <section>
 <name>Global Nets Information</name>
@@ -17,27 +17,34 @@
 </header>
 <row>
  <cell>1</cell>
- <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0</cell>
- <cell>(1163, 162)</cell>
- <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_Y</cell>
- <cell>5409</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_GB0</cell>
+ <cell>(1175, 162)</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_gbs_1</cell>
+ <cell>4484</cell>
 </row>
 <row>
  <cell>2</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0</cell>
+ <cell>(1163, 162)</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_Y</cell>
+ <cell>921</cell>
+</row>
+<row>
+ <cell>3</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint/U0</cell>
  <cell>(1154, 162)</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint/U0_Y</cell>
  <cell>292</cell>
 </row>
 <row>
- <cell>3</cell>
+ <cell>4</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0</cell>
  <cell>(1152, 162)</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0_Y</cell>
  <cell>17</cell>
 </row>
 <row>
- <cell>4</cell>
+ <cell>5</cell>
  <cell>CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT/U0</cell>
  <cell>(1153, 162)</cell>
  <cell>CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT/U0_Y</cell>
@@ -65,7 +72,7 @@
 <row>
  <cell>1</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint_CLK_GATING_AND2:Y</cell>
- <cell>(524, 15)</cell>
+ <cell>(456, 3)</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint/U0</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/un1_duttck_i_0_CLK_GATING</cell>
  <cell>ROUTED</cell>
@@ -108,10 +115,19 @@
  <cell>1</cell>
  <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0:OUT0</cell>
  <cell>(0, 5)</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_GB0</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0_NET</cell>
+ <cell>HARDWIRED</cell>
+ <cell>2</cell>
+</row>
+<row>
+ <cell>2</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0:OUT0</cell>
+ <cell>(0, 5)</cell>
  <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0</cell>
  <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0_NET</cell>
  <cell>HARDWIRED</cell>
- <cell>1</cell>
+ <cell>2</cell>
 </row>
 </table>
 <text></text>
@@ -161,13 +177,13 @@
 </header>
 <row>
  <cell>1</cell>
- <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0</cell>
- <cell>(1163, 162)</cell>
- <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_Y</cell>
- <cell>5409</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_GB0</cell>
+ <cell>(1175, 162)</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_gbs_1</cell>
+ <cell>4484</cell>
  <cell>1</cell>
- <cell>(581, 13)</cell>
- <cell>39</cell>
+ <cell>(1745, 13)</cell>
+ <cell>544</cell>
 </row>
 <row>
  <cell> </cell>
@@ -176,8 +192,8 @@
  <cell></cell>
  <cell></cell>
  <cell>2</cell>
- <cell>(581, 40)</cell>
- <cell>261</cell>
+ <cell>(1745, 40)</cell>
+ <cell>732</cell>
 </row>
 <row>
  <cell> </cell>
@@ -186,8 +202,8 @@
  <cell></cell>
  <cell></cell>
  <cell>3</cell>
- <cell>(581, 67)</cell>
- <cell>262</cell>
+ <cell>(1745, 67)</cell>
+ <cell>830</cell>
 </row>
 <row>
  <cell> </cell>
@@ -196,8 +212,8 @@
  <cell></cell>
  <cell></cell>
  <cell>4</cell>
- <cell>(581, 94)</cell>
- <cell>88</cell>
+ <cell>(1745, 94)</cell>
+ <cell>1626</cell>
 </row>
 <row>
  <cell> </cell>
@@ -206,8 +222,8 @@
  <cell></cell>
  <cell></cell>
  <cell>5</cell>
- <cell>(581, 121)</cell>
- <cell>4</cell>
+ <cell>(1745, 121)</cell>
+ <cell>619</cell>
 </row>
 <row>
  <cell> </cell>
@@ -216,18 +232,18 @@
  <cell></cell>
  <cell></cell>
  <cell>6</cell>
- <cell>(581, 148)</cell>
- <cell>2</cell>
+ <cell>(1745, 148)</cell>
+ <cell>133</cell>
 </row>
 <row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>7</cell>
+ <cell>2</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0</cell>
+ <cell>(1163, 162)</cell>
+ <cell>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_Y</cell>
+ <cell>921</cell>
+ <cell>1</cell>
  <cell>(587, 13)</cell>
- <cell>565</cell>
+ <cell>190</cell>
 </row>
 <row>
  <cell> </cell>
@@ -235,79 +251,59 @@
  <cell></cell>
  <cell></cell>
  <cell></cell>
- <cell>8</cell>
- <cell>(587, 40)</cell>
- <cell>844</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>9</cell>
- <cell>(587, 67)</cell>
- <cell>1007</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>10</cell>
- <cell>(587, 94)</cell>
- <cell>1276</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>11</cell>
- <cell>(587, 121)</cell>
- <cell>815</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>12</cell>
- <cell>(587, 148)</cell>
- <cell>218</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>13</cell>
- <cell>(587, 178)</cell>
- <cell>20</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>14</cell>
- <cell>(587, 205)</cell>
- <cell>8</cell>
-</row>
-<row>
  <cell>2</cell>
+ <cell>(587, 40)</cell>
+ <cell>371</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3</cell>
+ <cell>(587, 67)</cell>
+ <cell>207</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>4</cell>
+ <cell>(587, 94)</cell>
+ <cell>131</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>5</cell>
+ <cell>(587, 121)</cell>
+ <cell>12</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>6</cell>
+ <cell>(587, 148)</cell>
+ <cell>10</cell>
+</row>
+<row>
+ <cell>3</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint/U0</cell>
  <cell>(1154, 162)</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint/U0_Y</cell>
  <cell>292</cell>
  <cell>1</cell>
- <cell>(577, 14)</cell>
- <cell>165</cell>
+ <cell>(583, 14)</cell>
+ <cell>46</cell>
 </row>
 <row>
  <cell> </cell>
@@ -316,21 +312,11 @@
  <cell></cell>
  <cell></cell>
  <cell>2</cell>
- <cell>(577, 41)</cell>
- <cell>124</cell>
-</row>
-<row>
- <cell> </cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell></cell>
- <cell>3</cell>
  <cell>(583, 41)</cell>
- <cell>3</cell>
+ <cell>246</cell>
 </row>
 <row>
- <cell>3</cell>
+ <cell>4</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0</cell>
  <cell>(1152, 162)</cell>
  <cell>PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0_Y</cell>
@@ -340,7 +326,7 @@
  <cell>17</cell>
 </row>
 <row>
- <cell>4</cell>
+ <cell>5</cell>
  <cell>CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT/U0</cell>
  <cell>(1153, 162)</cell>
  <cell>CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT/U0_Y</cell>

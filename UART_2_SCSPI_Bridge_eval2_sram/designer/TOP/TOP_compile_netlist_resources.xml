@@ -2,8 +2,8 @@
 <?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
 <doc>
 <title>Compile Report</title>
-<text>Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.2 (Version 12.200.30.10)</text>
-<text>Date: Mon Sep 10 15:37:32 2018
+<text>Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.3 (Version 12.200.35.9)</text>
+<text>Date: Wed Nov 21 16:20:09 2018
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -56,7 +56,7 @@
 </row>
 <row>
  <cell>Source</cell>
- <cell>C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\synthesis\TOP.vm</cell>
+ <cell>C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\synthesis\TOP.vm</cell>
 </row>
 </table>
 <section><name>Options</name></section>
@@ -78,13 +78,13 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>15288</cell>
+ <cell>15851</cell>
  <cell>299544</cell>
- <cell>5.10</cell>
+ <cell>5.29</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>8461</cell>
+ <cell>8457</cell>
  <cell>299544</cell>
  <cell>2.82</cell>
 </row>
@@ -206,8 +206,8 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>12384</cell>
- <cell>5557</cell>
+ <cell>12947</cell>
+ <cell>5553</cell>
 </row>
 <row>
  <cell>uSRAM Interface Logic</cell>
@@ -226,8 +226,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>15288</cell>
- <cell>8461</cell>
+ <cell>15851</cell>
+ <cell>8457</cell>
 </row>
 </table>
 <section><name>Detailed Carry Chains Resource Usage</name></section>
@@ -240,15 +240,15 @@
 </row>
 <row>
  <cell>2</cell>
- <cell>64</cell>
+ <cell>69</cell>
 </row>
 <row>
  <cell>5</cell>
- <cell>2</cell>
+ <cell>3</cell>
 </row>
 <row>
  <cell>6</cell>
- <cell>3</cell>
+ <cell>2</cell>
 </row>
 <row>
  <cell>7</cell>
@@ -308,7 +308,7 @@
 </row>
 <row>
  <cell>Total</cell>
- <cell>114</cell>
+ <cell>119</cell>
 </row>
 </table>
 <section><name>Detailed Math Chains Resource Usage</name></section>
@@ -375,7 +375,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>5409</cell>
+ <cell>5405</cell>
  <cell>INT_NET</cell>
  <cell>Net   : CLOCKS_RESETS_0_CLK100</cell>
 </row>
@@ -451,7 +451,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>1750</cell>
+ <cell>1748</cell>
  <cell>INT_NET</cell>
  <cell>Net   : INT_RESET_N_c</cell>
 </row>
@@ -461,7 +461,7 @@
  <cell>Driver: CLOCKS_RESETS_0/reset_synchronizer_0/genblk1.reset_sync_reg[1]</cell>
 </row>
 <row>
- <cell>592</cell>
+ <cell>590</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/_T_164</cell>
 </row>
@@ -471,7 +471,7 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_RESET_CATCH_AND_SYNC/reset_n_catch_reg/reg_0/q</cell>
 </row>
 <row>
- <cell>293</cell>
+ <cell>294</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[2]</cell>
 </row>
@@ -481,7 +481,17 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[2]</cell>
 </row>
 <row>
- <cell>249</cell>
+ <cell>260</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_2284_Z</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_2284</cell>
+</row>
+<row>
+ <cell>250</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[7]</cell>
 </row>
@@ -491,7 +501,7 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[7]</cell>
 </row>
 <row>
- <cell>226</cell>
+ <cell>230</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[3]</cell>
 </row>
@@ -501,14 +511,14 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[3]</cell>
 </row>
 <row>
- <cell>162</cell>
+ <cell>167</cell>
  <cell>INT_NET</cell>
- <cell>Net   : CFG0_GND_INST_NET</cell>
+ <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/valid_0</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: CFG0_GND_INST</cell>
+ <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/frontend/fq/valid_0</cell>
 </row>
 <row>
  <cell>130</cell>
@@ -521,6 +531,16 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/io_imem_flush_icache</cell>
 </row>
 <row>
+ <cell>129</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_1036_Z</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_1036</cell>
+</row>
+<row>
  <cell>128</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/frontend/icache/un1__GEN_14_2_sqmuxa_or</cell>
@@ -529,26 +549,6 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/frontend/icache/refill_one_beat_RNI769K</cell>
-</row>
-<row>
- <cell>117</cell>
- <cell>INT_NET</cell>
- <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243</cell>
-</row>
-<row>
- <cell>117</cell>
- <cell>INT_NET</cell>
- <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243_1_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243_1</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -559,7 +559,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>1750</cell>
+ <cell>1748</cell>
  <cell>INT_NET</cell>
  <cell>Net   : INT_RESET_N_c</cell>
 </row>
@@ -569,7 +569,7 @@
  <cell>Driver: CLOCKS_RESETS_0/reset_synchronizer_0/genblk1.reset_sync_reg[1]</cell>
 </row>
 <row>
- <cell>592</cell>
+ <cell>590</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/_T_164</cell>
 </row>
@@ -579,7 +579,7 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_RESET_CATCH_AND_SYNC/reset_n_catch_reg/reg_0/q</cell>
 </row>
 <row>
- <cell>293</cell>
+ <cell>294</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[2]</cell>
 </row>
@@ -589,7 +589,17 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[2]</cell>
 </row>
 <row>
- <cell>249</cell>
+ <cell>260</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_2284_Z</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_2284</cell>
+</row>
+<row>
+ <cell>250</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[7]</cell>
 </row>
@@ -599,7 +609,7 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[7]</cell>
 </row>
 <row>
- <cell>226</cell>
+ <cell>230</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[3]</cell>
 </row>
@@ -609,14 +619,14 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[3]</cell>
 </row>
 <row>
- <cell>162</cell>
+ <cell>167</cell>
  <cell>INT_NET</cell>
- <cell>Net   : CFG0_GND_INST_NET</cell>
+ <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/valid_0</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: CFG0_GND_INST</cell>
+ <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/frontend/fq/valid_0</cell>
 </row>
 <row>
  <cell>130</cell>
@@ -629,6 +639,16 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/io_imem_flush_icache</cell>
 </row>
 <row>
+ <cell>129</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_1036_Z</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_1036</cell>
+</row>
+<row>
  <cell>128</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/frontend/icache/un1__GEN_14_2_sqmuxa_or</cell>
@@ -637,26 +657,6 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/frontend/icache/refill_one_beat_RNI769K</cell>
-</row>
-<row>
- <cell>117</cell>
- <cell>INT_NET</cell>
- <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243</cell>
-</row>
-<row>
- <cell>117</cell>
- <cell>INT_NET</cell>
- <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243_1_Z</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/un1__GEN_243_1</cell>
 </row>
 </table>
 </doc>

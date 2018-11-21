@@ -7,8 +7,8 @@
 
 Clock optimization not enabled
 2 non-gated/non-generated clock tree(s) driving 17 clock pin(s) of sequential element(s)
-2 gated/generated clock tree(s) driving 5701 clock pin(s) of sequential element(s)
-0 instances converted, 5701 sequential instances remain driven by gated/generated clocks
+2 gated/generated clock tree(s) driving 5697 clock pin(s) of sequential element(s)
+0 instances converted, 5697 sequential instances remain driven by gated/generated clocks
 
 =============================================================================== Non-Gated/Non-Generated Clocks ===============================================================================
 Clock Tree ID     Driving Element                                            Drive Element Type                   Fanout     Sample Instance                                                  
@@ -19,7 +19,7 @@ Clock Tree ID     Driving Element                                            Dri
 ====================================================================================================================================== Gated/Generated Clocks ======================================================================================================================================
 Clock Tree ID     Driving Element                                                         Drive Element Type     Fanout     Sample Instance                                                                  Explanation                                                                            
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       CLOCKS_RESETS_0.CCC_100MHz_0.CCC_100MHz_0.pll_inst_0                    PLL                    5409       CLOCKS_RESETS_0.reset_synchronizer_0.genblk1\.reset_sync_reg[1]                  Multiple clocks on generating sequential element from nets RCOSC_0_RCOSC_160MHZ_GL, GND
+@K:CKID0001       CLOCKS_RESETS_0.CCC_100MHz_0.CCC_100MHz_0.pll_inst_0                    PLL                    5405       CLOCKS_RESETS_0.reset_synchronizer_0.genblk1\.reset_sync_reg[1]                  Multiple clocks on generating sequential element from nets RCOSC_0_RCOSC_160MHZ_GL, GND
 @K:CKID0002       PROCESSOR_0.JTAG_DEBUG_0.JTAG_DEBUG_0.genblk1\.UJ_JTAG_0.un1_duttck     CFG4                   292        PROCESSOR_0.Mi_V_Processor_0.Mi_V_Processor_0.ChiselTop0.dtm.dmiReqReg_op[0]     Clock conversion disabled                                                              
 ====================================================================================================================================================================================================================================================================================================
 

@@ -337,8 +337,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x2dc ./hal/hal_irq.o
  .debug_macro   0x0000000000000000       0x28 ./hal/hal_irq.o
  .debug_macro   0x0000000000000000       0x10 ./hal/hal_irq.o
- .debug_line    0x0000000000000000      0x31d ./hal/hal_irq.o
- .debug_str     0x0000000000000000     0x4adc ./hal/hal_irq.o
+ .debug_line    0x0000000000000000      0x31e ./hal/hal_irq.o
+ .debug_str     0x0000000000000000     0x4add ./hal/hal_irq.o
  .comment       0x0000000000000000       0x59 ./hal/hal_irq.o
  .debug_frame   0x0000000000000000       0x78 ./hal/hal_irq.o
  .data          0x0000000000000000        0x0 ./hal/hw_reg_access.o
@@ -463,8 +463,8 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x30d ./drivers/CoreSPI/core_spi.o
  .debug_macro   0x0000000000000000       0x10 ./drivers/CoreSPI/core_spi.o
  .debug_macro   0x0000000000000000       0x35 ./drivers/CoreSPI/core_spi.o
- .debug_line    0x0000000000000000      0xd2b ./drivers/CoreSPI/core_spi.o
- .debug_str     0x0000000000000000     0x7f40 ./drivers/CoreSPI/core_spi.o
+ .debug_line    0x0000000000000000      0xd2c ./drivers/CoreSPI/core_spi.o
+ .debug_str     0x0000000000000000     0x7f41 ./drivers/CoreSPI/core_spi.o
  .comment       0x0000000000000000       0x59 ./drivers/CoreSPI/core_spi.o
  .debug_frame   0x0000000000000000      0x2b8 ./drivers/CoreSPI/core_spi.o
  .group         0x0000000000000000        0x8 ./drivers/CoreGPIO/core_gpio.o
@@ -893,16 +893,16 @@ LOAD c:/microsemi/softconsole_v5.3/riscv-unknown-elf-gcc/bin/../lib/gcc/riscv64-
                 0x0000000080002230                __stack_top = .
 OUTPUT(MiV_uart_blinky.elf elf32-littleriscv)
 
-.debug_line     0x0000000000000000     0x2cc2
+.debug_line     0x0000000000000000     0x2cc8
  .debug_line    0x0000000000000000      0x237 ./riscv_hal/entry.o
  .debug_line    0x0000000000000237      0x404 ./riscv_hal/init.o
  .debug_line    0x000000000000063b      0x58f ./riscv_hal/riscv_hal.o
  .debug_line    0x0000000000000bca      0x6b5 ./riscv_hal/riscv_hal_stubs.o
  .debug_line    0x000000000000127f      0x6e4 ./riscv_hal/syscall.o
  .debug_line    0x0000000000001963      0x185 ./hal/hw_reg_access.o
- .debug_line    0x0000000000001ae8      0x53a ./drivers/CoreUARTapb/core_uart_apb.o
- .debug_line    0x0000000000002022      0x7d9 ./drivers/CoreGPIO/core_gpio.o
- .debug_line    0x00000000000027fb      0x4c7 ./main.o
+ .debug_line    0x0000000000001ae8      0x53b ./drivers/CoreUARTapb/core_uart_apb.o
+ .debug_line    0x0000000000002023      0x7da ./drivers/CoreGPIO/core_gpio.o
+ .debug_line    0x00000000000027fd      0x4cb ./main.o
 
 .debug_info     0x0000000000000000     0x3a72
  .debug_info    0x0000000000000000       0x26 ./riscv_hal/entry.o
@@ -946,24 +946,24 @@ OUTPUT(MiV_uart_blinky.elf elf32-littleriscv)
  .debug_aranges
                 0x0000000000000388       0x20 ./main.o
 
-.debug_str      0x0000000000000000     0xc1ab
- .debug_str     0x0000000000000000       0x8e ./riscv_hal/entry.o
- .debug_str     0x000000000000008e     0x8acc ./riscv_hal/init.o
-                                       0x8d99 (size before relaxing)
- .debug_str     0x0000000000008b5a      0x543 ./riscv_hal/riscv_hal.o
-                                       0x9247 (size before relaxing)
- .debug_str     0x000000000000909d      0x316 ./riscv_hal/riscv_hal_stubs.o
-                                       0x6605 (size before relaxing)
- .debug_str     0x00000000000093b3     0x12f4 ./riscv_hal/syscall.o
-                                       0xa04a (size before relaxing)
- .debug_str     0x000000000000a6a7       0x17 ./hal/hw_reg_access.o
-                                         0x90 (size before relaxing)
- .debug_str     0x000000000000a6be      0xf72 ./drivers/CoreUARTapb/core_uart_apb.o
-                                       0x4333 (size before relaxing)
- .debug_str     0x000000000000b630      0x9ce ./drivers/CoreGPIO/core_gpio.o
-                                       0x4546 (size before relaxing)
- .debug_str     0x000000000000bffe      0x1ad ./main.o
-                                       0x4c7d (size before relaxing)
+.debug_str      0x0000000000000000     0xc1ac
+ .debug_str     0x0000000000000000       0x8f ./riscv_hal/entry.o
+ .debug_str     0x000000000000008f     0x8acc ./riscv_hal/init.o
+                                       0x8d9a (size before relaxing)
+ .debug_str     0x0000000000008b5b      0x543 ./riscv_hal/riscv_hal.o
+                                       0x9248 (size before relaxing)
+ .debug_str     0x000000000000909e      0x316 ./riscv_hal/riscv_hal_stubs.o
+                                       0x6606 (size before relaxing)
+ .debug_str     0x00000000000093b4     0x12f4 ./riscv_hal/syscall.o
+                                       0xa04b (size before relaxing)
+ .debug_str     0x000000000000a6a8       0x17 ./hal/hw_reg_access.o
+                                         0x91 (size before relaxing)
+ .debug_str     0x000000000000a6bf      0xf72 ./drivers/CoreUARTapb/core_uart_apb.o
+                                       0x4334 (size before relaxing)
+ .debug_str     0x000000000000b631      0x9ce ./drivers/CoreGPIO/core_gpio.o
+                                       0x4547 (size before relaxing)
+ .debug_str     0x000000000000bfff      0x1ad ./main.o
+                                       0x4c7e (size before relaxing)
 
 .debug_ranges   0x0000000000000000      0x2f8
  .debug_ranges  0x0000000000000000       0x28 ./riscv_hal/init.o

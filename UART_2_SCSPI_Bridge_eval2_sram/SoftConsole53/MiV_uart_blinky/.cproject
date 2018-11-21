@@ -241,7 +241,7 @@
                             							
                             <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.optimization.datasections.103741087" name="Data sections (-fdata-sections)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.optimization.datasections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
                             							
-                            <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.debugging.level.1346198421" name="Debug level" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.debugging.level" useByScannerDiscovery="true"/>
+                            <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.debugging.level.1346198421" name="Debug level" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.debugging.level" useByScannerDiscovery="true" value="ilg.gnumcueclipse.managedbuild.cross.riscv.option.debugging.level.none" valueType="enumerated"/>
                             							
                             <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.debugging.format.804119679" name="Debug format" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.debugging.format" useByScannerDiscovery="true"/>
                             							
@@ -353,15 +353,15 @@
                             							
                             <tool id="ilg.gnumcueclipse.managedbuild.cross.riscv.tool.createlisting.1409970860" name="GNU RISC-V Cross Create Listing" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.tool.createlisting">
                                 								
-                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.source.91696533" name="Display source (--source|-S)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.source" value="true" valueType="boolean"/>
+                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.source.91696533" name="Display source (--source|-S)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.source" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.allheaders.293061807" name="Display all headers (--all-headers|-x)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.allheaders" value="true" valueType="boolean"/>
+                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.allheaders.293061807" name="Display all headers (--all-headers|-x)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.allheaders" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.demangle.2141806864" name="Demangle names (--demangle|-C)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.demangle" value="true" valueType="boolean"/>
+                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.demangle.2141806864" name="Demangle names (--demangle|-C)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.demangle" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.linenumbers.1653780669" name="Display line numbers (--line-numbers|-l)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.linenumbers" value="true" valueType="boolean"/>
+                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.linenumbers.1653780669" name="Display line numbers (--line-numbers|-l)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.linenumbers" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 								
-                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.wide.504517599" name="Wide lines (--wide|-w)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.wide" value="true" valueType="boolean"/>
+                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.wide.504517599" name="Wide lines (--wide|-w)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createlisting.wide" useByScannerDiscovery="false" value="true" valueType="boolean"/>
                                 							
                             </tool>
                             							

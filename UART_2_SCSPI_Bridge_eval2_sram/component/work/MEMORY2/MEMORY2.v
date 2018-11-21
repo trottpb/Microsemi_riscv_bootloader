@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Aug 31 13:32:47 2018
-// Version: PolarFire v2.2 12.200.30.10
+// Created by SmartDesign Wed Nov 21 16:16:15 2018
+// Version: PolarFire v2.3 12.200.35.9
 //////////////////////////////////////////////////////////////////////
 
 `timescale 1ns / 100ps
@@ -46,19 +46,19 @@ output [1:0]  HRESP_M0;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
-wire   [31:0] AHB_0_AHBmslave8_HADDR;
-wire   [2:0]  AHB_0_AHBmslave8_HBURST;
-wire          AHB_0_AHBmslave8_HMASTLOCK;
-wire   [3:0]  AHB_0_AHBmslave8_HPROT;
-wire   [31:0] AHB_0_AHBmslave8_HRDATA;
-wire          AHB_0_AHBmslave8_HREADY;
-wire          AHB_0_AHBmslave8_HREADYOUT;
-wire   [1:0]  AHB_0_AHBmslave8_HRESP;
-wire          AHB_0_AHBmslave8_HSELx;
-wire   [2:0]  AHB_0_AHBmslave8_HSIZE;
-wire   [1:0]  AHB_0_AHBmslave8_HTRANS;
-wire   [31:0] AHB_0_AHBmslave8_HWDATA;
-wire          AHB_0_AHBmslave8_HWRITE;
+wire   [31:0] AHB_0_AHBmslave8_0_HADDR;
+wire   [2:0]  AHB_0_AHBmslave8_0_HBURST;
+wire          AHB_0_AHBmslave8_0_HMASTLOCK;
+wire   [3:0]  AHB_0_AHBmslave8_0_HPROT;
+wire   [31:0] AHB_0_AHBmslave8_0_HRDATA;
+wire          AHB_0_AHBmslave8_0_HREADY;
+wire          AHB_0_AHBmslave8_0_HREADYOUT;
+wire   [1:0]  AHB_0_AHBmslave8_0_HRESP;
+wire          AHB_0_AHBmslave8_0_HSELx;
+wire   [2:0]  AHB_0_AHBmslave8_0_HSIZE;
+wire   [1:0]  AHB_0_AHBmslave8_0_HTRANS;
+wire   [31:0] AHB_0_AHBmslave8_0_HWDATA;
+wire          AHB_0_AHBmslave8_0_HWRITE;
 wire   [31:0] HADDR_M0;
 wire   [2:0]  HBURST_M0;
 wire          HMASTLOCK_M0;
@@ -109,42 +109,42 @@ AHB AHB_0(
         .HPROT_M0     ( HPROT_M0 ),
         .HWDATA_M0    ( HWDATA_M0 ),
         .HMASTLOCK_M0 ( HMASTLOCK_M0 ),
-        .HRDATA_S8    ( AHB_0_AHBmslave8_HRDATA ),
-        .HREADYOUT_S8 ( AHB_0_AHBmslave8_HREADYOUT ),
-        .HRESP_S8     ( AHB_0_AHBmslave8_HRESP ),
+        .HRDATA_S8    ( AHB_0_AHBmslave8_0_HRDATA ),
+        .HREADYOUT_S8 ( AHB_0_AHBmslave8_0_HREADYOUT ),
+        .HRESP_S8     ( AHB_0_AHBmslave8_0_HRESP ),
         // Outputs
         .HRDATA_M0    ( AHBmmaster0_HRDATA ),
         .HREADY_M0    ( AHBmmaster0_HREADY ),
         .HRESP_M0     ( AHBmmaster0_HRESP ),
-        .HADDR_S8     ( AHB_0_AHBmslave8_HADDR ),
-        .HTRANS_S8    ( AHB_0_AHBmslave8_HTRANS ),
-        .HWRITE_S8    ( AHB_0_AHBmslave8_HWRITE ),
-        .HSIZE_S8     ( AHB_0_AHBmslave8_HSIZE ),
-        .HWDATA_S8    ( AHB_0_AHBmslave8_HWDATA ),
-        .HSEL_S8      ( AHB_0_AHBmslave8_HSELx ),
-        .HREADY_S8    ( AHB_0_AHBmslave8_HREADY ),
-        .HMASTLOCK_S8 ( AHB_0_AHBmslave8_HMASTLOCK ),
-        .HBURST_S8    ( AHB_0_AHBmslave8_HBURST ),
-        .HPROT_S8     ( AHB_0_AHBmslave8_HPROT ) 
+        .HADDR_S8     ( AHB_0_AHBmslave8_0_HADDR ),
+        .HTRANS_S8    ( AHB_0_AHBmslave8_0_HTRANS ),
+        .HWRITE_S8    ( AHB_0_AHBmslave8_0_HWRITE ),
+        .HSIZE_S8     ( AHB_0_AHBmslave8_0_HSIZE ),
+        .HWDATA_S8    ( AHB_0_AHBmslave8_0_HWDATA ),
+        .HSEL_S8      ( AHB_0_AHBmslave8_0_HSELx ),
+        .HREADY_S8    ( AHB_0_AHBmslave8_0_HREADY ),
+        .HMASTLOCK_S8 ( AHB_0_AHBmslave8_0_HMASTLOCK ),
+        .HBURST_S8    ( AHB_0_AHBmslave8_0_HBURST ),
+        .HPROT_S8     ( AHB_0_AHBmslave8_0_HPROT ) 
         );
 
-//--------LSRAM_code
-LSRAM_code LSRAM_code_0(
+//--------Memory_app
+Memory_app Memory_app_0(
         // Inputs
         .HCLK      ( HCLK ),
         .HRESETN   ( HRESETN ),
-        .HADDR     ( AHB_0_AHBmslave8_HADDR ),
-        .HTRANS    ( AHB_0_AHBmslave8_HTRANS ),
-        .HWRITE    ( AHB_0_AHBmslave8_HWRITE ),
-        .HSIZE     ( AHB_0_AHBmslave8_HSIZE ),
-        .HBURST    ( AHB_0_AHBmslave8_HBURST ),
-        .HWDATA    ( AHB_0_AHBmslave8_HWDATA ),
-        .HSEL      ( AHB_0_AHBmslave8_HSELx ),
-        .HREADYIN  ( AHB_0_AHBmslave8_HREADY ),
+        .HADDR     ( AHB_0_AHBmslave8_0_HADDR ),
+        .HTRANS    ( AHB_0_AHBmslave8_0_HTRANS ),
+        .HWRITE    ( AHB_0_AHBmslave8_0_HWRITE ),
+        .HSIZE     ( AHB_0_AHBmslave8_0_HSIZE ),
+        .HBURST    ( AHB_0_AHBmslave8_0_HBURST ),
+        .HWDATA    ( AHB_0_AHBmslave8_0_HWDATA ),
+        .HSEL      ( AHB_0_AHBmslave8_0_HSELx ),
+        .HREADYIN  ( AHB_0_AHBmslave8_0_HREADY ),
         // Outputs
-        .HRDATA    ( AHB_0_AHBmslave8_HRDATA ),
-        .HREADYOUT ( AHB_0_AHBmslave8_HREADYOUT ),
-        .HRESP     ( AHB_0_AHBmslave8_HRESP ) 
+        .HRDATA    ( AHB_0_AHBmslave8_0_HRDATA ),
+        .HREADYOUT ( AHB_0_AHBmslave8_0_HREADYOUT ),
+        .HRESP     ( AHB_0_AHBmslave8_0_HRESP ) 
         );
 
 

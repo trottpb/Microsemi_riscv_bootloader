@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;bootloader_extraputty/Debug/bootloader_extraputty_modified.hex&apos;" deleteContents="false" description="Delete resource &apos;bootloader_extraputty/Debug/bootloader_extraputty_modified.hex&apos;" element1="/bootloader_extraputty/Debug/bootloader_extraputty_modified.hex" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1542807229112"/>
+</session>

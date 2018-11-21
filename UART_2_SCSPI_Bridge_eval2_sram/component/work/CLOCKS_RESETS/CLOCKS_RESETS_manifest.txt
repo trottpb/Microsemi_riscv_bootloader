@@ -1,11 +1,11 @@
-Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.2 (Version 12.200.30.10)
+Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.3 (Version 12.200.35.9)
 
-Date      :  Fri Aug 03 15:23:52 2018
-Project   :  C:\Users\crudel\Documents\Projects\PF_MPF300-EK\UART_2_SPI_Bridge
+Date      :  Wed Nov 21 13:09:45 2018
+Project   :  C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram
 Component :  CLOCKS_RESETS
 Family    :  PolarFire
 
 
 HDL source files for all Synthesis and Simulation tools:
-    C:/Users/crudel/Documents/Projects/PF_MPF300-EK/UART_2_SPI_Bridge/component/work/CLOCKS_RESETS/CLOCKS_RESETS.v
+    C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/CLOCKS_RESETS/CLOCKS_RESETS.v
 

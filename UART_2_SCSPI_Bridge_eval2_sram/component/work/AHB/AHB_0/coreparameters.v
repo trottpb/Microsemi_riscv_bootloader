@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------
-// Created by Microsemi SmartDesign Fri Aug 31 13:31:41 2018
+// Created by Microsemi SmartDesign Wed Nov 21 16:14:09 2018
 // Parameters for CoreAHBLite
 //--------------------------------------------------------------------
 
@@ -22,7 +22,7 @@ parameter M0_AHBSLOT12ENABLE = 0;
 parameter M0_AHBSLOT13ENABLE = 0;
 parameter M0_AHBSLOT14ENABLE = 0;
 parameter M0_AHBSLOT15ENABLE = 0;
-parameter M0_AHBSLOT16ENABLE = 0;
+parameter M0_AHBSLOT16ENABLE = 1;
 parameter M1_AHBSLOT0ENABLE = 0;
 parameter M1_AHBSLOT1ENABLE = 0;
 parameter M1_AHBSLOT2ENABLE = 0;

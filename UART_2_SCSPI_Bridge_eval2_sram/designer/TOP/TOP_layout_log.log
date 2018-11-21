@@ -1,10 +1,12 @@
-INFO: Reading User SDC file C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\constraint\TOP_derived_constraints.sdc.
-INFO: Reading User SDC file C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\constraint\jtag_tck_constraint.sdc.
+INFO: Reading User SDC file C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\constraint\TOP_derived_constraints.sdc.
+INFO: Reading User SDC file C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\constraint\jtag_tck_constraint.sdc.
 
 No errors or warnings found.
 ***** Place and Route Configurations *****
 Timing-driven            : ON
 Power-driven             : OFF
+I/O Register Combining   : OFF
+Global Pins Demotion     : ON
 Driver Replication       : OFF
 High-effort              : ON
 Repair min-delay         : OFF
@@ -12,8 +14,8 @@ Incremental              : OFF
 Inter-clock optimization : ON
 TDPR scenario            : place_and_route
 
-INFO: Reading User PDC file C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\constraint\io\EvalkitIO.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\constraint\io\user2.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\constraint\io\EvalkitIO.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\constraint\io\user2.pdc. 0 error(s) and 0 warning(s)
 
  Running Timing based Global Demotion. 
         Demoted 0 global pins.
@@ -26,10 +28,10 @@ Info:  I/O Bank and Globals Assigner identified bank 'Bank3' as being fixed at V
 Info:  I/O Bank and Globals Assigner detected (1) out of (8) I/O Bank(s) with locked I/O technologies.
 
 I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 2 seconds
+Total time spent in I/O Bank and Globals Assigner: 3 seconds
 
-Placer V5.0 - 12.200.30 
-Design: TOP                             Started: Mon Sep 10 15:42:35 2018
+Placer V5.0 - 12.200.35 
+Design: TOP                             Started: Wed Nov 21 16:21:15 2018
 
 Initializing High-Effort Timing-Driven Placement ...
 Clustering ...
@@ -39,37 +41,37 @@ End of placement.
 
 Placer Runtime Summary   :
 Clustering (1 pass)      : 8 seconds
-Placement                : 37 seconds
-Improvement              : 70 seconds
+Placement                : 45 seconds
+Improvement              : 84 seconds
 
 Placer completed successfully.
 
 Design: TOP                             
-Finished: Mon Sep 10 15:45:33 2018
-Total CPU Time:     00:03:19            Total Elapsed Time: 00:02:58
-Total Memory Usage: 1605.0 Mbytes
+Finished: Wed Nov 21 16:24:41 2018
+Total CPU Time:     00:03:48            Total Elapsed Time: 00:03:26
+Total Memory Usage: 1605.8 Mbytes
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\designer\TOP\TOPStarted: Mon Sep 10 15:45:49 2018
+Design: C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\designer\TOP\TOPStarted: Wed Nov 21 16:24:59 2018
 
 
 Timing-driven Router completed successfully.
 
-Design: C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\designer\TOP\TOP
-Finished: Mon Sep 10 15:49:07 2018
-Total CPU Time:     00:03:13            Total Elapsed Time: 00:03:18
-Total Memory Usage: 6558.0 Mbytes
+Design: C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\designer\TOP\TOP
+Finished: Wed Nov 21 16:28:41 2018
+Total CPU Time:     00:03:35            Total Elapsed Time: 00:03:42
+Total Memory Usage: 6563.5 Mbytes
                         o - o - o - o - o - o
 
 Resource Usage
 +---------------+-------+--------+------------+
 | Type          | Used  | Total  | Percentage |
 +---------------+-------+--------+------------+
-| 4LUT          | 15288 | 299544 | 5.10       |
-| DFF           | 8461  | 299544 | 2.82       |
+| 4LUT          | 15851 | 299544 | 5.29       |
+| DFF           | 8457  | 299544 | 2.82       |
 | I/O Register  | 0     | 510    | 0.00       |
-| Logic Element | 15977 | 299544 | 5.33       |
+| Logic Element | 16546 | 299544 | 5.52       |
 +---------------+-------+--------+------------+
 

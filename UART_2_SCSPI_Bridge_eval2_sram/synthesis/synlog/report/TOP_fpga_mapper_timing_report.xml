@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\synthesis\synlog\TOP_fpga_mapper.srr</data>
+<data>C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\synthesis\synlog\TOP_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -16,9 +16,9 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 </row>
 <row>
 <data>CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0</data>
-<data>100.0 MHz</data>
-<data>92.8 MHz</data>
-<data>-0.776</data>
+<data>111.1 MHz</data>
+<data>92.5 MHz</data>
+<data>-1.810</data>
 </row>
 <row>
 <data>CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160/CLK</data>
@@ -29,13 +29,13 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>142.9 MHz</data>
-<data>1.501</data>
+<data>137.3 MHz</data>
+<data>1.358</data>
 </row>
 <row>
 <data>System</data>
 <data>100.0 MHz</data>
-<data>295.6 MHz</data>
-<data>6.617</data>
+<data>267.6 MHz</data>
+<data>6.263</data>
 </row>
 </report_table>

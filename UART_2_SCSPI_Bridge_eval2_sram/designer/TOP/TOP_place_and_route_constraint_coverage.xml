@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
 <doc>
-<text>SmartTime Version 12.200.30.10</text>
-<text>Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.2 (Version 12.200.30.10)
-Date: Mon Sep 10 15:42:09 2018 </text>
+<text>SmartTime Version 12.200.35.9</text>
+<text>Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.3 (Version 12.200.35.9)
+Date: Wed Nov 21 16:20:48 2018 </text>
 <table>
 <header>
 </header>
@@ -50,9 +50,9 @@ Date: Mon Sep 10 15:42:09 2018 </text>
 </header>
 <row>
  <cell>Setup</cell>
- <cell>        15544</cell>
+ <cell>        16219</cell>
  <cell>            2</cell>
- <cell>        15546</cell>
+ <cell>        16221</cell>
 </row>
 <row>
  <cell>Recovery</cell>
@@ -68,16 +68,16 @@ Date: Mon Sep 10 15:42:09 2018 </text>
 </row>
 <row>
  <cell>Total Setup</cell>
- <cell>        16384</cell>
+ <cell>        17059</cell>
  <cell>           13</cell>
- <cell>        16397</cell>
+ <cell>        17072</cell>
 </row>
 <separator/>
 <row>
  <cell>Hold</cell>
- <cell>        15544</cell>
+ <cell>        16219</cell>
  <cell>            2</cell>
- <cell>        15546</cell>
+ <cell>        16221</cell>
 </row>
 <row>
  <cell>Removal</cell>
@@ -93,9 +93,9 @@ Date: Mon Sep 10 15:42:09 2018 </text>
 </row>
 <row>
  <cell>Total Hold</cell>
- <cell>        16384</cell>
+ <cell>        17059</cell>
  <cell>           13</cell>
- <cell>        16397</cell>
+ <cell>        17072</cell>
 </row>
 </table>
 <section>
@@ -111,9 +111,9 @@ Date: Mon Sep 10 15:42:09 2018 </text>
 </header>
 <row>
  <cell>Setup</cell>
- <cell>        14884</cell>
+ <cell>        15559</cell>
  <cell>            2</cell>
- <cell>        14886</cell>
+ <cell>        15561</cell>
 </row>
 <row>
  <cell>Recovery</cell>
@@ -129,16 +129,16 @@ Date: Mon Sep 10 15:42:09 2018 </text>
 </row>
 <row>
  <cell>Total Setup</cell>
- <cell>        15663</cell>
+ <cell>        16338</cell>
  <cell>           12</cell>
- <cell>        15675</cell>
+ <cell>        16350</cell>
 </row>
 <separator/>
 <row>
  <cell>Hold</cell>
- <cell>        14884</cell>
+ <cell>        15559</cell>
  <cell>            2</cell>
- <cell>        14886</cell>
+ <cell>        15561</cell>
 </row>
 <row>
  <cell>Removal</cell>
@@ -154,9 +154,9 @@ Date: Mon Sep 10 15:42:09 2018 </text>
 </row>
 <row>
  <cell>Total Hold</cell>
- <cell>        15663</cell>
+ <cell>        16338</cell>
  <cell>           12</cell>
- <cell>        15675</cell>
+ <cell>        16350</cell>
 </row>
 </table>
 <section>

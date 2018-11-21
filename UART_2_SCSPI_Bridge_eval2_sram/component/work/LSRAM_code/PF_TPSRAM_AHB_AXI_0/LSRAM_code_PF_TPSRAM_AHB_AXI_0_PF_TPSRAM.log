@@ -59,7 +59,7 @@ Portname B_REN                  :
 LPM_HINT                        : 0
 Device                          : 300
 RAM Type                        : Two Port
-Optimized for                   : Speed
+Optimized for                   : Power
 Initialize RAM                  : False
 Clocks                          : Single Read/Write Clock
 Byte Enables                    : Yes
@@ -72,9 +72,9 @@ Lock access                     : Off
 ACCESS_BUSY                     : Disabled
 
 Cascade Configuration: 
-     Write Port configuration   : 16384x1
-     Read Port configuration    : 16384x1
-     Number of blocks depth wise: 1
-     Number of blocks width wise: 40
+     Write Port configuration   : 512x40
+     Read Port configuration    : 512x40
+     Number of blocks depth wise: 32
+     Number of blocks width wise: 1
 
-Wrote Verilog netlist to C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_everest2_sram\component\work\LSRAM_code\PF_TPSRAM_AHB_AXI_0\\LSRAM_code_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM.v.
+Wrote Verilog netlist to C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\component\work\LSRAM_code\PF_TPSRAM_AHB_AXI_0\\LSRAM_code_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM.v.

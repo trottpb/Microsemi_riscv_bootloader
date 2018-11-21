@@ -18,9 +18,9 @@ The file contains the information about resource utilization per module to be di
 </column_headers>
 <module>
 <data>TOP</data>
-<data>5557</data>
-<data>10764</data>
-<data>1121</data>
+<data>5553</data>
+<data>10835</data>
+<data>1130</data>
 <data>0</data>
 <data>2</data>
 <data>76</data>
@@ -126,7 +126,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>IO</data>
 <data>633</data>
-<data>812</data>
+<data>816</data>
 <data>132</data>
 <data>0</data>
 <data>0</data>
@@ -137,7 +137,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>AHB_MMIO</data>
 <data>65</data>
-<data>176</data>
+<data>175</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -146,9 +146,9 @@ The file contains the information about resource utilization per module to be di
 <data>0</data>
 <data>0</data>
 <module>
-<data>CoreAHBLite_Z4</data>
+<data>AHB_MMIO_AHB_MMIO_0_CoreAHBLite_Z4</data>
 <data>65</data>
-<data>176</data>
+<data>175</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -159,7 +159,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>COREAHBLITE_MATRIX4X16_1_1_0_192_0_0_0_0s</data>
 <data>65</data>
-<data>176</data>
+<data>175</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -170,7 +170,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>COREAHBLITE_MASTERSTAGE_1_1_0_192_0s_0_1_0</data>
 <data>37</data>
-<data>76</data>
+<data>66</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -218,7 +218,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>COREAHBLITE_SLAVESTAGE_0s_0_0_1</data>
 <data>14</data>
-<data>30</data>
+<data>39</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -245,7 +245,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>AHBtoAPB</data>
 <data>51</data>
-<data>40</data>
+<data>41</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -256,7 +256,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>COREAHBTOAPB3_15s_0s</data>
 <data>51</data>
-<data>40</data>
+<data>41</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -267,7 +267,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>CoreAHBtoAPB3_AhbToApbSM_0s_0_1_0_1_2_3_4</data>
 <data>9</data>
-<data>25</data>
+<data>26</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -305,7 +305,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>APB_PERIPHERALS</data>
 <data>0</data>
-<data>39</data>
+<data>38</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -316,7 +316,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>CoreAPB3_Z5</data>
 <data>0</data>
-<data>39</data>
+<data>38</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -327,7 +327,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>COREAPB3_MUXPTOB3</data>
 <data>0</data>
-<data>35</data>
+<data>34</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -341,7 +341,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>CoreSPI_0</data>
 <data>214</data>
-<data>273</data>
+<data>274</data>
 <data>38</data>
 <data>0</data>
 <data>0</data>
@@ -352,7 +352,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>CORESPI_Z7</data>
 <data>214</data>
-<data>273</data>
+<data>274</data>
 <data>38</data>
 <data>0</data>
 <data>0</data>
@@ -363,7 +363,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>spi_32s_8s_32s_10s_0_0_1_0s</data>
 <data>214</data>
-<data>273</data>
+<data>274</data>
 <data>38</data>
 <data>0</data>
 <data>0</data>
@@ -374,7 +374,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>spi_chanctrl_Z6</data>
 <data>135</data>
-<data>148</data>
+<data>149</data>
 <data>14</data>
 <data>0</data>
 <data>0</data>
@@ -449,7 +449,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>GPIO</data>
 <data>44</data>
-<data>57</data>
+<data>58</data>
 <data>16</data>
 <data>0</data>
 <data>0</data>
@@ -460,7 +460,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>CoreGPIO_Z8</data>
 <data>44</data>
-<data>57</data>
+<data>58</data>
 <data>16</data>
 <data>0</data>
 <data>0</data>
@@ -473,7 +473,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>LSRAM_64kBytes</data>
 <data>64</data>
-<data>55</data>
+<data>57</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -484,7 +484,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>LSRAM_64kBytes_COREAHBLSRAM_PF_0_COREAHBLSRAM_PF_26s_65536s_0s_0s_16_32s_32s</data>
 <data>64</data>
-<data>31</data>
+<data>33</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -495,7 +495,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>LSRAM_64kBytes_COREAHBLSRAM_PF_0_CoreAHBLSRAM_AHBLSramIf_Z9</data>
 <data>28</data>
-<data>19</data>
+<data>21</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -533,7 +533,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>UART</data>
 <data>195</data>
-<data>172</data>
+<data>173</data>
 <data>78</data>
 <data>0</data>
 <data>0</data>
@@ -544,7 +544,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>UART_UART_0_CoreUARTapb_Z10</data>
 <data>195</data>
-<data>172</data>
+<data>173</data>
 <data>78</data>
 <data>0</data>
 <data>0</data>
@@ -555,7 +555,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>UART_UART_0_COREUART_1s_1s_0s_26s_0s_0s</data>
 <data>171</data>
-<data>149</data>
+<data>150</data>
 <data>70</data>
 <data>0</data>
 <data>0</data>
@@ -578,7 +578,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>UART_UART_0_Rx_async_0s_1s_0s_1s_2s_3s</data>
 <data>39</data>
-<data>70</data>
+<data>71</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -678,7 +678,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>MEMORY2</data>
 <data>120</data>
-<data>184</data>
+<data>209</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -689,7 +689,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>AHB</data>
 <data>56</data>
-<data>118</data>
+<data>153</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -700,7 +700,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>AHB_AHB_0_CoreAHBLite_Z12</data>
 <data>56</data>
-<data>118</data>
+<data>153</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -709,9 +709,9 @@ The file contains the information about resource utilization per module to be di
 <data>0</data>
 <data>0</data>
 <module>
-<data>COREAHBLITE_MATRIX4X16_1_1_0_256_0_0_0_0s</data>
+<data>COREAHBLITE_MATRIX4X16_1_1_0_65792_0_0_0_0s</data>
 <data>56</data>
-<data>118</data>
+<data>153</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -720,9 +720,9 @@ The file contains the information about resource utilization per module to be di
 <data>0</data>
 <data>0</data>
 <module>
-<data>COREAHBLITE_MASTERSTAGE_1_1_0_256_0s_0_1_0</data>
+<data>COREAHBLITE_MASTERSTAGE_1_1_0_65792_0s_0_1_0</data>
 <data>42</data>
-<data>67</data>
+<data>82</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -733,7 +733,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>COREAHBLITE_DEFAULTSLAVESM_0s_0_1</data>
 <data>1</data>
-<data>4</data>
+<data>1</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -746,7 +746,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>COREAHBLITE_SLAVESTAGE_0s_0_0</data>
 <data>14</data>
-<data>51</data>
+<data>71</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -757,7 +757,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>COREAHBLITE_SLAVEARBITER_Z3_2</data>
 <data>13</data>
-<data>17</data>
+<data>36</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -771,9 +771,9 @@ The file contains the information about resource utilization per module to be di
 </module>
 </module>
 <module>
-<data>LSRAM_code</data>
+<data>Memory_app</data>
 <data>64</data>
-<data>66</data>
+<data>56</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -782,9 +782,9 @@ The file contains the information about resource utilization per module to be di
 <data>0</data>
 <data>0</data>
 <module>
-<data>LSRAM_code_COREAHBLSRAM_PF_0_COREAHBLSRAM_PF_26s_65536s_0s_0s_16_32s_32s</data>
+<data>Memory_app_COREAHBLSRAM_PF_0_COREAHBLSRAM_PF_26s_65536s_0s_0s_16_32s_32s</data>
 <data>64</data>
-<data>66</data>
+<data>32</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -793,9 +793,9 @@ The file contains the information about resource utilization per module to be di
 <data>0</data>
 <data>0</data>
 <module>
-<data>LSRAM_code_COREAHBLSRAM_PF_0_CoreAHBLSRAM_AHBLSramIf_Z13</data>
+<data>Memory_app_COREAHBLSRAM_PF_0_CoreAHBLSRAM_AHBLSramIf_Z13</data>
 <data>28</data>
-<data>22</data>
+<data>20</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -805,9 +805,9 @@ The file contains the information about resource utilization per module to be di
 <data>0</data>
 </module>
 <module>
-<data>LSRAM_code_COREAHBLSRAM_PF_0_CoreAHBLSRAM_SramCtrlIf_0s_65536s_16_0s_32s_0_1_2</data>
+<data>Memory_app_COREAHBLSRAM_PF_0_CoreAHBLSRAM_SramCtrlIf_0s_65536s_16_0s_32s_0_1_2</data>
 <data>36</data>
-<data>44</data>
+<data>12</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -818,9 +818,9 @@ The file contains the information about resource utilization per module to be di
 </module>
 </module>
 <module>
-<data>LSRAM_code_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM</data>
+<data>Memory_app_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM</data>
 <data>0</data>
-<data>0</data>
+<data>24</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -833,9 +833,9 @@ The file contains the information about resource utilization per module to be di
 </module>
 <module>
 <data>PROCESSOR</data>
-<data>4802</data>
-<data>9768</data>
-<data>989</data>
+<data>4798</data>
+<data>9810</data>
+<data>998</data>
 <data>0</data>
 <data>2</data>
 <data>10</data>
@@ -845,7 +845,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>JTAG_DEBUG</data>
 <data>16</data>
-<data>86</data>
+<data>88</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -856,7 +856,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>COREJTAGDEBUG_85_1s</data>
 <data>16</data>
-<data>86</data>
+<data>88</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -867,7 +867,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>uj_jtag_85</data>
 <data>16</data>
-<data>84</data>
+<data>86</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -880,9 +880,9 @@ The file contains the information about resource utilization per module to be di
 </module>
 <module>
 <data>Mi_V_Processor</data>
-<data>4786</data>
-<data>9682</data>
-<data>989</data>
+<data>4782</data>
+<data>9722</data>
+<data>998</data>
 <data>0</data>
 <data>2</data>
 <data>10</data>
@@ -891,9 +891,9 @@ The file contains the information about resource utilization per module to be di
 <data>0</data>
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_28672_0_2s_5s_34s_2s</data>
-<data>4786</data>
-<data>9682</data>
-<data>989</data>
+<data>4782</data>
+<data>9722</data>
+<data>998</data>
 <data>0</data>
 <data>2</data>
 <data>10</data>
@@ -902,9 +902,9 @@ The file contains the information about resource utilization per module to be di
 <data>0</data>
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CORE_RISC_VAHB_TOP</data>
-<data>4786</data>
-<data>9682</data>
-<data>989</data>
+<data>4782</data>
+<data>9722</data>
+<data>998</data>
 <data>0</data>
 <data>2</data>
 <data>10</data>
@@ -914,7 +914,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_COREPLEX_LOCAL_INTERRUPTER_CLINT</data>
 <data>129</data>
-<data>115</data>
+<data>113</data>
 <data>192</data>
 <data>0</data>
 <data>0</data>
@@ -926,7 +926,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_DEBUG_TRANSPORT_MODULE_JTAG</data>
 <data>166</data>
-<data>151</data>
+<data>150</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -985,7 +985,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_JTAG_TAP_CONTROLLER</data>
 <data>15</data>
-<data>34</data>
+<data>32</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1008,7 +1008,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_JTAG_STATE_MACHINE</data>
 <data>4</data>
-<data>14</data>
+<data>12</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1019,7 +1019,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_90</data>
 <data>4</data>
-<data>4</data>
+<data>5</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1030,7 +1030,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_68</data>
 <data>1</data>
-<data>1</data>
+<data>5</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1066,7 +1066,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_71</data>
 <data>1</data>
-<data>3</data>
+<data>0</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1177,9 +1177,9 @@ The file contains the information about resource utilization per module to be di
 </module>
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_SYNC_ROCKET_TILE_TILE</data>
-<data>1957</data>
-<data>4878</data>
-<data>685</data>
+<data>1954</data>
+<data>4924</data>
+<data>694</data>
 <data>0</data>
 <data>2</data>
 <data>10</data>
@@ -1200,9 +1200,9 @@ The file contains the information about resource utilization per module to be di
 </module>
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ROCKET_TILE_ROCKET</data>
-<data>1953</data>
-<data>4878</data>
-<data>685</data>
+<data>1950</data>
+<data>4924</data>
+<data>694</data>
 <data>0</data>
 <data>2</data>
 <data>10</data>
@@ -1212,8 +1212,8 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_D_CACHE_DCACHE</data>
 <data>389</data>
-<data>797</data>
-<data>122</data>
+<data>808</data>
+<data>121</data>
 <data>0</data>
 <data>0</data>
 <data>5</data>
@@ -1235,7 +1235,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ARBITER</data>
 <data>0</data>
-<data>82</data>
+<data>88</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1259,7 +1259,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_D_CACHE_DATA_ARRAY</data>
 <data>11</data>
-<data>17</data>
+<data>16</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1271,7 +1271,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLB</data>
 <data>0</data>
-<data>69</data>
+<data>68</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1283,9 +1283,9 @@ The file contains the information about resource utilization per module to be di
 </module>
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_FRONTEND_FRONTEND</data>
-<data>579</data>
-<data>915</data>
-<data>52</data>
+<data>576</data>
+<data>904</data>
+<data>60</data>
 <data>0</data>
 <data>0</data>
 <data>5</data>
@@ -1295,8 +1295,8 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_I_CACHE_ICACHE</data>
 <data>183</data>
-<data>469</data>
-<data>22</data>
+<data>461</data>
+<data>30</data>
 <data>0</data>
 <data>0</data>
 <data>5</data>
@@ -1306,8 +1306,8 @@ The file contains the information about resource utilization per module to be di
 </module>
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_SHIFT_QUEUE</data>
-<data>328</data>
-<data>349</data>
+<data>325</data>
+<data>347</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1332,8 +1332,8 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ROCKET</data>
 <data>972</data>
-<data>3041</data>
-<data>500</data>
+<data>3089</data>
+<data>502</data>
 <data>0</data>
 <data>2</data>
 <data>0</data>
@@ -1343,8 +1343,8 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ALU</data>
 <data>0</data>
-<data>467</data>
-<data>33</data>
+<data>464</data>
+<data>35</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1355,7 +1355,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_BREAKPOINT_UNIT</data>
 <data>0</data>
-<data>1157</data>
+<data>1170</data>
 <data>192</data>
 <data>0</data>
 <data>0</data>
@@ -1367,7 +1367,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CSR_FILE</data>
 <data>420</data>
-<data>874</data>
+<data>981</data>
 <data>122</data>
 <data>0</data>
 <data>0</data>
@@ -1391,7 +1391,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_MUL_DIV</data>
 <data>120</data>
-<data>276</data>
+<data>274</data>
 <data>121</data>
 <data>0</data>
 <data>2</data>
@@ -1404,7 +1404,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_TILE_BUS</data>
 <data>13</data>
-<data>125</data>
+<data>123</data>
 <data>11</data>
 <data>0</data>
 <data>0</data>
@@ -1418,7 +1418,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC</data>
 <data>140</data>
-<data>280</data>
+<data>279</data>
 <data>8</data>
 <data>0</data>
 <data>0</data>
@@ -1454,7 +1454,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ATOMIC_AUTOMATA</data>
 <data>122</data>
-<data>429</data>
+<data>431</data>
 <data>32</data>
 <data>0</data>
 <data>0</data>
@@ -1465,8 +1465,8 @@ The file contains the information about resource utilization per module to be di
 </module>
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_1</data>
-<data>246</data>
-<data>184</data>
+<data>245</data>
+<data>179</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1476,8 +1476,8 @@ The file contains the information about resource utilization per module to be di
 <data>0</data>
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_0</data>
-<data>64</data>
-<data>26</data>
+<data>63</data>
+<data>27</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1489,7 +1489,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_1</data>
 <data>76</data>
-<data>78</data>
+<data>77</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1501,7 +1501,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_1_0</data>
 <data>40</data>
-<data>38</data>
+<data>40</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1513,7 +1513,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_1_1</data>
 <data>39</data>
-<data>14</data>
+<data>8</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1537,7 +1537,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_5</data>
 <data>12</data>
-<data>10</data>
+<data>9</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1574,7 +1574,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_2</data>
 <data>222</data>
-<data>124</data>
+<data>125</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1597,7 +1597,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_9</data>
 <data>143</data>
-<data>78</data>
+<data>79</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1658,7 +1658,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_SYSTEM_BUS</data>
 <data>367</data>
-<data>213</data>
+<data>214</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1681,7 +1681,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_15</data>
 <data>93</data>
-<data>52</data>
+<data>51</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1705,7 +1705,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_17</data>
 <data>105</data>
-<data>57</data>
+<data>59</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1730,7 +1730,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_CACHE_CORK</data>
 <data>31</data>
-<data>158</data>
+<data>143</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1741,7 +1741,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_10_1</data>
 <data>13</data>
-<data>13</data>
+<data>12</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1753,7 +1753,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_10_2</data>
 <data>5</data>
-<data>11</data>
+<data>10</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -1766,7 +1766,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_DEBUG</data>
 <data>795</data>
-<data>1848</data>
+<data>1884</data>
 <data>14</data>
 <data>0</data>
 <data>0</data>
@@ -1777,7 +1777,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_INNER_ASYNC_DM_INNER</data>
 <data>672</data>
-<data>1750</data>
+<data>1796</data>
 <data>14</data>
 <data>0</data>
 <data>0</data>
@@ -2484,7 +2484,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_INNER_DM_INNER</data>
 <data>562</data>
-<data>1742</data>
+<data>1788</data>
 <data>14</data>
 <data>0</data>
 <data>0</data>
@@ -2497,7 +2497,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_OUTER_ASYNC_DM_OUTER</data>
 <data>123</data>
-<data>98</data>
+<data>88</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -2508,7 +2508,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE_1</data>
 <data>24</data>
-<data>14</data>
+<data>15</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -2615,7 +2615,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_28</data>
 <data>1</data>
-<data>3</data>
+<data>2</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -2626,7 +2626,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_60</data>
 <data>1</data>
-<data>3</data>
+<data>2</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -2880,7 +2880,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SOURCE_DM_INNER</data>
 <data>83</data>
-<data>7</data>
+<data>6</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -2891,7 +2891,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK</data>
 <data>37</data>
-<data>5</data>
+<data>4</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -2902,7 +2902,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_12</data>
 <data>1</data>
-<data>2</data>
+<data>1</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -2913,7 +2913,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_44</data>
 <data>1</data>
-<data>2</data>
+<data>1</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -2998,7 +2998,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_16</data>
 <data>1</data>
-<data>0</data>
+<data>2</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -3009,7 +3009,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_48</data>
 <data>1</data>
-<data>0</data>
+<data>2</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -3156,7 +3156,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_OUTER_DM_OUTER</data>
 <data>15</data>
-<data>35</data>
+<data>25</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -3347,7 +3347,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2</data>
 <data>1</data>
-<data>1</data>
+<data>6</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -3358,7 +3358,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_31</data>
 <data>1</data>
-<data>1</data>
+<data>6</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -3422,7 +3422,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_FRAGMENTER_1</data>
 <data>108</data>
-<data>191</data>
+<data>197</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -3433,7 +3433,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_REPEATER_0</data>
 <data>23</data>
-<data>17</data>
+<data>15</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -3445,7 +3445,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_REPEATER_1</data>
 <data>33</data>
-<data>28</data>
+<data>27</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -3457,7 +3457,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_REPEATER_2</data>
 <data>19</data>
-<data>14</data>
+<data>16</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -3470,7 +3470,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_TO_AHB</data>
 <data>190</data>
-<data>258</data>
+<data>263</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -3494,7 +3494,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_TO_AHB_CONVERTER</data>
 <data>191</data>
-<data>286</data>
+<data>291</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -3505,7 +3505,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_19</data>
 <data>83</data>
-<data>126</data>
+<data>131</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -3518,7 +3518,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_PERIPHERY_BUS</data>
 <data>9</data>
-<data>228</data>
+<data>205</data>
 <data>0</data>
 <data>0</data>
 <data>0</data>
@@ -3530,7 +3530,7 @@ The file contains the information about resource utilization per module to be di
 <module>
 <data>Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_SYSTEM_BUS</data>
 <data>17</data>
-<data>229</data>
+<data>214</data>
 <data>10</data>
 <data>0</data>
 <data>0</data>

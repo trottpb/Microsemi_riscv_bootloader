@@ -1,6 +1,6 @@
 DESIGN=TOP
-DESDIR=C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\designer\TOP
-TARGET_DIR=C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\designer\TOP
+DESDIR=C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\designer\TOP
+TARGET_DIR=C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\designer\TOP
 FAM=PolarFire
 DIE=PA5M300TS_ES
 PACKAGE=fcg1152

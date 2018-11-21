@@ -1,11 +1,11 @@
 #--  Synopsys, Inc.
 #--  Version N-2017.09M-SP1-1
 #--  Project file C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SCSPI_Bridge_eval2_sram\synthesis\TOP_syn.prj
-#--  Written on Mon Sep 10 15:37:12 2018
+#--  Written on Wed Nov 21 16:19:50 2018
 
 
 #project files
-add_file -verilog "C:/Microsemi/Libero_SoC_PolarFire_v2.2/Designer/data/aPA5M/polarfire_syn_comps.v"
+add_file -verilog "C:/Microsemi/Libero_SoC_PolarFire_v2.3/Designer/data/aPA5M/polarfire_syn_comps.v"
 add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/CCC_100MHz/CCC_100MHz_0/CCC_100MHz_CCC_100MHz_0_PF_CCC.v"
 add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/CCC_100MHz/CCC_100MHz.v"
 add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/Init_Monitor/Init_Monitor_0/Init_Monitor_Init_Monitor_0_PF_INIT_MONITOR.v"
@@ -20,7 +20,7 @@ add_file -verilog -lib COREAHBLITE_LIB "C:/Microsemiprj_PF23/apps/riscv_bootload
 add_file -verilog -lib COREAHBLITE_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/core/coreahblite_slavearbiter.v"
 add_file -verilog -lib COREAHBLITE_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/core/coreahblite_slavestage.v"
 add_file -verilog -lib COREAHBLITE_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/core/coreahblite_matrix4x16.v"
-add_file -verilog -lib COREAHBLITE_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite.v"
+add_file -verilog -lib COREAHBLITE_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/AHB_MMIO/AHB_MMIO_0/rtl/vlog/core/coreahblite.v"
 add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/AHB_MMIO/AHB_MMIO.v"
 add_file -verilog -lib COREAHBTOAPB3_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vlog/core/coreahbtoapb3_ahbtoapbsm.v"
 add_file -verilog -lib COREAHBTOAPB3_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vlog/core/coreahbtoapb3_apbaddrdata.v"
@@ -56,11 +56,11 @@ add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridg
 add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/IO/IO.v"
 add_file -verilog -lib COREAHBLITE_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/AHB/AHB_0/rtl/vlog/core/coreahblite.v"
 add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/AHB/AHB.v"
-add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/LSRAM_code/COREAHBLSRAM_PF_0/rtl/vlog/core/CoreAHBLSRAM_AHBLSramIf.v"
-add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/LSRAM_code/COREAHBLSRAM_PF_0/rtl/vlog/core/CoreAHBLSRAM_SramCtrlIf.v"
-add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/LSRAM_code/COREAHBLSRAM_PF_0/rtl/vlog/core/CoreAHBLSRAM_PF.v"
-add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/LSRAM_code/PF_TPSRAM_AHB_AXI_0/LSRAM_code_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM.v"
-add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/LSRAM_code/LSRAM_code.v"
+add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/Memory_app/COREAHBLSRAM_PF_0/rtl/vlog/core/CoreAHBLSRAM_AHBLSramIf.v"
+add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/Memory_app/COREAHBLSRAM_PF_0/rtl/vlog/core/CoreAHBLSRAM_SramCtrlIf.v"
+add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/Memory_app/COREAHBLSRAM_PF_0/rtl/vlog/core/CoreAHBLSRAM_PF.v"
+add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/Memory_app/PF_TPSRAM_AHB_AXI_0/Memory_app_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM.v"
+add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/Memory_app/Memory_app.v"
 add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/work/MEMORY2/MEMORY2.v"
 add_file -verilog -lib COREJTAGDEBUG_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/Actel/DirectCore/COREJTAGDEBUG/2.0.100/rtl/vlog/core/corejtagdebug_uj_jtag.v"
 add_file -verilog -lib COREJTAGDEBUG_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SCSPI_Bridge_eval2_sram/component/Actel/DirectCore/COREJTAGDEBUG/2.0.100/rtl/vlog/core/corejtagdebug.v"

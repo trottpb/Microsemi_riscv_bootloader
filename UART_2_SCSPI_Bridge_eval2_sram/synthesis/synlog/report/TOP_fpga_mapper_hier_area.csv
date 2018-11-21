@@ -1,6 +1,6 @@
 
 . Module name, SLE, CFG, ARI1, BUFFER, MACC_PA, RAM1K20, RAM64X12, GLOBAL, IO
-. TOP, 5557, 10764, 1121, 0, 2, 76, 8, 4, 10
+. TOP, 5553, 10835, 1130, 0, 2, 76, 8, 4, 10
 .	. CLOCKS_RESETS, 2, 0, 0, 0, 0, 0, 0, 2, 0
 .	.	. CCC_100MHz, 0, 0, 0, 0, 0, 0, 0, 1, 0
 .	.	.	. CCC_100MHz_CCC_100MHz_0_PF_CCC, 0, 0, 0, 0, 0, 0, 0, 1, 0
@@ -9,45 +9,45 @@
 .	.	. RCOSC, 0, 0, 0, 0, 0, 0, 0, 1, 0
 .	.	.	. RCOSC_RCOSC_0_PF_OSC, 0, 0, 0, 0, 0, 0, 0, 1, 0
 .	.	. reset_synchronizer, 2, 0, 0, 0, 0, 0, 0, 0, 0
-.	. IO, 633, 812, 132, 0, 0, 34, 2, 0, 0
-.	.	. AHB_MMIO, 65, 176, 0, 0, 0, 0, 0, 0, 0
-.	.	.	. CoreAHBLite_Z4, 65, 176, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	. COREAHBLITE_MATRIX4X16_1_1_0_192_0_0_0_0s, 65, 176, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. COREAHBLITE_MASTERSTAGE_1_1_0_192_0s_0_1_0, 37, 76, 0, 0, 0, 0, 0, 0, 0
+.	. IO, 633, 816, 132, 0, 0, 34, 2, 0, 0
+.	.	. AHB_MMIO, 65, 175, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. AHB_MMIO_AHB_MMIO_0_CoreAHBLite_Z4, 65, 175, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. COREAHBLITE_MATRIX4X16_1_1_0_192_0_0_0_0s, 65, 175, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. COREAHBLITE_MASTERSTAGE_1_1_0_192_0s_0_1_0, 37, 66, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. COREAHBLITE_DEFAULTSLAVESM_0s_0_1_0, 1, 2, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	. COREAHBLITE_SLAVESTAGE_0s_0_0_0, 14, 70, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. COREAHBLITE_SLAVEARBITER_Z3_2_1, 13, 17, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. COREAHBLITE_SLAVESTAGE_0s_0_0_1, 14, 30, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. COREAHBLITE_SLAVESTAGE_0s_0_0_1, 14, 39, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. COREAHBLITE_SLAVEARBITER_Z3_2_0, 13, 17, 0, 0, 0, 0, 0, 0, 0
-.	.	. AHBtoAPB, 51, 40, 0, 0, 0, 0, 0, 0, 0
-.	.	.	. COREAHBTOAPB3_15s_0s, 51, 40, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	. CoreAHBtoAPB3_AhbToApbSM_0s_0_1_0_1_2_3_4, 9, 25, 0, 0, 0, 0, 0, 0, 0
+.	.	. AHBtoAPB, 51, 41, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. COREAHBTOAPB3_15s_0s, 51, 41, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. CoreAHBtoAPB3_AhbToApbSM_0s_0_1_0_1_2_3_4, 9, 26, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	. CoreAHBtoAPB3_ApbAddrData_0s, 40, 13, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	. CoreAHBtoAPB3_PenableScheduler_0s_0_1_2, 2, 2, 0, 0, 0, 0, 0, 0, 0
-.	.	. APB_PERIPHERALS, 0, 39, 0, 0, 0, 0, 0, 0, 0
-.	.	.	. CoreAPB3_Z5, 0, 39, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	. COREAPB3_MUXPTOB3, 0, 35, 0, 0, 0, 0, 0, 0, 0
-.	.	. CoreSPI_0, 214, 273, 38, 0, 0, 0, 2, 0, 0
-.	.	.	. CORESPI_Z7, 214, 273, 38, 0, 0, 0, 2, 0, 0
-.	.	.	.	. spi_32s_8s_32s_10s_0_0_1_0s, 214, 273, 38, 0, 0, 0, 2, 0, 0
-.	.	.	.	.	. spi_chanctrl_Z6, 135, 148, 14, 0, 0, 0, 0, 0, 0
+.	.	. APB_PERIPHERALS, 0, 38, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. CoreAPB3_Z5, 0, 38, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. COREAPB3_MUXPTOB3, 0, 34, 0, 0, 0, 0, 0, 0, 0
+.	.	. CoreSPI_0, 214, 274, 38, 0, 0, 0, 2, 0, 0
+.	.	.	. CORESPI_Z7, 214, 274, 38, 0, 0, 0, 2, 0, 0
+.	.	.	.	. spi_32s_8s_32s_10s_0_0_1_0s, 214, 274, 38, 0, 0, 0, 2, 0, 0
+.	.	.	.	.	. spi_chanctrl_Z6, 135, 149, 14, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. spi_clockmux, 0, 1, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	. spi_control_8s, 0, 8, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	. spi_fifo_8s_32s_5_0, 18, 27, 6, 0, 0, 0, 1, 0, 0
 .	.	.	.	.	. spi_fifo_8s_32s_5_1, 18, 27, 6, 0, 0, 0, 1, 0, 0
 .	.	.	.	.	. spi_rf_32s_10s_0, 43, 60, 12, 0, 0, 0, 0, 0, 0
-.	.	. GPIO, 44, 57, 16, 0, 0, 0, 0, 0, 0
-.	.	.	. CoreGPIO_Z8, 44, 57, 16, 0, 0, 0, 0, 0, 0
-.	.	. LSRAM_64kBytes, 64, 55, 0, 0, 0, 32, 0, 0, 0
-.	.	.	. LSRAM_64kBytes_COREAHBLSRAM_PF_0_COREAHBLSRAM_PF_26s_65536s_0s_0s_16_32s_32s, 64, 31, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	. LSRAM_64kBytes_COREAHBLSRAM_PF_0_CoreAHBLSRAM_AHBLSramIf_Z9, 28, 19, 0, 0, 0, 0, 0, 0, 0
+.	.	. GPIO, 44, 58, 16, 0, 0, 0, 0, 0, 0
+.	.	.	. CoreGPIO_Z8, 44, 58, 16, 0, 0, 0, 0, 0, 0
+.	.	. LSRAM_64kBytes, 64, 57, 0, 0, 0, 32, 0, 0, 0
+.	.	.	. LSRAM_64kBytes_COREAHBLSRAM_PF_0_COREAHBLSRAM_PF_26s_65536s_0s_0s_16_32s_32s, 64, 33, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. LSRAM_64kBytes_COREAHBLSRAM_PF_0_CoreAHBLSRAM_AHBLSramIf_Z9, 28, 21, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	. LSRAM_64kBytes_COREAHBLSRAM_PF_0_CoreAHBLSRAM_SramCtrlIf_0s_65536s_16_0s_32s_0_1_2, 36, 12, 0, 0, 0, 0, 0, 0, 0
 .	.	.	. LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM, 0, 24, 0, 0, 0, 32, 0, 0, 0
-.	.	. UART, 195, 172, 78, 0, 0, 2, 0, 0, 0
-.	.	.	. UART_UART_0_CoreUARTapb_Z10, 195, 172, 78, 0, 0, 2, 0, 0, 0
-.	.	.	.	. UART_UART_0_COREUART_1s_1s_0s_26s_0s_0s, 171, 149, 70, 0, 0, 2, 0, 0, 0
+.	.	. UART, 195, 173, 78, 0, 0, 2, 0, 0, 0
+.	.	.	. UART_UART_0_CoreUARTapb_Z10, 195, 173, 78, 0, 0, 2, 0, 0, 0
+.	.	.	.	. UART_UART_0_COREUART_1s_1s_0s_26s_0s_0s, 171, 150, 70, 0, 0, 2, 0, 0, 0
 .	.	.	.	.	. UART_UART_0_Clock_gen_0s_0s, 19, 10, 14, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. UART_UART_0_Rx_async_0s_1s_0s_1s_2s_3s, 39, 70, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. UART_UART_0_Rx_async_0s_1s_0s_1s_2s_3s, 39, 71, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	. UART_UART_0_Tx_async_0s_1s_0s_1s_2s_3s_4s_5s_6s, 23, 23, 5, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	. UART_UART_0_fifo_256x8_0s_0s, 33, 9, 25, 0, 0, 1, 0, 0, 0
 .	.	.	.	.	.	. UART_UART_0_fifo_ctrl_256_0s_256s_8s_8s, 33, 9, 25, 0, 0, 1, 0, 0, 0
@@ -55,40 +55,40 @@
 .	.	.	.	.	. UART_UART_0_fifo_256x8_0s_0s_0, 33, 6, 26, 0, 0, 1, 0, 0, 0
 .	.	.	.	.	.	. UART_UART_0_fifo_ctrl_256_0s_256s_8s_8s_0, 33, 6, 26, 0, 0, 1, 0, 0, 0
 .	.	.	.	.	.	.	. UART_UART_0_ram256x8_g5_0, 0, 0, 0, 0, 0, 1, 0, 0, 0
-.	. MEMORY2, 120, 184, 0, 0, 0, 32, 0, 0, 0
-.	.	. AHB, 56, 118, 0, 0, 0, 0, 0, 0, 0
-.	.	.	. AHB_AHB_0_CoreAHBLite_Z12, 56, 118, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	. COREAHBLITE_MATRIX4X16_1_1_0_256_0_0_0_0s, 56, 118, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. COREAHBLITE_MASTERSTAGE_1_1_0_256_0s_0_1_0, 42, 67, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. COREAHBLITE_DEFAULTSLAVESM_0s_0_1, 1, 4, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. COREAHBLITE_SLAVESTAGE_0s_0_0, 14, 51, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. COREAHBLITE_SLAVEARBITER_Z3_2, 13, 17, 0, 0, 0, 0, 0, 0, 0
-.	.	. LSRAM_code, 64, 66, 0, 0, 0, 32, 0, 0, 0
-.	.	.	. LSRAM_code_COREAHBLSRAM_PF_0_COREAHBLSRAM_PF_26s_65536s_0s_0s_16_32s_32s, 64, 66, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	. LSRAM_code_COREAHBLSRAM_PF_0_CoreAHBLSRAM_AHBLSramIf_Z13, 28, 22, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	. LSRAM_code_COREAHBLSRAM_PF_0_CoreAHBLSRAM_SramCtrlIf_0s_65536s_16_0s_32s_0_1_2, 36, 44, 0, 0, 0, 0, 0, 0, 0
-.	.	.	. LSRAM_code_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM, 0, 0, 0, 0, 0, 32, 0, 0, 0
-.	. PROCESSOR, 4802, 9768, 989, 0, 2, 10, 6, 2, 0
-.	.	. JTAG_DEBUG, 16, 86, 0, 0, 0, 0, 0, 2, 0
-.	.	.	. COREJTAGDEBUG_85_1s, 16, 86, 0, 0, 0, 0, 0, 2, 0
-.	.	.	.	. uj_jtag_85, 16, 84, 0, 0, 0, 0, 0, 0, 0
-.	.	. Mi_V_Processor, 4786, 9682, 989, 0, 2, 10, 6, 0, 0
-.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_28672_0_2s_5s_34s_2s, 4786, 9682, 989, 0, 2, 10, 6, 0, 0
-.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CORE_RISC_VAHB_TOP, 4786, 9682, 989, 0, 2, 10, 6, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_COREPLEX_LOCAL_INTERRUPTER_CLINT, 129, 115, 192, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_DEBUG_TRANSPORT_MODULE_JTAG, 166, 151, 0, 0, 0, 0, 0, 0, 0
+.	. MEMORY2, 120, 209, 0, 0, 0, 32, 0, 0, 0
+.	.	. AHB, 56, 153, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. AHB_AHB_0_CoreAHBLite_Z12, 56, 153, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. COREAHBLITE_MATRIX4X16_1_1_0_65792_0_0_0_0s, 56, 153, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. COREAHBLITE_MASTERSTAGE_1_1_0_65792_0s_0_1_0, 42, 82, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. COREAHBLITE_DEFAULTSLAVESM_0s_0_1, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. COREAHBLITE_SLAVESTAGE_0s_0_0, 14, 71, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. COREAHBLITE_SLAVEARBITER_Z3_2, 13, 36, 0, 0, 0, 0, 0, 0, 0
+.	.	. Memory_app, 64, 56, 0, 0, 0, 32, 0, 0, 0
+.	.	.	. Memory_app_COREAHBLSRAM_PF_0_COREAHBLSRAM_PF_26s_65536s_0s_0s_16_32s_32s, 64, 32, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. Memory_app_COREAHBLSRAM_PF_0_CoreAHBLSRAM_AHBLSramIf_Z13, 28, 20, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	. Memory_app_COREAHBLSRAM_PF_0_CoreAHBLSRAM_SramCtrlIf_0s_65536s_16_0s_32s_0_1_2, 36, 12, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. Memory_app_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM, 0, 24, 0, 0, 0, 32, 0, 0, 0
+.	. PROCESSOR, 4798, 9810, 998, 0, 2, 10, 6, 2, 0
+.	.	. JTAG_DEBUG, 16, 88, 0, 0, 0, 0, 0, 2, 0
+.	.	.	. COREJTAGDEBUG_85_1s, 16, 88, 0, 0, 0, 0, 0, 2, 0
+.	.	.	.	. uj_jtag_85, 16, 86, 0, 0, 0, 0, 0, 0, 0
+.	.	. Mi_V_Processor, 4782, 9722, 998, 0, 2, 10, 6, 0, 0
+.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_28672_0_2s_5s_34s_2s, 4782, 9722, 998, 0, 2, 10, 6, 0, 0
+.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CORE_RISC_VAHB_TOP, 4782, 9722, 998, 0, 2, 10, 6, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_COREPLEX_LOCAL_INTERRUPTER_CLINT, 129, 113, 192, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_DEBUG_TRANSPORT_MODULE_JTAG, 166, 150, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CAPTURE_CHAIN, 32, 18, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CAPTURE_UPDATE_CHAIN, 32, 12, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CAPTURE_UPDATE_CHAIN_1, 41, 61, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_JTAG_BYPASS_CHAIN, 1, 1, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_JTAG_TAP_CONTROLLER, 15, 34, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_JTAG_TAP_CONTROLLER, 15, 32, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CAPTURE_UPDATE_CHAIN_2, 5, 5, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_JTAG_STATE_MACHINE, 4, 14, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_90, 4, 4, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_68, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_JTAG_STATE_MACHINE, 4, 12, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_90, 4, 5, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_68, 1, 5, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_69, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_70, 1, 0, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_71, 1, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_71, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_NEGATIVE_EDGE_LATCH_1, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_NEGATIVE_EDGE_LATCH_2, 5, 5, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_INT_XING, 4, 0, 0, 0, 0, 0, 0, 0, 0
@@ -97,57 +97,57 @@
 .	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_72, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_73, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_33_1, 1, 0, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_SYNC_ROCKET_TILE_TILE, 1957, 4878, 685, 0, 2, 10, 6, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_SYNC_ROCKET_TILE_TILE, 1954, 4924, 694, 0, 2, 10, 6, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_INT_XING_XING, 4, 0, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ROCKET_TILE_ROCKET, 1953, 4878, 685, 0, 2, 10, 6, 0, 0
-.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_D_CACHE_DCACHE, 389, 797, 122, 0, 0, 5, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ROCKET_TILE_ROCKET, 1950, 4924, 694, 0, 2, 10, 6, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_D_CACHE_DCACHE, 389, 808, 121, 0, 0, 5, 0, 0, 0
 .	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_AMOALU, 0, 208, 66, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ARBITER, 0, 82, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ARBITER, 0, 88, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ARBITER_1, 0, 155, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_D_CACHE_DATA_ARRAY, 11, 17, 0, 0, 0, 4, 0, 0, 0
-.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLB, 0, 69, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_FRONTEND_FRONTEND, 579, 915, 52, 0, 0, 5, 0, 0, 0
-.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_I_CACHE_ICACHE, 183, 469, 22, 0, 0, 5, 0, 0, 0
-.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_SHIFT_QUEUE, 328, 349, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_D_CACHE_DATA_ARRAY, 11, 16, 0, 0, 0, 4, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLB, 0, 68, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_FRONTEND_FRONTEND, 576, 904, 60, 0, 0, 5, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_I_CACHE_ICACHE, 183, 461, 30, 0, 0, 5, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_SHIFT_QUEUE, 325, 347, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLB_1, 0, 11, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ROCKET, 972, 3041, 500, 0, 2, 0, 6, 0, 0
-.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ALU, 0, 467, 33, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_BREAKPOINT_UNIT, 0, 1157, 192, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CSR_FILE, 420, 874, 122, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ROCKET, 972, 3089, 502, 0, 2, 0, 6, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ALU, 0, 464, 35, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_BREAKPOINT_UNIT, 0, 1170, 192, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_CSR_FILE, 420, 981, 122, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_I_BUF, 0, 1, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_MUL_DIV, 120, 276, 121, 0, 2, 0, 0, 0, 0
-.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_TILE_BUS, 13, 125, 11, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC, 140, 280, 8, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_MUL_DIV, 120, 274, 121, 0, 2, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_TILE_BUS, 13, 123, 11, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TLPLIC_PLIC, 140, 279, 8, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_LEVEL_GATEWAY_30, 1, 2, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_13, 70, 2, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ATOMIC_AUTOMATA, 122, 429, 32, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_1, 246, 184, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_0, 64, 26, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_1, 76, 78, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_1_0, 40, 38, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_1_1, 39, 14, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ATOMIC_AUTOMATA, 122, 431, 32, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_1, 245, 179, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_0, 63, 27, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_1, 76, 77, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_1_0, 40, 40, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_1_1, 39, 8, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_4, 9, 9, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_5, 12, 10, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_5, 12, 9, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_7, 5, 7, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_8, 1, 2, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_2, 222, 124, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_2, 222, 125, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_10_0, 79, 46, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_9, 143, 78, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_9, 143, 79, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_ERROR, 26, 7, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_23, 9, 1, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_24, 12, 3, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_26, 5, 3, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_SYSTEM_BUS, 367, 213, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_BUFFER_SYSTEM_BUS, 367, 214, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_14, 161, 89, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_15, 93, 52, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_15, 93, 51, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_16, 1, 3, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_17, 105, 57, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_17, 105, 59, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_18, 7, 12, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_CACHE_CORK, 31, 158, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_10_1, 13, 13, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_10_2, 5, 11, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_DEBUG, 795, 1848, 14, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_INNER_ASYNC_DM_INNER, 672, 1750, 14, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_CACHE_CORK, 31, 143, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_10_1, 13, 12, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_10_2, 5, 10, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_DEBUG, 795, 1884, 14, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_INNER_ASYNC_DM_INNER, 672, 1796, 14, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK_2, 24, 3, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_23, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_26, 1, 0, 0, 0, 0, 0, 0, 0, 0
@@ -206,9 +206,9 @@
 .	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_17, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_0_15, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_18, 1, 0, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_INNER_DM_INNER, 562, 1742, 14, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_OUTER_ASYNC_DM_OUTER, 123, 98, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE_1, 24, 14, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_INNER_DM_INNER, 562, 1788, 14, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_OUTER_ASYNC_DM_OUTER, 123, 88, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE_1, 24, 15, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_24, 1, 1, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_56, 1, 1, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_25, 1, 0, 0, 0, 0, 0, 0, 0, 0
@@ -217,8 +217,8 @@
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_58, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_27, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_59, 1, 0, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_28, 1, 3, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_60, 1, 3, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_28, 1, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_60, 1, 2, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1_0, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_32, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_64, 1, 0, 0, 0, 0, 0, 0, 0, 0
@@ -239,18 +239,18 @@
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_31, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_63, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_DMI_TO_TL_DMI2TL, 0, 33, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SOURCE_DM_INNER, 83, 7, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK, 37, 5, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_12, 1, 2, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_44, 1, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SOURCE_DM_INNER, 83, 6, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK, 37, 4, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_12, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_44, 1, 1, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_13, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_45, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_14, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_46, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_15, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_47, 1, 0, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_16, 1, 0, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_48, 1, 0, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_16, 1, 2, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_48, 1, 2, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE, 46, 2, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_0, 1, 1, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_32, 1, 1, 0, 0, 0, 0, 0, 0, 0
@@ -262,7 +262,7 @@
 .	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_35, 1, 0, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2_4, 1, 1, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_36, 1, 1, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_OUTER_DM_OUTER, 15, 35, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_DEBUG_MODULE_OUTER_DM_OUTER, 15, 25, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC, 14, 13, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2, 1, 2, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_0, 1, 0, 0, 0, 0, 0, 0, 0, 0
@@ -278,19 +278,19 @@
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_24, 1, 1, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_29, 1, 1, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_30, 1, 0, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2, 1, 1, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_31, 1, 1, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_VEC_1_2, 1, 6, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_RESET_REG_2_31, 1, 6, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_DMI_XBAR, 1, 9, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ERROR_ERROR, 56, 100, 41, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_21, 9, 10, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_22, 5, 6, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_FRAGMENTER_1, 108, 191, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_REPEATER_0, 23, 17, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_REPEATER_1, 33, 28, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_REPEATER_2, 19, 14, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_TO_AHB, 190, 258, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_FRAGMENTER_1, 108, 197, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_REPEATER_0, 23, 15, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_REPEATER_1, 33, 27, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_REPEATER_2, 19, 16, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_TO_AHB, 190, 263, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_20, 81, 92, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_TO_AHB_CONVERTER, 191, 286, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_19, 83, 126, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_PERIPHERY_BUS, 9, 228, 0, 0, 0, 0, 0, 0, 0
-.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_SYSTEM_BUS, 17, 229, 10, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_TO_AHB_CONVERTER, 191, 291, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_QUEUE_19, 83, 131, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_PERIPHERY_BUS, 9, 205, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_XBAR_SYSTEM_BUS, 17, 214, 10, 0, 0, 0, 0, 0, 0

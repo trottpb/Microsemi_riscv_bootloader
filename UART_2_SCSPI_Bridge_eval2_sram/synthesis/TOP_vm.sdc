@@ -1,4 +1,4 @@
-# Written by Synplify Pro version mapact2017q4p1, Build 003R. Synopsys Run ID: sid1536590130 
+# Written by Synplify Pro version mapact2017q4p1, Build 003R. Synopsys Run ID: sid1542817097 
 # Top Level Design Parameters 
 
 # Clocks 
@@ -8,7 +8,7 @@ create_clock -period 10.000 -waveform {0.000 5.000} -name {COREJTAGDEBUG_85_1s|i
 # Virtual Clocks 
 
 # Generated Clocks 
-create_generated_clock -name {CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0} -multiply_by {5} -divide_by {8} -source [get_pins {CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT/Y}]  [get_pins {CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0}] 
+create_generated_clock -name {CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0} -multiply_by {25} -divide_by {36} -source [get_pins {CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT/Y}]  [get_pins {CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0}] 
 
 # Paths Between Clocks 
 

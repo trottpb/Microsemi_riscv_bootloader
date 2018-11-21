@@ -35,6 +35,42 @@ fsm_state_encoding {17449444915} M3LOCKEXTEND {1000000000000000}
 
 fsm_registers {17449444915} {arbRegSMCurrentState[15]}  {arbRegSMCurrentState[14]}  {arbRegSMCurrentState[13]}  {arbRegSMCurrentState[12]}  {arbRegSMCurrentState[11]}  {arbRegSMCurrentState[10]}  {arbRegSMCurrentState[9]}  {arbRegSMCurrentState[8]}  {arbRegSMCurrentState[7]}  {arbRegSMCurrentState[6]}  {arbRegSMCurrentState[5]}  {arbRegSMCurrentState[4]}  {arbRegSMCurrentState[3]}  {arbRegSMCurrentState[2]}  {arbRegSMCurrentState[1]}  {arbRegSMCurrentState[0]} 
 
+fsm_encoding {17449444915} onehot
+
+fsm_state_encoding {17449444915} M0EXTEND {0000000000000001}
+
+fsm_state_encoding {17449444915} M0DONE {0000000000000010}
+
+fsm_state_encoding {17449444915} M0LOCK {0000000000000100}
+
+fsm_state_encoding {17449444915} M0LOCKEXTEND {0000000000001000}
+
+fsm_state_encoding {17449444915} M1EXTEND {0000000000010000}
+
+fsm_state_encoding {17449444915} M1DONE {0000000000100000}
+
+fsm_state_encoding {17449444915} M1LOCK {0000000001000000}
+
+fsm_state_encoding {17449444915} M1LOCKEXTEND {0000000010000000}
+
+fsm_state_encoding {17449444915} M2EXTEND {0000000100000000}
+
+fsm_state_encoding {17449444915} M2DONE {0000001000000000}
+
+fsm_state_encoding {17449444915} M2LOCK {0000010000000000}
+
+fsm_state_encoding {17449444915} M2LOCKEXTEND {0000100000000000}
+
+fsm_state_encoding {17449444915} M3EXTEND {0001000000000000}
+
+fsm_state_encoding {17449444915} M3DONE {0010000000000000}
+
+fsm_state_encoding {17449444915} M3LOCK {0100000000000000}
+
+fsm_state_encoding {17449444915} M3LOCKEXTEND {1000000000000000}
+
+fsm_registers {17449444915} {arbRegSMCurrentState[15]}  {arbRegSMCurrentState[14]}  {arbRegSMCurrentState[13]}  {arbRegSMCurrentState[12]}  {arbRegSMCurrentState[11]}  {arbRegSMCurrentState[10]}  {arbRegSMCurrentState[9]}  {arbRegSMCurrentState[8]}  {arbRegSMCurrentState[7]}  {arbRegSMCurrentState[6]}  {arbRegSMCurrentState[5]}  {arbRegSMCurrentState[4]}  {arbRegSMCurrentState[3]}  {arbRegSMCurrentState[2]}  {arbRegSMCurrentState[1]}  {arbRegSMCurrentState[0]} 
+
 fsm_encoding {5619131916} sequential
 
 fsm_state_encoding {5619131916} IDLE {00}

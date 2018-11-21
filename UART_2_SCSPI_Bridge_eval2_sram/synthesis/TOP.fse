@@ -238,7 +238,53 @@ fsm_state_encoding {4728602868} 10 {10}
 fsm_state_encoding {4728602868} 11 {11}
 
 fsm_registers {4728602868} {rx_state[1]}  {rx_state[0]} 
-te_encoding {41191319111} AHB_WR {01}
+RegSMCurrentState[8]}  {arbRegSMCurrentState[7]}  {arbRegSMCurrentState[6]}  {arbRegSMCurrentState[5]}  {arbRegSMCurrentState[4]}  {arbRegSMCurrentState[3]}  {arbRegSMCurrentState[2]}  {arbRegSMCurrentState[1]}  {arbRegSMCurrentState[0]} 
+
+fsm_encoding {22265426514} onehot
+
+fsm_state_encoding {22265426514} IDLE {00001}
+
+fsm_state_encoding {22265426514} WRITE0 {00010}
+
+fsm_state_encoding {22265426514} WRITE1 {00100}
+
+fsm_state_encoding {22265426514} READ0 {01000}
+
+fsm_state_encoding {22265426514} WAIT {10000}
+
+fsm_registers {22265426514} {ahbToApbSMState[4]}  {ahbToApbSMState[3]}  {ahbToApbSMState[2]}  {ahbToApbSMState[1]}  {ahbToApbSMState[0]} 
+
+fsm_encoding {24111411113} sequential
+
+fsm_state_encoding {24111411113} IDLE {00}
+
+fsm_state_encoding {24111411113} WAIT {01}
+
+fsm_state_encoding {24111411113} WAITCLR {10}
+
+fsm_registers {24111411113} {penableSchedulerState[1]}  {penableSchedulerState[0]} 
+
+fsm_encoding {32416041612} onehot
+
+fsm_state_encoding {32416041612} MTX_IDLE1 {000001}
+
+fsm_state_encoding {32416041612} MTX_IDLE2 {000010}
+
+fsm_state_encoding {32416041612} MTX_MOTSTART {000100}
+
+fsm_state_encoding {32416041612} MTX_SHIFT1 {001000}
+
+fsm_state_encoding {32416041612} MTX_SHIFT2 {010000}
+
+fsm_state_encoding {32416041612} MTX_END {100000}
+
+fsm_registers {32416041612} {mtx_state[5]}  {mtx_state[4]}  {mtx_state[3]}  {mtx_state[2]}  {mtx_state[1]}  {mtx_state[0]} 
+
+fsm_encoding {41191319111} sequential
+
+fsm_state_encoding {41191319111} IDLE {00}
+
+fsm_state_encoding {41191319111} AHB_WR {01}
 
 fsm_state_encoding {41191319111} AHB_RD {10}
 
