@@ -1,8 +1,8 @@
 # Microsemi Corp.
-# Date: 2018-Sep-07 14:10:23
+# Date: 2018-Nov-08 15:37:26
 # This file was generated based on the following SDC source files:
-#   C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/constraint/TOP_derived_constraints.sdc
-#   C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/constraint/jtag_tck_constraint.sdc
+#   C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/constraint/TOP_derived_constraints.sdc
+#   C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/constraint/jtag_tck_constraint.sdc
 #
 
 create_clock -name {CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160/CLK} -period 6.25 [ get_pins { CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160/CLK } ]

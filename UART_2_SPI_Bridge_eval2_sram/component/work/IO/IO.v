@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Sep 07 14:06:06 2018
-// Version: PolarFire v2.2 12.200.30.10
+// Created by SmartDesign Thu Nov 08 15:33:46 2018
+// Version: PolarFire v2.3 12.200.35.9
 //////////////////////////////////////////////////////////////////////
 
 `timescale 1ns / 100ps
@@ -135,10 +135,10 @@ wire          SPISCLKO_net_1;
 wire          SPISDO_net_1;
 wire          SPISS_net_1;
 wire          AHBmmaster0_HREADY_net_0;
+wire          RXRDY_net_1;
 wire   [3:0]  GPIO_OUT_net_1;
 wire   [31:0] AHBmmaster0_HRDATA_net_0;
 wire   [1:0]  AHBmmaster0_HRESP_net_0;
-wire          RXRDY_net_1;
 wire   [7:1]  SPISS_slice_0;
 wire   [7:0]  SPISS_net_2;
 //--------------------------------------------------------------------
@@ -150,20 +150,20 @@ wire   [3:0]  GPIO_IN_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
-wire   [4:0]  APB_PERIPHERALS_0_APBmslave0_PADDR_1_4to0;
-wire   [4:0]  APB_PERIPHERALS_0_APBmslave0_PADDR_1;
 wire   [31:0] APB_PERIPHERALS_0_APBmslave0_PADDR;
 wire   [6:0]  APB_PERIPHERALS_0_APBmslave0_PADDR_2_6to0;
 wire   [6:0]  APB_PERIPHERALS_0_APBmslave0_PADDR_2;
 wire   [7:0]  APB_PERIPHERALS_0_APBmslave0_PADDR_0_7to0;
 wire   [7:0]  APB_PERIPHERALS_0_APBmslave0_PADDR_0;
+wire   [4:0]  APB_PERIPHERALS_0_APBmslave0_PADDR_1_4to0;
+wire   [4:0]  APB_PERIPHERALS_0_APBmslave0_PADDR_1;
+wire   [31:0] APB_PERIPHERALS_0_APBmslave0_PWDATA;
 wire   [7:0]  APB_PERIPHERALS_0_APBmslave0_PWDATA_0_7to0;
 wire   [7:0]  APB_PERIPHERALS_0_APBmslave0_PWDATA_0;
-wire   [31:0] APB_PERIPHERALS_0_APBmslave0_PWDATA;
-wire   [7:0]  APB_PERIPHERALS_0_APBmslave1_PRDATA;
 wire   [31:8] APB_PERIPHERALS_0_APBmslave1_PRDATA_0_31to8;
 wire   [7:0]  APB_PERIPHERALS_0_APBmslave1_PRDATA_0_7to0;
 wire   [31:0] APB_PERIPHERALS_0_APBmslave1_PRDATA_0;
+wire   [7:0]  APB_PERIPHERALS_0_APBmslave1_PRDATA;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -183,14 +183,14 @@ assign SPISS_net_1              = SPISS_net_0[0];
 assign SPISS                    = SPISS_net_1;
 assign AHBmmaster0_HREADY_net_0 = AHBmmaster0_HREADY;
 assign HREADY_M0                = AHBmmaster0_HREADY_net_0;
+assign RXRDY_net_1              = RXRDY_net_0;
+assign RXRDY                    = RXRDY_net_1;
 assign GPIO_OUT_net_1           = GPIO_OUT_net_0;
 assign GPIO_OUT[3:0]            = GPIO_OUT_net_1;
 assign AHBmmaster0_HRDATA_net_0 = AHBmmaster0_HRDATA;
 assign HRDATA_M0[31:0]          = AHBmmaster0_HRDATA_net_0;
 assign AHBmmaster0_HRESP_net_0  = AHBmmaster0_HRESP;
 assign HRESP_M0[1:0]            = AHBmmaster0_HRESP_net_0;
-assign RXRDY_net_1              = RXRDY_net_0;
-assign RXRDY                    = RXRDY_net_1;
 //--------------------------------------------------------------------
 // Slices assignments
 //--------------------------------------------------------------------
@@ -199,12 +199,12 @@ assign SPISS_slice_0  = SPISS_net_2[7:1];
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
-assign APB_PERIPHERALS_0_APBmslave0_PADDR_1_4to0 = APB_PERIPHERALS_0_APBmslave0_PADDR[4:0];
-assign APB_PERIPHERALS_0_APBmslave0_PADDR_1 = { APB_PERIPHERALS_0_APBmslave0_PADDR_1_4to0 };
 assign APB_PERIPHERALS_0_APBmslave0_PADDR_2_6to0 = APB_PERIPHERALS_0_APBmslave0_PADDR[6:0];
 assign APB_PERIPHERALS_0_APBmslave0_PADDR_2 = { APB_PERIPHERALS_0_APBmslave0_PADDR_2_6to0 };
 assign APB_PERIPHERALS_0_APBmslave0_PADDR_0_7to0 = APB_PERIPHERALS_0_APBmslave0_PADDR[7:0];
 assign APB_PERIPHERALS_0_APBmslave0_PADDR_0 = { APB_PERIPHERALS_0_APBmslave0_PADDR_0_7to0 };
+assign APB_PERIPHERALS_0_APBmslave0_PADDR_1_4to0 = APB_PERIPHERALS_0_APBmslave0_PADDR[4:0];
+assign APB_PERIPHERALS_0_APBmslave0_PADDR_1 = { APB_PERIPHERALS_0_APBmslave0_PADDR_1_4to0 };
 
 assign APB_PERIPHERALS_0_APBmslave0_PWDATA_0_7to0 = APB_PERIPHERALS_0_APBmslave0_PWDATA[7:0];
 assign APB_PERIPHERALS_0_APBmslave0_PWDATA_0 = { APB_PERIPHERALS_0_APBmslave0_PWDATA_0_7to0 };

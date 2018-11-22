@@ -11,7 +11,7 @@
 .	.	. reset_synchronizer, 2, 0, 0, 0, 0, 0, 0, 0, 0
 .	. IO, 633, 821, 132, 0, 0, 34, 2, 0, 0
 .	.	. AHB_MMIO, 65, 186, 0, 0, 0, 0, 0, 0, 0
-.	.	.	. CoreAHBLite_Z4, 65, 186, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. AHB_MMIO_AHB_MMIO_0_CoreAHBLite_Z4, 65, 186, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	. COREAHBLITE_MATRIX4X16_1_1_0_192_0_0_0_0s, 65, 186, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	. COREAHBLITE_MASTERSTAGE_1_1_0_192_0s_0_1_0, 37, 79, 0, 0, 0, 0, 0, 0, 0
 .	.	.	.	.	.	. COREAHBLITE_ADDRDEC_Z1, 0, 1, 0, 0, 0, 0, 0, 0, 0

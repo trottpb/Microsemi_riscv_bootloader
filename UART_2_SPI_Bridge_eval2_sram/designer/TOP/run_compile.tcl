@@ -62,13 +62,13 @@ set_compile_info \
 set_compile_info \
     -category {"Source Files"} \
     -name {"Source"} \
-    -value {"C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_sram\synthesis\TOP.vm"}
+    -value {"C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_sram\synthesis\TOP.vm"}
 set_compile_info \
     -category {"Options"} \
     -name {"Limit the number of high fanout nets to display to"} \
     -value {"10"}
 compile \
-    -desdir {C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_sram\designer\TOP} \
+    -desdir {C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_sram\designer\TOP} \
     -design TOP \
     -fam PolarFire \
     -die PA5M300TS_ES \

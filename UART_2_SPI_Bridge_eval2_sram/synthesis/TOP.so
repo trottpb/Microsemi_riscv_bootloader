@@ -2,5 +2,5 @@
 <SynplifyOutput>
 	<result>Success</result>
 	<design>TOP</design>
-	<target_verilog>C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_sram\synthesis\TOP.vm</target_verilog>
+	<target_verilog>C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_sram\synthesis\TOP.vm</target_verilog>
 </SynplifyOutput>

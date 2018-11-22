@@ -1,16 +1,16 @@
 *****************************************************************
-Pin Report - Date: Fri Sep 07 14:18:16 2018 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Thu Nov 08 15:45:32 2018 Pinchecksum: NOT-AVAILABLE
 Product: Designer
-Release: PolarFire v2.2
-Version: 12.200.30.10
+Release: PolarFire v2.3
+Version: 12.200.35.9
 Design Name: TOP
 Family: PolarFire
 Die: MPF300TS_ES
 Package: FCG1152
 *****************************************************************
 
-Number |Port           |Function                                                |State      |I/O Std  |Direction |User I/O Lock Down |I/O state in Flash*Freeze mode |Clamp Diode |Resistor Pull |Schmitt Trigger |Vcm Input Range |On Die Termination |Odt Value (Ohm) |Input Delay |Slew |Output Drive (mA) |Impedance (ohm) |Output Load (pF) |Source Termination (Ohm) |Output Delay |
--------|---------------|--------------------------------------------------------|-----------|---------|----------|-------------------|-------------------------------|------------|--------------|----------------|----------------|-------------------|----------------|------------|-----|------------------|----------------|-----------------|-------------------------|-------------|
+Number |Port           |Function                                                |State      |I/O Std  |Direction |User I/O Lock Down |Clamp Diode |Resistor Pull |Schmitt Trigger |Vcm Input Range |On Die Termination |Odt Value (Ohm) |Input Delay |Slew |Output Drive (mA) |Impedance (ohm) |Output Load (pF) |Source Termination (Ohm) |Output Delay |
+-------|---------------|--------------------------------------------------------|-----------|---------|----------|-------------------|------------|--------------|----------------|----------------|-------------------|----------------|------------|-----|------------------|----------------|-----------------|-------------------------|-------------|
 A2                      GPIO251PB2                                               Unassigned  
 A3                      GPIO251NB2                                               Unassigned  
 A4                      GPIO253NB2                                               Unassigned  
@@ -29,14 +29,14 @@ A16                     VDDI6                                                   
 A17                     HSIO44PB6/DQS                                            Unassigned  
 A18                     HSIO44NB6/DQS                                            Unassigned  
 A19                     HSIO46NB6                                                Unassigned  
-A20     SPISS           HSIO47NB6                                                Fixed       LVCMOS18  Output     No                  LAST_VALUE                      ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
+A20     SPISS           HSIO47NB6                                                Fixed       LVCMOS18  Output     No                  ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
 A21                     VSS                                                      Reserved    
-A22     SPI_FLASH_HOLD  HSIO53PB6                                                Fixed       LVCMOS18  Output     No                  LAST_VALUE                      ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
+A22     SPI_FLASH_HOLD  HSIO53PB6                                                Fixed       LVCMOS18  Output     No                  ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
 A23                     HSIO53NB6                                                Unassigned  
-A24     INT_RESET_N     HSIO66NB6                                                Fixed       LVCMOS18  Output     No                  LAST_VALUE                      ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
+A24     INT_RESET_N     HSIO66NB6                                                Fixed       LVCMOS18  Output     No                  ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
 A25                     HSIO68PB6/DQS/CCC_SE_PLL1_OUT0                           Unassigned  
 A26                     VDDI6                                                    Reserved    
-A27     SPI_FLASH_WP    HSIO69PB6/CCC_SE_CLKIN_S_14/CCC_SE_PLL1_OUT0             Fixed       LVCMOS18  Output     No                  LAST_VALUE                      ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
+A27     SPI_FLASH_WP    HSIO69PB6/CCC_SE_CLKIN_S_14/CCC_SE_PLL1_OUT0             Fixed       LVCMOS18  Output     No                  ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
 A28                     VSS                                                      Reserved    
 A29                     VSS                                                      Reserved    
 A30                     VSS                                                      Reserved    
@@ -542,7 +542,7 @@ B22                     HSIO50NB6/DQS                                           
 B23                     VDDI6                                                    Reserved    
 B24                     HSIO66PB6                                                Unassigned  
 B25                     HSIO68NB6/DQS                                            Unassigned  
-B26     GPIO_OUT[1]     HSIO71NB6                                                Fixed       LVCMOS18  Output     No                  LAST_VALUE                      ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
+B26     GPIO_OUT[1]     HSIO71NB6                                                Fixed       LVCMOS18  Output     No                  ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
 B27                     HSIO69NB6                                                Unassigned  
 B28                     VSS                                                      Reserved    
 B29                     NC                                                       Reserved    
@@ -568,7 +568,7 @@ C14                     NC                                                      
 C15                     VSS                                                      Reserved    
 C16                     NC                                                       Reserved    
 C17                     HSIO43PB6                                                Unassigned  
-C18     SPISDI          HSIO45PB6                                                Fixed       LVCMOS18  Input      No                  LAST_VALUE                      ON           Up             OFF              ---              OFF                 120              OFF          ---   ---                ---              ---               ---                       ---           
+C18     SPISDI          HSIO45PB6                                                Fixed       LVCMOS18  Input      No                  ON           Up             OFF              ---              OFF                 120              OFF          ---   ---                ---              ---               ---                       ---           
 C19                     HSIO45NB6                                                Unassigned  
 C20                     VDDI6                                                    Reserved    
 C21                     HSIO49PB6                                                Unassigned  
@@ -576,7 +576,7 @@ C22                     HSIO50PB6/DQS                                           
 C23                     HSIO52NB6                                                Unassigned  
 C24                     HSIO67NB6                                                Unassigned  
 C25                     VSS                                                      Reserved    
-C26     GPIO_OUT[2]     HSIO70NB6                                                Fixed       LVCMOS18  Output     No                  LAST_VALUE                      ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
+C26     GPIO_OUT[2]     HSIO70NB6                                                Fixed       LVCMOS18  Output     No                  ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
 C27                     HSIO71PB6/CCC_SE_CLKIN_S_15                              Unassigned  
 C28                     VSS                                                      Reserved    
 C29                     VDDA                                                     Reserved    
@@ -609,7 +609,7 @@ D21                     HSIO48NB6                                               
 D22                     VSS                                                      Reserved    
 D23                     HSIO52PB6                                                Unassigned  
 D24                     HSIO67PB6                                                Unassigned  
-D25     GPIO_OUT[3]     HSIO70PB6/CCC_SE_PLL1_OUT1                               Fixed       LVCMOS18  Output     No                  LAST_VALUE                      ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
+D25     GPIO_OUT[3]     HSIO70PB6/CCC_SE_PLL1_OUT1                               Fixed       LVCMOS18  Output     No                  ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
 D26                     VSS                                                      Reserved    
 D27                     VSS                                                      Reserved    
 D28                     VSS                                                      Reserved    
@@ -674,7 +674,7 @@ F18                     NC                                                      
 F19                     NC                                                       Reserved    
 F20                     NC                                                       Reserved    
 F21                     VDDI6                                                    Reserved    
-F22     GPIO_OUT[0]     HSIO64NB6                                                Fixed       LVCMOS18  Output     No                  LAST_VALUE                      ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
+F22     GPIO_OUT[0]     HSIO64NB6                                                Fixed       LVCMOS18  Output     No                  ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
 F23                     HSIO62PB6/DQS/CCC_SE_PLL0_OUT0                           Unassigned  
 F24                     HSIO62NB6/DQS                                            Unassigned  
 F25                     HSIO63NB6                                                Unassigned  
@@ -703,9 +703,9 @@ G13                     VSS                                                     
 G14                     GPIO3NB2                                                 Unassigned  
 G15                     GPIO5PB2                                                 Unassigned  
 G16                     GPIO5NB2                                                 Unassigned  
-G17     UART_TX         HSIO37NB6                                                Fixed       LVCMOS18  Output     No                  LAST_VALUE                      ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
+G17     UART_TX         HSIO37NB6                                                Fixed       LVCMOS18  Output     No                  ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
 G18                     VDDI6                                                    Reserved    
-G19     SPISDO          HSIO39NB6                                                Fixed       LVCMOS18  Output     No                  LAST_VALUE                      ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
+G19     SPISDO          HSIO39NB6                                                Fixed       LVCMOS18  Output     No                  ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
 G20                     HSIO41PB6                                                Unassigned  
 G21                     HSIO41NB6                                                Unassigned  
 G22                     HSIO64PB6/CCC_SE_PLL0_OUT1                               Unassigned  
@@ -738,8 +738,8 @@ H14                     GPIO3PB2                                                
 H15                     VDDI2                                                    Reserved    
 H16                     GPIO32PB2/DQS                                            Unassigned  
 H17                     GPIO32NB2/DQS                                            Unassigned  
-H18     UART_RX         HSIO37PB6                                                Fixed       LVCMOS18  Input      No                  LAST_VALUE                      ON           Up             OFF              ---              OFF                 120              OFF          ---   ---                ---              ---               ---                       ---           
-H19     SPISCLKO        HSIO39PB6                                                Fixed       LVCMOS18  Output     No                  LAST_VALUE                      ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
+H18     UART_RX         HSIO37PB6                                                Fixed       LVCMOS18  Input      No                  ON           Up             OFF              ---              OFF                 120              OFF          ---   ---                ---              ---               ---                       ---           
+H19     SPISCLKO        HSIO39PB6                                                Fixed       LVCMOS18  Output     No                  ON           ---            ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
 H20                     VSS                                                      Reserved    
 H21                     HSIO36NB6                                                Unassigned  
 H22                     HSIO60NB6                                                Unassigned  
@@ -801,7 +801,7 @@ K9      TDO             TDO                                                     
 K10                     SDO                                                      Reserved    
 K11     TDI             TDI                                                      Dedicated   
 K12                     SDI                                                      Reserved    
-K13                     FF_EXIT_N                                                Reserved    
+K13                     RESERVED                                                 Reserved    
 K14                     VSS                                                      Reserved    
 K15                     GPIO0PB2                                                 Unassigned  
 K16                     GPIO31NB2                                                Unassigned  
@@ -810,7 +810,7 @@ K18                     GPIO35PB2/CCC_SE_CLKIN_S_11                             
 K19                     VDDI2                                                    Reserved    
 K20                     HSIO40PB6                                                Unassigned  
 K21                     HSIO38NB6/DQS                                            Unassigned  
-K22     RESET_N         HSIO55PB6                                                Fixed       LVCMOS18  Input      No                  LAST_VALUE                      ON           Up             OFF              ---              OFF                 120              OFF          ---   ---                ---              ---               ---                       ---           
+K22     RESET_N         HSIO55PB6                                                Fixed       LVCMOS18  Input      No                  ON           Up             OFF              ---              OFF                 120              OFF          ---   ---                ---              ---               ---                       ---           
 K23                     HSIO54PB6                                                Unassigned  
 K24                     VSS                                                      Reserved    
 K25                     HSIO59NB6                                                Unassigned  

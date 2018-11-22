@@ -1,11 +1,11 @@
 #--  Synopsys, Inc.
 #--  Version N-2017.09M-SP1-1
 #--  Project file C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_sram\synthesis\TOP_syn.prj
-#--  Written on Fri Sep  7 14:09:55 2018
+#--  Written on Thu Nov  8 15:37:02 2018
 
 
 #project files
-add_file -verilog "C:/Microsemi/Libero_SoC_PolarFire_v2.2/Designer/data/aPA5M/polarfire_syn_comps.v"
+add_file -verilog "C:/Microsemi/Libero_SoC_PolarFire_v2.3/Designer/data/aPA5M/polarfire_syn_comps.v"
 add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/component/work/CCC_100MHz/CCC_100MHz_0/CCC_100MHz_CCC_100MHz_0_PF_CCC.v"
 add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/component/work/CCC_100MHz/CCC_100MHz.v"
 add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/component/work/Init_Monitor/Init_Monitor_0/Init_Monitor_Init_Monitor_0_PF_INIT_MONITOR.v"
@@ -20,7 +20,7 @@ add_file -verilog -lib COREAHBLITE_LIB "C:/Microsemiprj_PF23/apps/riscv_bootload
 add_file -verilog -lib COREAHBLITE_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/core/coreahblite_slavearbiter.v"
 add_file -verilog -lib COREAHBLITE_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/core/coreahblite_slavestage.v"
 add_file -verilog -lib COREAHBLITE_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/component/Actel/DirectCore/CoreAHBLite/5.3.101/rtl/vlog/core/coreahblite_matrix4x16.v"
-add_file -verilog -lib COREAHBLITE_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite.v"
+add_file -verilog -lib COREAHBLITE_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/component/work/AHB_MMIO/AHB_MMIO_0/rtl/vlog/core/coreahblite.v"
 add_file -verilog "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/component/work/AHB_MMIO/AHB_MMIO.v"
 add_file -verilog -lib COREAHBTOAPB3_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vlog/core/coreahbtoapb3_ahbtoapbsm.v"
 add_file -verilog -lib COREAHBTOAPB3_LIB "C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_sram/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vlog/core/coreahbtoapb3_apbaddrdata.v"

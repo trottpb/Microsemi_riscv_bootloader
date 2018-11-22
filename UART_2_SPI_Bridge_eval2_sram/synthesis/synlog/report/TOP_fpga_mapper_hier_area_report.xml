@@ -146,7 +146,7 @@ The file contains the information about resource utilization per module to be di
 <data>0</data>
 <data>0</data>
 <module>
-<data>CoreAHBLite_Z4</data>
+<data>AHB_MMIO_AHB_MMIO_0_CoreAHBLite_Z4</data>
 <data>65</data>
 <data>186</data>
 <data>0</data>

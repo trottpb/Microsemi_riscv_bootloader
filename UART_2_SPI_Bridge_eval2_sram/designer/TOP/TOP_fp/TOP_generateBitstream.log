@@ -1,7 +1,7 @@
 Software Version: 12.200.35.9
 Opened 'C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_sram\designer\TOP\TOP_fp\TOP.pro'
 The 'open_project' command succeeded.
-Load Programming Data(s) Finished : Tue Oct 02 12:00:00 2018 (Elapsed time 00:01:01)
+Load Programming Data(s) Finished : Thu Nov 08 15:53:20 2018 (Elapsed time 00:01:03)
 The 'load_programming_data' command succeeded.
 The 'set_programming_file' command succeeded.
 Project saved.

@@ -1,6 +1,6 @@
 Compile Report
-Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.2 (Version 12.200.30.10)
-Date: Fri Sep 07 14:10:16 2018
+Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.3 (Version 12.200.35.9)
+Date: Thu Nov 08 15:37:19 2018
 
 Device Selection
 +------------------------+-------------+
@@ -15,11 +15,11 @@ Device Selection
 +------------------------+-------------+
 
 Source Files
-+---------+----------------------------------------------------------------------------------------+
-| Topcell | TOP                                                                                    |
-| Format  | Verilog                                                                                |
-| Source  | C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_sram\synthesis\TOP.vm |
-+---------+----------------------------------------------------------------------------------------+
++---------+------------------------------------------------------------------------------------------+
+| Topcell | TOP                                                                                      |
+| Format  | Verilog                                                                                  |
+| Source  | C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_sram\synthesis\TOP.vm |
++---------+------------------------------------------------------------------------------------------+
 
 Options
 +----------------------------------------------------+----+

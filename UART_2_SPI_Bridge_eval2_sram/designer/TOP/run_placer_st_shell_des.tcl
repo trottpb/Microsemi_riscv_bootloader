@@ -15,6 +15,6 @@ set_def {RTG4_MITIGATION_ON} {0}
 set_def USE_CONSTRAINTS_FLOW 1
 set_def NETLIST_TYPE EDIF
 set_name TOP
-set_workdir {C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_sram\designer\TOP}
-set_log     {C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_sram\designer\TOP\TOP_sdc.log}
+set_workdir {C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_sram\designer\TOP}
+set_log     {C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_sram\designer\TOP\TOP_sdc.log}
 set_design_state pre_layout

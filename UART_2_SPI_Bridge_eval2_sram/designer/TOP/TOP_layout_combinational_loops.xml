@@ -2,9 +2,9 @@
 <?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
 <doc>
 <title>Combinational Loop Report</title>
-<text>SmartTime Version 12.200.30.10</text>
-<text>Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.2 (Version 12.200.30.10)</text>
-<text>Date: Fri Sep 07 14:10:50 2018
+<text>SmartTime Version 12.200.35.9</text>
+<text>Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.3 (Version 12.200.35.9)</text>
+<text>Date: Thu Nov 08 15:37:54 2018
 </text>
 <table>
 <header>
