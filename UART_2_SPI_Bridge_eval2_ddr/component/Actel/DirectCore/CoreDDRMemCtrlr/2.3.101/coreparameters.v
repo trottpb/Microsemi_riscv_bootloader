@@ -1,5 +1,5 @@
 //--------------------------------------------------------------------
-// Created by Microsemi SmartDesign Fri Aug 31 09:48:48 2018
+// Created by Microsemi SmartDesign Thu Oct 18 16:08:05 2018
 // Parameters for CoreDDRMemCtrlr
 //--------------------------------------------------------------------
 

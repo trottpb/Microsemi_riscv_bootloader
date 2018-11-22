@@ -1,71 +1,67 @@
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(35032): WARNING: net N_19030 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(219045): WARNING: net N_19036 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(219046): WARNING: net N_19037 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(219047): WARNING: net N_19038 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(225793): WARNING: net N_19044 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(225794): WARNING: net N_19045 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(225795): WARNING: net N_19046 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(227937): WARNING: net N_19054 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(227938): WARNING: net N_19055 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(227939): WARNING: net N_19056 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(227940): WARNING: net N_19057 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(239938): WARNING: net N_19066 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(249822): WARNING: net N_19070 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(249823): WARNING: net N_19071 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(253820): WARNING: net N_19074 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(253821): WARNING: net N_19075 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(354995): WARNING: net N_19079 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(354996): WARNING: net N_19080 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(355083): WARNING: net N_19081 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(380317): WARNING: net N_19082 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(380318): WARNING: net N_19083 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(391626): WARNING: net N_19039 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(391731): WARNING: net N_19047 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(391732): WARNING: net N_19048 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(391733): WARNING: net N_19049 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(391754): WARNING: net N_19059 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(391755): WARNING: net N_19060 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(391756): WARNING: net N_19061 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(391757): WARNING: net N_19062 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(391815): WARNING: net N_19069 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(391883): WARNING: net N_19084 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(391884): WARNING: net N_19085 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(394131): WARNING: net N_19086 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(394132): WARNING: net N_19087 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(394627): WARNING: net N_19088 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(394628): WARNING: net N_19089 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(395126): WARNING: net N_19090 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(395127): WARNING: net N_19091 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(409490): WARNING: net N_19094 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(409491): WARNING: net N_19095 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(409492): WARNING: net N_19096 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(409493): WARNING: net N_19097 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(409494): WARNING: net N_19098 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(409495): WARNING: net N_19099 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(415454): WARNING: net N_19100 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(415455): WARNING: net N_19101 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(415456): WARNING: net N_19102 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(415457): WARNING: net N_19103 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(415458): WARNING: net N_19104 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(415459): WARNING: net N_19105 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(423336): WARNING: net N_19092 does not have a driver (VDB-1002)
-C:/Microsemiprj_PF/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(423337): WARNING: net N_19093 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(0): WARNING: net ** does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(213352): WARNING: net N_18445 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(213353): WARNING: net N_18446 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(213354): WARNING: net N_18447 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(220147): WARNING: net N_18457 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(220148): WARNING: net N_18458 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(220149): WARNING: net N_18459 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(222284): WARNING: net N_18466 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(222285): WARNING: net N_18467 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(222286): WARNING: net N_18468 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(222287): WARNING: net N_18469 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(234515): WARNING: net N_18481 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(244480): WARNING: net N_18491 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(244481): WARNING: net N_18492 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(248543): WARNING: net N_18495 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(248544): WARNING: net N_18496 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(351089): WARNING: net N_18501 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(351090): WARNING: net N_18502 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(351091): WARNING: net N_18503 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(351092): WARNING: net N_18504 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388362): WARNING: net N_18448 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388382): WARNING: net N_18449 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388383): WARNING: net N_18450 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388384): WARNING: net N_18451 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388385): WARNING: net N_18452 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388386): WARNING: net N_18453 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388480): WARNING: net N_18460 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388481): WARNING: net N_18461 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388482): WARNING: net N_18462 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388501): WARNING: net N_18472 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388502): WARNING: net N_18473 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388503): WARNING: net N_18474 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388518): WARNING: net N_18480 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388554): WARNING: net N_18484 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388562): WARNING: net N_18490 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(388627): WARNING: net N_18507 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(406487): WARNING: net N_18508 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(406488): WARNING: net N_18509 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(406489): WARNING: net N_18510 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(406490): WARNING: net N_18511 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(406491): WARNING: net N_18512 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(406492): WARNING: net N_18513 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(412451): WARNING: net N_18514 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(412452): WARNING: net N_18515 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(412453): WARNING: net N_18516 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(412454): WARNING: net N_18517 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(412455): WARNING: net N_18518 does not have a driver (VDB-1002)
+C:/Microsemiprj_PF23/apps/riscv_bootloader/UART_2_SPI_Bridge_eval2_ddr/synthesis/TOP.vm(412456): WARNING: net N_18519 does not have a driver (VDB-1002)
 
 Info: Device 'MPF300TS_ES' requires Two-port LSRAM cells with Read-width > 20 to be remapped 
       Two-port LSRAM instances with Read-width > 20:                     41
@@ -107,14 +103,14 @@ Info: Following Two-port LSRAM instances with Read-width > 20 and a single clock
       IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R7C0 
       IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R8C0 
       IO_0/LSRAM_64kBytes_0/PF_TPSRAM_AHB_AXI_0/LSRAM_64kBytes_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R9C0 
-      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_8/MSC_i_13/MSC_i_16/mem_mem_0_0 
-      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_8/MSC_i_13/MSC_i_16/mem_mem_0_1 
-      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_8/MSC_i_21/MSC_i_50/mem_mem_0_0 
-      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_8/MSC_i_21/MSC_i_50/mem_mem_0_1 
-      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_8/MSC_i_21/MSC_i_50/mem_mem_0_2 
-      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_8/MSC_i_21/MSC_i_50/mem_mem_0_3 
-      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_8/MSC_i_9/MSC_i_12/mem_mem_0_0 
-      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_8/MSC_i_9/MSC_i_12/mem_mem_0_1 
+      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_6/MSC_i_11/MSC_i_14/mem_mem_0_0 
+      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_6/MSC_i_11/MSC_i_14/mem_mem_0_1 
+      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_6/MSC_i_19/MSC_i_48/mem_mem_0_0 
+      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_6/MSC_i_19/MSC_i_48/mem_mem_0_1 
+      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_6/MSC_i_19/MSC_i_48/mem_mem_0_2 
+      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_6/MSC_i_19/MSC_i_48/mem_mem_0_3 
+      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_6/MSC_i_7/MSC_i_10/mem_mem_0_0 
+      MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_4/MSC_i_6/MSC_i_7/MSC_i_10/mem_mem_0_1 
       PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/dcache/tag_array_0_tag_array_0_0_0 
 
 Info: [127205813]:  CMPPF_149: Added 'ADLIB:ICB_CLKINT' instance type before pin 'PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint:A'.
@@ -135,9 +131,9 @@ Info: Global design data:
 Info: List of globals that cannot be demoted: 
     CLK    ASYN   DATA   Instance Name 
     ---    ----   ----   ------------- 
-    9821   0      0      'MEMORY_0/DDR3_0/CCC_0/clkint_4' 
-    7081   0      1      'CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0' 
+    16686  0      0      'MEMORY_0/DDR3_0/CCC_0/clkint_4' 
     16     0      1      'PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint' 
+    2      0      1      'CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0' 
     0      0      1      'CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160_INT' 
     1      0      0      'MEMORY_0/DDR3_0/DDRPHY_BLK_0/CLKINT_CMD' 
 
@@ -145,9 +141,9 @@ Info: List of globals considered for demotion:
     CLK    ASYN   DATA   Instance Name 
     ---    ----   ----   ------------- 
     292    0      0      'PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/tck_clkint' 
-    0      4887   4      'MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_RNIHTV3[0]' 
-    0      3994   0      'MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_225/MSC_i_226/MSC_i_227/MSC_i_228/s1_RNIPSG9' 
-    0      1778   8      'IO_0/CoreSPI_0_0/CoreSPI_0_0/USPI/UCC/ssel_rx_q2_RNIHUF9' 
+    0      4886   4      'MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_RNIHTV3[0]' 
+    0      3946   0      'MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_224/MSC_i_225/MSC_i_226/MSC_i_227/s1_RNIPSG9' 
+    0      1743   8      'IO_0/CoreSPI_0_0/CoreSPI_0_0/USPI/UCC/ssel_rx_q2_RNIHUF9' 
 
 Info: Demotion information: 
       Disconnected 4 data pins from global 'MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_RNIHTV3[0]'. 
@@ -166,4 +162,4 @@ Info: Chip global resources driven by the following fabric instances were gated 
     MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int[0]
     MEMORY_0/DDR3_0/DDRPHY_BLK_0/DFN1_CMD
     PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.UJ_JTAG_0/un1_duttck_inferred_clock_RNITU6B
-    MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_225/MSC_i_226/MSC_i_227/MSC_i_228/s1
+    MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_224/MSC_i_225/MSC_i_226/MSC_i_227/s1

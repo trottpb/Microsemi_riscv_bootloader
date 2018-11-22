@@ -1,33 +1,48 @@
-@P:  Worst Slack : -1.604
-@P:  CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0 - Estimated Frequency : 86.2 MHz
-@P:  CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0 - Requested Frequency : 100.0 MHz
-@P:  CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0 - Estimated Period : 11.604
-@P:  CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0 - Requested Period : 10.000
-@P:  CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0 - Slack : -1.604
+@P:  Worst Slack : -2.696
+@P:  CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0 - Estimated Frequency : 284.0 MHz
+@P:  CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0 - Requested Frequency : 111.1 MHz
+@P:  CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0 - Estimated Period : 3.522
+@P:  CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0 - Requested Period : 9.000
+@P:  CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0 - Slack : 5.478
 @P:  CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160/CLK - Estimated Frequency : NA
 @P:  CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160/CLK - Requested Frequency : 160.0 MHz
 @P:  CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160/CLK - Estimated Period : NA
 @P:  CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160/CLK - Requested Period : 6.250
 @P:  CLOCKS_RESETS_0/RCOSC_0/RCOSC_0/I_OSC_160/CLK - Slack : NA
-@P:  COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock - Estimated Frequency : 142.8 MHz
+@P:  COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock - Estimated Frequency : 140.3 MHz
 @P:  COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock - Estimated Period : 7.004
+@P:  COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock - Estimated Period : 7.129
 @P:  COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock - Requested Period : 10.000
-@P:  COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock - Slack : 1.498
-@P:  DDR3_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock - Estimated Frequency : 134.5 MHz
-@P:  DDR3_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  DDR3_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock - Estimated Period : 7.435
-@P:  DDR3_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock - Requested Period : 10.000
-@P:  DDR3_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock - Slack : 2.565
-@P:  System - Estimated Frequency : 271.2 MHz
+@P:  COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock - Slack : 1.436
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT0 - Estimated Frequency : NA
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT0 - Requested Frequency : 444.4 MHz
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT0 - Estimated Period : NA
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT0 - Requested Period : 2.250
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT0 - Slack : NA
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT1 - Estimated Frequency : 85.5 MHz
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT1 - Requested Frequency : 111.1 MHz
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT1 - Estimated Period : 11.696
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT1 - Requested Period : 9.000
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT1 - Slack : -2.696
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT2 - Estimated Frequency : NA
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT2 - Requested Frequency : 444.4 MHz
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT2 - Estimated Period : NA
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT2 - Requested Period : 2.250
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT2 - Slack : NA
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT3 - Estimated Frequency : NA
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT3 - Requested Frequency : 444.4 MHz
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT3 - Estimated Period : NA
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT3 - Requested Period : 2.250
+@P:  MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT3 - Slack : NA
+@P:  System - Estimated Frequency : 245.6 MHz
 @P:  System - Requested Frequency : 100.0 MHz
-@P:  System - Estimated Period : 3.688
+@P:  System - Estimated Period : 4.071
 @P:  System - Requested Period : 10.000
-@P:  System - Slack : 6.313
+@P:  System - Slack : 5.929
 @P: TOP Part : mpf300tfcg1152-1
-@P: TOP Register bits  : 16626 
+@P: TOP Register bits  : 16437 
 @P: TOP DSP Blocks  : 2
 @P: TOP I/O primitives : 57
 @P: TOP RAM1K20 :  62
-@P: TOP RAM64x12 :  84
-@P:  CPU Time : 0h:03m:44s
+@P: TOP RAM64x12 :  61
+@P:  CPU Time : 0h:03m:42s

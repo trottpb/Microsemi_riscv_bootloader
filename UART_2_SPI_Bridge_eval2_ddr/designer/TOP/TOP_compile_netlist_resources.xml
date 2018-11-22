@@ -2,8 +2,8 @@
 <?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
 <doc>
 <title>Compile Report</title>
-<text>Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.2 (Version 12.200.30.10)</text>
-<text>Date: Fri Sep 07 13:36:45 2018
+<text>Microsemi Corporation - Microsemi Libero Software Release PolarFire v2.3 (Version 12.200.35.9)</text>
+<text>Date: Thu Oct 18 16:53:23 2018
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -56,7 +56,7 @@
 </row>
 <row>
  <cell>Source</cell>
- <cell>C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\synthesis\TOP.vm</cell>
+ <cell>C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\synthesis\TOP.vm</cell>
 </row>
 </table>
 <section><name>Options</name></section>
@@ -78,15 +78,15 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>29077</cell>
+ <cell>28891</cell>
  <cell>299544</cell>
- <cell>9.71</cell>
+ <cell>9.64</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>19949</cell>
+ <cell>19484</cell>
  <cell>299544</cell>
- <cell>6.66</cell>
+ <cell>6.50</cell>
 </row>
 <row>
  <cell>I/O Register</cell>
@@ -114,9 +114,9 @@
 </row>
 <row>
  <cell>uSRAM</cell>
- <cell>84</cell>
+ <cell>61</cell>
  <cell>2772</cell>
- <cell>3.03</cell>
+ <cell>2.20</cell>
 </row>
 <row>
  <cell>LSRAM</cell>
@@ -200,13 +200,13 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>25765</cell>
- <cell>16637</cell>
+ <cell>25855</cell>
+ <cell>16448</cell>
 </row>
 <row>
  <cell>uSRAM Interface Logic</cell>
- <cell>1008</cell>
- <cell>1008</cell>
+ <cell>732</cell>
+ <cell>732</cell>
 </row>
 <row>
  <cell>LSRAM Interface Logic</cell>
@@ -220,8 +220,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>29077</cell>
- <cell>19949</cell>
+ <cell>28891</cell>
+ <cell>19484</cell>
 </row>
 </table>
 <section><name>Detailed Carry Chains Resource Usage</name></section>
@@ -234,7 +234,7 @@
 </row>
 <row>
  <cell>2</cell>
- <cell>303</cell>
+ <cell>308</cell>
 </row>
 <row>
  <cell>3</cell>
@@ -242,11 +242,11 @@
 </row>
 <row>
  <cell>5</cell>
- <cell>2</cell>
+ <cell>3</cell>
 </row>
 <row>
  <cell>6</cell>
- <cell>8</cell>
+ <cell>7</cell>
 </row>
 <row>
  <cell>7</cell>
@@ -254,15 +254,15 @@
 </row>
 <row>
  <cell>8</cell>
- <cell>56</cell>
+ <cell>57</cell>
 </row>
 <row>
  <cell>9</cell>
- <cell>76</cell>
+ <cell>74</cell>
 </row>
 <row>
  <cell>10</cell>
- <cell>26</cell>
+ <cell>22</cell>
 </row>
 <row>
  <cell>11</cell>
@@ -411,9 +411,9 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>9821</cell>
+ <cell>16686</cell>
  <cell>INT_NET</cell>
- <cell>Net   : MEMORY_0/DDR3_0_SYS_CLK</cell>
+ <cell>Net   : MEMORY_0_SYS_CLK</cell>
 </row>
 <row>
  <cell></cell>
@@ -426,22 +426,7 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>7082</cell>
- <cell>INT_NET</cell>
- <cell>Net   : CLOCKS_RESETS_0_CLK100</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_RGB1</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Source: NETLIST</cell>
-</row>
-<row>
- <cell>4887</cell>
+ <cell>4886</cell>
  <cell>INT_NET</cell>
  <cell>Net   : MEMORY_0/DDR3_0/DDRPHY_BLK_0_SYNC_SYS_RST_N</cell>
 </row>
@@ -456,14 +441,14 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>3994</cell>
+ <cell>3946</cell>
  <cell>INT_NET</cell>
- <cell>Net   : MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_net_1029</cell>
+ <cell>Net   : MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_net_1027</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_225/MSC_i_226/MSC_i_227/MSC_i_228/s1_RNIPSG9/U0_RGB1</cell>
+ <cell>Driver: MEMORY_0/DDR3_0/MSC_i_0/MSC_i_1/MSC_i_224/MSC_i_225/MSC_i_226/MSC_i_227/s1_RNIPSG9/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -471,7 +456,7 @@
  <cell>Source: NETLIST</cell>
 </row>
 <row>
- <cell>1778</cell>
+ <cell>1743</cell>
  <cell>INT_NET</cell>
  <cell>Net   : MEMORY_0.AXI_INTERCONNECT_0.AXI_INTERCONNECT_0.ACLK_syncReset</cell>
 </row>
@@ -509,6 +494,21 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: PROCESSOR_0/JTAG_DEBUG_0/JTAG_DEBUG_0/genblk1.udrck_clkint/U0_RGB1</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Source: NETLIST</cell>
+</row>
+<row>
+ <cell>3</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : CLOCKS_RESETS_0_CLK100</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/clkint_0/U0_RGB1</cell>
 </row>
 <row>
  <cell></cell>
@@ -562,7 +562,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>1677</cell>
+ <cell>1678</cell>
  <cell>INT_NET</cell>
  <cell>Net   : INT_RESET_N_c</cell>
 </row>
@@ -572,7 +572,7 @@
  <cell>Driver: CLOCKS_RESETS_0/reset_synchronizer_0/genblk1.reset_sync_reg[1]</cell>
 </row>
 <row>
- <cell>594</cell>
+ <cell>606</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/_T_164</cell>
 </row>
@@ -582,7 +582,7 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_RESET_CATCH_AND_SYNC/reset_n_catch_reg/reg_0/q</cell>
 </row>
 <row>
- <cell>297</cell>
+ <cell>291</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[2]</cell>
 </row>
@@ -592,7 +592,27 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[2]</cell>
 </row>
 <row>
- <cell>250</cell>
+ <cell>260</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_2284_Z</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_2284</cell>
+</row>
+<row>
+ <cell>251</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/write_callibration_offset[4]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/genblk2[1].write_callibration_offset[4]</cell>
+</row>
+<row>
+ <cell>251</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[7]</cell>
 </row>
@@ -602,7 +622,7 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[7]</cell>
 </row>
 <row>
- <cell>247</cell>
+ <cell>246</cell>
  <cell>INT_NET</cell>
  <cell>Net   : MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/write_callibration_offset[1]</cell>
 </row>
@@ -612,14 +632,14 @@
  <cell>Driver: MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/genblk2[0].write_callibration_offset[1]</cell>
 </row>
 <row>
- <cell>243</cell>
+ <cell>239</cell>
  <cell>INT_NET</cell>
- <cell>Net   : MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/write_callibration_offset[4]</cell>
+ <cell>Net   : MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/write_callibration_offset[5]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/genblk2[1].write_callibration_offset[4]</cell>
+ <cell>Driver: MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/genblk2[1].write_callibration_offset[5]</cell>
 </row>
 <row>
  <cell>237</cell>
@@ -632,17 +652,7 @@
  <cell>Driver: MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/genblk2[0].write_callibration_offset[2]</cell>
 </row>
 <row>
- <cell>234</cell>
- <cell>INT_NET</cell>
- <cell>Net   : MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/write_callibration_offset[5]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/genblk2[1].write_callibration_offset[5]</cell>
-</row>
-<row>
- <cell>230</cell>
+ <cell>229</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[3]</cell>
 </row>
@@ -650,16 +660,6 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[3]</cell>
-</row>
-<row>
- <cell>220</cell>
- <cell>INT_NET</cell>
- <cell>Net   : MEMORY_0/DDR3_0/DDRPHY_BLK_0_CAL_SELECT</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/select</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -670,7 +670,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>1677</cell>
+ <cell>1678</cell>
  <cell>INT_NET</cell>
  <cell>Net   : INT_RESET_N_c</cell>
 </row>
@@ -680,7 +680,7 @@
  <cell>Driver: CLOCKS_RESETS_0/reset_synchronizer_0/genblk1.reset_sync_reg[1]</cell>
 </row>
 <row>
- <cell>594</cell>
+ <cell>606</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/_T_164</cell>
 </row>
@@ -690,7 +690,7 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_RESET_CATCH_AND_SYNC/reset_n_catch_reg/reg_0/q</cell>
 </row>
 <row>
- <cell>297</cell>
+ <cell>291</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[2]</cell>
 </row>
@@ -700,7 +700,27 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[2]</cell>
 </row>
 <row>
- <cell>250</cell>
+ <cell>260</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_2284_Z</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/tile/rocket/core/csr/_T_2284</cell>
+</row>
+<row>
+ <cell>251</cell>
+ <cell>INT_NET</cell>
+ <cell>Net   : MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/write_callibration_offset[4]</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell></cell>
+ <cell>Driver: MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/genblk2[1].write_callibration_offset[4]</cell>
+</row>
+<row>
+ <cell>251</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[7]</cell>
 </row>
@@ -710,7 +730,7 @@
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[7]</cell>
 </row>
 <row>
- <cell>247</cell>
+ <cell>246</cell>
  <cell>INT_NET</cell>
  <cell>Net   : MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/write_callibration_offset[1]</cell>
 </row>
@@ -720,14 +740,14 @@
  <cell>Driver: MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/genblk2[0].write_callibration_offset[1]</cell>
 </row>
 <row>
- <cell>243</cell>
+ <cell>239</cell>
  <cell>INT_NET</cell>
- <cell>Net   : MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/write_callibration_offset[4]</cell>
+ <cell>Net   : MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/write_callibration_offset[5]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/genblk2[1].write_callibration_offset[4]</cell>
+ <cell>Driver: MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/genblk2[1].write_callibration_offset[5]</cell>
 </row>
 <row>
  <cell>237</cell>
@@ -740,17 +760,7 @@
  <cell>Driver: MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/genblk2[0].write_callibration_offset[2]</cell>
 </row>
 <row>
- <cell>234</cell>
- <cell>INT_NET</cell>
- <cell>Net   : MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/write_callibration_offset[5]</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/genblk2[1].write_callibration_offset[5]</cell>
-</row>
-<row>
- <cell>230</cell>
+ <cell>229</cell>
  <cell>INT_NET</cell>
  <cell>Net   : PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/TLAsyncCrossingSink_io_out_0_a_bits_address[3]</cell>
 </row>
@@ -758,16 +768,6 @@
  <cell></cell>
  <cell></cell>
  <cell>Driver: PROCESSOR_0/Mi_V_Processor_0/Mi_V_Processor_0/ChiselTop0/debug_1/dmInner/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_TL_ASYNC_CROSSING_SINK/Mi_V_Processor_Mi_V_Processor_0_MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_36_address[3]</cell>
-</row>
-<row>
- <cell>220</cell>
- <cell>INT_NET</cell>
- <cell>Net   : MEMORY_0/DDR3_0/DDRPHY_BLK_0_CAL_SELECT</cell>
-</row>
-<row>
- <cell></cell>
- <cell></cell>
- <cell>Driver: MEMORY_0/DDR3_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/select</cell>
 </row>
 </table>
 </doc>

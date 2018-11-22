@@ -1,7 +1,7 @@
-C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  TOP  -multisrs  C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\synthesis\synwork\TOP_comp.srs  -osyn  C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\synthesis\synwork\TOP_mult.srs  -log  C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\synthesis\synlog\TOP_multi_srs_gen.srr 
-relcom:..\..\..\..\..\..\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\bin64\syn_nfilter.exe -link -top TOP -multisrs ..\synwork\TOP_comp.srs -osyn ..\synwork\TOP_mult.srs -log ..\synlog\TOP_multi_srs_gen.srr
-rc:0 success:1 runtime:7
-file:..\synwork\TOP_comp.srs|io:i|time:1536323469|size:11072047|exec:0|csum:75ACEC2E3636265407D232ED27BCEFD8
-file:..\synwork\TOP_mult.srs|io:o|time:1536323477|size:12527|exec:0|csum:
-file:..\synlog\TOP_multi_srs_gen.srr|io:o|time:1536323477|size:4467|exec:0|csum:
-file:..\..\..\..\..\..\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1523437922|size:8657408|exec:1|csum:EAD189456567CA910873FDB52FD25D03
+C:\Microsemi\Libero_SoC_PolarFire_v2.3\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  TOP  -multisrs  C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\synthesis\synwork\TOP_comp.srs  -osyn  C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\synthesis\synwork\TOP_mult.srs  -log  C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\synthesis\synlog\TOP_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\Microsemi\Libero_SoC_PolarFire_v2.3\SynplifyPro\bin64\syn_nfilter.exe -link -top TOP -multisrs ..\synwork\TOP_comp.srs -osyn ..\synwork\TOP_mult.srs -log ..\synlog\TOP_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\TOP_comp.srs|io:i|time:1539875479|size:11065692|exec:0|csum:0A575867371A112B738614CCA9FE0805
+file:..\synwork\TOP_mult.srs|io:o|time:1539875487|size:12333|exec:0|csum:
+file:..\synlog\TOP_multi_srs_gen.srr|io:o|time:1539875487|size:4486|exec:0|csum:
+file:..\..\..\..\..\..\Microsemi\Libero_SoC_PolarFire_v2.3\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1523466722|size:8657408|exec:1|csum:EAD189456567CA910873FDB52FD25D03

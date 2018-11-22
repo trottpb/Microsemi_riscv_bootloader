@@ -1,6 +1,6 @@
 G5ROUTER_32_64_BIT_EXT=64
 DESIGN=TOP
-DESDIR=C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\designer\TOP
+DESDIR=C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\designer\TOP
 FAM=PolarFire
 DIE=PA5M300TS_ES
 PACKAGE=fcg1152

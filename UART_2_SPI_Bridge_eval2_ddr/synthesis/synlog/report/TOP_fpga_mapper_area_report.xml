@@ -5,18 +5,18 @@ The file contains the area information from mapper to be displayed as part of th
 *******************************************************************************************-->
 <report_table display_priority="1" name="Area Summary">
 <report_link name="Detailed report">
-<data>C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\synthesis\synlog\report\TOP_fpga_mapper_resourceusage.rpt</data>
+<data>C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\synthesis\synlog\report\TOP_fpga_mapper_resourceusage.rpt</data>
 <title>Resource Usage</title>
 </report_link>
 <report_link name="Hierarchical Area report">
-<data>C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\synthesis\synlog\report\TOP_fpga_mapper_hier_area_report.xml</data>
+<data>C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\synthesis\synlog\report\TOP_fpga_mapper_hier_area_report.xml</data>
 <title>Hierarchical Area Report</title>
 </report_link>
 <parameter tooltip="Total Carry Cells used" name="Carry Cells">
-<data>3655</data>
+<data>3613</data>
 </parameter>
 <parameter tooltip="Total Sequential Cells used" name="Sequential Cells">
-<data>16626</data>
+<data>16437</data>
 </parameter>
 <parameter tcl_name="dsp_used" tooltip="Total DSP Blocks used" name="DSP Blocks">
 <data>2</data>
@@ -31,9 +31,9 @@ The file contains the area information from mapper to be displayed as part of th
 <data>62</data>
 </parameter>
 <parameter tcl_name="v_ram" tooltip="Total RAM64x12 used" name="RAM64x12">
-<data>84</data>
+<data>61</data>
 </parameter>
 <parameter tcl_name="total_luts" tooltip="Total LUTs used" name="LUTs">
-<data>25200</data>
+<data>25289</data>
 </parameter>
 </report_table>

@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Sep 07 13:28:29 2018
-// Version: PolarFire v2.2 12.200.30.10
+// Created by SmartDesign Thu Oct 18 15:06:33 2018
+// Version: PolarFire v2.3 12.200.35.9
 //////////////////////////////////////////////////////////////////////
 
 `timescale 1ns / 100ps
@@ -105,6 +105,7 @@ wire   [1:0]  DQS_N;
 wire   [3:0]  GPIO_OUT_net_0;
 wire          INT_RESET_N_net_0;
 wire          IO_0_RXRDY;
+wire          MEMORY_0_SYS_CLK;
 wire          ODT_net_0;
 wire   [31:0] PROCESSOR_0_AHB_MST_MEM_HADDR;
 wire   [2:0]  PROCESSOR_0_AHB_MST_MEM_HBURST;
@@ -171,17 +172,17 @@ wire          VCC_net;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
+wire   [3:0]  PROCESSOR_0_AHB_MST_MEM_HPROT;
 wire   [6:4]  PROCESSOR_0_AHB_MST_MEM_HPROT_0_6to4;
 wire   [3:0]  PROCESSOR_0_AHB_MST_MEM_HPROT_0_3to0;
 wire   [6:0]  PROCESSOR_0_AHB_MST_MEM_HPROT_0;
-wire   [3:0]  PROCESSOR_0_AHB_MST_MEM_HPROT;
-wire   [30:0] PROCESSOR_0_AHB_MST_MMIO_HADDR;
 wire   [31:31]PROCESSOR_0_AHB_MST_MMIO_HADDR_0_31to31;
 wire   [30:0] PROCESSOR_0_AHB_MST_MMIO_HADDR_0_30to0;
 wire   [31:0] PROCESSOR_0_AHB_MST_MMIO_HADDR_0;
+wire   [30:0] PROCESSOR_0_AHB_MST_MMIO_HADDR;
+wire   [1:0]  PROCESSOR_0_AHB_MST_MMIO_HRESP;
 wire   [0:0]  PROCESSOR_0_AHB_MST_MMIO_HRESP_0_0to0;
 wire          PROCESSOR_0_AHB_MST_MMIO_HRESP_0;
-wire   [1:0]  PROCESSOR_0_AHB_MST_MMIO_HRESP;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -265,7 +266,7 @@ CLOCKS_RESETS CLOCKS_RESETS_0(
 //--------IO
 IO IO_0(
         // Inputs
-        .HCLK         ( CLOCKS_RESETS_0_CLK100 ),
+        .HCLK         ( MEMORY_0_SYS_CLK ),
         .HRESETN      ( INT_RESET_N_net_0 ),
         .RX           ( UART_RX ),
         .SPISDI       ( SPISDI ),
@@ -283,10 +284,10 @@ IO IO_0(
         .SPISDO       ( SPISDO_net_0 ),
         .SPISS        ( SPISS_net_0 ),
         .HREADY_M0    ( PROCESSOR_0_AHB_MST_MMIO_HREADY ),
+        .RXRDY        ( IO_0_RXRDY ),
         .GPIO_OUT     ( GPIO_OUT_net_0 ),
         .HRDATA_M0    ( PROCESSOR_0_AHB_MST_MMIO_HRDATA ),
-        .HRESP_M0     ( PROCESSOR_0_AHB_MST_MMIO_HRESP ),
-        .RXRDY        ( IO_0_RXRDY ) 
+        .HRESP_M0     ( PROCESSOR_0_AHB_MST_MMIO_HRESP ) 
         );
 
 //--------MEMORY
@@ -295,9 +296,9 @@ MEMORY MEMORY_0(
         .HCLK         ( CLOCKS_RESETS_0_CLK100 ),
         .HRESETN      ( INT_RESET_N_net_0 ),
         .MASTER0_HSEL ( PROCESSOR_0_AHB_MST_MEM_HSEL ),
-        .HWRITE_M0    ( PROCESSOR_0_AHB_MST_MEM_HWRITE ),
         .HADDR_M0     ( PROCESSOR_0_AHB_MST_MEM_HADDR ),
         .HTRANS_M0    ( PROCESSOR_0_AHB_MST_MEM_HTRANS ),
+        .HWRITE_M0    ( PROCESSOR_0_AHB_MST_MEM_HWRITE ),
         .HSIZE_M0     ( PROCESSOR_0_AHB_MST_MEM_HSIZE ),
         .HBURST_M0    ( PROCESSOR_0_AHB_MST_MEM_HBURST ),
         .HPROT_M0     ( PROCESSOR_0_AHB_MST_MEM_HPROT_0 ),
@@ -314,12 +315,13 @@ MEMORY MEMORY_0(
         .CK0_N        ( CK0_N_net_0 ),
         .SHIELD0      ( SHIELD0_net_0 ),
         .SHIELD1      ( SHIELD1_net_0 ),
-        .HREADY_M0    ( PROCESSOR_0_AHB_MST_MEM_HREADY ),
-        .HRESP_M0     ( PROCESSOR_0_AHB_MST_MEM_HRESP ),
         .DM           ( DM_net_0 ),
         .BA           ( BA_net_0 ),
         .A            ( A_net_0 ),
+        .SYS_CLK      ( MEMORY_0_SYS_CLK ),
         .HRDATA_M0    ( PROCESSOR_0_AHB_MST_MEM_HRDATA ),
+        .HREADY_M0    ( PROCESSOR_0_AHB_MST_MEM_HREADY ),
+        .HRESP_M0     ( PROCESSOR_0_AHB_MST_MEM_HRESP ),
         // Inouts
         .DQ           ( DQ ),
         .DQS          ( DQS ),
@@ -329,7 +331,7 @@ MEMORY MEMORY_0(
 //--------PROCESSOR
 PROCESSOR PROCESSOR_0(
         // Inputs
-        .CLK                 ( CLOCKS_RESETS_0_CLK100 ),
+        .CLK                 ( MEMORY_0_SYS_CLK ),
         .RESETN              ( INT_RESET_N_net_0 ),
         .TRSTB               ( TRSTB ),
         .TCK                 ( TCK ),
@@ -339,9 +341,9 @@ PROCESSOR PROCESSOR_0(
         .AHB_MST_MEM_HRESP   ( PROCESSOR_0_AHB_MST_MEM_HRESP ),
         .AHB_MST_MMIO_HREADY ( PROCESSOR_0_AHB_MST_MMIO_HREADY ),
         .AHB_MST_MMIO_HRESP  ( PROCESSOR_0_AHB_MST_MMIO_HRESP_0 ),
+        .IRQ                 ( IO_0_RXRDY ),
         .AHB_MST_MEM_HRDATA  ( PROCESSOR_0_AHB_MST_MEM_HRDATA ),
         .AHB_MST_MMIO_HRDATA ( PROCESSOR_0_AHB_MST_MMIO_HRDATA ),
-        .IRQ                 ( IO_0_RXRDY ),
         // Outputs
         .TDO                 ( TDO_net_0 ),
         .AHB_MST_MEM_HWRITE  ( PROCESSOR_0_AHB_MST_MEM_HWRITE ),

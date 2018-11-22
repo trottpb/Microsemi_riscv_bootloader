@@ -6,26 +6,26 @@ with Synopsys, Inc. All other use, reproduction, modification, or distribution o
 Synopsys software or the associated documentation is strictly prohibited.
 Tool: Synplify Pro (R)
 Build: N-2017.09M-SP1-1
-Install: C:\Microsemi\Libero_SoC_PolarFire_v2.2\SynplifyPro
+Install: C:\Microsemi\Libero_SoC_PolarFire_v2.3\SynplifyPro
 OS: Windows 6.1
 
 Hostname: EMEAPC0002
 
 Implementation : synthesis
 
-# Written on Fri Sep  7 13:31:51 2018
+# Written on Thu Oct 18 16:48:26 2018
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "TOP"
-Constraint File(s):      "C:\Microsemiprj_PF\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\designer\TOP\synthesis.fdc"
+Constraint File(s):      "C:\Microsemiprj_PF23\apps\riscv_bootloader\UART_2_SPI_Bridge_eval2_ddr\designer\TOP\synthesis.fdc"
 
 
 
 
 ##### SUMMARY ############################################################
 
-Found 0 issues in 0 out of 2 constraints
+Found 25 issues in 24 out of 31 constraints
 
 
 ##### DETAILS ############################################################
@@ -37,16 +37,15 @@ Clock Relationships
 
 Starting                                                      Ending                                                        |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                                        CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     |     10.000           |     No paths         |     No paths         |     No paths                         
+System                                                        CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     |     9.000            |     No paths         |     No paths         |     No paths                         
 System                                                        COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     |     10.000           |     No paths         |     10.000           |     No paths                         
-CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     System                                                        |     10.000           |     No paths         |     No paths         |     No paths                         
-CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     |     10.000           |     No paths         |     No paths         |     No paths                         
-CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     DDR3_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock          |     Diff grp         |     No paths         |     No paths         |     No paths                         
+CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     |     9.000            |     No paths         |     No paths         |     No paths                         
+CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT1                         |     9.000            |     No paths         |     No paths         |     No paths                         
 CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     |     Diff grp         |     No paths         |     No paths         |     No paths                         
-DDR3_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock          CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     |     Diff grp         |     No paths         |     No paths         |     No paths                         
-DDR3_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock          DDR3_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock          |     10.000           |     No paths         |     No paths         |     No paths                         
+MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT1                         MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT1                         |     9.000            |     No paths         |     No paths         |     No paths                         
+MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT1                         COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     System                                                        |     10.000           |     No paths         |     No paths         |     No paths                         
-COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     CLOCKS_RESETS_0/CCC_100MHz_0/CCC_100MHz_0/pll_inst_0/OUT0     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     MEMORY_0/DDR3_0/CCC_0/pll_inst_0/OUT1                         |     Diff grp         |     No paths         |     No paths         |     No paths                         
 COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     COREJTAGDEBUG_85_1s|iUDRCK_inferred_clock                     |     10.000           |     10.000           |     5.000            |     5.000                            
 =======================================================================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
@@ -152,14 +151,60 @@ p:WE_N
 Inapplicable constraints
 ************************
 
-(none)
-
+set_multicycle_path -setup_only 2 -from [get_cells { MEMORY_0.DDR3_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.select* }]
+	@E::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":37:0:37:0|Parameter "-setup_only" is not valid. 
+	@E::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":37:0:37:0|param { value } must be defined 
+	@N::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":37:0:37:0|Constraint will be disabled. 
 
 Applicable constraints with issues
 **********************************
 
-(none)
-
+set_false_path -through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_*FEEDBACK*.Y }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":15:0:15:0|Timing constraint (through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_*FEEDBACK*.Y }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_BIBUF*.D }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":28:0:28:0|Timing constraint (through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_BIBUF*.D }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_BIBUF*.E }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":29:0:29:0|Timing constraint (through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_BIBUF*.E }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_BIBUF_DIFF_DQS_*.YN }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":31:0:31:0|Timing constraint (through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_BIBUF_DIFF_DQS_*.YN }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_IOD_*.DELAY_LINE_OUT_OF_RANGE }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":22:0:22:0|Timing constraint (through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_IOD_*.DELAY_LINE_OUT_OF_RANGE }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_TRIBUFF_*.D }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":26:0:26:0|Timing constraint (through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_TRIBUFF_*.D }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_TRIBUFF_*.E }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":27:0:27:0|Timing constraint (through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_TRIBUFF_*.E }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.OB_A_12.Y }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":16:0:16:0|Timing constraint (through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.OB_A_12.Y }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.OB_DIFF_CK0.Y }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":17:0:17:0|Timing constraint (through [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.OB_DIFF_CK0.Y }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_IOD_*.ARST_N }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":13:0:13:0|Timing constraint (to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_IOD_*.ARST_N }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_IOD_*.DELAY_LINE_MOVE }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":36:0:36:0|Timing constraint (to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_IOD_*.DELAY_LINE_MOVE }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_IOD_*.FIFO_RD_PTR* }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":32:0:32:0|Timing constraint (to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_IOD_*.FIFO_RD_PTR* }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_IOD_*.FIFO_WR_PTR* }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":34:0:34:0|Timing constraint (to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_IOD_*.FIFO_WR_PTR* }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_IOD_*.RX_SYNC_RST* }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":33:0:33:0|Timing constraint (to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_IOD_*.RX_SYNC_RST* }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_IOD_*.TX_SYNC_RST* }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":35:0:35:0|Timing constraint (to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.*.I_IOD_*.TX_SYNC_RST* }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.DDR_READ }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":18:0:18:0|Timing constraint (to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.DDR_READ }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.DELAY_LINE_DIRECTION }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":20:0:20:0|Timing constraint (to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.DELAY_LINE_DIRECTION }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.DELAY_LINE_LOAD MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.DELAY_LINE_SEL }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":23:0:23:0|Timing constraint (to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.DELAY_LINE_LOAD MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.DELAY_LINE_SEL }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.DELAY_LINE_MOVE }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":21:0:21:0|Timing constraint (to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.DELAY_LINE_MOVE }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.HS_IO_CLK_PAUSE }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":14:0:14:0|Timing constraint (to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.HS_IO_CLK_PAUSE }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.READ_CLK_SEL[2] }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":25:0:25:0|Timing constraint (to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.READ_CLK_SEL[2] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.RESET }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":19:0:19:0|Timing constraint (to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.RESET }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.SWITCH }]
+	@W::"c:/microsemiprj_pf23/apps/riscv_bootloader/uart_2_spi_bridge_eval2_ddr/designer/top/synthesis.fdc":24:0:24:0|Timing constraint (to [get_pins { MEMORY_0.DDR3_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.SWITCH }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
 
 Constraints with matching wildcard expressions
 **********************************************
